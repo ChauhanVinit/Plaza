@@ -1,7 +1,7 @@
 "use client";
-import Header from "@/Components/Header";
-import FreeQuote from "@/Components/FreeQuote";
-import Heading from "@/utils/Heading";
+import Header from "../../components/Header";
+import FreeQuote from "../../components/FreeQuote";
+import Heading from "../../utils/Heading";
 import ResidentialA from "../../public/Residential/residential-image-01.png";
 import ResidentialB from "../../public/Residential/residential-image-02.png";
 import Image from "next/image";
@@ -23,9 +23,9 @@ import ConectElement from "../../public/Residential/Conect-element.svg";
 import Fire from "../../public/Residential/fire.svg";
 import Gun from "../../public/Residential/gun.svg";
 import Ellipse from "../../public/Ellipse.svg";
-import Footer from "@/Components/Footer";
+import Footer from "../../components/Footer";
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from "@headlessui/react";
-import Card from "@/Components/Card";
+import Card from "../../components/Card";
 
 const tabs = [
   {

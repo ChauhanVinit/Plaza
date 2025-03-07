@@ -1,5 +1,5 @@
 "use client";
-import Button from "@/utils/Button";
+import Button from "../../utils/Button";
 import Image from "next/image";
 import Schedule from "@/public/Services/Schedule.svg";
 const scrollIntoData = [

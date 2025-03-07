@@ -1,22 +1,22 @@
 "use client";
-import Header from "@/Components/Header";
-import Hero from "@/Components/HomePage/Hero";
-import TopIndustries from "@/Components/HomePage/TopIndustries";
+import Header from "../components/Header";
+import Hero from "../components/HomePage/Hero";
+import TopIndustries from "../components/HomePage/TopIndustries";
 import Image from "next/image";
 import aiSecurity from "../public/ai-security-01.svg";
 import folderSecurity from "../public/folder-security.svg";
 import licenseThird from "../public/license-third-party.svg";
 import videoBanner from "../public/video-banner.png";
-import Tag from "@/utils/Tag";
-import Heading from "@/utils/Heading";
+import Tag from "../utils/Tag";
+import Heading from "../utils/Heading";
 import right from "../public/right.svg";
-import Footer from "@/Components/Footer";
-import FreeQuote from "@/Components/FreeQuote";
-import OurServices from "@/Components/HomePage/OurServices";
-import AboutUs from "@/Components/HomePage/AboutUs";
-import KeyFeature from "@/Components/HomePage/KeyFeature";
-import Services from "@/Components/HomePage/Services";
-import Button from "@/utils/Button";
+import Footer from "../components/Footer";
+import FreeQuote from "../components/FreeQuote";
+import OurServices from "../components/HomePage/OurServices";
+import AboutUs from "../components/HomePage/AboutUs";
+import KeyFeature from "../components/HomePage/KeyFeature";
+import Services from "../components/HomePage/Services";
+import Button from "../utils/Button";
 
 export default function Home() {
   const excelData = [

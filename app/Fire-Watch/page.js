@@ -1,19 +1,19 @@
 "use client";
-import Header from "@/Components/Header";
-import Footer from "@/Components/Footer";
-import FreeQuote from "@/Components/FreeQuote";
-import GuardImage from "@/public/Services/Hero-Guard-01.png";
-import CoreFeature from "@/public/Services/Core-Features-Guard-01.png";
-import HowitworksA from "@/public/Services/How-it-works-02.svg";
-import HowitworksB from "@/public/Services/How-it-works-02.svg";
-import HowitworksC from "@/public/Services/How-it-works-02.svg";
-import collectionIcon from "@/public/AboutUs/collection.svg";
-import checkmark from "@/public/Services/checkmark-circle.svg";
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
+import FreeQuote from "../../components/FreeQuote";
+import GuardImage from "../../public/Services/Hero-Guard-01.png";
+import CoreFeature from "../../public/Services/Core-Features-Guard-01.png";
+import HowitworksA from "../../public/Services/How-it-works-02.svg";
+import HowitworksB from "../../public/Services/How-it-works-02.svg";
+import HowitworksC from "../../public/Services/How-it-works-02.svg";
+import collectionIcon from "../../public/AboutUs/collection.svg";
+import checkmark from "../../public/Services/checkmark-circle.svg";
 import "@splidejs/react-splide/css";
-import Hero from "@/Components/Services/Hero";
-import CoreFeatures from "@/Components/Services/CoreFeatures";
-import Howitworks from "@/Components/Services/Howitworks";
-import Morefeatures from "@/Components/Services/Morefeatures";
+import Hero from "../../components/Services/Hero";
+import CoreFeatures from "../../components/Services/CoreFeatures";
+import Howitworks from "../../components/Services/Howitworks";
+import Morefeatures from "../../components/Services/Morefeatures";
 
 const heroData = {
   title: "Expert Fire Watch Security Guards At Your Service",

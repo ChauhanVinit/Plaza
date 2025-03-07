@@ -1,16 +1,16 @@
 "use client";
-import Header from "@/Components/Header";
-import Footer from "@/Components/Footer";
-import Button from "@/utils/Button";
-import collectionIcon from "@/public/AboutUs/collection.svg";
-import streethouse from "@/public/AboutUs/street-house.png";
-import JoyandFreedom from "@/public/AboutUs/JoyandFreedom.svg";
-import Easeofuse from "@/public/AboutUs/Easeofuse.svg";
-import Performance from "@/public/AboutUs/Performance.svg";
-import lineShape from "@/public/line-shape-08.svg";
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
+import Button from "../../utils/Button";
+import collectionIcon from "../../public/AboutUs/collection.svg";
+import streethouse from "../../public/AboutUs/street-house.png";
+import JoyandFreedom from "../../public/AboutUs/JoyandFreedom.svg";
+import Easeofuse from "../../public/AboutUs/Easeofuse.svg";
+import Performance from "../../public/AboutUs/Performance.svg";
+import lineShape from "../../public/line-shape-08.svg";
 import Image from "next/image";
-import Tag from "@/utils/Tag";
-import Heading from "@/utils/Heading";
+import Tag from "../../utils/Tag";
+import Heading from "../../utils/Heading";
 const statsData = [
   {
     value: "5",

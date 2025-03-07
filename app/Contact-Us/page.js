@@ -1,23 +1,23 @@
 "use client";
 import { useState } from "react";
-import Header from "@/Components/Header";
-import Footer from "@/Components/Footer";
+import Header from "../../components/Header";
+import Footer from "../../Components/Footer";
 import Image from "next/image";
-import bannerimageA from "@/public/Contact-Banner-image-01.png";
-import bannerimageB from "@/public/Contact-Banner-image-02.png";
-import bannerimageC from "@/public/Contact-Banner-image-03.png";
-import bannerimageD from "@/public/Contact-Banner-image-04.png";
-import Tag from "@/utils/Tag";
-import Heading from "@/utils/Heading";
+import bannerimageA from "../../public/Contact-Banner-image-01.png";
+import bannerimageB from "../../public/Contact-Banner-image-02.png";
+import bannerimageC from "../../public/Contact-Banner-image-03.png";
+import bannerimageD from "../../public/Contact-Banner-image-04.png";
+import Tag from "../../utils/Tag";
+import Heading from "../../utils/Heading";
 import collectionIcon from "@/public/AboutUs/collection.svg";
-import Input from "@/utils/Input";
-import Textarea from "@/utils/Textarea";
-import Dropdown from "@/utils/Dropdown";
+import Input from "../../utils/Input";
+import Textarea from "../../utils/Textarea";
+import Dropdown from "../../utils/Dropdown";
 import { nanoid } from "nanoid";
-import Button from "@/utils/Button";
-import right from "@/public/right.svg";
-import lineShape from "@/public/line-shape-08.svg";
-import GoogleMapComponent from "@/utils/GoogleMapComponent";
+import Button from "../../utils/Button";
+import right from "../../public/right.svg";
+import lineShape from "../../public/line-shape-08.svg";
+import GoogleMapComponent from "../../utils/GoogleMapComponent";
 const Contact = () => {
   const images = [bannerimageA, bannerimageB, bannerimageC,bannerimageD];
 

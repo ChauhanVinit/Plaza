@@ -1,9 +1,9 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
-import Button from "@/utils/Button";
+import Button from "../../utils/Button";
 import Image from "next/image";
-import Tag from "@/utils/Tag";
-import Heading from "@/utils/Heading";
+import Tag from "../../utils/Tag";
+import Heading from "../../utils/Heading";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 const Howitworks = ({data,title,desc}) => {
 

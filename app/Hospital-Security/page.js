@@ -1,7 +1,7 @@
 "use client";
-import Header from "@/Components/Header";
-import FreeQuote from "@/Components/FreeQuote";
-import Heading from "@/utils/Heading";
+import Header from "../../components/Header";
+import FreeQuote from "../../components/FreeQuote";
+import Heading from "../../utils/Heading";
 import Image from "next/image";
 import checkmarkCircle from "../../public/Residential/checkmark-circle.svg";
 import tabImageA from "../../public/HospitalSecurity/Tab-image-A.png";
@@ -24,8 +24,8 @@ import Emergencyprotocol from "../../public/HospitalSecurity/Emergency Preparedn
 import HospitalSecurityA from "../../public/HospitalSecurity/HospitalSecurityA.png";
 import HospitalSecurityB from "../../public/HospitalSecurity/HospitalSecurityB.png";
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from "@headlessui/react";
-import Card from "@/Components/Card";
-import Footer from "@/Components/Footer";
+import Card from "../../components/Card";
+import Footer from "../../components/Footer";
   const tabs = [
     {
       label: "24/7 Surveillance And Monitoring",

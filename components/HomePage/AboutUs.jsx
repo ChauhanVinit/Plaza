@@ -2,12 +2,12 @@
 import IndustriesOne from "../../public/Industries-image-01.svg";
 import IndustriesTwo from "../../public/Industries-image-02.svg";
 import Image from "next/image";
-import Tag from "@/utils/Tag";
-import Heading from "@/utils/Heading";
+import Tag from "../../utils/Tag";
+import Heading from "../../utils/Heading";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
-import useIsClient from "@/Hook/useClient";
-import Button from "@/utils/Button";
+import useIsClient from "../../Hook/useClient";
+import Button from "../../utils/Button";
 const AboutusData = [
   {
     image: IndustriesOne,

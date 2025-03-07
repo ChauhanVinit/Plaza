@@ -4,13 +4,13 @@ import Image from "next/image";
 import Shutterstock from "@/public/Shutterstock.png";
 import lineShape from "@/public/line-shape-08.svg";
 import right from "@/public/right.svg";
-import Tag from "@/utils/Tag";
-import Heading from "@/utils/Heading";
-import Input from "@/utils/Input";
-import Textarea from "@/utils/Textarea";
+import Tag from "../utils/Tag";
+import Heading from "../utils/Heading";
+import Input from "../utils/Input";
+import Textarea from "../utils/Textarea";
 import { nanoid } from "nanoid";
-import Dropdown from "@/utils/Dropdown";
-import Button from "@/utils/Button";
+import Dropdown from "../utils/Dropdown";
+import Button from "../utils/Button";
 const FreeQuote = () => {
   const ServicesOptions = [
     

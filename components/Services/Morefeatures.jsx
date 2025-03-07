@@ -1,8 +1,8 @@
 "use client";
-import Button from "@/utils/Button";
+import Button from "../../utils/Button";
 import Image from "next/image";
-import Tag from "@/utils/Tag";
-import Heading from "@/utils/Heading";
+import Tag from "../../utils/Tag";
+import Heading from "../../utils/Heading";
 const Morefeatures = ({ data, title, desc }) => {
   return (
     <div

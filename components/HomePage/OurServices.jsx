@@ -2,11 +2,11 @@
 import client01 from "../../public/client01.svg";
 import lineShape02 from "../../public/line-shape02.svg";
 import Image from "next/image";
-import Tag from "@/utils/Tag";
-import Heading from "@/utils/Heading";
+import Tag from "../../utils/Tag";
+import Heading from "../../utils/Heading";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
-import useIsClient from "@/Hook/useClient";
+import useIsClient from "../../Hook/useClient";
 
 const clientTestimonials = [
   {

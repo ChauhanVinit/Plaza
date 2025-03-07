@@ -1,9 +1,9 @@
 "use client";
 import { useState } from "react";
-import Button from "@/utils/Button";
+import Button from "../../utils/Button";
 import Image from "next/image";
-import Tag from "@/utils/Tag";
-import Heading from "@/utils/Heading";
+import Tag from "../../utils/Tag";
+import Heading from "../../utils/Heading";
 const CoreFeatures = ({ data, title, desc, img }) => {
   const [openIndex, setOpenIndex] = useState(null);
   const toggleAccordion = (index) => {

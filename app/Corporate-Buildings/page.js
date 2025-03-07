@@ -1,8 +1,8 @@
 "use client";
-import Header from "@/Components/Header";
-import FreeQuote from "@/Components/FreeQuote";
-import Footer from "@/Components/Footer";
-import Heading from "@/utils/Heading";
+import Header from "../../components/Header";
+import FreeQuote from "../../components/FreeQuote";
+import Footer from "../../components/Footer";
+import Heading from "../../utils/Heading";
 import CommercialA from "../../public/CommercialBuilding/Commercial-image01.png";
 import CommercialB from "../../public/CommercialBuilding/Commercial-image03.png";
 import Image from "next/image";
@@ -24,7 +24,7 @@ import ConectElement from "../../public/Residential/Conect-element.svg";
 import Fire from "../../public/Residential/fire.svg";
 import Gun from "../../public/Residential/gun.svg";
 import Ellipse from "../../public/Ellipse.svg";
-import Card from "@/Components/Card";
+import Card from "../../components/Card";
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from "@headlessui/react";
 const CorporateBuildings = () => {
   const tabs = [

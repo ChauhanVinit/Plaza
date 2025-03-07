@@ -3,8 +3,8 @@ import lineShape from "../../public/line-shape.svg";
 import bottomShape from "../../public/bottom-shape.svg";
 import Image from "next/image";
 import thirdParty from "../../public/license-third-02.svg";
-import Tag from "@/utils/Tag";
-import Heading from "@/utils/Heading";
+import Tag from "../../utils/Tag";
+import Heading from "../../utils/Heading";
 
 const featureData = [
   {

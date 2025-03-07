@@ -13,9 +13,9 @@ import car from "../../public/car-03.svg";
 import Image from "next/image";
 import validation from "../../public/validation.svg";
 import HomeServicesBanner from "../../public/HomeServicesBanner.png";
-import Tag from "@/utils/Tag";
-import Heading from "@/utils/Heading";
-import Button from "@/utils/Button";
+import Tag from "../../utils/Tag";
+import Heading from "../../utils/Heading";
+import Button from "../../utils/Button";
 
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from "@headlessui/react";
 const Services = () => {
