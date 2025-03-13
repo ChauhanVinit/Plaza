@@ -29,7 +29,7 @@ export default function Home() {
     {
       icon: aiSecurity,
       title: "Security Powered By Cutting-Edge Technology",
-      para: "Utilizing cutting-edge technology to enhance your security and efficiency",
+      para: "Utilizing cutting-edge technology to enhance your security",
     },
     {
       icon: folderSecurity,
