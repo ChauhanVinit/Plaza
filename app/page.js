@@ -7,6 +7,7 @@ import aiSecurity from "../public/ai-security-01.svg";
 import folderSecurity from "../public/folder-security.svg";
 import licenseThird from "../public/license-third-party.svg";
 import videoBanner from "../public/video-banner.png";
+import ExpertSecurity from "../public/ExpertSecurity.png";
 import Tag from "../utils/Tag";
 import Heading from "../utils/Heading";
 import right from "../public/right.svg";
@@ -41,10 +42,12 @@ export default function Home() {
       <Header />
       <Hero />
       <TopIndustries />
-      <div className="max-w-[1440px] mx-auto px-[120px] py-20 ">
-        <div className=" grid grid-cols-12 gap-20">
-          <div className="col-span-5"></div>
-          <div className="col-span-7">
+      <div className="max-w-[1300px] mx-auto px-[60px] py-20">
+        <div className="flex items-start gap-[90px]">
+          <div className="w-[45%]">
+             <Image src={ExpertSecurity}   alt="ExpertSecurity" />
+          </div>
+          <div className="w-[55%]">
             <Tag title={"What we excel at"} />
 
             <Heading
@@ -52,11 +55,8 @@ export default function Home() {
                 "Guarding San Jose Bay Area With Plaza Protection’s Expert Security"
               }
             />
-            <p className="mt-6 font-jakarta text-lg font-normal leading-8 text-[#374049]">
-              We customize our services to fit your unique needs,
-              specifications, and environment. With over a decade of combined
-              management expertise, we guarantee exceptional professional and
-              quality.
+            <p className="mt-6 font-urbanist text-[20px] font-normal leading-8 text-[#45535E]">
+            We customize our services to fit your unique needs, specifications, and environment. With over a decade of combined management expertise, we guarantee exceptional professional and quality.
             </p>
 
             <div className=" mt-8 px-4 bg-[#EDF5FF]/20 rounded-3xl ">
@@ -66,13 +66,13 @@ export default function Home() {
                   className="py-4 flex items-center gap-4 border-b border-[#1355FF]/10 last:border-none"
                 >
                   <div className=" inline-flex items-center justify-center w-[58px] h-[58px] rounded-[83px] bg-[#EDF5FF]">
-                    <Image src={item.icon} alt={item.icon} className=" w-8 h-8" />
+                    <Image src={item.icon} alt={item.icon} className="w-8 h-8" />
                   </div>
                   <div>
-                    <h3 className=" font-urbanist text-lg leading-[22px]  font-bold text-[#171A1D]">
+                    <h3 className="font-urbanist text-lg leading-[22px]  font-bold text-[#171A1D]">
                       {item.title}
                     </h3>
-                    <p className=" mt-2 font-jakarta font-normal text-base leading-5 text-[#374049] ">
+                    <p className="mt-2 font-urbanist font-normal text-base leading-5 text-[#45535E] ">
                       {item.para}
                     </p>
                   </div>
@@ -80,10 +80,9 @@ export default function Home() {
               ))}
             </div>
 
-            <div className="  mt-12 inline-flex items-center gap-4">
+            <div className="mt-12 inline-flex items-center gap-4">
               <Button
                 variant="blue"
-                icon={<Image src={right} alt="right" className="w-4 h-4" />}
                 style={"!min-w-[223px]"}
                 name="Request Quote"
               />

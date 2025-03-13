@@ -1,63 +1,81 @@
 "use client";
 import Image from "next/image";
-import Logo from "../public/Logo.svg";
-import { footerContentData as data } from "../data/FooterContent"
-import Link from 'next/link';
+import Logo from "../public/pps-logo.svg";
+import { footerContentData as data } from "../data/FooterContent";
+import callRinging from "../public/call-ringing.svg";
+import estimate from "../public/estimate-02.svg";
+import location from "../public/location-04.svg";
+import Link from "next/link";
 
 const Footer = () => {
   return (
     <div className="px-[120px] pt-20 pb-8 bg-[#EDF5FF] ">
-      <div className=" w-full max-w-[1200px] mx-auto">
-        
+      <div className="w-full max-w-[1200px] mx-auto">
         <div className="flex items-center justify-between pb-10 border-b border-[#212121]/20">
-          {data.topSection.map((item, index) => (
-            <div
-              key={index}
-              className="px-1  flex items-center gap-4 w-1/3 justify-center first:justify-start last:justify-end"
-            >
-              <div className="w-11 h-11 inline-flex items-center justify-center bg-[#D7E8FF] rounded-[66.67px]">
-                <Image src={item.icon} alt={item.title} className=" w-5 h-5" />
+          <div className="w-1/3">
+            <Image src={Logo} alt="Logo" className="w-[182px] h-12" />
+          </div>
+
+          <div className="w-1/3 flex items-center gap-4  justify-center ">
+            <div className="w-11 h-11 inline-flex items-center justify-center bg-[#D7E8FF] rounded-full">
+              <Image src={callRinging} alt={callRinging} className=" w-5 h-5" />
+            </div>
+            <div>
+              <h3 className="font-urbanist text-lg !leading-[22px] font-semibold text-[#1355FF]">
+                Help line
+              </h3>
+              <p className="mt-[7px] font-urbanist text-base !leading-[19px] font-bold text-[#374049]">
+                1-844-55-(557-5292)
+              </p>
+            </div>
+          </div>
+          <div className="w-1/3 flex items-center gap-4 justify-end ">
+            <div className="w-11 h-11 inline-flex items-center justify-center bg-[#D7E8FF] rounded-full">
+              <Image src={estimate} alt={estimate} className=" w-5 h-5" />
+            </div>
+            <div>
+              <h3 className="font-urbanist text-lg !leading-[22px] font-semibold text-[#1355FF]">
+                Make A Quote
+              </h3>
+              <p className="mt-[7px] font-urbanist text-base !leading-[19px] font-bold text-[#374049]">
+                contact@plazaprotection.com
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="flex items-start py-10 border-b border-[#212121]/20">
+          <div className="w-1/3">
+            <div className="flex  gap-4 justify-start items-start ">
+              <div className="w-11 h-11 inline-flex items-center justify-center bg-[#D7E8FF] rounded-full">
+                <Image src={location} alt={location} className="w-5 h-5" />
               </div>
               <div>
                 <h3 className="font-urbanist text-lg !leading-[22px] font-semibold text-[#1355FF]">
-                  {item.title}
+                  Location
                 </h3>
-                <p className="mt-[7px] font-urbanist text-base !leading-[19px] font-bold text-[#374049]">
-                  {item.description}
+                <p className="mt-[7px] font-urbanist text-base !leading-[19px] font-bold text-[#374049] max-w-[218px]">
+                  1900 Camden Ave San Jose, CA 95124 United States
                 </p>
               </div>
             </div>
-          ))}
-        </div>
-
-      
-        <div className="flex items-start py-10 border-b border-[#212121]/20">
-          <div className="w-1/3">
-            <div className="inline-flex items-center gap-3 mb-6 ">
-              <Image src={Logo} alt="Logo" className="w-[37.45px] h-[40px]" />
-              <h3 className="text-[30px] !leading-9 font-bold font-urbanist text-[#061237]">
-                Plaza<span className="text-[#1355FF]">Protection</span>
-              </h3>
-            </div>
-            <p className="mb-8 font-jakarta text-sm !leading-6 font-normal text-[#374049] max-w-[260px]">
-              {data.description}
+            <p className="mt-6 mb-8 font-urbanist text-sm  font-normal text-[#374049] max-w-[301px]">
+              Plaza Protection delivers top-tier protection across the San Jose
+              Bay Area with your safety front and center.
             </p>
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-4">
               {data.socialMedia.map((media, index) => (
-                <Link href={media.path} target="_blank"
-                  key={index}
-                  className=" w-8 h-8 inline-flex items-center justify-center bg-white rounded-[9.14px] border-[0.57px] border-[#8F9AB3]"
-                >
+                <Link href={media.path} target="_blank" key={index}>
                   <Image
                     src={media.icon}
                     alt={media.alt}
-                    className=" w-[14px] h-[14px]"
+                    className=" w-10 h-10"
                   />
                 </Link>
               ))}
             </div>
           </div>
-          <div className="grow pl-[60px] flex items-start justify-between">
+          <div className="grow pl-20 flex items-start justify-between">
             {data.sections.map((section, index) => (
               <div key={index} className=" min-w-[198px]">
                 <h3 className="mb-4 px-2 font-jakarta text-[13px] !leading-[26px] font-bold text-[#0C2459] uppercase">
@@ -78,16 +96,15 @@ const Footer = () => {
           </div>
         </div>
 
-       
-        <div className=" pt-6 flex items-center justify-between">
-          <p className=" font-jakarta font-semibold text-[13px] leading-[18px] text-[#344054]">
+        <div className="pt-6 flex items-center justify-between">
+          <p className="font-urbanist font-semibold text-sm leading-5 text-[#344054]">
             {data.bottomSection.copyRight}
           </p>
           <div className=" inline-flex items-center gap-8">
             {data.bottomSection.links.map((link, index) => (
               <div
                 key={index}
-                className={`font-jakarta font-semibold text-[13px] leading-[18px] text-[#344054] relative ${
+                className={`font-urbanist font-semibold text-sm leading-5 text-[#344054] relative ${
                   index > 0
                     ? "before:absolute before:top-2 before:-left-4 before:w-1 before:h-1 before:rounded-[100px] before:bg-[#344054]"
                     : ""

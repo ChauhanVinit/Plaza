@@ -1,5 +1,8 @@
 "use client";
-import client01 from "../../public/client01.svg";
+import clientA from "../../public/Client-img-01.png";
+import clientB from "../../public/Client-img-02.png";
+import clientC from "../../public/Client-img-03.png";
+import clientD from "../../public/Client-img-04.png";
 import lineShape02 from "../../public/line-shape02.svg";
 import Image from "next/image";
 import Tag from "../../utils/Tag";
@@ -11,7 +14,7 @@ import useIsClient from "../../Hook/useClient";
 const clientTestimonials = [
   {
     id: 1,
-    clientImage: client01,
+    clientImage: clientA,
     clientText: `Plaza Protection Has Offered Valued Security Patrol
       Services To Our Customers By Making Sure That Their
       Professional Team Is On The Ground When A Situation Arises.
@@ -26,38 +29,38 @@ const clientTestimonials = [
 
   {
     id: 2,
-    clientImage: client01,
+    clientImage: clientB,
     clientText: `Plaza Protection Has Consistently Delivered Excellent
       Security Services. Their Team's Quick Response To 
       Emergencies And Proactive Approach Has Ensured A Safe
       Environment For Our Organization.`,
-    clientName: "Andre Walington",
-    clientRole: "Carnegie Foundation",
+      clientName: "Sophia Martinez",
+      clientRole: "GreenTech Innovations",
   },
   {
     id: 3,
-    clientImage: client01,
+    clientImage: clientC,
     clientText: `Working With Plaza Protection Has Been Seamless.
       Their Professionalism And Dedication Are Unmatched. 
       Highly Recommend Their Services To Any Organization.`,
-    clientName: "Andre Walington",
-    clientRole: "Carnegie Foundation",
+      clientName: "Daniel Thompson",
+      clientRole: "Horizon Capital",
   },
   {
     id: 4,
-    clientImage: client01,
+    clientImage: clientD,
     clientText: `Exceptional Service And Support! Plaza Protection 
       Goes Above And Beyond To Meet Our Security Needs. 
       Truly A Reliable Security Partner.`,
-    clientName: "Andre Walington",
-    clientRole: "Carnegie Foundation",
+      clientName: "Emily Robertson",
+      clientRole: "Summit Enterprises",
   },
 ];
 
 const OurServices = () => {
   const isClient = useIsClient();
   return (
-    <div className="relative max-w-[1440px] mx-auto py-[160px] px-[120px] bg-[#FCFDFF] rounded-[40px] mb-20">
+    <div className="relative max-w-[1300px] mx-auto py-20 px-[60px] rounded-[40px]">
       <Image
         src={lineShape02}
         className="z-0 absolute top-[160px] -left-60 w-[548px]  h-[640px]"
@@ -106,7 +109,7 @@ const OurServices = () => {
                 </div>
               </div>
               <div className="py-[22px] w-[70%]">
-                <p className=" max-w-[656px] font-urbanist text-2xl leading-[43px] font-semibold">
+                <p className="text-[#171A1D] font-urbanist text-2xl leading-[43px] font-semibold">
                   <span className="text-[50px]">“</span>
                   {testimonial.clientText}
                 </p>

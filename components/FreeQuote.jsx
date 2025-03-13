@@ -1,9 +1,7 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
-import Shutterstock from "@/public/Shutterstock.png";
 import lineShape from "@/public/line-shape-08.svg";
-import right from "@/public/right.svg";
 import Tag from "../utils/Tag";
 import Heading from "../utils/Heading";
 import Input from "../utils/Input";
@@ -13,7 +11,6 @@ import Dropdown from "../utils/Dropdown";
 import Button from "../utils/Button";
 const FreeQuote = () => {
   const ServicesOptions = [
-    
     {
       id: nanoid(),
       name: "Vehicle Patrol",
@@ -28,7 +25,6 @@ const FreeQuote = () => {
     },
   ];
   const facilityOptions = [
-   
     {
       id: nanoid(),
       name: "Vehicle Patrol",
@@ -43,7 +39,6 @@ const FreeQuote = () => {
     },
   ];
   const areaOptions = [
-    
     {
       id: nanoid(),
       name: "Vehicle Patrol",
@@ -58,7 +53,6 @@ const FreeQuote = () => {
     },
   ];
   const durationOptions = [
-   
     {
       id: nanoid(),
       name: "Vehicle Patrol",
@@ -92,52 +86,51 @@ const FreeQuote = () => {
   };
 
   return (
-    <div className="relative max-h-[612px] max-w-[1440px] mx-auto  mb-40   px-[60px] bg-[#0C2459] rounded-[40px] ">
+    <div className="relative h-[512px] max-w-[1200px] mx-auto mb-[220px] px-[60px] bg-[#0C2459] rounded-[40px] ">
       <Image
         src={lineShape}
         className="z-0 absolute top-0 left-0 max-h-[612px] "
         alt="lineShape"
       />
-      <div className="relative flex items-start">
-        <div className=" pt-20 pb-24 pr-8 w-[30%] ">
-          <Tag title={"Security you can blindly trust"} className={'!bg-gradient-to-t from-[#E2EAFF] to-[#E2EAFF]'} />
+      <div className="relative flex gap-5 items-start">
+        <div className="py-[60px] w-1/3 ">
+          <Tag
+            title={"Security you can blindly trust"}
+            className={"!bg-gradient-to-t from-[#E2EAFF] to-[#E2EAFF]"}
+          />
           <Heading
             title={"Plaza Protection : Securing San Jose Inside Out"}
-            className={"!max-w-[326px] !text-white"}
+            className={" !text-white"}
           />
-          <p className="mt-6 font-jakarta font-normal text-base leading-7 text-white max-w-[326px]">
+          <p className="mt-6 font-jakarta font-normal text-base  text-white">
             Serving the San Jose area, our expert team is ready to protect what
             matters most. Contact us today for a free risk assessment!
           </p>
           <div className="mt-10 inline-flex items-center gap-4">
             <Button
-                variant="custom"
-        
-                style={"!min-w-[190px]  !text-white !bg-transparent !rounded-2xl"}
-                name={"About Us"}
-              />
+              variant="custom"
+              path={"Contact-Us"}
+              style={"!min-w-[190px]  !text-white !bg-transparent "}
+              name={"Contact Us"}
+            />
           </div>
         </div>
-        <div className="relative pt-8 pr-[11px] w-[30%]  ">
-          <Image
-            src={Shutterstock}
-            alt="Shutterstock"
-            className="w-full h-[580px] object-cover"
-          />
-        </div>
-        <div className="relative pt-20 w-[40%]  ">
-          <div className="p-8 rounded-3xl bg-[#F0F4FF] shadow-[0px_5px_15px_0px_rgba(19,85,255,0.2)]">
-            <h2 className="mb-6 font-urbanist text-[32px] font-bold text-[#222A5B]">
+
+        <div className="relative -right-[108px]  pt-[60px] grow ">
+          <div
+            className="p-8 rounded-[40px] border-[3px] border-[#FFFFFF] 
+          bg-[linear-gradient(180deg,_#EBF0FF_23%,_#7198FE_100%)] shadow-[0px_4px_4px_0px_rgba(19,85,255,0.15)] backdrop-blur-[192px]"
+          >
+            <h2 className="mb-6 font-urbanist text-[32px] !leading-10 font-bold text-[#171A1D]">
               Get Free Quote
             </h2>
-            <div className="w-full flex gap-6 ">
+            <div className="w-full flex gap-4 ">
               <div className="w-1/2">
                 <Input
                   placeholder={"Your Name"}
                   onChange={handleInputChange}
                   value={freeQuote.userName}
                   name={"userName"}
-                  className={"!py-[15px] px-6 border-[#7198FE]/50"}
                 />
               </div>
               <div className="w-1/2">
@@ -146,18 +139,16 @@ const FreeQuote = () => {
                   onChange={handleInputChange}
                   value={freeQuote.companyName}
                   name={"companyName"}
-                  className={"!py-[15px] px-6 border-[#7198FE]/50"}
                 />
               </div>
             </div>
-            <div className="w-full flex gap-6 mt-4">
+            <div className="w-full flex gap-4 mt-4">
               <div className=" w-1/2">
                 <Input
                   placeholder={"Email"}
                   onChange={handleInputChange}
                   value={freeQuote.userEmail}
                   name={"userEmail"}
-                  className={"!py-[15px] px-6 border-[#7198FE]/50"}
                 />
               </div>
               <div className=" w-1/2">
@@ -166,50 +157,47 @@ const FreeQuote = () => {
                   onChange={handleInputChange}
                   value={freeQuote.name}
                   name={"name"}
-                  className={"!py-[15px] px-6 border-[#7198FE]/50"}
                 />
               </div>
             </div>
-            <div className="w-full flex gap-6 mt-4">
+            <div className="w-full flex gap-4 mt-4">
               <div className="w-1/2">
-                <Dropdown options={ServicesOptions} height="h-[55px]" placeholder="Select Services" />
+                <Dropdown
+                  options={ServicesOptions}
+                  placeholder="Select Services"
+                />
               </div>
               <div className="w-1/2">
-                <Dropdown options={facilityOptions} height="h-[55px]" placeholder="Type Of Facility" />
+                <Dropdown
+                  options={facilityOptions}
+                  placeholder="Type Of Facility"
+                />
               </div>
             </div>
-            <div className="w-full flex gap-6 mt-4">
+            <div className="w-full flex gap-4 mt-4">
               <div className="w-1/2">
-                <Dropdown options={areaOptions} height="h-[55px]" placeholder="Select Area" />
+                <Dropdown options={areaOptions} placeholder="Select Area" />
               </div>
-              <div className="w-1/2"> 
-                <Dropdown options={durationOptions} height="h-[55px]" placeholder="Duration Of Service" />
+              <div className="w-1/2">
+                <Dropdown
+                  options={durationOptions}
+                  placeholder="Duration Of Service"
+                />
               </div>
             </div>
             <div className="w-full  mt-4">
               <Textarea
-                placeholder={"Write Your Message"}
+                placeholder={"Assignment Details"}
                 value={freeQuote.userMessage}
                 name={"userMessage"}
-                className={"!py-[17px] border-[#7198FE]/50"}
               />
             </div>
 
-            <div className="mt-8 flex items-center gap-4">
+            <div className="mt-8">
               <Button
                 variant="blue"
-                icon={<Image src={right} alt="right" className="w-4 h-4" />}
-                style={"!min-w-[175px] !rounded-2xl  "}
-                name="Submit"
-              />
-              <span className="font-jakarta text-base font-semibold text-[#1D2939]">
-                Or
-              </span>
-              <Button
-                variant="custom"
-                style={"!min-w-[135px] !bg-transparent !rounded-2xl"}
-                name={"Contact Us"}
-                path="/Contact-Us"
+                style={"!w-full"}
+                name="Submit Free Quote"
               />
             </div>
           </div>

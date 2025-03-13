@@ -5,6 +5,14 @@ import Image from "next/image";
 import thirdParty from "../../public/license-third-02.svg";
 import Tag from "../../utils/Tag";
 import Heading from "../../utils/Heading";
+import GuardTracking from "../../public/Security-Guard-Tracking.svg";
+import ViewingSchedule from "../../public/Viewing-Schedule.svg";
+import Coordinatewithguard from "../../public/Coordinate-with-guard.svg";
+import LiveDashboard from "../../public/Live-Dashboard.svg";
+import Realreporting from "../../public/Real-time-reporting.svg";
+import ManagingVisitors from "../../public/Managing-Visitors.svg";
+import Sitetour from "../../public/Streamline-site-tour.svg";
+
 
 const featureData = [
   {
@@ -12,7 +20,7 @@ const featureData = [
     title: "Security Guard Tracking",
     description:
       "Monitor the real-time GPS location and movement of guards on your site via the live map in our client portal.",
-    image: thirdParty,
+    image: GuardTracking,
     span: " col-span-4",
   },
   {
@@ -20,7 +28,7 @@ const featureData = [
     title: "Viewing Schedules",
     description:
       "Stay in the loop—view schedules, post orders, and request special coverage on the go.",
-    image: thirdParty,
+    image: ViewingSchedule,
     span: "col-span-4",
   },
   {
@@ -28,7 +36,7 @@ const featureData = [
     title: "Live Dashboard",
     description:
       "Collaborate with us seamlessly—co-manage patrol operations in real-time with secure access to our live dashboard.",
-    image: thirdParty,
+    image: LiveDashboard,
     span: "col-span-4",
   },
   {
@@ -36,7 +44,7 @@ const featureData = [
     title: "Real-Time Reporting",
     description:
       "Access detailed reports and visitor logs anytime, anywhere, through the Plaza Protection client portal.",
-    image: thirdParty,
+    image: Realreporting,
     span: "col-span-3",
   },
   {
@@ -44,7 +52,7 @@ const featureData = [
     title: "Managing Visitors On Site",
     description:
       "Streamline visitor management with real-time tracking and access control for efficient, secure site access.",
-    image: thirdParty,
+    image: ManagingVisitors,
     span: "col-span-3",
   },
   {
@@ -52,7 +60,7 @@ const featureData = [
     title: "Streamlined Site Tours",
     description:
       "Step into the future with QR, NFC, and virtual tags for secure site tours and patrols on predefined routes.",
-    image: thirdParty,
+    image: Sitetour,
     span: "col-span-3",
   },
   {
@@ -60,7 +68,7 @@ const featureData = [
     title: "Coordinate With Guards",
     description:
       "Enhance communication with your security guards, streamlining real-time updates and efficient teamwork.",
-    image: thirdParty,
+    image: Coordinatewithguard,
     span: "col-span-3",
   },
 ];
@@ -89,7 +97,7 @@ const KeyFeature = () => {
           title={"Reinventing Security with Innovative Guard Management"}
           className={"!text-white"}
         />
-        <div className="w-full grid grid-cols-12 gap-6 mt-[60px]">
+        <div className="w-full grid grid-cols-12 gap-4 mt-[60px]">
           {featureData.map((item) => (
             <div
               key={item.id}
@@ -102,10 +110,10 @@ const KeyFeature = () => {
                 alt={item.title}
                 className="w-12 h-12"
               />
-              <h2 className="mt-8 mb-4 font-urbanist text-[22px] font-bold text-[#21A9ED]">
+              <h2 className="mt-8 mb-4 font-urbanist text-[22px] !leading-7  font-bold text-[#21A9ED]">
                 {item.title}
               </h2>
-              <p className="font-jakarta font-normal text-base leading-7 text-[#EDF5FF]/60">
+              <p className="font-jakarta font-normal text-base  text-[#EDF5FF]/60">
                 {item.description}
               </p>
             </div>

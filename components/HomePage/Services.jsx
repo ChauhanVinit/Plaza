@@ -1,12 +1,6 @@
 "use client";
 import { useState } from "react";
-import gun from "../../public/gun.svg";
-import gunWhite from "../../public/gun-white.svg";
-import mentorWhite from "../../public/mentor-white.svg";
-import fireWhite from "../../public/fire-white.svg";
-import tvSmartWhite from "../../public/tv-smart-white.svg";
-import carWhite from "../../public/car-white.svg";
-import mentor from "../../public/mentor.svg";
+import UnarmedSecurity from "../../public/UnarmedSecurity.svg";
 import fire from "../../public/fire.svg";
 import tvSmart from "../../public/tv-smart.svg";
 import car from "../../public/car-03.svg";
@@ -25,24 +19,14 @@ const Services = () => {
   const tabs = [
     {
       label: "Unarmed Security",
-      icon: gun,
-      activeIcon: gunWhite,
+      icon: UnarmedSecurity,
       title: "Effective Security Without The Use Of Firearms",
       description:
         "Plaza Protection provides top-tier security without firearms. As San Jose’s leading unarmed security provider, our skilled guards prevent theft and vandalism, offering a reassuring defense.",
     },
     {
-      label: "Standing Guards",
-      icon: mentor,
-      activeIcon: mentorWhite,
-      title: "Experienced Standing Guards for Your Safety",
-      description:
-        "Our standing guards are well-trained professionals ensuring safety and security in various environments. Count on us for unmatched reliability and presence.",
-    },
-    {
       label: "Fire Watch",
       icon: fire,
-      activeIcon: fireWhite,
       title: "Prevent Fire Hazards with Expert Monitoring",
       description:
         "Our fire watch services ensure compliance and safety during high-risk situations. Stay protected with our dedicated fire watch personnel.",
@@ -50,7 +34,6 @@ const Services = () => {
     {
       label: "Remote Monitoring",
       icon: tvSmart,
-      activeIcon: tvSmartWhite,
       title: "24/7 Surveillance with Advanced Technology",
       description:
         "Our remote monitoring solutions provide constant vigilance. We utilize cutting-edge technology to secure your premises at all times.",
@@ -58,7 +41,6 @@ const Services = () => {
     {
       label: "Vehicle Patrol",
       icon: car,
-      activeIcon: carWhite,
       title: "Mobile Security with Vehicle Patrol Services",
       description:
         "Our vehicle patrol services offer a visible and active security presence, ensuring extensive coverage and rapid response.",
@@ -66,79 +48,84 @@ const Services = () => {
   ];
 
   return (
-    <div className="w-full max-w-[1440px] mx-auto p-[60px] rounded-[40px] bg-[#EDF5FF] text-center">
+    <div className="w-full max-w-[1440px] mx-auto py-20 px-[60px] rounded-[40px] bg-[#EDF5FF] text-center">
       <Tag title="Explore Our Diverse Range of Security Solutions" />
       <Heading
         className="!mt-4"
         title="Services That Perfectly Fit Your Security Needs"
       />
-      <div className="mt-[80px] !text-left">
-        <TabGroup className="flex items-start gap-[80px]">
-          <TabList className="flex flex-col py-14 gap-6 pl-[34px] w-[292px]">
+      <div className="mt-[60px] !text-left">
+        <TabGroup className="flex items-center gap-20">
+          <TabList className="flex flex-col gap-[22px]  pl-[34px] min-w-[284px]">
             {tabs.map((item, index) => (
-              <Tab
-                key={index}
-                onClick={() => setActiveTab(index)}
-                className={`inline-flex items-center justify-start whitespace-nowrap rounded-2xl p-4 py-3 h-[60px] leading-normal bg-[#EDF5FF] border border-[#B6CAFF]/50 gap-4 text-[20px] font-urbanist font-semibold text-[#1355FF] transition-all focus-visible:outline-none  data-[selected]:!bg-[#11205A] data-[selected]:bg-[linear-gradient-0]   data-[selected]:text-white relative smooth before:h-[10px] before:w-[10px] before:absolute before:top-1/2 before:-left-[34px] before:rounded-full before:transition-colors before:duration-1000 ease-out ${
-                  index <= activeTab
-                    ? "before:bg-[#11205A]"
-                    : "before:bg-[#88C0FF]"
-                } ${
-                  index !== tabs.length - 1
-                    ? `after:w-[2px] after:h-[80px] after:absolute after:-left-[30px] after:top-[39px] after:transition-colors after:duration-1000 ease-out ${
-                        index < activeTab
-                          ? "after:bg-[#11205A]"
-                          : "after:bg-[#88C0FF]"
-                      }`
-                    : ""
-                } `}
-              >
-                <Image
-                  src={index === activeTab ? item.activeIcon : item.icon}
-                  alt={item.label}
-                />
-                <span>{item.label}</span>
-              </Tab>
+              <div key={index} className="relative flex items-center">
+                {/* Connector Line - Only show if not the last tab */}
+                {index !== tabs.length - 1 && (
+                  <div
+                    className={`absolute -left-[30px] top-[33px] w-[2px] h-[80px] transition-colors duration-1000 ease-out ${
+                      index < activeTab ? "bg-[#1355FF]" : "bg-[#88C0FF]"
+                    }`}
+                  ></div>
+                )}
+
+                {/* Circular Indicator */}
+                <div
+                  className={`w-[10px] h-[10px] rounded-full absolute left-[-34px] top-[48%] transform -translate-y-1/2 transition-colors duration-1000 ease-out ${
+                    index <= activeTab ? "bg-[#1355FF]" : "bg-[#88C0FF]"
+                  }`}
+                ></div>
+
+                <div
+                  className={`smooth relative w-full p-[1px] rounded-2xl hover:bg-gradient-to-r from-[#1355FF] to-[rgb(182,202,255)]   ${
+                    activeTab === index
+                      ? "bg-gradient-to-r from-[#1355FF] to-[#B6CAFF] "
+                      : "bg-[linear-gradient(to_right,_rgba(176,198,255,0.5)_0%,_rgba(182,202,255,0.5)_100%)] "
+                  }`}
+                >
+                  <Tab
+                    onClick={() => setActiveTab(index)}
+                    className="w-full rounded-2xl flex items-center justify-start whitespace-nowrap px-5  min-h-[60px] leading-normal !bg-[#e6eeff] gap-4 text-[20px] font-urbanist font-semibold text-[#1355FF] transition-all focus-visible:outline-none data-[selected]:!bg-white data-[selected]:text-[#1355FF]"
+                  >
+                    <Image src={item.icon} alt={item.label} />
+                    <span>{item.label}</span>
+                  </Tab>
+                </div>
+              </div>
             ))}
           </TabList>
           <TabPanels className="grow py-8 w-[75%]">
             {tabs.map((item, index) => (
               <TabPanel key={index}>
-                <div className="flex items-start gap-20">
-                  <div className="px-[14px]">
+                <div className="flex items-center gap-[60px]">
+                  <div>
                     <Image
                       src={HomeServicesBanner}
                       alt="HomeServicesBanner"
-                      className="min-w-[428px] h-[441px]"
+                      className="min-w-[428px] h-[445px]"
                     />
                   </div>
-                  <div className="py-3">
-                    <div className="flex items-center gap-4 mb-4">
-                      <Image
-                        src={validation}
-                        alt="validation"
-                        className="w-[22.22px] h-[22.22px]"
-                      />
-                      <h3 className="font-urbanist text-2xl leading-normal font-bold text-[#0A3DEB]">
+                  <div className="grow">
+                    <div className="mb-4">
+                      <h3 className="font-urbanist text-2xl !leading-7 font-bold text-[#0A3DEB]">
                         {item.label}
                       </h3>
                     </div>
-                    <h1 className="mb-6 font-urbanist text-[32px] leading-[42px] font-bold text-[#171A1D] max-w-[412px]">
+                    <h1 className="mb-6 font-urbanist text-[32px] leading-10 font-bold text-[#171A1D] ">
                       {item.title}
                     </h1>
-                    <p className="font-jakarta font-normal text-lg leading-8 text-[#374049] max-w-[412px]">
+                    <p className="font-urbanist font-normal text-[20px] leading-8 text-[#45535E] ">
                       {item.description}
                     </p>
                     <div className="mt-10 inline-flex items-center gap-4">
                       <Button
                         variant="blue"
-                        style="!min-w-[221px] rounded-2xl"
+                        style="!min-w-[221px]"
                         name="Request Quote"
                       />
 
                       <Button
                         variant="custom"
-                        style="!min-w-[175px] rounded-2xl !bg-[#EDF5FF]"
+                        style="!min-w-[175px]  !bg-[#EDF5FF]"
                         name="View More"
                       />
                     </div>

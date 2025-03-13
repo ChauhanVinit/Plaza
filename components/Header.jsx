@@ -1,9 +1,9 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
-import Logo from "@/public/Logo.svg";
+import Logo from "@/public/pps-logo.svg";
 import callRinging from "@/public/call-ringing.svg";
-import menu from "@/public/menu.svg";
+import login from "@/public/login.svg";
 import vehiclePatrol from "@/public/vehicle-patrol.png";
 import down from "@/public/down.svg";
 import Link from "next/link";
@@ -21,10 +21,16 @@ const Header = () => {
           path: "/Unarmed-Security",
         },
         {
-          id: "RemoteGuarding",
-          name: "Remote guarding",
+          id: "fire-Watch",
+          name: "Fire Watch",
           icon: vehiclePatrol,
-          path: "/Remote-Guarding",
+          path: "/Fire-Watch",
+        },
+        {
+          id: "RemoteGuarding",
+          name: "Remote Guarding Service",
+          icon: vehiclePatrol,
+          path: "/Remote-Guarding-Service",
         },
         {
           id: "Vehiclepatrol",
@@ -32,12 +38,7 @@ const Header = () => {
           icon: vehiclePatrol,
           path: "/Vehicle-patrol",
         },
-        {
-          id: "fire-Watch",
-          name: "Fire Watch",
-          icon: vehiclePatrol,
-          path: "/Fire-Watch",
-        },
+        
       ],
     },
     {
@@ -50,9 +51,9 @@ const Header = () => {
           path: "/Residential-Communities",
         },
         {
-          id: "corporate-Buildings",
-          name: "Corporate Buildings",
-          path: "Corporate-Buildings",
+          id: "commercial-Buildings",
+          name: "Commercial Buildings",
+          path: "Commercial-Buildings",
         },
         {
           id: "construction-Sites",
@@ -61,24 +62,52 @@ const Header = () => {
         },
         {
           id: "shopping-Center",
-          name: "Shopping Center",
-          path: "/Shopping-Center",
+          name: "Shopping Centers",
+          path: "/Shopping-Centers",
         },
         {
-          id: "hospital-Security",
-          name: "Hospital Security",
-          path: "/Hospital-Security",
+          id: "healthcare-facilities",
+          name: "Healthcare Facilities",
+          path: "/Healthcare-Facilities",
         },
       ],
     },
-    { id: 3, name: "About us", path: "/About-us", subnavs: [] },
-    { id: 4, name: "Blog", path: "/Blog", subnavs: [] },
-    { id: 5, name: "Contact us", path: "/Contact-Us", subnavs: [] },
+    {
+      id: 3,
+      name: "Company",
+      subnavs: [
+        {
+          id: "aboutUs",
+          name: "About Us",
+          icon: vehiclePatrol,
+          path: "/About-us",
+        },
+        {
+          id: "contactUs",
+          name: "Contact Us",
+          icon: vehiclePatrol,
+          path: "/Contact-Us",
+        },
+        {
+          id: "blog",
+          name: "Blog",
+          icon: vehiclePatrol,
+          path: "/Blog",
+        },
+        {
+          id: "requestAquote",
+          name: "Request A Quote",
+          icon: vehiclePatrol,
+          path: "/Request-A-Quote",
+        },
+      ],
+    },
+    { id: 4, name: "Pricing", path: "/Pricing", subnavs: [] },
+    
   ];
 
   const [openSubnav, setOpenSubnav] = useState(null);
 
-  
   const handleSubNavHover = (id) => {
     setOpenSubnav(id);
   };
@@ -136,45 +165,39 @@ const Header = () => {
 
   return (
     <div className=" w-full sticky top-0 z-[999] bg-white">
-       <div className="max-w-[1440px] mx-auto bg-white flex items-center  px-[15px] py-[10px] ">
-      <div className="inline-flex items-center gap-3 py-[11px]">
-        <Image src={Logo} alt="Logo" className="w-[46.81px] h-[50px]" />
-        <h3 className="text-[35px] leading-normal font-bold font-urbanist text-[#061237]">
-          Plaza<span className="text-[#1355FF]">Protection</span>
-        </h3>
-      </div>
-      <div className="ml-[100px] grow flex items-center">
-        {tobarData.map((nav) =>
-          nav.subnavs.length ? renderSubnavs(nav) : renderNavLink(nav)
-        )}
-      </div>
-      <div className="flex items-center gap-10">
-        <div className="flex px-1 gap-4">
-          <button className="h-10 w-10 bg-[#D7E8FF] inline-flex items-center justify-center rounded-[60.61px]">
-            <Image
-              src={callRinging}
-              className="w-[18.18px] h-[18.18px]"
-              alt="callRinging"
-            />
-          </button>
-          <div>
-            <h3 className="font-urbanist text-base leading-normal font-semibold text-[#1355FF]">
-              Help Line
-            </h3>
-            <p className="font-urbanist text-base leading-normal font-bold text-[#374049]">
-              1-844-55-PLAZA (557-5292)
-            </p>
+      <div className="max-w-[1440px] mx-auto bg-white flex items-center  px-[15px] py-3 ">
+        <div className="inline-flex items-center gap-[10px] py-3">
+          <Image src={Logo} alt="Logo" className="w-[182px] h-12" />
+        </div>
+        <div className="ml-[180px] grow flex items-center">
+          {tobarData.map((nav) =>
+            nav.subnavs.length ? renderSubnavs(nav) : renderNavLink(nav)
+          )}
+        </div>
+        <div className="flex items-center gap-3">
+          <div className="flex items-center px-1 gap-3">
+            <button className="h-10 w-10 bg-[#D7E8FF] inline-flex items-center justify-center">
+              <Image src={callRinging} className="w-5 h-5" alt="callRinging" />
+            </button>
+            <div>
+              <p
+                className="font-urbanist text-base leading-normal font-semibold 
+            text-[#1D2939]"
+              >
+                1-844-55-(557-5292)
+              </p>
+            </div>
           </div>
-        </div>
-        <div>
-          <button className="p-3 inline-flex items-center justify-center border border-[#98A2B3] rounded-lg">
-            <Image src={menu} alt="menu" className="w-6 h-6" />
+          <div className="h-7 w-[1px] bg-[#E6E6E6]"></div>
+          <button className="px-5 py-1 inline-flex items-center gap-3 ">
+             <div className="w-10 h-10 inline-flex items-center justify-center bg-[#1355FF]">
+               <Image src={login} alt="login" width={20} height={20} /> 
+             </div>
+             <h3 className="font-urbanist text-base font-semibold text-[#1D2939]">Sign In</h3>
           </button>
         </div>
       </div>
     </div>
-    </div>
-    
   );
 };
 

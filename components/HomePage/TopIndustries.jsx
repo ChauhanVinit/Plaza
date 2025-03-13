@@ -19,14 +19,14 @@ const images = [
 const TopIndustries = () => {
   const isClient = useIsClient();
   return (
-    <div className="max-w-[1440px] mx-auto p-20 flex items-center justify-between">
-      <div className="w-1/4">
-        <h3 className="font-jakarta text-3xl font-bold text-[#061237]">
-          First Choice For San Jose’s Top Industries
+    <div className="max-w-[1300px] mx-auto p-20 grid grid-cols-12 items-center ">
+      <div className="col-span-4">
+        <h3 className="font-urbanist text-3xl font-bold !leading-10 text-[#171A1D]">
+          First Choice For San<br/> Jose’s Top Industries
         </h3>
       </div>
 
-      <div className="ml-auto w-[65%] overflow-hidden">
+      <div className="col-span-8  overflow-hidden">
         {isClient && (
           <Splide
             aria-label="My Favorite Images"

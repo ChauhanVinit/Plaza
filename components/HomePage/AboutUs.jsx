@@ -1,6 +1,10 @@
 "use client";
-import IndustriesOne from "../../public/Industries-image-01.svg";
-import IndustriesTwo from "../../public/Industries-image-02.svg";
+import Residential from "../../public/Residential.png";
+import Commercial from "../../public/Commercial.png";
+import Construction from "../../public/Construction.png";
+import ShoppingCenter from "../../public/Shopping-Center.png";
+import Healthcare from "../../public/Healthcare.png";
+
 import Image from "next/image";
 import Tag from "../../utils/Tag";
 import Heading from "../../utils/Heading";
@@ -10,32 +14,42 @@ import useIsClient from "../../Hook/useClient";
 import Button from "../../utils/Button";
 const AboutusData = [
   {
-    image: IndustriesOne,
-    title: "Healthcare Facilities",
-    para: "At Plaza Protection, we understand that the presence of firearms can make people uneasy. That’s why our highly trained guards provide top-tier security without the need for weapons",
+    image: Residential,
+    title: "Residential Communities",
+    para: "Plaza Protection’s security guards are committed to protecting residential communities, providing a secure and peaceful environment for every home.",
+    path:'/Residential-Communities'
   },
   {
-    image: IndustriesTwo,
-    title: "Healthcare Facilities",
-    para: "At Plaza Protection, we understand that the presence of firearms can make people uneasy. That’s why our highly trained guards provide top-tier security without the need for weapons",
+    image: Commercial,
+    title: "Commercial Buildings",
+    para: "Plaza Protection’s security experts are skilled in addressing the unique challenges of commercial properties, safeguarding your business against break-ins, theft, and vandalism.",
+    path:'/Commercial-Buildings'
   },
   {
-    image: IndustriesOne,
-    title: "Healthcare Facilities",
-    para: "At Plaza Protection, we understand that the presence of firearms can make people uneasy. That’s why our highly trained guards provide top-tier security without the need for weapons",
+    image: Construction,
+    title: "Construction Sites",
+    para: "Plaza Protection security guards safeguard construction sites by preventing theft, monitoring activity, and maintaining a safe environment for your crew and assets.",
+    path:'/Construction-Sites'
   },
   {
-    image: IndustriesTwo,
+    image: ShoppingCenter,
+    title: "Shopping Center",
+    para: "Plaza Protection security guards safeguard construction sites by preventing theft, monitoring activity, and maintaining a safe environment for your crew and assets.",
+    path:'/Shopping-Centers'
+  },
+  {
+    image: Healthcare,
     title: "Healthcare Facilities",
-    para: "At Plaza Protection, we understand that the presence of firearms can make people uneasy. That’s why our highly trained guards provide top-tier security without the need for weapons",
+    para: "Plaza Protection security guards safeguard construction sites by preventing theft, monitoring activity, and maintaining a safe environment for your crew and assets.",
+    path:'/Healthcare-Facilities'
   },
 ];
 const AboutUs = () => {
   const isClient = useIsClient();
 
   return (
-   <div className="w-full pl-[calc((100%-1440px)/2)] mb-20">
-     <div className="rounded-tl-[40px] rounded-bl-[40px]  relative  -mt-[116px]  px-[60px] py-20 bg-[#EDF5FF]">
+   <div className="w-full pl-[calc((100%-1440px)/2)] ">
+     <div className="rounded-tl-[40px] rounded-bl-[40px]  relative  -mt-[116px]  pl-[60px] py-20 bg-[#EDF5FF]">
       <Tag title={"Quick view about us"} />
 
       <Heading title={"Explore Our Range Of Security Solutions"} />
@@ -47,7 +61,7 @@ const AboutUs = () => {
             perMove: 1,
             rewind: true,
             perPage: 3,
-            gap: "0px",
+            gap: "24px",
             autoplay: false,
             arrows: true,
             classes: {
@@ -66,15 +80,15 @@ const AboutUs = () => {
                 <div className="overflow-hidden max-h-[350px] max-w-full shadow-[0_4px_4px_rgba(0,0,0,0.25)] rounded-2xl">
                   <Image
                     src={item.image}
-                    alt="ins"
-                    className="object-cover min-w-[472px] h-[350px]"
+                    alt={item.title}
+                    className=" w-full h-auto"
                   />
                 </div>
 
-                <h2 className="mt-8 mb-4 font-urbanist text-2xl leading-[29px] font-bold text-[#171A1D]">
+                <h2 className="mt-8 mb-4 font-urbanist text-2xl !leading-7 font-bold text-[#171A1D]">
                   {item.title}
                 </h2>
-                <p className="mb-8 font-jakarta text-base leading-7 font-normal text-[#374049]">
+                <p className="mb-8 font-jakarta text-base  font-normal text-[#45535E]">
                   {item.para}
                 </p>
                 <div>
@@ -82,7 +96,7 @@ const AboutUs = () => {
                     variant="custom"
                     style={"!bg-transparent min-w-[158px]  !text-center"}
                     name={"View More"}
-                    path="/About-us"
+                    path={item.path}
                   />
                 </div>
               </div>

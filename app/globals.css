@@ -20,9 +20,9 @@
   .invisible-scroll::-webkit-scrollbar-track {
     @apply bg-transparent;
   }
+ 
+ 
 }
-
-
 ::-webkit-scrollbar {
 	@apply w-[3px] bg-[#edf5ff];
 }
@@ -48,10 +48,10 @@
 }
 
 .serv-prev{
-  @apply right-[0px] -top-[110px] -translate-x-[10vw]
+  @apply right-[0px] -top-[110px] -translate-x-[20vw]
 }
 .serv-next{
-  @apply  right-[60px] -top-[110px] rotate-180  -translate-x-[10vw]
+  @apply  right-[60px] -top-[110px] rotate-180  -translate-x-[20vw]
 }
 
 .custom-arrow svg {

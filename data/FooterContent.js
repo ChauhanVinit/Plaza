@@ -3,29 +3,12 @@ import estimate from "../public/estimate-02.svg";
 import location from "../public/location-04.svg";
 import Logo from "../public/Logo.svg";
 import facebook from "../public/facebook.svg";
-import X from "../public/Icon-X.svg";
+import X from "../public/X.svg";
 import linkedin from "../public/linkedin.svg";
 import instagram from "../public/instagram.svg";
 import youtube from "../public/youtube.svg";
 
 export const footerContentData = {
-    topSection: [
-      {
-        icon: callRinging,
-        title: "Help line",
-        description: "1-844-55-PLAZA (557-5292)",
-      },
-      {
-        icon: estimate,
-        title: "Make A Quote",
-        description: "contact@plazaprotection.com",
-      },
-      {
-        icon: location,
-        title: "Location",
-        description: "1256, San Jose, Area",
-      },
-    ],
     description:
       "Plaza Protection delivers top-tier protection across the San Jose Bay Area with personalized onsite services that put your safety front and center.",
     socialMedia: [
@@ -40,18 +23,18 @@ export const footerContentData = {
         title: "Services",
         links: [
           "Unarmed Security",
-          "Standing Guards",
-          "Foot Patrol",
           "Fire Watch",
+          "Remote Guarding Service",
+          "Vehicle Patrol",
         ],
       },
       {
-        title: "Learn More",
-        links: ["FAQs", "Product info", "Security", "Support Center"],
+        title: "INDUSTRIES",
+        links: ["Residential Communities", "Commercial Buildings", "Construction Sites", "Shopping Centers","Healthcare Facilities"],
       },
       {
         title: "Company",
-        links: ["About Us", "Contact Us", "Blog", "Pricing"],
+        links: ["About Us", "Contact Us", "Blog", "Request A Quote"],
       },
     ],
     bottomSection: {
