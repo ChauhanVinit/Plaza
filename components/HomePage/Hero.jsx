@@ -1,7 +1,7 @@
 "use client";
 import mapsLocation from "../../public/maps-location.svg";
 import Image from "next/image";
-import Button from "@/utils/Button";
+import Button from "../../utils/Button";
 const Hero = () => {
   return (
     <div className="w-full max-w-[1440px] mx-auto  mt-14 grid grid-cols-12">

@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
-import lineShape from "@/public/line-shape-08.svg";
+import lineShape from "../public/line-shape-08.svg";
 import Tag from "../utils/Tag";
 import Heading from "../utils/Heading";
 import Input from "../utils/Input";

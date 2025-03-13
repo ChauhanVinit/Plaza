@@ -1,11 +1,11 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
-import Logo from "@/public/pps-logo.svg";
-import callRinging from "@/public/call-ringing.svg";
-import login from "@/public/login.svg";
-import vehiclePatrol from "@/public/vehicle-patrol.png";
-import down from "@/public/down.svg";
+import Logo from "../public/pps-logo.svg";
+import callRinging from "../public/call-ringing.svg";
+import login from "../public/login.svg";
+import vehiclePatrol from "../public/vehicle-patrol.png";
+import down from "../public/down.svg";
 import Link from "next/link";
 
 const Header = () => {

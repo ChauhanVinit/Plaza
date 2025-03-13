@@ -1,7 +1,3 @@
-import callRinging from "../public/call-ringing.svg";
-import estimate from "../public/estimate-02.svg";
-import location from "../public/location-04.svg";
-import Logo from "../public/Logo.svg";
 import facebook from "../public/facebook.svg";
 import X from "../public/X.svg";
 import linkedin from "../public/linkedin.svg";
