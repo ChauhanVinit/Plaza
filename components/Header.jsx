@@ -72,38 +72,10 @@ const Header = () => {
         },
       ],
     },
-    {
-      id: 3,
-      name: "Company",
-      subnavs: [
-        {
-          id: "aboutUs",
-          name: "About Us",
-          icon: vehiclePatrol,
-          path: "/About-us",
-        },
-        {
-          id: "contactUs",
-          name: "Contact Us",
-          icon: vehiclePatrol,
-          path: "/Contact-Us",
-        },
-        {
-          id: "blog",
-          name: "Blog",
-          icon: vehiclePatrol,
-          path: "/Blog",
-        },
-        {
-          id: "requestAquote",
-          name: "Request A Quote",
-          icon: vehiclePatrol,
-          path: "/Request-A-Quote",
-        },
-      ],
-    },
-    { id: 4, name: "Pricing", path: "/Pricing", subnavs: [] },
     
+    { id: 3, name: "Contact Us", path: "/Contact-Us", subnavs: [] },
+    { id: 4, name: "About Us", path: "/About-us", subnavs: [] },
+    { id: 5, name: "Blog", path: "/Blog", subnavs: [] },
   ];
 
   const [openSubnav, setOpenSubnav] = useState(null);
@@ -193,7 +165,7 @@ const Header = () => {
              <div className="w-10 h-10 inline-flex items-center justify-center bg-[#1355FF]">
                <Image src={login} alt="login" width={20} height={20} /> 
              </div>
-             <h3 className="font-urbanist text-base font-semibold text-[#1D2939]">Sign In</h3>
+             <h3 className="font-urbanist text-base font-semibold text-[#1D2939]">Request Quote</h3>
           </button>
         </div>
       </div>
