@@ -72,7 +72,7 @@ const Header = () => {
         },
       ],
     },
-    { id: 3, name: "Our Technology,", path: "/Our-Technology,", subnavs: [] },
+    // { id: 3, name: "Our Technology,", path: "/Our-Technology,", subnavs: [] },
     { id: 4, name: "Contact Us", path: "/Contact-Us", subnavs: [] },
     { id: 5, name: "About Us", path: "/About-us", subnavs: [] },
     { id: 6, name: "Blog", path: "/Blog", subnavs: [] },
