@@ -23,6 +23,7 @@ const Services = () => {
       title: "Effective Security Without The Use Of Firearms",
       description:
         "Plaza Protection provides top-tier security without firearms. As San Jose’s leading unarmed security provider, our skilled guards prevent theft and vandalism, offering a reassuring defense.",
+        path:'/Unarmed-Security'
     },
     {
       label: "Fire Watch",
@@ -30,6 +31,7 @@ const Services = () => {
       title: "Prevent Fire Hazards with Expert Monitoring",
       description:
         "Our fire watch services ensure compliance and safety during high-risk situations. Stay protected with our dedicated fire watch personnel.",
+        path:'/Fire-Watch'
     },
     {
       label: "Remote Monitoring",
@@ -37,6 +39,7 @@ const Services = () => {
       title: "24/7 Surveillance with Advanced Technology",
       description:
         "Our remote monitoring solutions provide constant vigilance. We utilize cutting-edge technology to secure your premises at all times.",
+        path:'/Remote-Guarding-Service'
     },
     {
       label: "Vehicle Patrol",
@@ -44,6 +47,7 @@ const Services = () => {
       title: "Mobile Security with Vehicle Patrol Services",
       description:
         "Our vehicle patrol services offer a visible and active security presence, ensuring extensive coverage and rapid response.",
+        path:'/Vehicle-patrol'
     },
   ];
 
@@ -121,12 +125,14 @@ const Services = () => {
                         variant="blue"
                         style="!min-w-[221px]"
                         name="Request Quote"
+                        path="/Request-A-Quote"
                       />
 
                       <Button
                         variant="custom"
                         style="!min-w-[175px]  !bg-[#EDF5FF]"
                         name="View More"
+                        path={item.path}
                       />
                     </div>
                   </div>

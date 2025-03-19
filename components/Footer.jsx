@@ -87,7 +87,9 @@ const Footer = () => {
                       key={linkIndex}
                       className="p-2 font-urbanist text-base font-medium text-[#171A1D] !leading-5"
                     >
-                      {link}
+                      <a href={link.path} target="_blank" >
+                        {link.label}
+                      </a>
                     </li>
                   ))}
                 </ul>

@@ -24,7 +24,7 @@ const Hero = () => {
           </p>
 
           <div className="mt-12 inline-flex items-center gap-4">
-          <Button variant="blue" style={"!min-w-[243px]"} name="Request Quote"  />
+          <Button variant="blue" style={"!min-w-[243px]"} name="Request Quote" path="/Request-A-Quote"  />
 
           <Button variant="custom" style={"!min-w-[162px]"} name="Contact Us"  path="/Contact-Us"  />
           </div>

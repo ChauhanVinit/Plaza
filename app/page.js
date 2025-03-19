@@ -10,7 +10,6 @@ import videoBanner from "../public/video-banner.png";
 import ExpertSecurity from "../public/ExpertSecurity.png";
 import Tag from "../utils/Tag";
 import Heading from "../utils/Heading";
-import right from "../public/right.svg";
 import Footer from "../components/Footer";
 import FreeQuote from "../components/FreeQuote";
 import OurServices from "../components/HomePage/OurServices";
@@ -85,6 +84,7 @@ export default function Home() {
                 variant="blue"
                 style={"!min-w-[223px]"}
                 name="Request Quote"
+                path="/Request-A-Quote"
               />
 
               <Button

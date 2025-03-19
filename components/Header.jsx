@@ -7,8 +7,8 @@ import login from "../public/login.svg";
 import vehiclePatrol from "../public/vehicle-patrol.png";
 import down from "../public/down.svg";
 import Link from "next/link";
-
-const Header = () => {
+import Button from "../utils/Button";
+const Header = ({ ContactUsBtn }) => {
   const tobarData = [
     {
       id: 1,
@@ -38,7 +38,6 @@ const Header = () => {
           icon: vehiclePatrol,
           path: "/Vehicle-patrol",
         },
-        
       ],
     },
     {
@@ -146,7 +145,9 @@ const Header = () => {
             nav.subnavs.length ? renderSubnavs(nav) : renderNavLink(nav)
           )}
         </div>
-        <div className="flex items-center gap-3">
+        <div
+          className={`flex items-center  ${ContactUsBtn ? "gap-10" : "gap-3"} `}
+        >
           <div className="flex items-center px-1 gap-3">
             <button className="h-10 w-10 bg-[#D7E8FF] inline-flex items-center justify-center">
               <Image src={callRinging} className="w-5 h-5" alt="callRinging" />
@@ -160,13 +161,31 @@ const Header = () => {
               </p>
             </div>
           </div>
-          <div className="h-7 w-[1px] bg-[#E6E6E6]"></div>
-          <button className="px-5 py-1 inline-flex items-center gap-3 ">
-             <div className="w-10 h-10 inline-flex items-center justify-center bg-[#1355FF]">
-               <Image src={login} alt="login" width={20} height={20} /> 
-             </div>
-             <h3 className="font-urbanist text-base font-semibold text-[#1D2939]">Request Quote</h3>
-          </button>
+
+          {ContactUsBtn ? (
+            <Button
+              variant="custom"
+              style={"!min-w-[162px]"}
+              name="Contact Us"
+              path="/Contact-Us"
+            />
+          ) : (
+            <>
+              <div className="h-7 w-[1px] bg-[#E6E6E6]"></div>
+              <Link
+                href={"/Request-A-Quote"}
+                target="_blank"
+                className="px-5 py-1 inline-flex items-center gap-3 "
+              >
+                <div className="w-10 h-10 inline-flex items-center justify-center bg-[#1355FF]">
+                  <Image src={login} alt="login" width={20} height={20} />
+                </div>
+                <h3 className="font-urbanist text-base font-semibold text-[#1D2939]">
+                  Request Quote
+                </h3>
+              </Link>
+            </>
+          )}
         </div>
       </div>
     </div>
