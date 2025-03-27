@@ -82,7 +82,7 @@ export default function Home() {
             <div className="mt-12 inline-flex items-center gap-4">
               <Button
                 variant="blue"
-                style={"!min-w-[223px]"}
+                style={"!min-w-[243px]"}
                 name="Request Quote"
                 path="/Request-A-Quote"
               />

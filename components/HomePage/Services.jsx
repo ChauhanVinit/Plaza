@@ -123,14 +123,14 @@ const Services = () => {
                     <div className="mt-10 inline-flex items-center gap-4">
                       <Button
                         variant="blue"
-                        style="!min-w-[221px]"
+                        style="!min-w-[243px]"
                         name="Request Quote"
                         path="/Request-A-Quote"
                       />
 
                       <Button
                         variant="custom"
-                        style="!min-w-[175px]  !bg-[#EDF5FF]"
+                        style="!min-w-[162px]  !bg-[#EDF5FF]"
                         name="View More"
                         path={item.path}
                       />
