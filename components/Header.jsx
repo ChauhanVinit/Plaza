@@ -157,7 +157,7 @@ const Header = ({ ContactUsBtn }) => {
                 className="font-urbanist text-base leading-normal font-semibold 
             text-[#1D2939]"
               >
-                1-844-55-(557-5292)
+                1-844-55-557-5292
               </p>
             </div>
           </div>
