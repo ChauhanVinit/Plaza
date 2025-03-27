@@ -28,7 +28,7 @@ const coreFeaturesData = {
 
 const howItworksData = {
   title: "Enhanced Control With Our Security Guard Management System",
-  desc: "Our cutting edge security guard management system puts you in control of every aspect of your security. You’ll have real-time access to schedules, detailed reports, and GPS tracking of guards, ensuring transparency and oversight.",
+  desc: "Our cutting edge security guard management system puts you in control of every aspect of your security. ",
 };
 const moreFeaturesData = {
   title: "Essential Features Of Unarmed Security Guard Solutions",

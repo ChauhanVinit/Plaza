@@ -78,12 +78,7 @@ const Howitworks = ({data,title,desc}) => {
       <p className="mb-6 font-jakarta font-normal text-lg !leading-8 text-[#374049] max-w-[550px]">
        {desc}
       </p>
-      <Button
-        variant="custom"
-        style={"!min-w-[162px] !bg-transparent"}
-        name="Contact Us"
-         path="/Contact-Us"
-      />
+      
 
       <Splide
         ref={splideTextRef}
