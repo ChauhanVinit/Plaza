@@ -13,15 +13,19 @@ const FreeQuote = () => {
   const ServicesOptions = [
     {
       id: nanoid(),
-      name: "Vehicle Patrol",
-    },
-    {
-      id: nanoid(),
-      name: "Foot Patrol",
+      name: "Unarmed Security",
     },
     {
       id: nanoid(),
       name: "Fire Watch",
+    },
+    {
+      id: nanoid(),
+      name: "Remote Monitoring",
+    },
+    {
+      id: nanoid(),
+      name: "Vehicle Patrol",
     },
   ];
   const facilityOptions = [
@@ -55,15 +59,23 @@ const FreeQuote = () => {
   const durationOptions = [
     {
       id: nanoid(),
-      name: "Vehicle Patrol",
+      name: "6 months",
     },
     {
       id: nanoid(),
-      name: "Foot Patrol",
+      name: "1 Year",
     },
     {
       id: nanoid(),
-      name: "Fire Watch",
+      name: "2 Years",
+    },
+    {
+      id: nanoid(),
+      name: "3 Years",
+    },
+    {
+      id: nanoid(),
+      name: "5 Years",
     },
   ];
 
@@ -71,7 +83,7 @@ const FreeQuote = () => {
     userName: "",
     companyName: "",
     userEmail: "",
-    name: "",
+    userAddress: "",
     userMessage: "",
   });
 
@@ -153,10 +165,10 @@ const FreeQuote = () => {
               </div>
               <div className=" w-1/2">
                 <Input
-                  placeholder={"Your Name"}
+                  placeholder={"Your Address"}
                   onChange={handleInputChange}
-                  value={freeQuote.name}
-                  name={"name"}
+                  value={freeQuote.userAddress}
+                  name={"userAddress"}
                 />
               </div>
             </div>
