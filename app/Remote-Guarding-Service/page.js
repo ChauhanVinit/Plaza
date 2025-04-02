@@ -14,15 +14,15 @@ import Hero from "../../components/Services/Hero";
 import CoreFeatures from "../../components/Services/CoreFeatures";
 import Howitworks from "../../components/Services/Howitworks";
 import Morefeatures from "../../components/Services/Morefeatures";
-
+import Visitorcheckin from "../../public/Services/Visitor-check-in.svg";
 const heroData = {
   title: "Secure Your Property With Remote Guarding Services",
-  desc: "Our remote guarding services offer cutting-edge security through real-time video surveillance, remote monitoring, and rapid response capabilities.",
+  desc: "By leveraging cutting-edge technology and a highly skilled team, Plaza Protection delivers comprehensive security solutions including video surveillance, security guards, remote guarding, alarms, and access control.",
   img: GuardImage,
 };
 const coreFeaturesData = {
-  title: "Smart Video Analytics For Real-Time Protection",
-  desc: "Smart video analytics provide real-time threat detection, ensuring immediate alerts and rapid response to any security breach.",
+  title: "Smart Video Surveillance for Proactive Security",
+  desc: "Plaza Protection’s video surveillance ensures real-time monitoring, rapid threat detection, and a safer business environment.",
   img: CoreFeature,
 };
 
@@ -31,38 +31,38 @@ const howItworksData = {
   desc: "Smart video analytics continuously monitors your property, detecting potential threats in real time. With instant alerts and rapid response capabilities, it ensures proactive security and immediate action to protect what matters most.",
 };
 const moreFeaturesData = {
-  title: "Essential Features Of Remote Guarding Services",
-  desc: "Remote guarding services combine advanced technology and expert monitoring to deliver 24/7 security solutions. Trained operators monitor live video feeds and security systems to detect unusual activity and respond instantly.",
+  title: "AI-Powered Remote Guarding for 24/7 Security",
+  desc: "Smart remote guarding combines AI-driven monitoring, 24/7 surveillance, and instant threat response to ensure seamless security across multiple locations.",
 };
 const accordionItems = [
   {
     icon: collectionIcon,
-    title: "Real-Time Threat Detection",
-    description: "Instant identification of potential security risks.",
+    title: "High-Definition Cameras",
+    description: "Delivers clear, detailed footage for accurate monitoring.",
   },
   {
     icon: collectionIcon,
     title: "Rapid Response",
-    description: "Instant identification of potential security risks.",
+    description: "Delivers clear, detailed footage for accurate monitoring.",
   },
   {
     icon: collectionIcon,
     title: "Advanced Monitoring",
-    description: "Instant identification of potential security risks.",
+    description: "Delivers clear, detailed footage for accurate monitoring.",
   },
   {
     icon: collectionIcon,
     title: "Smart Video Analytics",
-    description: "Instant identification of potential security risks.",
+    description: "Delivers clear, detailed footage for accurate monitoring.",
   },
 ];
 
 const moreFeatures = [
   {
     icon: checkmark,
-    title: "24/7 Monitoring",
+    title: "Live Video Monitoring",
     description:
-      "Continuous surveillance of your property via live video feeds.",
+      "Ensures real-time surveillance for instant threat detection.",
   },
   {
     icon: checkmark,
@@ -88,21 +88,21 @@ const howItworks = [
     title: "Real-Time Threat Detection",
     description: "Immediate identification of potential risks.",
     imageSrc: HowitworksA,
-    icon: collectionIcon,
+    icon: Visitorcheckin,
   },
   {
     id: 2,
     title: "Emergency Response",
     description: "Ensuring rapid response in critical situations.",
     imageSrc: HowitworksB,
-    icon: collectionIcon,
+    icon: Visitorcheckin,
   },
   {
     id: 3,
     title: "Safety Training",
     description: "Comprehensive training to handle fire incidents.",
     imageSrc: HowitworksC,
-    icon: collectionIcon,
+    icon: Visitorcheckin,
   },
 ];
 

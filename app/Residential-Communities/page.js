@@ -359,7 +359,7 @@ const ResidentialCommunities = () => {
         <div className="text-center !max-w-[967px] mx-auto">
           <Heading
             className="!mb-6 !mt-0"
-            title="Consistent, Round-the-Clock Protection For Gated Communities"
+            title="Consistent, Round-The-Clock Protection For Gated Communities"
           />
           <p className="font-jakarta text-lg leading-8 text-[#374049] font-normal">
             With Plaza Protection, your gated community benefits from continuous

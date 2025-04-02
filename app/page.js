@@ -44,7 +44,7 @@ export default function Home() {
       <div className="max-w-[1300px] mx-auto px-[60px] py-20">
         <div className="flex items-start gap-[90px]">
           <div className="w-[45%]">
-             <Image src={ExpertSecurity}   alt="ExpertSecurity" />
+            <Image src={ExpertSecurity} alt="ExpertSecurity" />
           </div>
           <div className="w-[55%]">
             <Tag title={"What we excel at"} />
@@ -55,7 +55,10 @@ export default function Home() {
               }
             />
             <p className="mt-6 font-urbanist text-[20px] font-normal leading-8 text-[#45535E]">
-            We customize our services to fit your unique needs, specifications, and environment. With over a decade of combined management expertise, we guarantee exceptional professional and quality.
+              We customize our services to fit your unique needs,
+              specifications, and environment. With over a decade of combined
+              management expertise, we guarantee exceptional professional and
+              quality.
             </p>
 
             <div className=" mt-8 px-4 bg-[#EDF5FF]/20 rounded-3xl ">
@@ -65,7 +68,11 @@ export default function Home() {
                   className="py-4 flex items-center gap-4 border-b border-[#1355FF]/10 last:border-none"
                 >
                   <div className=" inline-flex items-center justify-center w-[58px] h-[58px] rounded-[83px] bg-[#EDF5FF]">
-                    <Image src={item.icon} alt={item.icon} className="w-8 h-8" />
+                    <Image
+                      src={item.icon}
+                      alt={item.icon}
+                      className="w-8 h-8"
+                    />
                   </div>
                   <div>
                     <h3 className="font-urbanist text-lg leading-[22px]  font-bold text-[#171A1D]">
@@ -109,4 +116,3 @@ export default function Home() {
     </>
   );
 }
-

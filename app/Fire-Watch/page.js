@@ -14,7 +14,7 @@ import Hero from "../../components/Services/Hero";
 import CoreFeatures from "../../components/Services/CoreFeatures";
 import Howitworks from "../../components/Services/Howitworks";
 import Morefeatures from "../../components/Services/Morefeatures";
-
+import Visitorcheckin from "../../public/Services/Visitor-check-in.svg";
 const heroData = {
   title: "Expert Fire Watch Security Guards At Your Service",
   desc: "Our expert fire watch security guards provide proactive patrols to detect fire hazards and ensure swift response. With trained professionals on duty, your safety is always a top priority.",
@@ -38,23 +38,23 @@ const moreFeaturesData = {
 const accordionItems = [
   {
     icon: collectionIcon,
-    title: "24/7 Unarmed Security",
-    description: "Constant and dependable protection.",
+    title: "Continuous Patrols",
+    description: "Ongoing monitoring to detect fire hazards.",
   },
   {
     icon: collectionIcon,
-    title: "Advanced Surveillance",
-    description: "Cutting-edge monitoring for safety.",
+    title: "Trained Guards",
+    description: "Ongoing monitoring to detect fire hazards.",
   },
   {
     icon: collectionIcon,
-    title: "Advanced Surveillance",
-    description: "Cutting-edge monitoring for safety.",
+    title: "Swift Response",
+    description: "Ongoing monitoring to detect fire hazards.",
   },
   {
     icon: collectionIcon,
-    title: "Advanced Surveillance",
-    description: "Cutting-edge monitoring for safety.",
+    title: "Enhanced Safety",
+    description: "Ongoing monitoring to detect fire hazards.",
   },
 ];
 
@@ -89,21 +89,21 @@ const howItworks = [
     title: "Fire Risk Prevention",
     description: "Proactive measures to minimize fire threats.",
     imageSrc: HowitworksA,
-    icon: collectionIcon,
+    icon: Visitorcheckin,
   },
   {
     id: 2,
     title: "Emergency Response",
     description: "Ensuring rapid response in critical situations.",
     imageSrc: HowitworksB,
-    icon: collectionIcon,
+    icon: Visitorcheckin,
   },
   {
     id: 3,
     title: "Safety Training",
     description: "Comprehensive training to handle fire incidents.",
     imageSrc: HowitworksC,
-    icon: collectionIcon,
+    icon: Visitorcheckin,
   },
 ];
 

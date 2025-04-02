@@ -41,6 +41,7 @@ const Hero = ({title,desc,img}) => {
             variant="blue"
             style={"!min-w-[243px]"}
             name="Request Quote"
+            path="/Request-A-Quote"
           />
 
           <Button

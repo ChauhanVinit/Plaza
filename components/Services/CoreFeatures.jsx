@@ -23,7 +23,7 @@ const CoreFeatures = ({ data, title, desc, img }) => {
         <p className="py-6 font-jakarta font-normal text-lg !leading-8 text-[#374049] max-w-[593px]">
           {desc}
         </p>
-        <Button variant="custom" style={"!min-w-[162px]"} name="Contact Us" />
+        <Button variant="custom" style={"!min-w-[162px]"} name="Contact Us" path="/Contact-Us" />
 
         <div className="mt-[60px] flex flex-col gap-4">
           {data.map((item, index) => (
@@ -40,8 +40,8 @@ const CoreFeatures = ({ data, title, desc, img }) => {
                   <h3 className="font-bold font-urbanist text-xl !leading-6 text-[#171A1D]">
                     {item.title}
                   </h3>
-                </div>
-              </div>
+                </div>                        
+              </div>                                                                       
 
               <div
                 className={`transition-all duration-300 overflow-hidden ${
@@ -56,7 +56,7 @@ const CoreFeatures = ({ data, title, desc, img }) => {
               </div>
             </div>
           ))}
-        </div>
+        </div>                                                 
       </div>
 
       <div className="col-span-6">

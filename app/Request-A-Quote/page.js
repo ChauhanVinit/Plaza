@@ -252,7 +252,8 @@ const RequestAQuote = () => {
           <Button
             variant="custom"
             style={"!min-w-[190px]  !text-white !bg-transparent !rounded-2xl"}
-            name={"Request A Quote"}
+            name={"Contact Us"}
+            path={'/Contact-Us'}
           />
         </div>
       </div>

@@ -15,7 +15,7 @@ const Morefeatures = ({ data, title, desc }) => {
         <p className="mb-6 font-jakarta font-normal text-lg !leading-8 text-[#374049] ">
           {desc}
         </p>
-        <Button variant="custom" style={"!min-w-[162px]"} name="Contact Us" />
+        <Button variant="custom" style={"!min-w-[162px]"} name="Contact Us" path="/Contact-Us" />
       </div>
 
       <div className="grid grid-cols-12 gap-6 mt-[60px]">

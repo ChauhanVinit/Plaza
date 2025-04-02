@@ -1,6 +1,5 @@
 "use client";
-import { useState, useEffect, useRef } from "react";
-import Button from "../../utils/Button";
+import {useEffect, useRef } from "react";
 import Image from "next/image";
 import Tag from "../../utils/Tag";
 import Heading from "../../utils/Heading";

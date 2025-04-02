@@ -14,7 +14,7 @@ import Hero from "../../components/Services/Hero";
 import CoreFeatures from "../../components/Services/CoreFeatures";
 import Howitworks from "../../components/Services/Howitworks";
 import Morefeatures from "../../components/Services/Morefeatures";
-
+import Visitorcheckin from "../../public/Services/Visitor-check-in.svg";
 const heroData = {
   title: "Professional Unarmed Security Guard Services For Every Environment",
   desc: "Providing 24/7 unarmed security services, our guards ensure safety with a constant, reassuring presence. More than just patrols, we foster peace of mind for businesses and communities alike.",
@@ -38,22 +38,22 @@ const accordionItems = [
   {
     icon: collectionIcon,
     title: "24/7 Unarmed Security",
-    description: "Constant and dependable protection.",
+    description: "Unarmed security technology includes surveillance cameras, access control systems, GPS tracking, and wearable sensors.",
   },
   {
     icon: collectionIcon,
     title: "Advanced Technology",
-    description: "Cutting-edge monitoring for safety.",
+    description: "Unarmed security technology includes surveillance cameras, access control systems, GPS tracking, and wearable sensors.",
   },
   {
     icon: collectionIcon,
     title: "Rapid Threat Response",
-    description: "Cutting-edge monitoring for safety.",
+    description: "Unarmed security technology includes surveillance cameras, access control systems, GPS tracking, and wearable sensors.",
   },
   {
     icon: collectionIcon,
     title: "Strong, Visible Presence",
-    description: "Cutting-edge monitoring for safety.",
+    description: "Unarmed security technology includes surveillance cameras, access control systems, GPS tracking, and wearable sensors.",
   },
 ];
 
@@ -88,21 +88,21 @@ const howItworks = [
     title: "Technology-Driven Security Insights",
     description: "Leverage advanced tools to enhance and monitor security operations.",
     imageSrc: HowitworksB,
-    icon: collectionIcon,
+    icon: Visitorcheckin,
   },
   {
     id: 2,
     title: "Emergency Response",
     description: "Ensuring rapid response in critical situations.",
     imageSrc: HowitworksA,
-    icon: collectionIcon,
+    icon: Visitorcheckin,
   },
   {
     id: 3,
     title: "Safety Training",
     description: "Comprehensive training to handle fire incidents.",
     imageSrc: HowitworksC,
-    icon: collectionIcon,
+    icon: Visitorcheckin,
   },
 ];
 const UnarmedSecurity = () => {

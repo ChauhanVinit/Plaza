@@ -162,10 +162,10 @@ const AboutUs = () => {
               </div>
               <div>
                 <p className="font-jakarta text-base !leading-5 font-normal text-[#374049]">
-                  Founded
+                Experience
                 </p>
                 <h3 className="mt-2 font-urbanist text-lg font-bold text-[#171A1D] !leading-[22px]">
-                  2020
+                10+ Years
                 </h3>
               </div>
             </div>
@@ -180,10 +180,10 @@ const AboutUs = () => {
               </div>
               <div>
                 <p className="font-jakarta text-base !leading-5 font-normal text-[#374049]">
-                  Employee
+                Headquarter
                 </p>
                 <h3 className="mt-2 font-urbanist text-lg font-bold text-[#171A1D] !leading-[22px]">
-                  2k
+                San Jose, CA
                 </h3>
               </div>
             </div>
