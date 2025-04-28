@@ -16,96 +16,101 @@ const AboutusData = [
   {
     image: Residential,
     title: "Residential Communities",
-    para: "Plaza Protection’s security guards are committed to protecting residential communities, providing a secure and peaceful environment for every home.",
-    path:'/Residential-Communities'
+    description:
+      "Plaza Protection’s security guards are committed to protecting residential communities, providing a secure and peaceful environment for every home.",
+    path: "/Residential-Communities",
   },
   {
     image: Commercial,
     title: "Commercial Buildings",
-    para: "Plaza Protection’s security experts are skilled in addressing the unique challenges of commercial properties, safeguarding your business against break-ins, theft, and vandalism.",
-    path:'/Commercial-Buildings'
+    description:
+      "Plaza Protection’s security experts are skilled in addressing the unique challenges of commercial properties, safeguarding your business against break-ins, theft, and vandalism.",
+    path: "/Commercial-Buildings",
   },
   {
     image: Construction,
     title: "Construction Sites",
-    para: "Plaza Protection security guards safeguard construction sites by preventing theft, monitoring activity, and maintaining a safe environment for your crew and assets.",
-    path:'/Construction-Sites'
+    description:
+      "Plaza Protection security guards safeguard construction sites by preventing theft, monitoring activity, and maintaining a safe environment for your crew and assets.",
+    path: "/Construction-Sites",
   },
   {
     image: ShoppingCenter,
     title: "Shopping Center",
-    para: "Plaza Protection security guards safeguard construction sites by preventing theft, monitoring activity, and maintaining a safe environment for your crew and assets.",
-    path:'/Shopping-Centers'
+    description:
+      "Plaza Protection security guards ensure the safety of shopping centers by preventing theft, monitoring visitor activity, and maintaining a secure environment for shoppers, staff, and businesses.",
+    path: "/Shopping-Centers",
   },
   {
     image: Healthcare,
     title: "Healthcare Facilities",
-    para: "Plaza Protection security guards safeguard construction sites by preventing theft, monitoring activity, and maintaining a safe environment for your crew and assets.",
-    path:'/Healthcare-Facilities'
+    description:
+      "Plaza Protection security guards safeguard healthcare facilities by preventing unauthorized access, monitoring activity, and maintaining a safe and secure environment for patients, staff, and visitors.",
+    path: "/Healthcare-Facilities",
   },
 ];
 const AboutUs = () => {
   const isClient = useIsClient();
 
   return (
-   <div className="w-full pl-[calc((100%-1440px)/2)] ">
-     <div className="rounded-tl-[40px] rounded-bl-[40px]  relative  -mt-[116px]  pl-[60px] py-20 bg-[#EDF5FF]">
-      <Tag title={"Quick view about us"} />
+    <div className="w-full pl-[calc((100%-1440px)/2)] ">
+      <div className="rounded-tl-[40px] rounded-bl-[40px]  relative  -mt-[116px]  pl-[60px] py-20 bg-[#EDF5FF]">
+        <Tag title={"Quick view about us"} />
 
-      <Heading title={"Explore Our Range Of Security Solutions"} />
-      {isClient && (
-        <Splide
-          aria-label="My Favorite Images"
-          options={{
-            type: "loop",
-            perMove: 1,
-            rewind: true,
-            perPage: 3,
-            gap: "24px",
-            autoplay: false,
-            arrows: true,
-            classes: {
-              arrow: "custom-arrow",
-              prev: "serv-prev",
-              next: "serv-next",
-            },
-            interval: 3000,
-            pagination: false,
-          }}
-          className="dots:absolute dots:right-auto dots:left-[calc(100%+80px)] dots:p-0 dots:min-w-[300px] dots:justify-start dot:!bg-[#DDE6F0] dot:w-2.5 dot:h-2.5 activeDot:scale-100 activeDot:!bg-[#9DBBC2] dot:shadow-none dot:outline-none mt-[60px] "
-        >
-          {AboutusData.map((item, index) => (
-            <SplideSlide key={index}>
-              <div className="p-4">
-                <div className="overflow-hidden max-h-[350px] max-w-full shadow-[0_4px_4px_rgba(0,0,0,0.25)] rounded-2xl">
-                  <Image
-                    src={item.image}
-                    alt={item.title}
-                    className=" w-full h-auto"
-                  />
-                </div>
+        <Heading title={"Trusted Security Services For Every Industry"} />
+        {isClient && (
+          <Splide
+            aria-label="My Favorite Images"
+            options={{
+              type: "loop",
+              perMove: 1,
+              rewind: true,
+              perPage: 3,
+              gap: "24px",
+              autoplay: false,
+              arrows: true,
+              classes: {
+                arrow: "custom-arrow",
+                prev: "serv-prev",
+                next: "serv-next",
+              },
+              interval: 3000,
+              pagination: false,
+            }}
+            className="dots:absolute dots:right-auto dots:left-[calc(100%+80px)] dots:p-0 dots:min-w-[300px] dots:justify-start dot:!bg-[#DDE6F0] dot:w-2.5 dot:h-2.5 activeDot:scale-100 activeDot:!bg-[#9DBBC2] dot:shadow-none dot:outline-none mt-[60px] "
+          >
+            {AboutusData.map((item, index) => (
+              <SplideSlide key={index}>
+                <div className="p-4">
+                  <div className="overflow-hidden max-h-[350px] max-w-full shadow-[0_4px_4px_rgba(0,0,0,0.25)] rounded-2xl">
+                    <Image
+                      src={item.image}
+                      alt={item.title}
+                      className=" w-full h-auto"
+                    />
+                  </div>
 
-                <h2 className="mt-8 mb-4 font-urbanist text-2xl !leading-7 font-bold text-[#171A1D]">
-                  {item.title}
-                </h2>
-                <p className="mb-8 font-jakarta text-base  font-normal text-[#45535E]">
-                  {item.para}
-                </p>
-                <div>
-                  <Button
-                    variant="custom"
-                    style={"!bg-transparent min-w-[158px]  !text-center"}
-                    name={"View More"}
-                    path={item.path}
-                  />
+                  <h2 className="mt-8 mb-4 font-urbanist text-2xl !leading-7 font-bold text-[#171A1D]">
+                    {item.title}
+                  </h2>
+                  <p className="mb-8 font-jakarta text-base  font-normal text-[#45535E]">
+                    {item.description}
+                  </p>
+                  <div>
+                    <Button
+                      variant="custom"
+                      style={"!bg-transparent min-w-[158px]  !text-center"}
+                      name={"Learn More"}
+                      path={item.path}
+                    />
+                  </div>
                 </div>
-              </div>
-            </SplideSlide>
-          ))}
-        </Splide>
-      )}
+              </SplideSlide>
+            ))}
+          </Splide>
+        )}
+      </div>
     </div>
-   </div>
   );
 };
 

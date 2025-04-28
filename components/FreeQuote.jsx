@@ -107,11 +107,11 @@ const FreeQuote = () => {
       <div className="relative flex gap-5 items-start">
         <div className="py-[60px] w-1/3 ">
           <Tag
-            title={"Security you can blindly trust"}
+            title={"Trusted security partner"}
             className={"!bg-gradient-to-t from-[#E2EAFF] to-[#E2EAFF]"}
           />
           <Heading
-            title={"Plaza Protection : Securing San Jose Inside Out"}
+            title={"Plaza Protection: Trusted Security Guard Company"}
             className={" !text-white"}
           />
           <p className="mt-6 font-jakarta font-normal text-base  text-white">
@@ -134,7 +134,7 @@ const FreeQuote = () => {
           bg-[linear-gradient(180deg,_#EBF0FF_23%,_#7198FE_100%)] shadow-[0px_4px_4px_0px_rgba(19,85,255,0.15)] backdrop-blur-[192px]"
           >
             <h2 className="mb-6 font-urbanist text-[32px] !leading-10 font-bold text-[#171A1D]">
-              Get Free Quote
+            Request A Quote Now
             </h2>
             <div className="w-full flex gap-4 ">
               <div className="w-1/2">
@@ -209,7 +209,7 @@ const FreeQuote = () => {
               <Button
                 variant="blue"
                 style={"!w-full"}
-                name="Submit Free Quote"
+                name="Submit"
               />
             </div>
           </div>

@@ -76,10 +76,16 @@ const AboutUs = () => {
       <div className="max-w-[1360px] mx-auto my-24 ">
         <div className="max-w-[1186px] mx-auto text-center">
           <h1 className="font-urbanist text-[56px] !leading-[64px] font-bold text-[#222A5B] mb-8">
-          Welcome to Plaza Protection – Your Trusted Security Partner In The San Jose Bay Area
+            Welcome to Plaza Protection – Your Trusted Security Partner In The
+            San Jose Bay Area
           </h1>
           <p className="font-jakarta text-lg !leading-[30px] font-normal text-[#6B7280] ">
-          At Plaza Protection, we specialize in delivering top-tier security guard services designed to safeguard people, property, and businesses throughout the San Jose Bay Area. With years of expertise and a dedicated team of highly trained security professionals, we are committed to providing customized solutions tailored to the unique needs of our clients.
+            At Plaza Protection, we specialize in delivering top-tier security
+            guard services designed to safeguard people, property, and
+            businesses throughout the San Jose Bay Area. With years of expertise
+            and a dedicated team of highly trained security professionals, we
+            are committed to providing customized solutions tailored to the
+            unique needs of our clients.
           </p>
         </div>
         <div className="w-full mt-14  inline-flex justify-center items-center  gap-4">
@@ -89,7 +95,12 @@ const AboutUs = () => {
             name="Request Quote"
           />
 
-          <Button variant="custom" style={"!min-w-[162px]"} name="Contact Us"  path="/Contact-Us" />
+          <Button
+            variant="custom"
+            style={"!min-w-[162px]"}
+            name="Contact Us"
+            path="/Contact-Us"
+          />
         </div>
       </div>
 
@@ -162,10 +173,10 @@ const AboutUs = () => {
               </div>
               <div>
                 <p className="font-jakarta text-base !leading-5 font-normal text-[#374049]">
-                Experience
+                  Experience
                 </p>
                 <h3 className="mt-2 font-urbanist text-lg font-bold text-[#171A1D] !leading-[22px]">
-                10+ Years
+                  10+ Years
                 </h3>
               </div>
             </div>
@@ -180,10 +191,10 @@ const AboutUs = () => {
               </div>
               <div>
                 <p className="font-jakarta text-base !leading-5 font-normal text-[#374049]">
-                Headquarter
+                  Headquarter
                 </p>
                 <h3 className="mt-2 font-urbanist text-lg font-bold text-[#171A1D] !leading-[22px]">
-                San Jose, CA
+                  San Jose, CA
                 </h3>
               </div>
             </div>
@@ -214,7 +225,7 @@ const AboutUs = () => {
           ))}
         </div>
       </div>
-       
+
       <div className="relative max-w-[1440px] mx-auto mb-20 p-20 rounded-[40px] bg-[#0C2459] text-center">
         <Image
           src={lineShape}
@@ -228,7 +239,11 @@ const AboutUs = () => {
           />
           <Heading
             className={"!mt-6 !text-white !max-w-[723px] mx-auto"}
-            title={<>Plaza Protection : <br /> Securing San Jose Inside Out</>}
+            title={
+              <>
+                Plaza Protection : <br /> Securing San Jose Inside Out
+              </>
+            }
           />
           <p
             className="mt-6 mb-10 font-jakarta text-base !leading-7 font-normal text-white 

@@ -94,8 +94,12 @@ const KeyFeature = () => {
           className={"!bg-none !text-[#B9D8FF]"}
         />
         <Heading
-          title={"Reinventing Security with Innovative Guard Management"}
+          title={"Always Keeping Our Clients In The Loop"}
           className={"!text-white"}
+        />
+        <Heading
+          title={"Transforming Security With Innovative Guard Management Systems"}
+          className={"!mt-0 !text-white"}
         />
         <div className="w-full grid grid-cols-12 gap-4 mt-[60px]">
           {featureData.map((item) => (

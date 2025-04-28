@@ -23,17 +23,20 @@ export default function Home() {
     {
       icon: licenseThird,
       title: "Licensed And Trained Security Professionals",
-      para: "Our guards are certified and skilled to provide superior protection.",
+      description:
+        "Bringing a decade of expertise to ensure top-notch security solutions.",
     },
     {
       icon: aiSecurity,
       title: "Security Powered By Cutting-Edge Technology",
-      para: "Utilizing cutting-edge technology to enhance your security",
+      description:
+        "Our guards are certified and skilled to provide superior protection.",
     },
     {
       icon: folderSecurity,
       title: "Custom Security Services For Your Unique Needs",
-      para: "Tailoring our services to fit your specific security requirements.",
+      description:
+        "Tailoring our services to fit your specific security requirements.",
     },
   ];
   return (
@@ -41,24 +44,22 @@ export default function Home() {
       <Header />
       <Hero />
       <TopIndustries />
-      <div className="max-w-[1300px] mx-auto px-[60px] py-20">
+      <div className="max-w-[1300px] mx-auto px-[60px] py-20 bg-[#FAFAFA] rounded-[40px]">
         <div className="flex items-start gap-[90px]">
           <div className="w-[45%]">
             <Image src={ExpertSecurity} alt="ExpertSecurity" />
           </div>
           <div className="w-[55%]">
-            <Tag title={"What we excel at"} />
+            <Tag title={"Ensuring Safety With Expertise"} />
 
             <Heading
               title={
-                "Guarding San Jose Bay Area With Plaza Protection’s Expert Security"
+                "Cutting-Edge Security Solutions For A Rapidly Evolving World"
               }
             />
             <p className="mt-6 font-urbanist text-[20px] font-normal leading-8 text-[#45535E]">
-              We customize our services to fit your unique needs,
-              specifications, and environment. With over a decade of combined
-              management expertise, we guarantee exceptional professional and
-              quality.
+              Our commitment to excellence ensures a safe, secure environment
+              for all, giving you peace of mind under our vigilant protection.
             </p>
 
             <div className=" mt-8 px-4 bg-[#EDF5FF]/20 rounded-3xl ">
@@ -75,11 +76,11 @@ export default function Home() {
                     />
                   </div>
                   <div>
-                    <h3 className="font-urbanist text-lg leading-[22px]  font-bold text-[#171A1D]">
+                    <h3 className="font-urbanist text-xl leading-6  font-bold text-[#171A1D]">
                       {item.title}
                     </h3>
                     <p className="mt-2 font-urbanist font-normal text-base leading-5 text-[#45535E] ">
-                      {item.para}
+                      {item.description}
                     </p>
                   </div>
                 </div>
@@ -96,7 +97,7 @@ export default function Home() {
 
               <Button
                 variant="custom"
-                style={"min-w-[158px] "}
+                style={"min-w-[158px] !bg-transparent"}
                 name="About Us"
                 path="/About-us"
               />

@@ -20,9 +20,9 @@ const Services = () => {
     {
       label: "Unarmed Security",
       icon: UnarmedSecurity,
-      title: "Effective Security Without The Use Of Firearms",
+      title: "Unarmed Security That You Can Blindly Trust",
       description:
-        "Plaza Protection provides top-tier security without firearms. As San Jose’s leading unarmed security provider, our skilled guards prevent theft and vandalism, offering a reassuring defense.",
+        "At Plaza Protection, we understand that the presence of firearms can make people uneasy. That’s why our highly trained guards provide top-tier security without the need for weapons. As San Jose's leading unarmed security provider, our officers effectively deter crimes like theft and vandalism, serving as a reassuring first line of defense.",
       path: "/Unarmed-Security",
     },
     {
@@ -53,10 +53,10 @@ const Services = () => {
 
   return (
     <div className="w-full max-w-[1440px] mx-auto py-20 px-[60px] rounded-[40px] bg-[#EDF5FF] text-center">
-      <Tag title="Explore Our Diverse Range of Security Solutions" />
+      <Tag title="Why Choose Us?" />
       <Heading
         className="!mt-4"
-        title="Services That Perfectly Fit Your Security Needs"
+        title="Explore Our Range Of Security Solutions"
       />
       <div className="mt-[60px] !text-left">
         <TabGroup className="flex items-center gap-20">
@@ -131,7 +131,7 @@ const Services = () => {
                       <Button
                         variant="custom"
                         style="!min-w-[162px]  !bg-[#EDF5FF]"
-                        name="View More"
+                        name="Learn More"
                         path={item.path}
                       />
                     </div>

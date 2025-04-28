@@ -67,7 +67,7 @@ const OurServices = () => {
         alt="lineShape"
       />
       <Tag title={"Don’t trust us? Trust businesses like yours"} />
-      <Heading title={"Hear What Our Clients Say About Our Services"} />
+      <Heading title={"Hear What Our Clients Say"} />
        {
         isClient &&  <Splide
         aria-label="My Favorite Images"

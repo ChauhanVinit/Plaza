@@ -22,7 +22,7 @@ const TopIndustries = () => {
     <div className="max-w-[1300px] mx-auto p-20 grid grid-cols-12 items-center ">
       <div className="col-span-4">
         <h3 className="font-urbanist text-3xl font-bold !leading-10 text-[#171A1D]">
-          First Choice For San<br/> Jose’s Top Industries
+        Trusted By San Jose’s Leading Industries
         </h3>
       </div>
 
