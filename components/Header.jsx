@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
-import Logo from "../public/pps-logo.svg";
+import Logo from "../public/pps-logo.png";
 import callRinging from "../public/call-ringing.svg";
 import login from "../public/login.svg";
 import vehiclePatrol from "../public/vehicle-patrol.png";
@@ -71,10 +71,11 @@ const Header = ({ ContactUsBtn }) => {
         },
       ],
     },
-    // { id: 3, name: "Our Technology,", path: "/Our-Technology,", subnavs: [] },
+    { id: 3, name: "Our Technology", path: "/Our-Technology,", subnavs: [] },
     { id: 4, name: "Contact Us", path: "/Contact-Us", subnavs: [] },
     { id: 5, name: "About Us", path: "/About-us", subnavs: [] },
     { id: 6, name: "Blog", path: "/Blog", subnavs: [] },
+    
   ];
 
   const [openSubnav, setOpenSubnav] = useState(null);
@@ -90,7 +91,7 @@ const Header = ({ ContactUsBtn }) => {
   const renderNavLink = (nav) => {
     return (
       <Link
-        className=" px-[14px] py-7 text-base leading-5 font-jakarta font-semibold text-[#1D2939] "
+        className="px-[14px] py-7 text-base leading-5 font-jakarta font-semibold text-[#1D2939] "
         href={nav.path}
         key={nav.id}
       >
@@ -135,12 +136,12 @@ const Header = ({ ContactUsBtn }) => {
   };
 
   return (
-    <div className=" w-full sticky top-0 z-[999] bg-white">
+    <div className="w-full sticky top-0 z-[999] bg-white">
       <div className="max-w-[1440px] mx-auto bg-white flex items-center  px-[15px] py-3 ">
         <div className="inline-flex items-center gap-[10px] py-3">
           <Image src={Logo} alt="Logo" className="w-[182px] h-12" />
         </div>
-        <div className="ml-[180px] grow flex items-center">
+        <div className="mx-auto flex items-center">
           {tobarData.map((nav) =>
             nav.subnavs.length ? renderSubnavs(nav) : renderNavLink(nav)
           )}

@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import Logo from "../public/pps-logo.svg";
+import Logo from "../public/pps-logo.png";
 import { footerContentData as data } from "../data/FooterContent";
 import callRinging from "../public/call-ringing.svg";
 import estimate from "../public/estimate-02.svg";

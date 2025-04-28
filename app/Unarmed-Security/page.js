@@ -2,7 +2,7 @@
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import FreeQuote from "../../components/FreeQuote";
-import GuardImage from "../../public/Services/Hero-Guard-02.svg";
+import GuardImage from "../../public/Services/Hero-Guard-02.png";
 import CoreFeature from "../../public/Services/Core-Features-Guard-02.png";
 import HowitworksA from "../../public/Services/How-it-works-02.svg";
 import HowitworksB from "../../public/Services/How-it-works-02.svg";
@@ -15,17 +15,19 @@ import CoreFeatures from "../../components/Services/CoreFeatures";
 import Howitworks from "../../components/Services/Howitworks";
 import Morefeatures from "../../components/Services/Morefeatures";
 import Visitorcheckin from "../../public/Services/Visitor-check-in.svg";
+       
+
 const heroData = {
   title: "Professional Unarmed Security Guard Services For Every Environment",
   desc: "Providing 24/7 unarmed security services, our guards ensure safety with a constant, reassuring presence. More than just patrols, we foster peace of mind for businesses and communities alike.",
   img: GuardImage,
-};
+}; 
 const coreFeaturesData = {
   title: "Unarmed Security Guards: Vigilant, Professional, Reliable",
   desc: "Plaza Protection provides 24/7 unarmed security with trained guards and advanced technology. Our team ensures rapid response and a strong, visible presence for constant safety.",
   img: CoreFeature,
 };
-
+ 
 const howItworksData = {
   title: "Enhanced Control With Our Security Guard Management System",
   desc: "Our cutting edge security guard management system puts you in control of every aspect of your security. ",
@@ -38,22 +40,26 @@ const accordionItems = [
   {
     icon: collectionIcon,
     title: "24/7 Unarmed Security",
-    description: "Unarmed security technology includes surveillance cameras, access control systems, GPS tracking, and wearable sensors.",
+    description:
+      "Unarmed security technology includes surveillance cameras, access control systems, GPS tracking, and wearable sensors.",
   },
   {
     icon: collectionIcon,
     title: "Advanced Technology",
-    description: "Unarmed security technology includes surveillance cameras, access control systems, GPS tracking, and wearable sensors.",
+    description:
+      "Unarmed security technology includes surveillance cameras, access control systems, GPS tracking, and wearable sensors.",
   },
   {
     icon: collectionIcon,
     title: "Rapid Threat Response",
-    description: "Unarmed security technology includes surveillance cameras, access control systems, GPS tracking, and wearable sensors.",
+    description:
+      "Unarmed security technology includes surveillance cameras, access control systems, GPS tracking, and wearable sensors.",
   },
   {
     icon: collectionIcon,
     title: "Strong, Visible Presence",
-    description: "Unarmed security technology includes surveillance cameras, access control systems, GPS tracking, and wearable sensors.",
+    description:
+      "Unarmed security technology includes surveillance cameras, access control systems, GPS tracking, and wearable sensors.",
   },
 ];
 
@@ -73,20 +79,21 @@ const moreFeatures = [
   {
     icon: checkmark,
     title: "Risk Assessment",
-    description: " Identifying and addressing potential security vulnerabilities.",
+    description:
+      " Identifying and addressing potential security vulnerabilities.",
   },
   {
     icon: checkmark,
     title: "Conflict De-escalation",
-    description:
-      "Trained to handle and diffuse tense situations effectively.",
+    description: "Trained to handle and diffuse tense situations effectively.",
   },
 ];
 const howItworks = [
   {
     id: 1,
     title: "Technology-Driven Security Insights",
-    description: "Leverage advanced tools to enhance and monitor security operations.",
+    description:
+      "Leverage advanced tools to enhance and monitor security operations.",
     imageSrc: HowitworksB,
     icon: Visitorcheckin,
   },
@@ -116,7 +123,7 @@ const UnarmedSecurity = () => {
       <FreeQuote />
       <Footer />
     </>
-  )
-}
+  );
+};
 
-export default UnarmedSecurity
+export default UnarmedSecurity;

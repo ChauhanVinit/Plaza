@@ -21,7 +21,7 @@ const heroData = {
   img: GuardImage,
 };
 const coreFeaturesData = {
-  title: "Smart Video Surveillance for Proactive Security",
+  title: "Smart Video Surveillance For Proactive Security",
   desc: "Plaza Protection’s video surveillance ensures real-time monitoring, rapid threat detection, and a safer business environment.",
   img: CoreFeature,
 };
@@ -31,7 +31,7 @@ const howItworksData = {
   desc: "Smart video analytics continuously monitors your property, detecting potential threats in real time. With instant alerts and rapid response capabilities, it ensures proactive security and immediate action to protect what matters most.",
 };
 const moreFeaturesData = {
-  title: "AI-Powered Remote Guarding for 24/7 Security",
+  title: "AI-Powered Remote Guarding For 24/7 Security",
   desc: "Smart remote guarding combines AI-driven monitoring, 24/7 surveillance, and instant threat response to ensure seamless security across multiple locations.",
 };
 const accordionItems = [
