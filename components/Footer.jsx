@@ -25,7 +25,7 @@ const Footer = () => {
                 Call 
               </h3>
               <p className="mt-[7px] font-urbanist text-base !leading-[19px] font-bold text-[#374049]">
-                1-844-55-(557-5292)
+                 1-844-55-557-5292
               </p>
             </div>
           </div>

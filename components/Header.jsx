@@ -175,7 +175,7 @@ const Header = ({ ContactUsBtn }) => {
               <div className="h-7 w-[1px] bg-[#E6E6E6]"></div>
               <Link
                 href={"/Request-A-Quote"}
-                target="_blank"
+                // target="_blank"
                 className="px-5 py-1 inline-flex items-center gap-3 "
               >
                 <div className="w-10 h-10 inline-flex items-center justify-center bg-[#1355FF]">
