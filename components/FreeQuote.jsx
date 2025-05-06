@@ -134,7 +134,7 @@ const FreeQuote = () => {
           bg-[linear-gradient(180deg,_#EBF0FF_23%,_#7198FE_100%)] shadow-[0px_4px_4px_0px_rgba(19,85,255,0.15)] backdrop-blur-[192px]"
           >
             <h2 className="mb-6 font-urbanist text-[32px] !leading-10 font-bold text-[#171A1D]">
-            Request A Quote Now
+              Request A Quote Now
             </h2>
             <div className="w-full flex gap-4 ">
               <div className="w-1/2">
@@ -206,15 +206,11 @@ const FreeQuote = () => {
             </div>
 
             <div className="mt-8">
-              <Button
-                variant="blue"
-                style={"!w-full"}
-                name="Submit"
-              />
+              <Button variant="blue" style={"!w-full"} name="Submit" hoverX={true} />
             </div>
           </div>
         </div>
-      </div>
+      </div>                                                                                         
     </div>
   );
 };

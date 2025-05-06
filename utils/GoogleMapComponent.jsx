@@ -20,5 +20,5 @@ export default function GoogleMapComponent() {
       </GoogleMap>
     </LoadScript>
   );
-}
+}                                                                                                                                
 

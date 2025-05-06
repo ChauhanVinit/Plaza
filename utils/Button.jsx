@@ -7,7 +7,7 @@ const Button = ({
   style = "",
   variant = "blue",
   onClick,
-  path,
+  path,                                                                            
 }) => {
   const isBlueVariant = variant === "blue";
   const buttonClasses = `cursor-pointer text-base font-semibold inline-flex justify-center items-center font-jakarta py-2 px-2 h-16 ${style} 
@@ -17,7 +17,7 @@ const Button = ({
         : "bg-white border border-[#98A2B3] text-[#1D2939] "
     }
   `;
-
+                                                                                                                                                                         
   const buttonContent = (
     <>
       {isBlueVariant ? (

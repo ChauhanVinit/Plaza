@@ -19,10 +19,9 @@ import right from "../../public/right.svg";
 import lineShape from "../../public/line-shape-08.svg";
 import GoogleMapComponent from "../../utils/GoogleMapComponent";
 const Contact = () => {
-  const images = [bannerimageA, bannerimageB, bannerimageC,bannerimageD];
+  const images = [bannerimageA, bannerimageB, bannerimageC, bannerimageD];
 
   const ServicesOptions = [
-    
     {
       id: nanoid(),
       name: "Vehicle Patrol",
@@ -37,7 +36,6 @@ const Contact = () => {
     },
   ];
   const facilityOptions = [
-   
     {
       id: nanoid(),
       name: "Vehicle Patrol",
@@ -52,7 +50,6 @@ const Contact = () => {
     },
   ];
   const areaOptions = [
-    
     {
       id: nanoid(),
       name: "Vehicle Patrol",
@@ -67,7 +64,6 @@ const Contact = () => {
     },
   ];
   const durationOptions = [
-   
     {
       id: nanoid(),
       name: "Vehicle Patrol",
@@ -103,12 +99,18 @@ const Contact = () => {
     <>
       <Header />
       <div className="max-w-[1360px] mx-auto mt-24 mb-[87px] ">
-      <div className="max-w-[1186px] mx-auto text-center">
+        <div className="max-w-[1186px] mx-auto text-center">
           <h1 className="font-urbanist text-[56px] !leading-[64px] font-bold text-[#222A5B] mb-8">
-          Welcome to Plaza Protection – Your Trusted Security Partner In The San Jose Bay Area
+            Welcome to Plaza Protection – Your Trusted Security Partner In The
+            San Jose Bay Area
           </h1>
           <p className="font-jakarta text-lg !leading-[30px] font-normal text-[#6B7280] ">
-          At Plaza Protection, we specialize in delivering top-tier security guard services designed to safeguard people, property, and businesses throughout the San Jose Bay Area. With years of expertise and a dedicated team of highly trained security professionals, we are committed to providing customized solutions tailored to the unique needs of our clients.
+            At Plaza Protection, we specialize in delivering top-tier security
+            guard services designed to safeguard people, property, and
+            businesses throughout the San Jose Bay Area. With years of expertise
+            and a dedicated team of highly trained security professionals, we
+            are committed to providing customized solutions tailored to the
+            unique needs of our clients.
           </p>
         </div>
       </div>
@@ -244,21 +246,37 @@ const Contact = () => {
             </div>
           </div>
           <div className="w-full flex gap-6 mt-4">
-              <div className="w-1/2">
-                <Dropdown options={ServicesOptions} height="h-[55px]" placeholder="Select Services" />
-              </div>
-              <div className="w-1/2">
-                <Dropdown options={facilityOptions} height="h-[55px]" placeholder="Type Of Facility" />
-              </div>
+            <div className="w-1/2">
+              <Dropdown
+                options={ServicesOptions}
+                height="h-[55px]"
+                placeholder="Select Services"
+              />
             </div>
-            <div className="w-full flex gap-6 mt-4">
-              <div className="w-1/2">
-                <Dropdown options={areaOptions} height="h-[55px]" placeholder="Select Area" />
-              </div>
-              <div className="w-1/2"> 
-                <Dropdown options={durationOptions} height="h-[55px]" placeholder="Duration Of Service" />
-              </div>
+            <div className="w-1/2">
+              <Dropdown
+                options={facilityOptions}
+                height="h-[55px]"
+                placeholder="Type Of Facility"
+              />
             </div>
+          </div>
+          <div className="w-full flex gap-6 mt-4">
+            <div className="w-1/2">
+              <Dropdown
+                options={areaOptions}
+                height="h-[55px]"
+                placeholder="Select Area"
+              />
+            </div>
+            <div className="w-1/2">
+              <Dropdown
+                options={durationOptions}
+                height="h-[55px]"
+                placeholder="Duration Of Service"
+              />
+            </div>
+          </div>
           <div className="w-full  mt-4">
             <Textarea
               placeholder={"Write Your Message"}
@@ -277,11 +295,10 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      
-      <div className="max-w-[1440px] mx-auto mb-20 rounded-[40px] overflow-hidden">
-        <GoogleMapComponent/>
-      </div>
 
+      <div className="max-w-[1440px] mx-auto mb-20 rounded-[40px] overflow-hidden">
+        <GoogleMapComponent />
+      </div>
 
       <div className="relative max-w-[1440px] mx-auto mb-20 p-20 rounded-[40px] bg-[#0C2459] text-center">
         <Image
@@ -296,7 +313,11 @@ const Contact = () => {
           />
           <Heading
             className={"!mt-6 !text-white !max-w-[723px] mx-auto"}
-            title={<>Plaza Protection : <br /> Securing San Jose Inside Out</>}
+            title={
+              <>
+                Plaza Protection : <br /> Securing San Jose Inside Out
+              </>
+            }
           />
           <p
             className="mt-6 mb-10 font-jakarta text-base !leading-7 font-normal text-white 

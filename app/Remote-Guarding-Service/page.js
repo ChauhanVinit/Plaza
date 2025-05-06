@@ -61,19 +61,18 @@ const moreFeatures = [
   {
     icon: checkmark,
     title: "Live Video Monitoring",
-    description:
-      "Ensures real-time surveillance for instant threat detection.",
+    description: "Ensures real-time surveillance for instant threat detection.",
   },
   {
     icon: checkmark,
     title: "Cost-effective Security",
-    description:
-      "Minimizes on-site staff while ensuring top security.",
+    description: "Minimizes on-site staff while ensuring top security.",
   },
   {
     icon: checkmark,
     title: "Scalable Solutions",
-    description: "Easily adaptable to various property sizes and security requirements.",
+    description:
+      "Easily adaptable to various property sizes and security requirements.",
   },
   {
     icon: checkmark,
@@ -117,7 +116,7 @@ const RemoteGuarding = () => {
       <FreeQuote />
       <Footer />
     </>
-  )
-}
+  );       
+};                  
 
-export default RemoteGuarding
+export default RemoteGuarding;
