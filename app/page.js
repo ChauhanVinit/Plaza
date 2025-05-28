@@ -59,7 +59,7 @@ export default function Home() {
             />
             <p className="mt-6 font-dmSans text-xl !leading-8 font-normal  text-[#45535E]">
               Our commitment to excellence ensures a safe, secure environment
-              for all, giving you peace of mind under our vigilant protection..
+              for all, giving you peace of mind under our vigilant protection.
             </p>
 
             <div className=" mt-8 px-4 bg-[#EDF5FF]/20 rounded-3xl ">
