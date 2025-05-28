@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer utilities {
+  .smooth {
+    @apply transition-all duration-100 ease-in-out
+  }
+
+  .invisible-scroll::-webkit-scrollbar {
+    @apply w-0 h-0 bg-transparent;
+  }
+
+  .invisible-scroll::-webkit-scrollbar-thumb {
+    @apply bg-transparent;
+  }
+
+  .invisible-scroll::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+ 
+ 
+}
+::-webkit-scrollbar {
+	@apply w-[3px] bg-[#edf5ff];
+}
+
+::-webkit-scrollbar-thumb {
+	@apply bg-[#1355FF] rounded-[50px];
+}
+
+::-webkit-scrollbar-track {
+	@apply bg-transparent;
+}
+
+
+.custom-arrow{
+	@apply absolute bottom-0  z-10 inline-flex items-center justify-center  h-[50px] w-[50px] rounded-md border border-[#98A2B3]  bg-transparent
+}
+.custom-prev {
+  @apply  right-0    ;
+}
+
+.custom-next {
+  @apply  right-[66px] rotate-180;
+}
+
+.serv-prev{
+  @apply right-[0px] -top-[110px] -translate-x-[20vw]
+}
+.serv-next{
+  @apply  right-[60px] -top-[110px] rotate-180  -translate-x-[20vw]
+}
+
+.custom-arrow svg {
+  width: 12px; 
+  height: 15px; 
+  stroke: #374049; 
+  fill: #374049; 
+}
+
+
