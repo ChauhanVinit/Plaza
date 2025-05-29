@@ -25,13 +25,13 @@ const Button = ({
           <div className="transition-all duration-300  ease-in-out  absolute inset-0 flex items-center justify-center  translate-y-0 group-hover:-translate-y-full z-10 ">
             <span className="transition-all duration-300  ease-in-out translate-y-0 group-hover:-translate-y-full inline-flex items-center gap-2">
               {name}
-              {icon && <span className="relative top-[1px]">{icon}</span>}
+              {icon && <span className="relative top-[0px]">{icon}</span>}
             </span>
           </div>
           <div className="transition-all duration-300  ease-in-out absolute inset-0 flex items-center justify-center  translate-y-full group-hover:translate-y-0 z-10 ">
             <span className="transition-all duration-300  ease-in-out translate-y-full group-hover:translate-y-0 inline-flex items-center gap-2">
               {name}
-              {icon && <span className="relative top-[1px]">{icon}</span>}
+              {icon && <span className="relative top-[0px]">{icon}</span>}
             </span>
           </div>
         </>

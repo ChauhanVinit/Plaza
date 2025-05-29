@@ -4,23 +4,16 @@ import Footer from "../../components/Footer";
 import FreeQuote from "../../components/FreeQuote";
 import GuardImage from "../../public/Services/Hero-Guard-01.png";
 import CoreFeature from "../../public/Services/Core-Features-Guard-01.png";
-// import HowitworksA from "../../public/Services/How-it-works-02.svg";
-// import HowitworksB from "../../public/Services/How-it-works-02.svg";
-// import HowitworksC from "../../public/Services/How-it-works-02.svg";
 import collectionIcon from "../../public/AboutUs/collection.svg";
 import checkmark from "../../public/Services/checkmark-circle.svg";
 import "@splidejs/react-splide/css";
 import Hero from "../../components/Services/Hero";
 import CoreFeatures from "../../components/Services/CoreFeatures";
-// import Howitworks from "../../components/Services/Howitworks";
-import WhenNeeded from "../../components/Services/WhenNeeded";
-// import Visitorcheckin from "../../public/Services/Visitor-check-in.svg";
+import KeyFeatures from "../../components/Services/KeyFeatures";
 import IndustriesWeServe from "../../components/Services/IndustriesWeServe";
-import Benefits from "@/components/Services/Benefits";
+import Highlights from "@/components/Services/Highlights";
 import FAQ from "@/components/Services/FAQ";
-// import TechnologyDriven from "../../public/Services/Technology-Driven.svg";
 import fireRiskPrevention from "../../public/Services/Fire-risk-prevention.svg";
-import InstantThreat from "../../public/ConstructionSites/Perimeter-Monitoring.svg";
 import InstantAlert from "../../public/Services/Instant-Alert.svg";
 import BenefitsIMG from "../../public/Services/Benefits-image-02.png";
 import Security24 from "../../public/Residential/Security-24.svg";
@@ -33,20 +26,15 @@ const heroData = {
   img: GuardImage,
 };
 const coreFeaturesData = {
-  title: "24/7 Unarmed Security For Reliable Protection And Rapid Response",
-  desc: "Plaza Protection provides 24/7 unarmed security with trained guards and advanced technology. Our team ensures rapid response and a strong, visible presence for constant safety. ",
+  title: "Reliable Fire Watch Services for Enhanced Safety in San Jose",
+  desc: "Plaza Protection’s fire watch guards provide continuous monitoring, identify fire hazards, and ensure rapid emergency response to keep properties safe and protected.",
   img: CoreFeature,
 };
-
-// const howItworksData = {
-//   title: "How Our Expert Fire Watch Service Ensures Safety",
-//   desc: "With our expert fire watch service, we provide constant monitoring to detect potential fire hazards, ensuring rapid response and immediate alerts.",
-// };
-const whenNeededData = {
+const KeyFeaturesData = {
   title: "Professional Fire Watch Services For Hazard Prevention And Safety Compliance",
   desc: "Professional fire watch services provide critical protection by monitoring high-risk areas to prevent potential fire hazards. Trained fire watch personnel ensure compliance with fire safety regulations and respond quickly to any signs of danger.",
 };
-const benefitData = {
+const HighlightsData = {
   title: "Expert Fire Watch Service For Continuous Monitoring And Rapid Response",
   desc: "With our expert fire watch service, we provide constant monitoring to detect potential fire hazards, ensuring rapid response and immediate alerts.",
   image:BenefitsIMG,
@@ -56,7 +44,7 @@ const accordionItems = [
   {
     icon: collectionIcon,
     title: "Trained Fire Watch Guards",
-    description: "Swift action in case of fire incidents.",
+    description: "Experienced personnel providing fire protection and security.",
   },
   {
     icon: collectionIcon,
@@ -66,16 +54,16 @@ const accordionItems = [
   {
     icon: collectionIcon,
     title: "Hazard Detection",
-    description: "Swift action in case of fire incidents.",
+    description: "Identifies risks like faulty wiring and blocked exits.",
   },
   {
     icon: collectionIcon,
     title: "Fire Prevention Maintenance",
-    description: "Swift action in case of fire incidents.",
+    description: "Ensures fire safety equipment remains operational.",
   },
 ];
 
-const whenNeeded = [
+const KeyFeature = [
   {
     icon: checkmark,
     title: "Immediate Response",
@@ -101,7 +89,7 @@ const whenNeeded = [
   },
 ];
 
-const benefit = [
+const Highlight = [
   {
     icon: fireRiskPrevention,
     title: "Fire Risk Prevention",
@@ -128,30 +116,6 @@ const benefit = [
   },
 ];
 
-// const howItworks = [
-//   {
-//     id: 1,
-//     title: "Fire Risk Prevention",
-//     description: "Proactive measures to minimize fire threats.",
-//     imageSrc: HowitworksA,
-//     icon: Visitorcheckin,
-//   },
-//   {
-//     id: 2,
-//     title: "Emergency Response",
-//     description: "Ensuring rapid response in critical situations.",
-//     imageSrc: HowitworksB,
-//     icon: Visitorcheckin,
-//   },
-//   {
-//     id: 3,
-//     title: "Safety Training",
-//     description: "Comprehensive training to handle fire incidents.",
-//     imageSrc: HowitworksC,
-//     icon: Visitorcheckin,
-//   },
-// ];
-
 const FireWatch = () => {
   return (
     <>
@@ -159,9 +123,8 @@ const FireWatch = () => {
       <Hero {...heroData} />
        <IndustriesWeServe />
       <CoreFeatures data={accordionItems} {...coreFeaturesData} />
-      {/* <Howitworks data={howItworks} {...howItworksData} /> */}
-      <WhenNeeded data={whenNeeded} {...whenNeededData} />
-      <Benefits data={benefit} {...benefitData} />
+      <KeyFeatures data={KeyFeature} {...KeyFeaturesData} />
+      <Highlights data={Highlight} {...HighlightsData} />
       <FAQ />
       <FreeQuote />
       <Footer />

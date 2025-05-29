@@ -2,144 +2,113 @@
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import FreeQuote from "../../components/FreeQuote";
-import GuardImage from "../../public/Services/Hero-Guard-03.png";
-import CoreFeature from "../../public/Services/Core-Features-Guard-03.png";
-// import HowitworksA from "../../public/Services/How-it-works-02.svg";
-// import HowitworksB from "../../public/Services/How-it-works-02.svg";
-// import HowitworksC from "../../public/Services/How-it-works-02.svg";
+import GuardImage from "../../public/Services/Hero-Guard-05.png";
+import CoreFeature from "../../public/Services/Core-Features-Guard-05.png";
 import collectionIcon from "../../public/AboutUs/collection.svg";
 import checkmark from "../../public/Services/checkmark-circle.svg";
 import "@splidejs/react-splide/css";
 import Hero from "../../components/Services/Hero";
 import CoreFeatures from "../../components/Services/CoreFeatures";
-// import Howitworks from "../../components/Services/Howitworks";
-import WhenNeeded from "../../components/Services/WhenNeeded";
-// import Visitorcheckin from "../../public/Services/Visitor-check-in.svg";
+import KeyFeatures from "../../components/Services/KeyFeatures";
 import IndustriesWeServe from "../../components/Services/IndustriesWeServe";
-import Benefits from "@/components/Services/Benefits";
+import Highlights from "@/components/Services/Highlights";
 import FAQ from "@/components/Services/FAQ";
-import Realtimeincident from "../../public/Residential/Real-time-incident.svg";
-import InstantAlert from "../../public/Services/Instant-Alert.svg";
-import BenefitsIMG from "../../public/Services/Benefits-image-03.png";
+import BenefitsIMG from "../../public/Services/Benefits-image-05.png";
 import Rapidincident from "../../public/ShoppingCenter/Rapid-incident-response.svg";
-import ProactiveSecurity from "../../public/Services/Proactive Security.svg";
-
+import ComprehensiveArea from "../../public/Services/Comprehensive-area-coverage.svg";
+import Realtime from "../../public/Services/Real-time-communication.svg";
+import VisibleDitterence from "../../public/Services/Visible-Ditterence.svg";
 const heroData = {
   title: "CCTV Installation Services for Reliable Property Surveillance",
   desc: "Secure your home or business with professional CCTV installation services by Plaza Protection. Get reliable, 24/7 surveillance and real-time monitoring tailored to your property.",
   img: GuardImage,
 };
 const coreFeaturesData = {
-  title: "Why Plaza Protection Is the Smart Choice for CCTV Installation",
-  desc: "Plaza Protection’s video surveillance ensures real-time monitoring, rapid threat detection, and a safer business environment.",
+  title: "Why Plaza Protection Is The Smart Choice For CCTV Installation?",
+  desc: "Secure your property with Plaza Protection's expert CCTV installation services. Customized solutions, advanced tech, and 24/7 support for complete peace of mind.",
   img: CoreFeature,
 };
 
-// const howItworksData = {
-//   title: "How Smart Video Analytics Enhances Your Security",
-//   desc: "Smart video analytics continuously monitors your property, detecting potential threats in real time. With instant alerts and rapid response capabilities, it ensures proactive security and immediate action to protect what matters most.",
-// };
-const whenNeededData = {
-  title: "AI-Powered Remote Guarding For 24/7 Security",
-  desc: "Smart remote guarding combines AI-driven monitoring, 24/7 surveillance, and instant threat response to ensure seamless security across multiple locations.",
+
+const KeyFeaturesData = {
+  title: "Trusted CCTV Installation Services for Smarter Security",
+  desc: "Boost your property's security with Plaza Protection’s trusted CCTV solutions. We deliver precision installation, smart monitoring, and advanced visual clarity for total peace of mind.",
 };
-const benefitData = {
-  title: "How Smart Video Analytics Enhances Your Security",
-  desc: "Smart video analytics continuously monitors your property, detecting potential threats in real time. With instant alerts and rapid response capabilities, it ensures proactive security and immediate action to protect what matters most.",
+const HighlightsData = {
+  title: "Smarter Surveillance, Safer Spaces",
+  desc: "At Plaza Protection, we’re dedicated to enhancing your security with intelligent, cutting-edge CCTV solutions. Whether you're upgrading your current system or starting fresh, our tailored approach ensures maximum protection and peace of mind.",
   image: BenefitsIMG,
 };
 const accordionItems = [
   {
     icon: collectionIcon,
-    title: "High-Definition Cameras",
+    title: "Tailored Surveillance Strategies",
     description:
-      "Enables continuous surveillance for immediate threat detection.",
+      "Custom CCTV design for full property coverage.",
   },
   {
     icon: collectionIcon,
-    title: "Real-Time Monitoring",
+    title: "Crystal-Clear Visuals",
     description:
-      "Enables continuous surveillance for immediate threat detection.",
+      "HD and 4K cameras for sharp, detailed footage.",
   },
   {
     icon: collectionIcon,
-    title: "Advanced Analytics",
+    title: "Access From Anywhere",
     description:
-      "Enables continuous surveillance for immediate threat detection.",
+      "Monitor your property remotely.",
   },
   {
     icon: collectionIcon,
-    title: "Instant Incident Alerts",
+    title: "Expert Installation & Support",
     description:
-      "Enables continuous surveillance for immediate threat detection.",
+      "Expert tech installation & upkeep",
   },
 ];
 
-const whenNeeded = [
+const KeyFeature = [
   {
     icon: checkmark,
-    title: "Live Video Monitoring",
-    description: "Enhances security with intelligent risk assessment.",
+    title: "Strategic System Design",
+    description: "We install CCTV to cover key entry points, blind spots, and vulnerable areas.",
   },
   {
     icon: checkmark,
-    title: "AI-Powered Analytics",
-    description: "Enhances security with intelligent risk assessment.",
+    title: "Ultra-HD Video Quality",
+    description: "Experience best image resolution with our HD and 4K cameras, ensuring all detail is captured clear.",
   },
   {
     icon: checkmark,
-    title: "24/7 Protection",
-    description: "Provides continuous monitoring, even in high-risk areas.",
+    title: "Remote Monitoring & Alerts",
+    description: "Access live footage from any device and receive instant alerts to stay informed even when you're away.",
   },
   {
     icon: checkmark,
-    title: "Rapid Incident Response",
-    description: "Enables swift action to security threats.",
+    title: "Reliable, Scalable Technology",
+    description: "Our CCTV systems are easily upgraded and integrated for full security coverage.",
   },
 ];
-// const howItworks = [
-//   {
-//     id: 1,
-//     title: "Real-Time Threat Detection",
-//     description: "Immediate identification of potential risks.",
-//     imageSrc: HowitworksA,
-//     icon: Visitorcheckin,
-//   },
-//   {
-//     id: 2,
-//     title: "Emergency Response",
-//     description: "Ensuring rapid response in critical situations.",
-//     imageSrc: HowitworksB,
-//     icon: Visitorcheckin,
-//   },
-//   {
-//     id: 3,
-//     title: "Safety Training",
-//     description: "Comprehensive training to handle fire incidents.",
-//     imageSrc: HowitworksC,
-//     icon: Visitorcheckin,
-//   },
-// ];
-const benefit = [
-  {
-    icon: Realtimeincident,
-    title: "Real-Time Threat Detection",
-    description: "Immediate identification of potential risks.",
-  },
-  {
-    icon: InstantAlert,
-    title: "Instant Alerts",
-    description: "Prompt notifications to respond quickly to incidents.",
-  },
+
+const Highlight = [
   {
     icon: Rapidincident,
-    title: "Rapid Response Capabilities",
-    description: "Fast action to address security concerns.",
+    title: "Visible Security Presence",
+    description: "CCTV cameras deter criminal activity on your property.",
   },
   {
-    icon: ProactiveSecurity,
-    title: "Proactive Security",
-    description: "Preventative measures to safeguard your property.",
+    icon: ComprehensiveArea,
+    title: "Real-Time Incident Management",
+    description: "Access live feeds and alerts to respond to threats instantly.",
+  },
+  {
+    icon: Realtime,
+    title: "Valuable Video Evidence",
+    description: "Store high-quality footage for insurance and legal support.",
+  },
+  {
+    icon: VisibleDitterence,
+    title: "Improved Safety Culture",
+    description: "Visible surveillance ensures security and peace of mind for everyone.",
   },
 ];
 const CCTVInstallation = () => {
@@ -149,9 +118,8 @@ const CCTVInstallation = () => {
       <Hero {...heroData} />
       <IndustriesWeServe />
       <CoreFeatures data={accordionItems} {...coreFeaturesData} />
-      {/* <Howitworks data={howItworks} {...howItworksData} /> */}
-      <WhenNeeded data={whenNeeded} {...whenNeededData} />
-      <Benefits data={benefit} {...benefitData} />
+      <KeyFeatures data={KeyFeature} {...KeyFeaturesData} />
+      <Highlights data={Highlight} {...HighlightsData} />
       <FAQ />
       <FreeQuote />
       <Footer />

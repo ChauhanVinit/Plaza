@@ -4,20 +4,16 @@ import Footer from "../../components/Footer";
 import FreeQuote from "../../components/FreeQuote";
 import GuardImage from "../../public/Services/Hero-Guard-04.png";
 import CoreFeature from "../../public/Services/Core-Features-Guard-04.png";
-// import HowitworksA from "../../public/Services/How-it-works-02.svg";
-// import HowitworksB from "../../public/Services/How-it-works-02.svg";
-// import HowitworksC from "../../public/Services/How-it-works-02.svg";
 import collectionIcon from "../../public/AboutUs/collection.svg";
 import checkmark from "../../public/Services/checkmark-circle.svg";
 import "@splidejs/react-splide/css";
 import Hero from "../../components/Services/Hero";
 import CoreFeatures from "../../components/Services/CoreFeatures";
-// import Howitworks from "../../components/Services/Howitworks";
-import WhenNeeded from "../../components/Services/WhenNeeded";
+import KeyFeatures from "../../components/Services/KeyFeatures";
 import IndustriesWeServe from "../../components/Services/IndustriesWeServe";
 import FAQ from "@/components/Services/FAQ";
-import Benefits from "@/components/Services/Benefits";
-import BenefitsIMG from "../../public/Services/Benefits-image-03.png";
+import Highlights from "@/components/Services/Highlights";
+import BenefitsIMG from "../../public/Services/Benefits-image-04.png";
 import Rapidincident from "../../public/ShoppingCenter/Rapid-incident-response.svg";
 import Realtime from "../../public/Services/Real-time-communication.svg";
 import VisibleDitterence from "../../public/Services/Visible-Ditterence.svg";
@@ -34,15 +30,12 @@ const coreFeaturesData = {
   img: CoreFeature,
 };
 
-// const howItworksData = {
-//   title: "Understanding The Operation Of Our Vehicle Patrol Service",
-//   desc: "Our vehicle patrol service combines proactive surveillance with quick response times, ensuring your property is continuously monitored.",
-// };
-const whenNeededData = {
+
+const KeyFeaturesData = {
   title: "Reliable Vehicle Patrol Services For Enhanced Security",
   desc: "Vehicle patrol services provide reliable and efficient security with frequent, scheduled checks to deter criminal activity. Security officers use marked vehicles equipped with communication tools and GPS for quick responses to incidents or emergencies.",
 };
-const benefitData = {
+const HighlightsData = {
   title: "Understanding The Operation Of Our Vehicle Patrol Service",
   desc: "Our vehicle patrol service combines proactive surveillance with quick response times, ensuring your property is continuously monitored.",
   image:BenefitsIMG
@@ -56,21 +49,21 @@ const accordionItems = [
   {
     icon: collectionIcon,
     title: "Comprehensive Security",
-    description: "Preventive security to deter potential threats.",
+    description: "Patrolling all areas to ensure full coverage.",
   },
   {
     icon: collectionIcon,
     title: "Reliable Service",
-    description: "Preventive security to deter potential threats.",
+    description: "Dependable vehicle patrols for round-the-clock safety.",
   },
   {
     icon: collectionIcon,
     title: "Immediate Alerts",
-    description: "Preventive security to deter potential threats.",
+    description: "Quick action and real-time notifications for any security incidents.",
   },
 ];
 
-const whenNeeded = [
+const KeyFeature = [
   {
     icon: checkmark,
     title: "GPS Tracking",
@@ -96,30 +89,8 @@ const whenNeeded = [
       "Patrol services available around the clock, ensuring continuous security.",
   },
 ];
-// const howItworks = [
-//   {
-//     id: 1,
-//     title: "Rapid Incident Response",
-//     description: "Quick intervention to handle security breaches.",
-//     imageSrc: HowitworksC,
-//     icon: collectionIcon,
-//   },
-//   {
-//     id: 2,
-//     title: "Emergency Response",
-//     description: "Ensuring rapid response in critical situations.",
-//     imageSrc: HowitworksB,
-//     icon: collectionIcon,
-//   },
-//   {
-//     id: 3,
-//     title: "Safety Training",
-//     description: "Comprehensive training to handle fire incidents.",
-//     imageSrc: HowitworksA,
-//     icon: collectionIcon,
-//   },
-// ];
-const benefit = [
+
+const Highlight = [
   {
     icon: Rapidincident,
     title: "Rapid Incident Response",
@@ -152,9 +123,8 @@ const Vehiclepatrol = () => {
       <Hero {...heroData} />
       <IndustriesWeServe />
       <CoreFeatures data={accordionItems} {...coreFeaturesData} />
-      {/* <Howitworks data={howItworks} {...howItworksData} /> */}
-      <WhenNeeded data={whenNeeded} {...whenNeededData} />
-      <Benefits data={benefit} {...benefitData} />
+      <KeyFeatures data={KeyFeature} {...KeyFeaturesData} />
+      <Highlights data={Highlight} {...HighlightsData} />
       <FAQ />
       <FreeQuote />
       <Footer />

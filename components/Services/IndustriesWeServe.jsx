@@ -29,12 +29,13 @@ const IndustriesWeServe = () => {
   ];
 
   return (
-    <div className="max-w-[1440px] mx-auto py-20 px-16 bg-[#E7E7FF]/20 rounded-[40px]">
+    <div className="max-w-[1440px] mx-auto py-20 px-16 bg-[#E7E7FF]/20 rounded-[40px]
+     mb-[68px]">
       <div className="flex justify-between items-end">
         <div>
           <Tag title={"Industries where we served"} />
-          <Heading title={"Industries We Serve"} className={"!mb-6"} />
-          <p className="font-jakarta font-normal text-lg !leading-8 text-[#374049] max-w-[915px]">
+          <Heading title={"Industries We Serve"} className={"!mb-6 !text-[#222A5B]"} />
+          <p className="font-dmSans font-normal text-xl !leading-8 text-[#333333] max-w-[915px]">
             Unarmed security guard services provide vital protection through
             professional presence, conflict resolution, and vigilant
             surveillance. These guards are trained to de-escalate situations,
@@ -45,8 +46,8 @@ const IndustriesWeServe = () => {
           <Button
             variant="custom"
             style={"!min-w-[162px] !bg-transparent"}
-            name="Contact Us"
-            path="/Contact-Us"
+            name="View More"
+            // path="/Contact-Us"
           />
         </div>
       </div>
@@ -60,7 +61,7 @@ const IndustriesWeServe = () => {
             <Image src={item.src} alt={item.alt} />
             <div className="absolute bottom-0 h-1/2 bg-[linear-gradient(to_bottom,_rgba(255,255,255,0)_0%,_rgba(255,255,255,0.7)_41%,_rgba(255,255,255,1)_88%)] w-full"></div>
             <div className="absolute bottom-4 w-full p-[10px] text-center">
-              <h3 className="font-urbanist text-xl !leading-6 font-bold text-[#171A1D]">
+              <h3 className="font-dmSans text-xl font-semibold text-[#171A1D] tracking-[-0.5px]">
                 {item.title}
               </h3>
             </div>

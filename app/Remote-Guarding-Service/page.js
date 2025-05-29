@@ -4,19 +4,14 @@ import Footer from "../../components/Footer";
 import FreeQuote from "../../components/FreeQuote";
 import GuardImage from "../../public/Services/Hero-Guard-03.png";
 import CoreFeature from "../../public/Services/Core-Features-Guard-03.png";
-// import HowitworksA from "../../public/Services/How-it-works-02.svg";
-// import HowitworksB from "../../public/Services/How-it-works-02.svg";
-// import HowitworksC from "../../public/Services/How-it-works-02.svg";
 import collectionIcon from "../../public/AboutUs/collection.svg";
 import checkmark from "../../public/Services/checkmark-circle.svg";
 import "@splidejs/react-splide/css";
 import Hero from "../../components/Services/Hero";
 import CoreFeatures from "../../components/Services/CoreFeatures";
-// import Howitworks from "../../components/Services/Howitworks";
-import WhenNeeded from "../../components/Services/WhenNeeded";
-// import Visitorcheckin from "../../public/Services/Visitor-check-in.svg";
+import KeyFeatures from "../../components/Services/KeyFeatures";
 import IndustriesWeServe from "../../components/Services/IndustriesWeServe";
-import Benefits from "@/components/Services/Benefits";
+import Highlights from "@/components/Services/Highlights";
 import FAQ from "@/components/Services/FAQ";
 import Realtimeincident from "../../public/Residential/Real-time-incident.svg";
 import InstantAlert from "../../public/Services/Instant-Alert.svg";
@@ -36,15 +31,11 @@ const coreFeaturesData = {
   img: CoreFeature,
 };
 
-// const howItworksData = {
-//   title: "How Smart Video Analytics Enhances Your Security",
-//   desc: "Smart video analytics continuously monitors your property, detecting potential threats in real time. With instant alerts and rapid response capabilities, it ensures proactive security and immediate action to protect what matters most.",
-// };
-const whenNeededData = {
+const KeyFeaturesData = {
   title: "AI-Powered Remote Guarding For 24/7 Security",
   desc: "Smart remote guarding combines AI-driven monitoring, 24/7 surveillance, and instant threat response to ensure seamless security across multiple locations.",
 };
-const benefitData = {
+const HighlightsData = {
   title: "How Smart Video Analytics Enhances Your Security",
   desc: "Smart video analytics continuously monitors your property, detecting potential threats in real time. With instant alerts and rapid response capabilities, it ensures proactive security and immediate action to protect what matters most.",
   image:BenefitsIMG,
@@ -53,7 +44,7 @@ const accordionItems = [
   {
     icon: collectionIcon,
     title: "High-Definition Cameras",
-    description: "Enables continuous surveillance for immediate threat detection.",
+    description: "Delivers clear, detailed footage for accurate monitoring.",
   },
   {
     icon: collectionIcon,
@@ -63,16 +54,16 @@ const accordionItems = [
   {
     icon: collectionIcon,
     title: "Advanced Analytics",
-    description: "Enables continuous surveillance for immediate threat detection.",
+    description: "Constant and dependable protection.",
   },
   {
     icon: collectionIcon,
     title: "Instant Incident Alerts",
-    description: "Enables continuous surveillance for immediate threat detection.",
+    description: "Ensures swift response to potential risks.",
   },
 ];
 
-const whenNeeded = [
+const KeyFeature = [
   {
     icon: checkmark,
     title: "Live Video Monitoring",
@@ -96,30 +87,9 @@ const whenNeeded = [
       "Enables swift action to security threats.",
   },
 ];
-// const howItworks = [
-//   {
-//     id: 1,
-//     title: "Real-Time Threat Detection",
-//     description: "Immediate identification of potential risks.",
-//     imageSrc: HowitworksA,
-//     icon: Visitorcheckin,
-//   },
-//   {
-//     id: 2,
-//     title: "Emergency Response",
-//     description: "Ensuring rapid response in critical situations.",
-//     imageSrc: HowitworksB,
-//     icon: Visitorcheckin,
-//   },
-//   {
-//     id: 3,
-//     title: "Safety Training",
-//     description: "Comprehensive training to handle fire incidents.",
-//     imageSrc: HowitworksC,
-//     icon: Visitorcheckin,
-//   },
-// ];
-const benefit = [
+
+
+const Highlight = [
   {
     icon: Realtimeincident,
     title: "Real-Time Threat Detection",
@@ -152,9 +122,8 @@ const RemoteGuarding = () => {
       <Hero {...heroData} />
        <IndustriesWeServe />
       <CoreFeatures data={accordionItems} {...coreFeaturesData} />
-      {/* <Howitworks data={howItworks} {...howItworksData} /> */}
-        <WhenNeeded data={whenNeeded} {...whenNeededData} />
-        <Benefits data={benefit} {...benefitData} />
+        <KeyFeatures data={KeyFeature} {...KeyFeaturesData} />
+      <Highlights data={Highlight} {...HighlightsData} />
       <FAQ />
       <FreeQuote />
       <Footer />

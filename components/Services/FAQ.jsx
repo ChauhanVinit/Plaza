@@ -44,6 +44,7 @@ const FAQ = () => {
           title={
             "Frequently Asked Questions About Unarmed Security Guards Services"
           }
+          className={'!text-[#222A5B]'}
         />
       </div>
 
@@ -59,7 +60,7 @@ const FAQ = () => {
                 openIndex === index ? "pb-4" : "pb-0"
               }`}
             >
-              <h3 className="font-jakarta font-bold text-xl !leading-[30px] text-[#0C2459]">
+              <h3 className="font-dmSans font-semibold text-xl  text-[#0C2459] tracking-[-0.5px]">
                 {item.question}
               </h3>
               <button>
@@ -80,7 +81,7 @@ const FAQ = () => {
                   : "max-h-0 opacity-0 pt-0"
               }`}
             >
-              <p className="font-jakarta text-base font-normal text-[#344054]">
+              <p className="font-dmSans text-base font-normal text-[#344054]">
                 {item.answer}
               </p>
             </div>

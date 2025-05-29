@@ -3,10 +3,6 @@ import { useState } from "react";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Image from "next/image";
-// import bannerimageA from "../../public/Contact-Banner-image-01.png";
-// import bannerimageB from "../../public/Contact-Banner-image-02.png";
-// import bannerimageC from "../../public/Contact-Banner-image-03.png";
-// import bannerimageD from "../../public/Contact-Banner-image-04.png";
 import Tag from "../../utils/Tag";
 import Heading from "../../utils/Heading";
 import Input from "../../utils/Input";
@@ -22,8 +18,6 @@ import Mail from "../../public/Mail.svg";
 import Location from "../../public/Location.svg";
 import ContactBanner from "../../public/Contact-01.png";
 const Contact = () => {
-  // const images = [bannerimageA, bannerimageB, bannerimageC, bannerimageD];
-
   const ServicesOptions = [
     {
       id: nanoid(),
@@ -101,38 +95,24 @@ const Contact = () => {
   return (
     <>
       <Header />
-      <div className="max-w-[1360px] mx-auto mt-24 mb-[87px] ">
-        <div className="max-w-[1323px] mx-auto text-center">
-          <h1 className="font-urbanist text-[56px] !leading-[64px] font-bold text-[#222A5B] mb-8">
-            Contact Us 
+        <div className="max-w-[1360px] mx-auto mt-[91px] mb-[70px] text-center">
+          <h1 className="font-dmSans text-[56px] !leading-[64px] font-semibold text-[#222A5B] tracking-[-1px] mb-8">
+            Contact Us
           </h1>
-          <p className="font-jakarta text-lg !leading-[30px] font-normal text-[#6B7280] ">
+          <p className="font-dmSans text-xl !leading-[30px] font-normal text-[#45535E] max-w-[1326px] mx-auto ">
             Whether you're looking for on-site security, patrol services, or advanced monitoring, our team is here to assist you. Reach out to us today to learn more about our services or request a quote now. We’re available 24/7 to ensure your peace of mind and protect what matters most.
           </p>
         </div>
+
+      <div className="max-w-[1200px] mx-auto mb-20">
+        <Image
+          src={ContactBanner}
+          alt="ContactBanner"
+          className="object-cover rounded-[40px]"
+        />
       </div>
 
-      {/* <div className="max-w-[957px] mx-auto  mb-[170px] grid grid-cols-12 gap-4">
-        {images.map((src, index) => {
-          const extraClass = index % 2 === 0 ? "relative top-10" : "";
-          return (
-            <div key={index} className={`col-span-3 ${extraClass}`}>
-              <Image
-                src={src}
-                className="h-[296px] rounded-3xl"
-                alt={`streethouse-${index}`}
-              />
-            </div>
-          );
-        })}
-      </div> */}
-       
-       <div className="max-w-[1200px] mx-auto mb-20">
-          <Image src={ContactBanner} alt="ContactBanner" className="object-cover rounded-[40px]" />
-       </div>
-
-
-      <div className="max-w-[1440px] mx-auto mb-20 p-20 rounded-[40px] grid grid-cols-12 gap-20 bg-[#EDF5FF]">
+      <div className="max-w-[1440px] mx-auto mb-20 p-20 rounded-[40px] grid grid-cols-12 items-start gap-20 bg-[#EDF5FF]">
         <div className="col-span-6">
           <Tag title={"Quick View CONTACT Us"} />
           <Heading
@@ -141,61 +121,48 @@ const Contact = () => {
               "Contact Us Today to Discuss Your Security Needs and Ensure Your Peace of Mind"
             }
           />
-          <p className="mt-6 font-jakarta text-base !leading-7 font-normal text-[#374049]">
-            Whether you're looking for personal or business protection, we are here to provide reliable and professional services. Let us help you safeguard what matters most.
+          <p className="mt-6 font-dmSans text-xl !leading-8 font-normal text-[#374049]">
+            Whether you're looking for personal or business protection, we are
+            here to provide reliable and professional services. Let us help you
+            safeguard what matters most.
           </p>
 
           <div className="mt-8 px-4 rounded-3xl bg-[#EDF5FF]/20">
             <div className="py-4 flex items-center gap-6 border-b border-[#1355FF]/10 ">
               <div className="w-[50px] h-50px inline-flex items-center justify-center">
-                <Image
-                  src={Call}
-                  width={32}
-                  height={32}
-                  alt="Call"
-                />
+                <Image src={Call} width={32} height={32} alt="Call" />
               </div>
               <div>
-                <p className="font-jakarta text-base !leading-5 font-normal text-[#374049]">
+                <p className="font-dmSans text-base font-normal text-[#374049]">
                   Get in touch with us now
                 </p>
-                <h3 className="mt-2 font-urbanist text-lg font-bold text-[#171A1D] !leading-[22px]">
+                <h3 className="mt-2 font-dmSans text-lg font-semibold text-[#171A1D] tracking-[-0.5px] ">
                   1-844-55-557-5292
                 </h3>
               </div>
             </div>
             <div className="py-4 flex items-center gap-6 border-b border-[#1355FF]/10 ">
               <div className="w-[50px] h-50px inline-flex items-center justify-center">
-                <Image
-                  src={Mail}
-                  width={32}
-                  height={32}
-                  alt="Mail"
-                />
+                <Image src={Mail} width={32} height={32} alt="Mail" />
               </div>
               <div>
-                <p className="font-jakarta text-base !leading-5 font-normal text-[#374049]">
-                   Email: 
+                <p className="font-dmSans text-base font-normal text-[#374049]">
+                  Email:
                 </p>
-                <h3 className="mt-2 font-urbanist text-lg font-bold text-[#171A1D] !leading-[22px]">
+                <h3 className="mt-2 font-dmSans text-lg font-semibold text-[#171A1D] tracking-[-0.5px] ">
                   contact@plazaprotection.com
                 </h3>
               </div>
             </div>
             <div className="py-4 flex items-center gap-6 ">
               <div className="w-[50px] h-50px inline-flex items-center justify-center">
-                <Image
-                  src={Location}
-                  width={32}
-                  height={32}
-                  alt="Location"
-                />
+                <Image src={Location} width={32} height={32} alt="Location" />
               </div>
               <div>
-                <p className="font-jakarta text-base !leading-5 font-normal text-[#374049]">
+                <p className="font-dmSans text-base font-normal text-[#374049]">
                   Address
                 </p>
-                <h3 className="mt-2 font-urbanist text-lg font-bold text-[#171A1D] !leading-[22px]">
+                <h3 className="mt-2 font-dmSans text-lg font-semibold text-[#171A1D] tracking-[-0.5px] ">
                   Plaza Protection 1900 Camden Ave San Jose, CA 95124 United
                   States
                 </h3>
@@ -204,7 +171,7 @@ const Contact = () => {
           </div>
         </div>
         <div className="col-span-6 p-8 rounded-3xl bg-[#F0F4FF] shadow-[0_5px_15px_0_rgba(19,85,255,0.2)]">
-          <h2 className="mb-6 font-urbanist text-[32px] font-bold text-[#222A5B]">
+          <h2 className="mb-6 font-dmSans text-[32px] !leading-10 font-semibold text-[#222A5B]">
             Get Free Quote
           </h2>
           <div className="w-full flex gap-6 ">
@@ -291,7 +258,7 @@ const Contact = () => {
             <Button
               variant="blue"
               icon={<Image src={right} alt="right" className="w-4 h-4" />}
-              style={"!min-w-[175px] !rounded-2xl  "}
+              style={"!min-w-[175px]"}
               name="Submit"
             />
           </div>
@@ -322,10 +289,11 @@ const Contact = () => {
             }
           />
           <p
-            className="mt-6 mb-10 font-jakarta text-base !leading-7 font-normal text-white 
+            className="mt-6 mb-10 font-dmSans text-base !leading-7 font-normal text-white 
       max-w-[723px] mx-auto"
           >
-            Serving the San Jose area, our expert team is ready to protect what matters most. Contact us today for a free risk assessment!
+            Serving the San Jose area, our expert team is ready to protect what
+            matters most. Contact us today for a free risk assessment!
           </p>
 
           <Button
