@@ -4,17 +4,10 @@ import FreeQuote from "../../components/FreeQuote";
 import Heading from "../../utils/Heading";
 import Image from "next/image";
 import checkmarkCircle from "../../public/Residential/checkmark-circle.svg";
-import tabImageA from "../../public/ShoppingCenter/Shopping-image-A.png";
-import tabImageB from "../../public/ShoppingCenter/Shopping-image-B.png";
-import tabImageC from "../../public/ShoppingCenter/Shopping-image-C.png";
 import Shoppingmall from "../../public/ShoppingCenter/Shopping-mall.png";
 import guard from "../../public/ShoppingCenter/Shopping-mall-guard.png";
 import ConectElement from "../../public/Residential/Conect-element.svg";
-import Fire from "../../public/Residential/fire.svg";
-import Gun from "../../public/Residential/gun.svg";
-import Ellipse from "../../public/Ellipse.svg";
 import Advancesurveilance from "../../public/ShoppingCenter/Advance-surveilance.svg";
-import AcessControl from "../../public/ConstructionSites/Acess-Control.svg";
 import Rapidincident from "../../public/ShoppingCenter/Rapid-incident-response.svg";
 import VisitorManagement from "../../public/ShoppingCenter/Visitor-Management.svg";
 import SurveillanceMonitoring from "../../public/ShoppingCenter/Surveillance-And-Monitoring.svg";
@@ -26,125 +19,135 @@ import ShoppingCanterB from "../../public/ShoppingCenter/ShoppingCanterB.png";
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from "@headlessui/react";
 import Card from "../../components/Card";
 import Footer from "../../components/Footer";
-  const tabs = [
-    {
-      label: "Advanced Surveillance",
-      icon: Advancesurveilance,
-      image1: tabImageA,
-      image2: tabImageB,
-      image3: tabImageC,
-    },
-    {
-      label: "Access Control",
-      icon: AcessControl,
-      image1: tabImageC,
-      image2: tabImageB,
-      image3: tabImageA,
-    },
-    {
-      label: "Rapid Incident Response",
-      icon: Rapidincident,
-      image1: tabImageB,
-      image2: tabImageC,
-      image3: tabImageA,
-    },
-    {
-      label: "Visitor Management",
-      icon:  VisitorManagement,
-      image1: tabImageC,
-      image2: tabImageA,
-      image3: tabImageB,
-    },
-  ];
+import person from "../../public/Residential/person-01.svg";
+import Quote from "../../public/Residential/iconmonstr-quote.svg";
+import TrainedSecurity from "../../public/ConstructionSites/Trained-Security.svg";
+import RealTimeA from "../../public/CommercialBuilding/Real-Time-01.svg";
+import RealTimeB from "../../public/CommercialBuilding/Real-Time-02.svg";
+import RealTimeC from "../../public/CommercialBuilding/Real-Time-03.svg";
+import IncidentManagementA from "../../public/Residential/IncidentManagement-01.svg";
+import IncidentManagementB from "../../public/Residential/IncidentManagement-02.svg";
+import IncidentManagementC from "../../public/Residential/IncidentManagement-03.svg";
+import VisitorAssistanceB from "../../public/Residential/Community-Patrol-01.svg";
+import VisitorAssistanceA from "../../public/CommercialBuilding/Visitor-Assistance-01.svg";
+import VisitorAssistanceC from "../../public/CommercialBuilding/Visitor-Assistance-02.svg";
+const tabs = [
+  {
+    label: "Advanced Surveillance",
+    icon: Advancesurveilance,
+    image1: RealTimeA,
+    image2: RealTimeB,
+    image3: RealTimeC,
+  },
+
+  {
+    label: "Rapid Incident Response",
+    icon: Rapidincident,
+    image1: IncidentManagementA,
+    image2: IncidentManagementB,
+    image3: IncidentManagementC,
+  },
+  {
+    label: "Visitor Management",
+    icon: VisitorManagement,
+    image1: VisitorAssistanceA,
+    image2: VisitorAssistanceB,
+    image3: VisitorAssistanceC,
+  },
+];
 
 const SecurityStrategiesData = [
-    {
-      icon: SurveillanceMonitoring,
-      title: "24/7 Surveillance And Monitoring",
-      description:
-        "Our tailored security services are designed to provide each community with a personalized approach to safety. From sophisticated surveillance systems to expertly ",
-    },
-    {
-      icon: AssetProtection,
-      title: "Asset Protection",
-      description:
-        "Our tailored security services are designed to provide each community with a personalized approach to safety. From sophisticated surveillance systems to expertly ",
-    },
-    {
-      icon: Customsecurityplan,
-      title: "Custom Security Plans",
-      description:
-        "Our tailored security services are designed to provide each community with a personalized approach to safety. From sophisticated surveillance systems to expertly ",
-    },
-    {
-      icon: Emergencyprotocol,
-      title: "Emergency Protocols",
-      description:
-        "Our tailored security services are designed to provide each community with a personalized approach to safety. From sophisticated surveillance systems to expertly ",
-    },
-  ];
-  const residentialFeatures = [
-    {
-      icon: checkmarkCircle,
-      title: "Real-Time Monitoring",
-      description:
-        "Our tailored security services are designed to provide each community with a personalized approach to safety. ",
-    },
-    {
-      icon: checkmarkCircle,
-      title: "Fire Watch Services",
-      description:
-        "Our tailored security services are designed to provide each community with a personalized approach to safety. ",
-    },
-    {
-      icon: checkmarkCircle,
-      title: "Continuous Vigilance",
-      description:
-        "Our tailored security services are designed to provide each community with a personalized approach to safety. ",
-    },
-    {
-      icon: checkmarkCircle,
-      title: "Remote Area Surveillance",
-      description:
-        "Our tailored security services are designed to provide each community with a personalized approach to safety. ",
-    },
-  ];
-
-
+  {
+    icon: SurveillanceMonitoring,
+    title: "24/7 Surveillance And Monitoring",
+    description:
+      "Our tailored security services are designed to provide each community with a personalized approach to safety. From sophisticated surveillance systems to expertly ",
+  },
+  {
+    icon: AssetProtection,
+    title: "Asset Protection",
+    description:
+      "Our tailored security services are designed to provide each community with a personalized approach to safety. From sophisticated surveillance systems to expertly ",
+  },
+  {
+    icon: Customsecurityplan,
+    title: "Custom Security Plans",
+    description:
+      "Our tailored security services are designed to provide each community with a personalized approach to safety. From sophisticated surveillance systems to expertly ",
+  },
+  {
+    icon: Emergencyprotocol,
+    title: "Emergency Protocols",
+    description:
+      "Our tailored security services are designed to provide each community with a personalized approach to safety. From sophisticated surveillance systems to expertly ",
+  },
+];
+const residentialFeatures = [
+  {
+    icon: checkmarkCircle,
+    title: "Real-Time Monitoring",
+    description:
+      "Our tailored security services are designed to provide each community with a personalized approach to safety. ",
+  },
+  {
+    icon: checkmarkCircle,
+    title: "Fire Watch Services",
+    description:
+      "Our tailored security services are designed to provide each community with a personalized approach to safety. ",
+  },
+  {
+    icon: checkmarkCircle,
+    title: "Continuous Vigilance",
+    description:
+      "Our tailored security services are designed to provide each community with a personalized approach to safety. ",
+  },
+  {
+    icon: checkmarkCircle,
+    title: "Remote Area Surveillance",
+    description:
+      "Our tailored security services are designed to provide each community with a personalized approach to safety. ",
+  },
+];
 
 const ShoppingCenter = () => {
   return (
     <>
       <Header />
-      <div className="w-full max-w-[1360px] mt-16 mb-[141px] mx-auto">
-        <div className="flex gap-[93px]">
-          <div className="relative">
+      <div className="w-full max-w-[1342px] mt-20 mb-40 mx-auto">
+        <div className="flex gap-12">
+          <div className="relative pt-[14px]">
             <Image
               src={Shoppingmall}
               className="rounded-3xl min-w-[302px] h-auto"
               alt="streetHouses"
               loading="lazy"
             />
-            <div className="z-[51] absolute -right-[104px] bottom-24 inline-flex items-center gap-2 pl-3 pr-3 py-[9px] rounded-[50px] bg-white border-[1.5px] border-[#E7E7E7]  shadow-[0_17.33px_25.99px_0_rgba(0,0,0,0.05)]">
-              <div className="w-6 h-6 inline-flex justify-center items-center rounded-full bg-[#E8EEFF]">
-                <Image src={Gun} alt="Gun" className="w-4 h-4" />
+            <div className="z-[51] absolute -right-[126px] bottom-[101px] inline-flex items-center gap-2 px-3 py-[9px] rounded-[50px] bg-white border-[1.5px] border-[#E7E7E7]  shadow-[0_17.33px_25.99px_0_rgba(0,0,0,0.05)]">
+              <div className="w-[30px] h-[30px] inline-flex justify-center items-center rounded-full bg-[#EDF5FF]">
+                <Image
+                  src={Emergencyprotocol}
+                  alt="Emergency Protocols"
+                  className="w-4 h-4"
+                />
               </div>
-              <div className="font-urbanist text-xs font-semibold text-[#11205A]">
-                Unarmed Security
+              <div className="font-dmSans text-xs font-medium text-[#1A1A1A]">
+                Emergency Protocols
               </div>
             </div>
           </div>
           <div className="relative">
             <div>
-              <h1 className="font-urbanist text-[56px] !leading-[64px] font-bold text-[#222A5B] mb-6">
-              Comprehensive Security Services To Safeguard Your Shopping Center
+              <h1 className="font-dmSans text-[56px] !leading-[64px] font-semibold text-[#222A5B] tracking-[-1px] mb-6">
+                Comprehensive Security Services To Safeguard Your Shopping
+                Center
               </h1>
-              <p className="px-4 rounded border-l-[3px] border-l-[#B0BABF] font-jakarta text-lg !leading-[30px] font-normal text-[#6B7280] max-w-[575px] ">
-              Ensuring peace of mind with reliable protection for your shopping center
+              <p className="px-4 rounded border-l-[3px] border-l-[#B0BABF] font-dmSans text-xl !leading-8 font-normal text-[#333333] max-w-[806px]">
+                Ensuring peace of mind with reliable protection for your
+                shopping center
               </p>
             </div>
 
-            <div className="absolute bottom-0 -left-[126px] z-50">
+            <div className="absolute bottom-[9px] -left-20 z-50">
               <Image
                 src={ConectElement}
                 alt="ConectElement"
@@ -154,104 +157,37 @@ const ShoppingCenter = () => {
           </div>
         </div>
 
-        <div className="flex gap-6 mt-12 items-start">
-          <div className="p-6 rounded-3xl bg-[#2877FF]/5 flex flex-col gap-4">
-            <div className="flex items-center gap-4">
-              <div>
+        <div className="flex items-start mt-[74px] gap-[52px] ">
+          <div className="grow flex items-center gap-5 p-[35px] rounded-3xl bg-[#FFB82E]/5">
+            <div className="min-w-[206px]">
+              <div className="flex items-end justify-between">
                 <Image
-                  src={Ellipse}
-                  className=" w-[60px] h-[60px]"
-                  alt="streetHouses"
+                  src={person}
+                  alt="person"
+                  className="w-[60px] h-[60px]"
                 />
+                <Image src={Quote} alt="person" className="w-[43px] h-[43px]" />
               </div>
-              <div>
-                <h3 className="font-jakarta text-xl !leading-6 font-semibold text-[#171A1D] mb-2">
-                  Magna Architectural Design
-                </h3>
-                <p className="font-jakarta text-base font-semibold text-[#6B7280]">
-                  Manager
-                </p>
-              </div>
+              <h3 className="mt-1 text-base font-dmSans font-semibold text-[#171A1D]">
+                Jane Cooper
+              </h3>
+              <p className="text-sm font-dmSans font-normal text-[#6B7280]">
+                Manager
+              </p>
+              <p className="text-sm font-dmSans font-normal text-[#333333]">
+                Total Network Development
+              </p>
             </div>
             <div>
-              <p className=" font-jakarta text-base italic text-[#6B7280] max-w-[471px]">
-                “Plaza Protection provides top-tier security without firearms.
-                As San Jose’s leading unarmed security provider, our skilled
-                guards prevent theft and vandalism, offering a reassuring
-                defense.”
+              <p className="font-dmSans text-xl font-semibold text-[#45535E] tracking-[-0.5px] max-w-[595px]">
+                Plaza Protection provides top-tier security without firearms. As
+                San Jose’s leading unarmed security provider, our skilled guards
+                prevent theft and vandalism, offering a reassuring defense.
               </p>
             </div>
           </div>
-          <div className=" p-6 rounded-3xl border-[3px] border-[#F1F1F1]">
-            <div className="mb-5 flex items-center justify-between">
-              <h1 className="text-3xl font-semibold tracking-[1%] text-[#11205A]">
-                85%
-              </h1>
-              <h3 className="font-jakarta text-base text-[#0C2459] font-bold">
-                Daily activities
-              </h3>
-            </div>
 
-            <div className="inline-flex items-center gap-[22px]">
-              <div className="flex flex-col justify-center items-center gap-[10px]">
-                <div className="relative h-[78px] w-[10px] bg-[#E7E9EE] rounded-full">
-                  <div className="absolute bottom-0 w-full h-[70%] bg-[#1355FF] rounded-full"></div>
-                </div>
-                <span className=" font-jakarta font-semibold text-sm text-[#939393]">
-                  Sun
-                </span>
-              </div>
-              <div className="flex flex-col justify-center items-center gap-[10px]">
-                <div className="relative h-[78px] w-[10px] bg-[#E7E9EE] rounded-full">
-                  <div className="absolute bottom-0 w-full h-[65%] bg-[#1355FF] rounded-full"></div>
-                </div>
-                <span className=" font-jakarta font-semibold text-sm text-[#939393]">
-                  Mon
-                </span>
-              </div>
-              <div className="flex flex-col justify-center items-center gap-[10px]">
-                <div className="relative h-[78px] w-[10px] bg-[#E7E9EE] rounded-full">
-                  <div className="absolute bottom-0 w-full h-[45%] bg-[#1355FF] rounded-full"></div>
-                </div>
-                <span className=" font-jakarta font-semibold text-sm text-[#939393]">
-                  Tue
-                </span>
-              </div>
-              <div className="flex flex-col justify-center items-center gap-[10px]">
-                <div className="relative h-[78px] w-[10px] bg-[#E7E9EE] rounded-full">
-                  <div className="absolute bottom-0 w-full h-[35%] bg-[#1355FF] rounded-full"></div>
-                </div>
-                <span className=" font-jakarta font-semibold text-sm text-[#939393]">
-                  Wed
-                </span>
-              </div>
-              <div className="flex flex-col justify-center items-center gap-[10px]">
-                <div className="relative h-[78px] w-[10px] bg-[#E7E9EE] rounded-full">
-                  <div className="absolute bottom-0 w-full h-[25%] bg-[#1355FF] rounded-full"></div>
-                </div>
-                <span className=" font-jakarta font-semibold text-sm text-[#939393]">
-                  Thu
-                </span>
-              </div>
-              <div className="flex flex-col justify-center items-center gap-[10px]">
-                <div className="relative h-[78px] w-[10px] bg-[#E7E9EE] rounded-full">
-                  <div className="absolute bottom-0 w-full h-[80%] bg-[#1355FF] rounded-full"></div>
-                </div>
-                <span className=" font-jakarta font-semibold text-sm text-[#939393]">
-                  Fri
-                </span>
-              </div>
-              <div className="flex flex-col justify-center items-center gap-[10px]">
-                <div className="relative h-[78px] w-[10px] bg-[#E7E9EE] rounded-full">
-                  <div className="absolute bottom-0 w-full h-[40%] bg-[#1355FF] rounded-full"></div>
-                </div>
-                <span className=" font-jakarta font-semibold text-sm text-[#939393]">
-                  Sat
-                </span>
-              </div>
-            </div>
-          </div>
-          <div className="relative mt-[-215px]">
+          <div className="relative -mt-[232px]">
             <Image
               src={guard}
               className="rounded-3xl min-w-[399px] h-auto"
@@ -259,30 +195,31 @@ const ShoppingCenter = () => {
               loading="lazy"
             />
 
-            <div className="z-[51] absolute -left-[59px] top-[136px] inline-flex items-center gap-2 pl-3 pr-3 py-[9px] rounded-[50px] bg-white border-[1.5px] border-[#E7E7E7]  shadow-[0_17.33px_25.99px_0_rgba(0,0,0,0.05)]">
-              <div className="w-6 h-6 inline-flex justify-center items-center rounded-full bg-[#E8EEFF]">
-                <Image src={Fire} alt="Gun" className="w-4 h-4" />
+            <div className="z-[51] absolute -left-[105px] top-[121px] inline-flex items-center gap-2 px-3 py-[9px] rounded-[50px] bg-white border-[1.5px] border-[#E7E7E7]  shadow-[0_17.33px_25.99px_0_rgba(0,0,0,0.05)]">
+              <div className="w-[30px] h-[30px] inline-flex justify-center items-center rounded-full bg-[#EDF5FF]">
+                <Image src={TrainedSecurity} alt="Gun" className="w-4 h-4" />
               </div>
-              <div className="font-urbanist text-xs font-semibold text-[#11205A]">
-                Fire Watch
+              <div className="font-dmSans text-xs font-medium text-[#1A1A1A]">
+                Trained Security Personnel
               </div>
             </div>
           </div>
         </div>
       </div>
-       
-      <div className="w-full max-w-[1440px] mx-auto mb-20 bg-[#EDF5FF] rounded-[40px] p-20 flex flex-col gap-[60px]">
-        <div className="text-center">
-          <Heading
-            className="!mb-6 !mt-0"
-            title="Securing Your Shopping Center With Experienced And Trusted Guards"
-          />
-          <p className="font-jakarta text-lg leading-8 text-[#374049] font-normal  ">
-          Safeguard your shopping center with the expertise of our experienced and trusted security guards. With tailored solutions to meet your center's unique needs, we help you create a safe space that enhances shopper confidence and supports your business operations seamlessly.
-          </p>
-        </div>
 
-        <div>
+      <div className="w-full max-w-[1440px] mx-auto mb-20 bg-[#F0F6FF] rounded-[40px] p-20">
+        <Heading
+          className="!mb-6 !mt-0 !text-[#222A5B] !text-center"
+          title="Securing Your Shopping Center With Experienced And Trusted Guards"
+        />
+        <p className="text-center font-dmSans text-xl !leading-8 text-[#333333] font-normal">
+          Safeguard your shopping center with the expertise of our experienced
+          and trusted security guards. With tailored solutions to meet your
+          center's unique needs, we help you create a safe space that enhances
+          shopper confidence and supports your business operations seamlessly.
+        </p>
+
+        <div className="mt-14">
           <TabGroup>
             <TabList className="flex items-center gap-8 p-4">
               {tabs.map((item, index) => (
@@ -298,7 +235,7 @@ const ShoppingCenter = () => {
                       className="w-8 h-8"
                     />
                   </div>
-                  <span className="font-urbanist text-xl font-bold text-[#171A1D]">
+                  <span className="font-dmSans text-xl font-semibold text-[#171A1D] tracking-[-0.5px]">
                     {item.label}
                   </span>
                 </Tab>
@@ -314,7 +251,7 @@ const ShoppingCenter = () => {
                         <Image
                           src={image}
                           alt={item.label}
-                          className="rounded-3xl w-full h-[324px]"
+                          className="h-full w-full shadow-[0_21px_32px_0_rgba(0,88,250,0.1)] rounded-3xl"
                         />
                       </div>
                     )
@@ -326,36 +263,45 @@ const ShoppingCenter = () => {
         </div>
       </div>
 
-      <div className="w-full max-w-[1440px] mx-auto mt-20  p-20 flex flex-col gap-[60px]">
-        <div className="text-center max-w-[967px] mx-auto">
+      <div className="w-full max-w-[1440px] mx-auto mt-20  p-20">
+       
           <Heading
-            className="!mb-6 !mt-0"
+            className="!mb-6 !mt-0 !text-[#222A5B] !text-center"
             title="Expert Shopping Mall Security For A Safe And Enjoyable Experience"
           />
-          <p className="font-jakarta text-lg leading-8 text-[#374049] font-normal">
-          Deliver a secure and welcoming atmosphere with expert shopping mall security designed for a safe and enjoyable experience. By maintaining order and deterring theft or vandalism, we ensure your mall operates smoothly and remains a trusted destination. Tailored to the unique dynamics of your mall, our comprehensive security solutions prioritize safety without compromising the shopping experience.
+          <p className="font-dmSans text-xl !leading-8 text-[#333333] font-normal !text-center">
+            Deliver a secure and welcoming atmosphere with expert shopping mall
+            security designed for a safe and enjoyable experience. By
+            maintaining order and deterring theft or vandalism, we ensure your
+            mall operates smoothly and remains a trusted destination. Tailored
+            to the unique dynamics of your mall, our comprehensive security
+            solutions prioritize safety without compromising the shopping
+            experience.
           </p>
-        </div>
+  
 
-        <div className="grid grid-cols-12  gap-y-6  gap-x-6">
+        <div className="grid grid-cols-12  gap-y-10  gap-x-10 mt-[60px]">
           {SecurityStrategiesData.map((item, index) => (
-            <Card key={index} item={item} />
+            <Card key={index} item={item} className={"!border-[#FFF0E0]"} />
           ))}
         </div>
       </div>
 
-      <div className="w-full max-w-[1440px] mx-auto my-20 bg-[#EBFFF1]/30 rounded-[40px] p-20 flex flex-col gap-[60px]">
-        <div className="text-center !max-w-[967px] mx-auto">
+      <div className="w-full max-w-[1440px] mx-auto my-20 bg-[#EBFFF1]/30 rounded-[40px] p-20">
+      
           <Heading
-            className="!mb-6 !mt-0"
+            className="!mb-6 !mt-0 !text-[#222A5B] !text-center"
             title="Round-The-Clock Security Guard Services For Shopping Centers"
           />
-          <p className="font-jakarta text-lg leading-8 text-[#374049] font-normal">
-          Maintain a secure shopping environment day and night with our 24/7 security guard services. Our experienced security personnel are always on duty, conducting regular patrols, monitoring surveillance systems, and ensuring the safety of everyone on your premises.
+          <p className="font-dmSans text-xl !leading-8  text-[#333333] font-normal text-center">
+            Maintain a secure shopping environment day and night with our 24/7
+            security guard services. Our experienced security personnel are
+            always on duty, conducting regular patrols, monitoring surveillance
+            systems, and ensuring the safety of everyone on your premises.
           </p>
-        </div>
+       
 
-        <div className="grid grid-cols-12 gap-8">
+        <div className="grid grid-cols-12 gap-8 mt-[60px]">
           <div className=" col-span-4 ">
             <Image
               src={ShoppingCanterA}
@@ -374,9 +320,9 @@ const ShoppingCenter = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-12  gap-y-6  gap-x-6">
+        <div className="grid grid-cols-12  gap-y-6  gap-x-6 mt-[60px]">
           {residentialFeatures.map((item, index) => (
-            <Card key={index} item={item} />
+            <Card key={index} item={item}  />
           ))}
         </div>
       </div>
@@ -384,6 +330,6 @@ const ShoppingCenter = () => {
       <Footer />
     </>
   );
-}
+};
 
-export default ShoppingCenter
+export default ShoppingCenter;

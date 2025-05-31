@@ -29,6 +29,8 @@ import IncidentManagementC from "../../public/Residential/IncidentManagement-03.
 import CommunityPatrolA from "../../public/Residential/Community-Patrol-01.svg";
 import CommunityPatrolB from "../../public/Residential/Community-Patrol-02.svg";
 import CommunityPatrolC from "../../public/Residential/Community-Patrol-03.svg";
+import Quote from "../../public/Residential/iconmonstr-quote.svg";
+
 const tabs = [
   {
     label: "Advance Location Monitoring",
@@ -51,7 +53,6 @@ const tabs = [
     image2: CommunityPatrolB,
     image3: CommunityPatrolC,
   },
-                         
 ];
 
 const residentialFeatures = [
@@ -112,9 +113,9 @@ const ResidentialCommunities = () => {
   return (
     <>
       <Header />
-      <div className="w-full max-w-[1360px] mt-16 mb-[141px] mx-auto">
-        <div className="flex gap-[93px]">
-          <div className="relative">
+      <div className="w-full max-w-[1342px] mt-20 mb-40 mx-auto">
+        <div className="flex gap-12">
+          <div className="relative pt-[14px]">
             <Image
               src={streetHouses}
               width={302}
@@ -123,144 +124,60 @@ const ResidentialCommunities = () => {
               alt="streetHouses"
               loading="lazy"
             />
-            <div className="z-[51] absolute -right-[180px] bottom-24 inline-flex items-center gap-2 px-3 py-[9px] rounded-[50px] bg-white border-[1.5px] border-[#E7E7E7]  shadow-[0_17.33px_25.99px_0_rgba(0,0,0,0.05)]">
+            <div className="z-[51] absolute -right-[180px] bottom-[101px] inline-flex items-center gap-2 px-3 py-[9px] rounded-[50px] bg-white border-[1.5px] border-[#E7E7E7]  shadow-[0_17.33px_25.99px_0_rgba(0,0,0,0.05)]">
               <div className="w-[30px] h-[30px] inline-flex justify-center items-center rounded-full bg-[#EDF5FF]">
-                <Image src={Surveillance} alt="Surveillance" className="w-4 h-4" />
+                <Image
+                  src={Surveillance}
+                  alt="Surveillance"
+                  className="w-4 h-4"
+                />
               </div>
-              <div className="font-urbanist text-xs font-semibold text-[#11205A]">
+              <div className="font-dmSans text-xs font-medium text-[#1A1A1A]">
                 Surveillance Camera Monitoring
               </div>
             </div>
           </div>
           <div className="relative">
             <div>
-              <h1 className="font-urbanist text-[56px] !leading-[64px] font-bold text-[#222A5B] mb-6">
-                Comprehensive Security Services For Residential Communities In San Jose
+              <h1 className="font-dmSans text-[56px] !leading-[64px] font-semibold text-[#222A5B] tracking-[-1px] mb-6">
+                Comprehensive Security Services For Residential Communities In
+                San Jose
               </h1>
-              <p className="px-4 rounded border-l-[3px] border-l-[#B0BABF] font-jakarta text-lg !leading-[30px] font-normal text-[#6B7280] max-w-[572px] ">
-                Ensuring the safety and security of residential communities in San Jose is our top priority. We provide professional security services tailored to the unique needs of gated communities, apartment complexes, and private neighborhoods.
+              <p className="px-4 rounded border-l-[3px] border-l-[#B0BABF] font-dmSans text-xl !leading-8 font-normal text-[#333333] max-w-[806px] ">
+                Ensuring the safety and security of residential communities in
+                San Jose is our top priority. We provide professional security
+                services tailored to the unique needs of gated communities,
+                apartment complexes, and private neighborhoods.
               </p>
             </div>
 
-            <div className="absolute bottom-0 -left-[126px] z-50">
+            <div className="absolute bottom-[9px] -left-20 z-50">
               <Image src={ConectElement} alt="ConectElement" width={713} />
             </div>
           </div>
         </div>
 
-        <div className="flex gap-11 mt-12 items-start">
-          {/* <div className="p-6 rounded-3xl bg-[#2877FF]/5 flex flex-col gap-4">
-            <div className="flex items-center gap-4">
-              <div>
+        <div className="flex items-start mt-[74px] gap-[52px] ">
+          <div className="grow flex items-center gap-5 p-[35px] rounded-3xl bg-[#FFB82E]/5">
+            <div className="min-w-[206px]">
+              <div className="flex items-end justify-between">
                 <Image
-                  src={Ellipse}
-                  width={60}
-                  height={60}
-                  alt="streetHouses"
+                  src={person}
+                  alt="person"
+                  className="w-[60px] h-[60px]"
                 />
+                <Image src={Quote} alt="person" className="w-[43px] h-[43px]" />
               </div>
-              <div>
-                <h3 className="font-jakarta text-xl !leading-6 font-semibold text-[#171A1D] mb-2">
-                  Magna Architectural Design
-                </h3>
-                <p className="font-jakarta text-base font-semibold text-[#6B7280]">
-                  Manager
-                </p>
-              </div>
+              <h3 className="mt-1 text-base font-dmSans font-semibold text-[#171A1D]">Bradley Lawlor</h3>
+              <p className="text-sm font-dmSans font-normal text-[#6B7280]">Manager</p>
+              <p className="text-sm font-dmSans font-normal text-[#333333]">Total Network Development</p>
             </div>
             <div>
-              <p className=" font-jakarta text-base italic text-[#6B7280] max-w-[471px]">
-                “Plaza Protection provides top-tier security without firearms.
-                As San Jose’s leading unarmed security provider, our skilled
-                guards prevent theft and vandalism, offering a reassuring
-                defense.”
-              </p>
+               <p className="font-dmSans text-xl font-semibold text-[#45535E] tracking-[-0.5px] max-w-[595px]">Plaza Protection provides top-tier security without firearms. As San Jose’s leading unarmed security provider, our skilled guards prevent theft and vandalism, offering a reassuring defense.</p>
             </div>
           </div>
-          <div className=" p-6 rounded-3xl border-[3px] border-[#F1F1F1]">
-            <div className="mb-5 flex items-center justify-between">
-              <h1 className="text-3xl font-semibold tracking-[1%] text-[#11205A]">
-                85%
-              </h1>
-              <h3 className="font-jakarta text-base text-[#0C2459] font-bold">
-                Daily activities
-              </h3>
-            </div>
 
-            <div className="inline-flex items-center gap-[22px]">
-              <div className="flex flex-col justify-center items-center gap-[10px]">
-                <div className="relative h-[78px] w-[10px] bg-[#E7E9EE] rounded-full">
-                  <div className="absolute bottom-0 w-full h-[70%] bg-[#1355FF] rounded-full"></div>
-                </div>
-                <span className=" font-jakarta font-semibold text-sm text-[#939393]">
-                  Sun
-                </span>
-              </div>
-              <div className="flex flex-col justify-center items-center gap-[10px]">
-                <div className="relative h-[78px] w-[10px] bg-[#E7E9EE] rounded-full">
-                  <div className="absolute bottom-0 w-full h-[65%] bg-[#1355FF] rounded-full"></div>
-                </div>
-                <span className=" font-jakarta font-semibold text-sm text-[#939393]">
-                  Mon
-                </span>
-              </div>
-              <div className="flex flex-col justify-center items-center gap-[10px]">
-                <div className="relative h-[78px] w-[10px] bg-[#E7E9EE] rounded-full">
-                  <div className="absolute bottom-0 w-full h-[45%] bg-[#1355FF] rounded-full"></div>
-                </div>
-                <span className=" font-jakarta font-semibold text-sm text-[#939393]">
-                  Tue
-                </span>
-              </div>
-              <div className="flex flex-col justify-center items-center gap-[10px]">
-                <div className="relative h-[78px] w-[10px] bg-[#E7E9EE] rounded-full">
-                  <div className="absolute bottom-0 w-full h-[35%] bg-[#1355FF] rounded-full"></div>
-                </div>
-                <span className=" font-jakarta font-semibold text-sm text-[#939393]">
-                  Wed
-                </span>
-              </div>
-              <div className="flex flex-col justify-center items-center gap-[10px]">
-                <div className="relative h-[78px] w-[10px] bg-[#E7E9EE] rounded-full">
-                  <div className="absolute bottom-0 w-full h-[25%] bg-[#1355FF] rounded-full"></div>
-                </div>
-                <span className=" font-jakarta font-semibold text-sm text-[#939393]">
-                  Thu
-                </span>
-              </div>
-              <div className="flex flex-col justify-center items-center gap-[10px]">
-                <div className="relative h-[78px] w-[10px] bg-[#E7E9EE] rounded-full">
-                  <div className="absolute bottom-0 w-full h-[80%] bg-[#1355FF] rounded-full"></div>
-                </div>
-                <span className=" font-jakarta font-semibold text-sm text-[#939393]">
-                  Fri
-                </span>
-              </div>
-              <div className="flex flex-col justify-center items-center gap-[10px]">
-                <div className="relative h-[78px] w-[10px] bg-[#E7E9EE] rounded-full">
-                  <div className="absolute bottom-0 w-full h-[40%] bg-[#1355FF] rounded-full"></div>
-                </div>
-                <span className=" font-jakarta font-semibold text-sm text-[#939393]">
-                  Sat
-                </span>
-              </div>
-            </div>
-          </div> */}
-
-          <div className="grow bg-[#2877FF]/5 p-6 rounded-3xl">
-               <div className="flex items-center gap-6">
-                    <Image src={person} alt="person"  className="w-[60px] h-[60px]" />
-                    <div>
-                       <h3 className="font-jakarta font-semibold text-xl !leading-[22px] text-[#171A1D] mb-1">James Hall</h3>
-                       <p className="font-jakarta font-semibold text-base !leading-[22px] text-[#6B7280]">Manager</p>
-                    </div>
-               </div>
-               <div className="mt-4">
-                <p className=" font-jakarta italic text-base text-[#6B7280] max-w-[842px]">“Plaza Protection provides top-tier security without firearms. As San Jose’s leading unarmed security provider, our skilled guards prevent theft and vandalism, offering a reassuring defense.”</p>
-               </div>
-          </div>
-
-          <div className="relative mt-[-215px]">
+          <div className="relative -mt-[232px]">
             <Image
               src={GuardImage}
               width={399}
@@ -270,11 +187,11 @@ const ResidentialCommunities = () => {
               loading="lazy"
             />
 
-            <div className="z-[51] absolute -left-[52px] top-[136px] inline-flex items-center gap-2 px-3 py-[9px] rounded-[50px] bg-white border-[1.5px] border-[#E7E7E7]  shadow-[0_17.33px_25.99px_0_rgba(0,0,0,0.05)]">
+            <div className="z-[51] absolute -left-[52px] top-[121px] inline-flex items-center gap-2 px-3 py-[9px] rounded-[50px] bg-white border-[1.5px] border-[#E7E7E7]  shadow-[0_17.33px_25.99px_0_rgba(0,0,0,0.05)]">
               <div className="w-[30px] h-[30px] inline-flex justify-center items-center rounded-full bg-[#EDF5FF]">
                 <Image src={Visitorcheck} alt="Fire" width={16} height={16} />
               </div>
-              <div className="font-urbanist text-xs font-semibold text-[#11205A]">
+              <div className="font-dmSans text-xs font-medium text-[#1A1A1A]">
                 Visitor & Vendor Check-In Services
               </div>
             </div>
@@ -282,18 +199,23 @@ const ResidentialCommunities = () => {
         </div>
       </div>
 
-      <div className="w-full max-w-[1440px] mx-auto mb-20 bg-[#EDF5FF] rounded-[40px] p-20 flex flex-col gap-[60px]">
-        <div className="text-center">
+      <div className="w-full max-w-[1440px] mx-auto mb-20 bg-[#F0F6FF] rounded-[40px] p-20">
+       
           <Heading
-            className="!mb-6 !mt-0"
+            className="!mb-6 !mt-0 !text-[#222A5B] !text-center"
             title="Advanced Security Services for Protecting Residential Communities"
           />
-          <p className="font-jakarta text-lg leading-8 text-[#374049] font-normal">
-            With highly trained security personnel, advanced surveillance systems, and a proactive approach to threat prevention, we create a safe and secure environment for residents. Whether it's access control, mobile patrols, or emergency response, our team is committed to delivering reliable protection and peace of mind for your community.
+          <p className="text-center font-dmSans text-xl !leading-8 text-[#333333] font-normal ">
+            With highly trained security personnel, advanced surveillance
+            systems, and a proactive approach to threat prevention, we create a
+            safe and secure environment for residents. Whether it's access
+            control, mobile patrols, or emergency response, our team is
+            committed to delivering reliable protection and peace of mind for
+            your community.
           </p>
-        </div>
+       
 
-        <div>
+        <div className="mt-14">
           <TabGroup>
             <TabList className="flex items-center gap-8 p-4">
               {tabs.map((item, index) => (
@@ -310,7 +232,7 @@ const ResidentialCommunities = () => {
                       width={32}
                     />
                   </div>
-                  <span className="font-urbanist text-xl font-bold text-[#171A1D]">
+                  <span className="font-dmSans text-xl font-semibold text-[#171A1D] tracking-[-0.5px]">
                     {item.label}
                   </span>
                 </Tab>
@@ -326,7 +248,7 @@ const ResidentialCommunities = () => {
                         <Image
                           src={image}
                           alt={item.label}
-                          className="rounded-3xl object-cover shadow-[0_21px_32px_0_rgba(0,88,250,0.1)"
+                          className="h-full w-full shadow-[0_21px_32px_0_rgba(0,88,250,0.1)] rounded-3xl"
                         />
                       </div>
                     )
@@ -338,36 +260,29 @@ const ResidentialCommunities = () => {
         </div>
       </div>
 
-      <div className="w-full max-w-[1440px] mx-auto mt-20  p-20 flex flex-col gap-[60px]">
-        <div className="text-center">
+      <div className="w-full max-w-[1440px] mx-auto mt-20  p-20">
           <Heading
-            className="!mb-6 !mt-0"
+            className="!mb-6 !mt-0 !text-[#222A5B] !text-center"
             title="Tailored Security Strategies For Your Gated Community"
           />
-          <p className="font-jakarta text-lg leading-8 text-[#374049] font-normal">
-            Every gated neighborhood is unique, and Plaza Protection understands
-            that one size doesn’t fit all. We work closely with your community
-            to develop a security plan that’s personalized to meet your specific
-            needs. From concierge services to monitoring visitor access, our
-            team ensures that your residents are safe and your community is
-            well-protected.
+          <p className="font-dmSans text-xl !leading-8 text-[#333333] font-normal !text-center">
+            Every gated neighborhood is unique, and Plaza Protection understands that one size doesn’t fit all. We work closely with your community to develop a security plan that’s personalized to meet your specific needs. From concierge services to monitoring visitor access, our team ensures that your residents are safe and your community is well-protected.
           </p>
-        </div>
+       
 
-        <div className="grid grid-cols-12  gap-y-6  gap-x-6">
+        <div className="grid grid-cols-12  gap-y-10  gap-x-10 mt-[60px]">
           {SecurityStrategiesData.map((item, index) => (
-            <Card key={index} item={item} className={'!border-[#FFF0E0]'} />
+            <Card key={index} item={item} className={"!border-[#FFF0E0]"} />
           ))}
         </div>
       </div>
 
-      <div className="w-full max-w-[1440px] mx-auto my-20 bg-[#EBFFF1]/30 rounded-[40px] p-20 flex flex-col gap-[60px]">
-        <div className="text-center !max-w-[967px] mx-auto">
+      <div className="w-full max-w-[1440px] mx-auto my-20 bg-[#EBFFF1]/30 rounded-[40px] p-20">
           <Heading
-            className="!mb-6 !mt-0"
+            className="!mb-6 !mt-0 !text-[#222A5B] !text-center"
             title="Consistent, Round-The-Clock Protection For Gated Communities"
           />
-          <p className="font-jakarta text-lg leading-8 text-[#374049] font-normal">
+          <p className="font-dmSans text-xl !leading-8  text-[#333333] font-normal text-center">
             With Plaza Protection, your gated community benefits from continuous
             security coverage. Our well-trained guards maintain vigilance 24/7,
             providing a visible deterrent to crime and responding quickly to any
@@ -375,9 +290,9 @@ const ResidentialCommunities = () => {
             concern, our team is ready to address it promptly and
             professionally.
           </p>
-        </div>
+       
 
-        <div className="grid grid-cols-12 gap-8">
+        <div className="grid grid-cols-12 gap-8 mt-[60px]">
           <div className=" col-span-4 ">
             <Image
               src={ResidentialA}
@@ -396,7 +311,7 @@ const ResidentialCommunities = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-12  gap-y-6  gap-x-6">
+        <div className="grid grid-cols-12  gap-y-6  gap-x-6 mt-[60px]">
           {residentialFeatures.map((item, index) => (
             <Card key={index} item={item} />
           ))}
