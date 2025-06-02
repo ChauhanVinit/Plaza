@@ -202,10 +202,10 @@ const ResidentialCommunities = () => {
       <div className="w-full max-w-[1440px] mx-auto mb-20 bg-[#F0F6FF] rounded-[40px] p-20">
        
           <Heading
-            className="!mb-6 !mt-0 !text-[#222A5B] !text-center"
+            className="!mb-6 !mt-0 !text-[#222A5B] !text-center !tracking-[-3px]"
             title="Advanced Security Services for Protecting Residential Communities"
           />
-          <p className="text-center font-dmSans text-xl !leading-8 text-[#333333] font-normal ">
+          <p className="text-center font-dmSans text-xl !leading-8 text-[#333333] font-normal max-w-[1126px] mx-auto">
             With highly trained security personnel, advanced surveillance
             systems, and a proactive approach to threat prevention, we create a
             safe and secure environment for residents. Whether it's access
@@ -262,10 +262,10 @@ const ResidentialCommunities = () => {
 
       <div className="w-full max-w-[1440px] mx-auto mt-20  p-20">
           <Heading
-            className="!mb-6 !mt-0 !text-[#222A5B] !text-center"
+            className="!mb-6 !mt-0 !text-[#222A5B] !text-center !tracking-[-3px]"
             title="Tailored Security Strategies For Your Gated Community"
           />
-          <p className="font-dmSans text-xl !leading-8 text-[#333333] font-normal !text-center">
+          <p className="font-dmSans text-xl !leading-8 text-[#333333] font-normal !text-center max-w-[1126px] mx-auto">
             Every gated neighborhood is unique, and Plaza Protection understands that one size doesn’t fit all. We work closely with your community to develop a security plan that’s personalized to meet your specific needs. From concierge services to monitoring visitor access, our team ensures that your residents are safe and your community is well-protected.
           </p>
        
@@ -279,10 +279,10 @@ const ResidentialCommunities = () => {
 
       <div className="w-full max-w-[1440px] mx-auto my-20 bg-[#EBFFF1]/30 rounded-[40px] p-20">
           <Heading
-            className="!mb-6 !mt-0 !text-[#222A5B] !text-center"
+            className="!mb-6 !mt-0 !text-[#222A5B] !text-center !tracking-[-3px]"
             title="Consistent, Round-The-Clock Protection For Gated Communities"
           />
-          <p className="font-dmSans text-xl !leading-8  text-[#333333] font-normal text-center">
+          <p className="font-dmSans text-xl !leading-8  text-[#333333] font-normal text-center max-w-[1126px] mx-auto">
             With Plaza Protection, your gated community benefits from continuous
             security coverage. Our well-trained guards maintain vigilance 24/7,
             providing a visible deterrent to crime and responding quickly to any

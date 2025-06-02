@@ -204,10 +204,10 @@ const ConstructionSites = () => {
 
       <div className="w-full max-w-[1440px] mx-auto mb-20 bg-[#F0F6FF] rounded-[40px] p-20">
         <Heading
-          className="!mb-6 !mt-0 !text-[#222A5B] !text-center"
+          className="!mb-6 !mt-0 !text-[#222A5B] !text-center !tracking-[-3px]"
           title="Customized Security Solutions For Seamless Construction Operations"
         />
-        <p className="text-center font-dmSans text-xl !leading-8 text-[#333333] font-normal ">
+        <p className="text-center font-dmSans text-xl !leading-8 text-[#333333] font-normal max-w-[1126px] mx-auto">
           Every construction site has unique challenges, requiring tailored
           security solutions to ensure smooth and secure operations.By aligning
           security measures with the specific needs of your project, customized
@@ -262,10 +262,10 @@ const ConstructionSites = () => {
 
       <div className="w-full max-w-[1440px] mx-auto mt-20  p-20">
         <Heading
-          className="!mb-6 !mt-0 !text-[#222A5B] !text-center"
+          className="!mb-6 !mt-0 !text-[#222A5B] !text-center !tracking-[-3px]"
           title="Mitigating Risks And Enhancing Security At Construction Sites"
         />
-        <p className="font-dmSans text-xl !leading-8 text-[#333333] font-normal !text-center">
+        <p className="font-dmSans text-xl !leading-8 text-[#333333] font-normal !text-center max-w-[1126px] mx-auto">
           Effective security at construction sites involves proactive measures
           to reduce risks like theft, vandalism, and accidents. Trained security
           personnel, access control systems, and surveillance tools help protect
@@ -280,10 +280,10 @@ const ConstructionSites = () => {
       </div>
       <div className="w-full max-w-[1440px] mx-auto my-20 bg-[#EBFFF1]/30 rounded-[40px] p-20 ">
         <Heading
-          className="!mb-6 !mt-0 !text-[#222A5B] !text-center"
+          className="!mb-6 !mt-0 !text-[#222A5B] !text-center !tracking-[-3px] !max-w-[1126px] !mx-auto"
           title="Expert Security Solutions Designed For The Unique Needs Of Construction Sites."
         />
-        <p className="font-dmSans text-xl !leading-8  text-[#333333] font-normal text-center">
+        <p className="font-dmSans text-xl !leading-8  text-[#333333] font-normal text-center max-w-[1126px] mx-auto">
           Construction sites present unique security challenges, from
           safeguarding valuable equipment and materials to managing access and
           preventing vandalism. Expert security solutions address these specific

@@ -208,10 +208,10 @@ const HospitalSecurity = () => {
 
       <div className="w-full max-w-[1440px] mx-auto mb-20 bg-[#F0F6FF] rounded-[40px] p-20">
         <Heading
-          className="!mb-6 !mt-0 !text-[#222A5B] !text-center"
+          className="!mb-6 !mt-0 !text-[#222A5B] !text-center !tracking-[-3px]"
           title="Seamless Security For Safe And Efficient Healthcare Operations"
         />
-        <p className="text-center font-dmSans text-xl !leading-8 text-[#333333] font-normal">
+        <p className="text-center font-dmSans text-xl !leading-8 text-[#333333] font-normal max-w-[1126px] mx-auto">
           Seamless security ensures the safety and efficiency of healthcare
           operations by protecting staff, patients, visitors, and critical
           assets. Advanced surveillance, access control, and visitor management
@@ -265,10 +265,10 @@ const HospitalSecurity = () => {
 
       <div className="w-full max-w-[1440px] mx-auto mt-20  p-20">
         <Heading
-          className="!mb-6 !mt-0 !text-[#222A5B] !text-center"
+          className="!mb-6 !mt-0 !text-[#222A5B] !text-center !tracking-[-3px]"
           title="Ensuring Hospital Security With Trained And Reliable Security Personnel"
         />
-        <p className="font-dmSans text-xl !leading-8 text-[#333333] font-normal !text-center">
+        <p className="font-dmSans text-xl !leading-8 text-[#333333] font-normal !text-center max-w-[1126px] mx-auto">
           Ensure the safety and security of your hospital with our trained and
           reliable security personnel. Our team is equipped with the knowledge
           and expertise to handle any security challenges, from monitoring
@@ -284,10 +284,10 @@ const HospitalSecurity = () => {
 
       <div className="w-full max-w-[1440px] mx-auto my-20 bg-[#EBFFF1]/30 rounded-[40px] p-20">
         <Heading
-          className="!mb-6 !mt-0 !text-[#222A5B] !text-center"
+          className="!mb-6 !mt-0 !text-[#222A5B] !text-center !tracking-[-3px] max-w-[1152px] mx-auto"
           title="Guarding Hospitals With Proactive Security Solutions For Optimal Protection"
         />
-        <p className="font-dmSans text-xl !leading-8  text-[#333333] font-normal text-center">
+        <p className="font-dmSans text-xl !leading-8  text-[#333333] font-normal text-center max-w-[1126px] mx-auto">
           Hospitals face unique security challenges, requiring customized
           solutions to ensure safety and efficiency. Our tailored security
           strategies are designed to meet the unique needs of healthcare

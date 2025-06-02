@@ -211,10 +211,10 @@ const CorporateBuildings = () => {
       <div className="w-full max-w-[1440px] mx-auto mb-20 bg-[#F0F6FF] rounded-[40px] p-20 ">
        
           <Heading
-            className="!mb-6 !mt-0 !text-[#222A5B] !text-center"
+            className="!mb-6 !mt-0 !text-[#222A5B] !text-center !tracking-[-3px]"
             title="Expert Security Solutions for Personalized Protection and Peace of Mind"
           />
-          <p className="text-center font-dmSans text-xl !leading-8 text-[#333333] font-normal ">
+          <p className="text-center font-dmSans text-xl !leading-8 text-[#333333] font-normal max-w-[1126px] mx-auto">
             Our expert security solutions are designed to offer peace of mind by
             blending advanced technology with experienced guards. We provide
             personalized protection plans tailored to your specific needs,
@@ -269,10 +269,10 @@ const CorporateBuildings = () => {
       <div className="w-full max-w-[1440px] mx-auto mt-20  p-20">
         
           <Heading
-            className="!mb-6 !mt-0 !text-[#222A5B] !text-center"
-            title="Empowering Your Corporate Space With Tailored Security solutions"
+            className="!mb-6 !mt-0 !text-[#222A5B] !text-center !tracking-[-3px]"
+            title="Empowering your commercial space With Tailored Security solutions"
           />
-          <p className="font-dmSans text-xl !leading-8 text-[#333333] font-normal !text-center">
+          <p className="font-dmSans text-xl !leading-8 text-[#333333] font-normal !text-center max-w-[1126px] mx-auto">
             Elevate your security with customized solutions that fit your unique
             needs. Our tailored approach integrates professional guards,
             advanced technology, and proactive strategies to safeguard your
@@ -289,10 +289,10 @@ const CorporateBuildings = () => {
       <div className="w-full max-w-[1440px] mx-auto my-20 bg-[#EBFFF1]/30 rounded-[40px] p-20">
        
           <Heading
-            className="!mb-6 !mt-0 !text-[#222A5B] !text-center"
+            className="!mb-6 !mt-0 !text-[#222A5B] !text-center !tracking-[-3px]"
             title="Round-The-Clock Vigilance For Your Peace Of Mind"
           />
-          <p className="font-dmSans text-xl !leading-8  text-[#333333] font-normal text-center">
+          <p className="font-dmSans text-xl !leading-8  text-[#333333] font-normal text-center max-w-[1126px] mx-auto">
             True peace of mind starts with unyielding security. Our 24/7
             vigilance ensures every moment is covered, every corner protected,
             and every concern addressed—because your safety never takes a break,

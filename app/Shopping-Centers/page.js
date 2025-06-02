@@ -209,10 +209,10 @@ const ShoppingCenter = () => {
 
       <div className="w-full max-w-[1440px] mx-auto mb-20 bg-[#F0F6FF] rounded-[40px] p-20">
         <Heading
-          className="!mb-6 !mt-0 !text-[#222A5B] !text-center"
+          className="!mb-6 !mt-0 !text-[#222A5B] !text-center !tracking-[-3px]"
           title="Securing Your Shopping Center With Experienced And Trusted Guards"
         />
-        <p className="text-center font-dmSans text-xl !leading-8 text-[#333333] font-normal">
+        <p className="text-center font-dmSans text-xl !leading-8 text-[#333333] font-normal max-w-[1126px] mx-auto">
           Safeguard your shopping center with the expertise of our experienced
           and trusted security guards. With tailored solutions to meet your
           center's unique needs, we help you create a safe space that enhances
@@ -266,10 +266,10 @@ const ShoppingCenter = () => {
       <div className="w-full max-w-[1440px] mx-auto mt-20  p-20">
        
           <Heading
-            className="!mb-6 !mt-0 !text-[#222A5B] !text-center"
+            className="!mb-6 !mt-0 !text-[#222A5B] !text-center !tracking-[-3px]"
             title="Expert Shopping Mall Security For A Safe And Enjoyable Experience"
           />
-          <p className="font-dmSans text-xl !leading-8 text-[#333333] font-normal !text-center">
+          <p className="font-dmSans text-xl !leading-8 text-[#333333] font-normal !text-center max-w-[1126px] mx-auto">
             Deliver a secure and welcoming atmosphere with expert shopping mall
             security designed for a safe and enjoyable experience. By
             maintaining order and deterring theft or vandalism, we ensure your
@@ -290,10 +290,10 @@ const ShoppingCenter = () => {
       <div className="w-full max-w-[1440px] mx-auto my-20 bg-[#EBFFF1]/30 rounded-[40px] p-20">
       
           <Heading
-            className="!mb-6 !mt-0 !text-[#222A5B] !text-center"
+            className="!mb-6 !mt-0 !text-[#222A5B] !text-center !tracking-[-3px]"
             title="Round-The-Clock Security Guard Services For Shopping Centers"
           />
-          <p className="font-dmSans text-xl !leading-8  text-[#333333] font-normal text-center">
+          <p className="font-dmSans text-xl !leading-8  text-[#333333] font-normal text-center max-w-[1126px] mx-auto">
             Maintain a secure shopping environment day and night with our 24/7
             security guard services. Our experienced security personnel are
             always on duty, conducting regular patrols, monitoring surveillance
