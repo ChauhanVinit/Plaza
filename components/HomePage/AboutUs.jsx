@@ -53,11 +53,11 @@ const AboutUs = () => {
   const isClient = useIsClient();
 
   return (
-    <div className="w-full pl-[calc((100%-1440px)/2)] ">
-      <div className="rounded-tl-[40px] rounded-bl-[40px]  relative  -mt-[116px]  pl-[60px] py-20 bg-[#EDF5FF]">
+    <div className="w-full 2xl:pl-[calc((100%-1440px)/2)] ">
+      <div className="rounded-[40px] sm:rounded-tr-[0px] sm:rounded-br-[0px]  sm:rounded-tl-[40px] sm:rounded-bl-[40px]  relative mt-10  sm:-mt-[116px] pb-[114px]  pt-8 px-4 sm:pb-[122px] sm:pt-10  sm:px-6 md:py-10  xl:px-8  2xl:py-20 2xl:pr-[0px] 2xl:pl-[60px] bg-[#EDF5FF]  mx-4 sm:ml-6 sm:mr-0  xl:ml-10 2xl:mx-0">
         <Tag title={"Quick view about us"} />
 
-        <Heading title={"Trusted Security Services For Every Industry"} />
+        <Heading title={"Trusted Security Services For Every Industry"} className={'      md:max-w-[600px] lg:max-w-full'} />
         {isClient && (
           <Splide
             aria-label="My Favorite Images"
@@ -67,6 +67,13 @@ const AboutUs = () => {
               rewind: true,
               perPage: 3,
               gap: "24px",
+              pagination: false,
+              breakpoints: {
+                1440: { gap: "16px" }, 
+                1040: {perPage: 2 },
+                768: { perPage: 1, pagination: true },
+                
+              },
               autoplay: false,
               arrows: true,
               classes: {
@@ -75,13 +82,13 @@ const AboutUs = () => {
                 next: "serv-next",
               },
               interval: 3000,
-              pagination: false,
+              
             }}
-            className="dots:absolute dots:right-auto dots:left-[calc(100%+80px)] dots:p-0 dots:min-w-[300px] dots:justify-start dot:!bg-[#DDE6F0] dot:w-2.5 dot:h-2.5 activeDot:scale-100 activeDot:!bg-[#9DBBC2] dot:shadow-none dot:outline-none mt-[60px] "
+            className="dots:absolute dots:right-0 dots:-bottom-16 sm:dots:-bottom-[72px]  dots:p-0 dots:min-w-[300px] dots:justify-center  dots:items-center  dots:gap-4 dot:!bg-[#88C0FF] dot:w-2 dot:h-2 activeDot:scale-100 activeDot:!bg-[#1355FF] dot:shadow-none dot:outline-none mt-[60px]"
           >
             {AboutusData.map((item, index) => (
               <SplideSlide key={index}>
-                <div className="p-4">
+                <div className="p-2 xl:p-4">
                   <div className="overflow-hidden max-h-[350px] max-w-full shadow-[0_4px_4px_rgba(0,0,0,0.25)] rounded-2xl">
                     <Image
                       src={item.image}
@@ -90,7 +97,7 @@ const AboutUs = () => {
                     />
                   </div>
 
-                  <h2 className="mt-8 mb-4 font-dmSans text-2xl font-semibold text-[#171A1D] tracking-[-0.5px]">
+                  <h2 className="mt-8 mb-4 font-dmSans text-xl  lg:text-[22px] lg:!leading-[30px]  2xl:text-2xl font-semibold text-[#171A1D] tracking-[-0.5px]">
                     {item.title}
                   </h2>
                   <p className="mb-8 font-dmSans text-base  font-normal text-[#45535E]">
@@ -99,7 +106,7 @@ const AboutUs = () => {
                   <div>
                     <Button
                       variant="custom"
-                      style={"!bg-transparent min-w-[158px]  !text-center"}
+                      style={"!bg-transparent !min-w-full sm:!min-w-[158px]  !text-center"}
                       name={"Learn More"}
                       path={item.path}
                     />
@@ -109,7 +116,7 @@ const AboutUs = () => {
             ))}
           </Splide>
         )}
-      </div>
+      </div>                                                 
     </div>
   );
 };

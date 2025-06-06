@@ -53,7 +53,7 @@ const clientTestimonials = [
 const OurServices = () => {
   const isClient = useIsClient();
   return (
-    <div className="relative max-w-[1300px] mx-auto py-20 px-[60px] rounded-[40px]">
+    <div className="relative mx-4 sm:mx-6 xl:mx-10 my-10 2xl:my-[60px] 2xl:max-w-[1300px] 2xl:mx-auto py-8 px-0 sm:py-10 sm:px-6 xl:px-8 2xl:py-20 2xl:px-[60px] rounded-[40px]">
       <Image
         src={lineShape02}
         className="z-0 absolute top-[160px] -left-60 w-[548px]  h-[640px]"
@@ -72,6 +72,11 @@ const OurServices = () => {
           gap: "24px",
           autoplay: false,
           arrows: true,
+          pagination: false,
+          breakpoints: {
+                768: {pagination: true },
+                
+              },
           classes: {
             arrow: "custom-arrow", 
             prev: "custom-prev",  
@@ -80,19 +85,19 @@ const OurServices = () => {
           interval: 3000,
           pagination: false,
         }}
-        className="dots:absolute dots:right-auto dots:left-[calc(100%+80px)] dots:p-0 dots:min-w-[300px] dots:justify-start dot:!bg-[#DDE6F0] dot:w-2.5 dot:h-2.5 activeDot:scale-100 activeDot:!bg-[#9DBBC2] dot:shadow-none dot:outline-none mt-20"
+        className="dots:absolute dots:right-0 dots:bottom-[18px]  dots:p-0 dots:min-w-[300px] dots:justify-center  dots:items-center  dots:gap-4 dot:!bg-[#88C0FF] dot:w-2 dot:h-2 activeDot:scale-100 activeDot:!bg-[#1355FF] dot:shadow-none dot:outline-none mt-20"
       >
         {clientTestimonials.map((testimonial, index) => (
           <SplideSlide key={index} >
-            <div className="flex items-center gap-[200px] pb-[110px]">
-              <div className=" relative w-[30%]">
+            <div className="flex flex-col items-start lg:flex-row lg:items-center gap-8 lg:gap-10 xl:gap-20   2xl:gap-[200px] pb-[90px] lg:pb-[110px]">
+              <div className="relative lg:w-[30%]">
                 <Image
                   src={testimonial.clientImage}
-                  className="min-w-[344px] h-[399px]"
+                  className=" w-auto min-w-0 xl:min-w-[344px]  h-[399px]"
                   alt={`client${testimonial.id}`}
                 />
 
-                <div className="min-w-[222px] border border-[#B9D8FF] absolute right-0 bottom-3  p-[18.17px] bg-[#EDF5FF]  rounded-bl-[18.17px] rounded-tr-[18.17px] ">
+                <div className="min-w-[222px] max-w-[222px] border border-[#B9D8FF] absolute right-0 bottom-3  p-[18.17px] bg-[#EDF5FF]  rounded-bl-[18.17px] rounded-tr-[18.17px] ">
                   <h3 className="mb-1 font-urbanist font-bold text-xl !leading-6 text-[#1355FF]">
                     {testimonial.clientName}
                   </h3>
@@ -101,8 +106,8 @@ const OurServices = () => {
                   </p>
                 </div>
               </div>
-              <div className="py-[22px] w-[70%]">
-                <p className="text-[#171A1D] font-dmSans text-2xl !leading-10 font-normal tracking-[-0.5px]">
+              <div className="py-0 lg:py-[22px] lg:w-[70%]">
+                <p className="text-[#171A1D] font-dmSans text-xl !leading-9 xl:!text-[22px] xl:!leading-[38px] 2xl:text-2xl 2xl:!leading-10 font-normal tracking-[-0.5px]">
                   {/* <span className="text-[50px]">“</span> */}
                   {testimonial.clientText}
                 </p>

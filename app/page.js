@@ -44,12 +44,12 @@ export default function Home() {
       <Header />
       <Hero />
       <TopIndustries />
-      <div className="max-w-[1440px] mx-auto mt-[60px] px-[60px] py-20 bg-[#FAFAFA] rounded-[40px]">
-        <div className="flex items-start gap-[140px]">
-          <div className="w-[42%]">
+      <div className="mx-4 sm:mx-6  xl:mx-10  2xl:container 2xl:mx-auto mt-10 2xl:mt-[60px] py-8 px-4 sm:py-10 sm:px-6  xl:px-8  2xl:px-[60px] 2xl:py-20 bg-[#FAFAFA] rounded-[40px]">
+        <div className="flex flex-col xl:flex-row items-start gap-8 xl:gap-10 2xl:gap-[140px]">
+          <div className="w-full xl:w-[42%]">
             <Image src={ExpertSecurity} className="object-cover" alt="ExpertSecurity" />
           </div>
-          <div className="w-[58%]">
+          <div className="w-full xl:w-[58%]">
             <Tag title={"Ensuring Safety With Expertise"} />
 
             <Heading
@@ -57,7 +57,7 @@ export default function Home() {
                 "Cutting-Edge Security Solutions For A Rapidly Evolving World"
               }
             />
-            <p className="mt-6 font-dmSans text-xl !leading-8 font-normal  text-[#45535E]">
+            <p className="mt-6 font-dmSans text-lg 2xl:text-xl 2xl:!leading-8 font-normal  text-[#45535E]">
               Our commitment to excellence ensures a safe, secure environment
               for all, giving you peace of mind under our vigilant protection.
             </p>
@@ -76,10 +76,10 @@ export default function Home() {
                     />
                   </div>
                   <div>
-                    <h3 className="font-dmSans text-xl leading-6  font-bold text-[#171A1D] tracking-[-0.5px]">
+                    <h3 className="font-dmSans text-base  lg:text-lg  2xl:text-xl !leading-6  font-semibold text-[#171A1D] tracking-[-0.5px]">
                       {item.title}
                     </h3>
-                    <p className="mt-2 font-dmSans font-normal text-base leading-5 text-[#45535E] ">
+                    <p className="mt-2 font-dmSans font-normal text-[15px] lg:text-base leading-5 text-[#45535E] ">
                       {item.description}
                     </p>
                   </div>
@@ -87,18 +87,18 @@ export default function Home() {
               ))}
             </div>
 
-            <div className="mt-12 inline-flex items-center gap-4">
+            <div className="w-full mt-12 inline-flex sm:flex-row flex-col items-center gap-4">
               <Button
               icon={<Image src={right} alt="right" className="w-4 h-4" />}
                 variant="blue"
-                style={"!min-w-[243px]"}
+                style={"!min-w-full sm:!min-w-[243px]"}
                 name="Request Quote"
                 path="/Request-A-Quote"
               />
 
               <Button
                 variant="custom"
-                style={"min-w-[158px] !bg-transparent"}
+                style={"!min-w-full sm:!min-w-[158px] !bg-transparent"}
                 name="About Us"
                 path="/About-us"
               />

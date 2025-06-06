@@ -37,21 +37,21 @@
 
 
 .custom-arrow{
-	@apply absolute bottom-0  z-10 inline-flex items-center justify-center  h-[50px] w-[50px] rounded-md border border-[#98A2B3]  bg-transparent
+	@apply absolute bottom-0 z-10 inline-flex items-center justify-center h-[50px] w-[50px] border border-[#98A2B3] bg-transparent;
 }
 .custom-prev {
-  @apply  right-0    ;
+  @apply left-1/2 -translate-x-[calc(50%-106px)]  md:right-0 md:left-auto md:translate-x-0 ;
 }
 
 .custom-next {
-  @apply  right-[66px] rotate-180;
+  @apply left-1/2 -translate-x-[calc(50%+106px)]  md:right-[66px] md:left-auto md:translate-x-0 rotate-180;
 }
 
 .serv-prev{
-  @apply right-[0px] -top-[110px] -translate-x-[20vw]
+  @apply left-1/2 -translate-x-[calc(50%-106px)] -bottom-[82px] sm:-bottom-[90px] md:right-0 md:left-auto md:translate-x-0 2xl:right-[284px] md:-top-[110px]; 
 }
 .serv-next{
-  @apply  right-[60px] -top-[110px] rotate-180  -translate-x-[20vw]
+   @apply left-1/2 -translate-x-[calc(50%+106px)] -bottom-[82px] sm:-bottom-[90px] md:right-[66px] md:left-auto md:translate-x-0 2xl:right-[350px] md:-top-[110px] rotate-180;
 }
 
 .custom-arrow svg {

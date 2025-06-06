@@ -53,21 +53,21 @@ const Services = () => {
   ];
 
   return (
-    <div className="w-full max-w-[1440px] mt-[60px] mx-auto py-20 px-[60px] rounded-[40px] bg-[#F0F6FF] text-center">
+    <div className="mx-4 sm:mx-6 xl:mx-10 2xl:container 2xl:mx-auto mt-10 2xl:mt-[60px] py-8 px-4 sm:py-10 sm:px-6 xl:px-8 2xl:py-20 2xl:px-[60px] rounded-[40px] bg-[#F0F6FF] text-center">
       <Tag title="Why Choose Us?" />
       <Heading
         className="!mt-4"
         title="Explore Our Range Of Security Solutions"
       />
       <div className="mt-[60px] !text-left">
-        <TabGroup className="flex items-center gap-20">
-          <TabList className="flex flex-col gap-[22px]  pl-[34px] min-w-[291px]">
+        <TabGroup className="flex items-center flex-col 2xl:flex-row  gap-8 2x:gap-20 ">
+          <TabList className="flex  flex-col lg:flex-row justify-center 2xl:flex-col gap-4 2xl:gap-[22px] pl-[34px] lg:pl-0  2xl:pl-[34px]  min-w-max sm:min-w-[291px] lg:min-w-full 2xl:min-w-[291px]">
             {tabs.map((item, index) => (
               <div key={index} className="relative flex items-center">
                 {/* Connector Line - Only show if not the last tab */}
                 {index !== tabs.length - 1 && (
                   <div
-                    className={`absolute -left-[30px] top-[33px] w-[2px] h-[80px] transition-colors duration-1000 ease-out ${
+                    className={`block lg:hidden 2xl:block absolute -left-[30px] top-[33px] w-[2px] h-[80px] transition-colors duration-1000 ease-out ${
                       index < activeTab ? "bg-[#1355FF]" : "bg-[#88C0FF]"
                     }`}
                   ></div>
@@ -75,7 +75,7 @@ const Services = () => {
 
                 {/* Circular Indicator */}
                 <div
-                  className={`w-[10px] h-[10px] rounded-full absolute left-[-34px] top-[48%] transform -translate-y-1/2 transition-colors duration-1000 ease-out ${
+                  className={`block lg:hidden 2xl:block  w-[10px] h-[10px] rounded-full absolute left-[-34px] top-[48%] transform -translate-y-1/2 transition-colors duration-1000 ease-out ${
                     index <= activeTab ? "bg-[#1355FF]" : "bg-[#88C0FF]"
                   }`}
                 ></div>
@@ -89,7 +89,7 @@ const Services = () => {
                 >
                   <Tab
                     onClick={() => setActiveTab(index)}
-                    className="w-full rounded-2xl flex items-center justify-start whitespace-nowrap px-5  min-h-[60px] leading-normal !bg-[#e6eeff] gap-4 !text-[20px] font-dmSans font-semibold text-[#1355FF] transition-all focus-visible:outline-none data-[selected]:!bg-white data-[selected]:text-[#1355FF] tracking-[-0.5px]"
+                    className="w-full rounded-2xl flex items-center justify-start  px-5  min-h-[60px] leading-normal !bg-[#e6eeff] gap-4 !text-[20px] font-dmSans font-semibold text-[#1355FF] transition-all focus-visible:outline-none data-[selected]:!bg-white data-[selected]:text-[#1355FF] tracking-[-0.5px]"
                   >
                     <Image src={item.icon} alt={item.label} className="w-6 h-6" />
                     <span>{item.label}</span>
@@ -98,41 +98,41 @@ const Services = () => {
               </div>                                                                        
             ))}
           </TabList>
-          <TabPanels className="grow py-8 w-[75%]">
+          <TabPanels className="grow  lg:py-8 2xl:w-[75%]">
             {tabs.map((item, index) => (
               <TabPanel key={index}>
-                <div className="flex items-center gap-[60px]">
+                <div className="flex flex-col lg:flex-row items-center gap-10 2xl:gap-[60px]">
                   <div>
                     <Image
                       src={FeaturesImg}
                       alt="HomeServicesBanner"
-                      className="min-w-[428px] h-[445px]"
+                      className=" min-w-0  sm:min-w-[428px] w-auto h-[445px]"
                     />
                   </div>
-                  <div className="grow">
+                  <div className="grow text-left sm:text-center lg:text-left">
                     <div className="mb-4">
-                      <h3 className="font-dmSans text-2xl !leading-8 font-semibold text-[#1355FF] tracking-[-0.5px]">
+                      <h3 className="font-dmSans text-xl  lg:text-[22px] lg:!leading-[30px]  2xl:text-2xl 2xl:!leading-8 font-semibold text-[#1355FF] tracking-[-0.5px]">
                         {item.label}
-                      </h3>
-                    </div>
-                    <h1 className="mb-6 font-dmSans text-[32px] !leading-10 font-bold text-[#171A1D] tracking-[-0.1px]">
+                      </h3>                    
+                    </div>                          
+                    <h1 className="mb-6 font-dmSans text-[28px] !leading-9 lg:text-[30px] lg:!leading-[30px] 2xl:text-[32px] 2xl:!leading-10 font-semibold text-[#171A1D] tracking-[-0.1px]">
                       {item.title}
                     </h1>
-                    <p className="font-dmSans font-normal  text-base text-[#45535E] ">
+                    <p className="font-dmSans font-normal text-base text-[#45535E] ">
                       {item.description}
                     </p>
-                    <div className="mt-10 inline-flex items-center gap-4">
+                    <div className="w-full mt-10 inline-flex sm:flex-row flex-col items-center justify-start sm:justify-center lg:justify-start gap-4">
                       <Button
                         icon={<Image src={right} alt="right" className="w-4 h-4" />}
                         variant="blue"
-                        style="!min-w-[243px]"
+                        style="!min-w-full sm:!min-w-[243px]"
                         name="Request Quote"
                         path="/Request-A-Quote"
                       />
 
                       <Button
                         variant="custom"
-                        style="!min-w-[162px]  !bg-[#EDF5FF]"
+                        style="!min-w-full sm:!min-w-[162px] !bg-[#EDF5FF]"
                         name="Learn More"
                         path={item.path}
                       />

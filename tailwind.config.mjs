@@ -13,6 +13,14 @@ export default {
   			urbanist: 'Urbanist',
         dmSans: 'DM Sans',
   		},
+      screens: {
+        xs: "480px",
+        sm: "640px",
+        md: "768px",
+        lg: "1040px",
+        xl: "1280px",
+        "2xl": "1440px",
+      },
   		
     },
   },

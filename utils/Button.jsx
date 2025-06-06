@@ -10,10 +10,10 @@ const Button = ({
   path,                                                                            
 }) => {
   const isBlueVariant = variant === "blue";
-  const buttonClasses = `cursor-pointer text-base font-semibold inline-flex justify-center items-center font-dmSans capitalize py-2 px-2 h-16 ${style} 
+  const buttonClasses = `  cursor-pointer text-base font-semibold inline-flex justify-center items-center font-dmSans capitalize py-2 px-2 h-14 xs:h-16 ${style} 
     ${
       isBlueVariant
-        ? "bg-[#1355FF] hover:bg-[#222A5B] transition-all duration-300  ease-in-out relative  overflow-hidden  px-1 py-8 text-lg  leading-4 font-bold text-white  group transform rounded-[2px]"
+        ? "bg-[#1355FF] hover:bg-[#222A5B] transition-all duration-300  ease-in-out relative  overflow-hidden  py-2 px-2 h-14 xs:h-16  leading-4 font-bold text-white  group transform rounded-[2px]"
         : "bg-white border border-[#98A2B3] text-[#1D2939] "
     }
   `;
