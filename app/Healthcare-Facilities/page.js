@@ -255,7 +255,7 @@ const HospitalSecurity = () => {
 
       <div className="mx-4 sm:mx-6 xl:mx-10 2xl:container 2xl:mx-auto mb-10 2xl:mb-20 bg-[#F0F6FF] rounded-[40px] px-4 pt-10 pb-[122px] sm:px-6 xl:px-8 2xl:p-20">
         <Heading
-          className="!mb-6 !mt-0 !text-[#222A5B] !text-center !tracking-[-3px]"
+          className="!mb-6 !mt-0 !text-[#222A5B] !text-center !tracking-[-2px]"
           title="Seamless Security For Safe And Efficient Healthcare Operations"
         />
         <p className="text-center font-dmSans text-lg 2xl:text-xl 2xl:!leading-8 text-[#333333] font-normal max-w-[1126px] mx-auto">
@@ -357,7 +357,7 @@ const HospitalSecurity = () => {
 
       <div className="mx-4 sm:mx-6 xl:mx-10 2xl:container 2xl:mx-auto mt-10 2xl:mt-20  px-4 py-10 sm:px-6 xl:px-8 2xl:p-20 ">
         <Heading
-          className="!mb-6 !mt-0 !text-[#222A5B] !text-center !tracking-[-3px]"
+          className="!mb-6 !mt-0 !text-[#222A5B] !text-center !tracking-[-2px]"
           title="Ensuring Hospital Security With Trained And Reliable Security Personnel"
         />
         <p className="font-dmSans text-lg  xl:text-xl xl:!leading-8 text-[#333333] font-normal !text-center max-w-[1126px] mx-auto">
@@ -376,7 +376,7 @@ const HospitalSecurity = () => {
 
       <div className="mx-4 sm:mx-6 xl:mx-10 2xl:container 2xl:mx-auto my-10 2xl:my-20 bg-[#EBFFF1]/30 rounded-[40px] px-4 py-10 sm:px-6 xl:px-8 2xl:p-20">
         <Heading
-          className="!mb-6 !mt-0 !text-[#222A5B] !text-center !tracking-[-3px] max-w-[1152px] mx-auto"
+          className="!mb-6 !mt-0 !text-[#222A5B] !text-center !tracking-[-2px] max-w-[1152px] mx-auto"
           title="Guarding Hospitals With Proactive Security Solutions For Optimal Protection"
         />
         <p className="font-dmSans text-lg  xl:text-xl xl:!leading-8  text-[#333333] font-normal text-center max-w-[1126px] mx-auto">
