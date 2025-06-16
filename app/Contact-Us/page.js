@@ -109,7 +109,7 @@ const Contact = () => {
     name: "",
     userMessage: "",
   });
-                                                                                            
+
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     if (name in freeQuote) {
@@ -123,7 +123,8 @@ const Contact = () => {
   const SecurityTrustData = {
     title: (
       <>
-        Plaza Protection : <br className="hidden sm:block" /> Trusted Security Guard Company
+        Plaza Protection : <br className="hidden sm:block" /> Trusted Security
+        Guard Company
       </>
     ),
     btnText: "Request A Quote",
@@ -144,7 +145,7 @@ const Contact = () => {
           most.
         </p>
       </div>
-                                                                                                
+
       <div className="hidden xs:flex items-center justify-center mx-4 sm:mx-6 xl:max-w-[1200px] xl:mx-auto  mb-10 2xl:mb-20">
         <Image
           src={ContactBannerA}
@@ -161,8 +162,8 @@ const Contact = () => {
         />
       </div>
 
-      <div className="mx-0 sm:mx-6  xl:mx-10 2xl:container 2xl:mx-auto mb-10 2xl:mb-20 py-10 px-4 sm:px-6 xl:px-10 2xl:p-20 rounded-[40px] grid grid-cols-12 items-center gap-8 xl:gap-10 2xl:gap-20 bg-[#EDF5FF]">
-        <div className="col-span-12 xl:col-span-6">
+      <div className="mx-0 sm:mx-6  xl:mx-10 2xl:container 2xl:mx-auto mb-10 2xl:mb-20 py-10 px-4 sm:px-6 xl:px-10 2xl:p-20 rounded-[40px] flex flex-col xl:flex-row items-center gap-8 xl:gap-10 2xl:gap-20 bg-[#EDF5FF]">
+        <div className="w-full xl:w-[calc(50%-20px)] 2xl:w-[calc(50%-40px)]">
           <Tag title={"Quick View CONTACT Us"} />
           <Heading
             className={"!mt-4"}
@@ -184,7 +185,7 @@ const Contact = () => {
                   item.border ? "border-b border-[#1355FF]/10" : ""
                 }`}
               >
-                <div className="w-[50px] h-50px inline-flex items-center justify-center">
+                <div className=" min-w-[50px] h-50px inline-flex items-center justify-center">
                   <Image
                     src={item.icon}
                     width={32}
@@ -204,7 +205,7 @@ const Contact = () => {
             ))}
           </div>
         </div>
-        <div className="col-span-12 xl:col-span-6 p-4 md:p-6 2xl:p-8 rounded-2xl  md:rounded-3xl bg-[#F0F4FF] shadow-[0_5px_15px_0_rgba(19,85,255,0.2)]">
+        <div className="w-full xl:w-[calc(50%-20px)] 2xl:w-[calc(50%-40px)] p-4 md:p-6 2xl:p-8 rounded-2xl  md:rounded-3xl bg-[#F0F4FF] shadow-[0_5px_15px_0_rgba(19,85,255,0.2)]">
           <h2 className="mb-6 font-dmSans text-[32px] !leading-10 font-semibold text-[#222A5B]">
             Get Free Quote
           </h2>
