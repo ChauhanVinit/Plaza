@@ -21,7 +21,7 @@ import CustomizedPlans from "../../public/ConstructionSites/Tailored-security-pl
 
 
 const heroData = {
-  title: "Reliable Fire Watch Services in South Bay Area",
+  title: <>Reliable Fire Watch Services<br className="hidden lg:block" /> in South Bay Area</>,
   desc: "Plaza Protection offers expert fire watch security, ensuring continuous monitoring and rapid response during fire system failures to keep properties and occupants safe.",
   img: GuardImage,
 };

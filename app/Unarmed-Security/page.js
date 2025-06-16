@@ -19,7 +19,6 @@ import BenefitsIMG from "../../public/Services/Benefits-image-01.png";
 import RealTimeSecurity from "../../public/Residential/Security-24.svg";
 import InstantAlerts from "../../public/Residential/Instant-Threat-Alerts.svg";
 
-
 const heroData = {
   title: `Round-The-Clock Unarmed Security For Protection And Peace Of Mind`,
   desc: "Providing 24/7 unarmed security services, our guards ensure safety with a constant, reassuring presence. More than just patrols, we foster peace of mind for businesses and communities alike.",
@@ -31,7 +30,6 @@ const coreFeaturesData = {
   img: CoreFeature,
 };
 
-
 const KeyFeaturesData = {
   title: "Unarmed Security Guard Services For Protection And Surveillance",
   desc: "Unarmed security guard services provide vital protection through professional presence, conflict resolution, and vigilant surveillance. These guards are trained to de-escalate situations, manage access control, and monitor premises for suspicious activity.",
@@ -40,33 +38,29 @@ const KeyFeaturesData = {
 const HighlightsData = {
   title: "Seamless Oversight Through Our Enhanced Guard Management System",
   desc: "Our cutting edge security guard management system puts you in control of every aspect of your security. You’ll have real-time access to schedules, detailed reports, and GPS tracking of guards, ensuring transparency and oversight.",
-  image:BenefitsIMG,
+  image: BenefitsIMG,
 };
 
 const accordionItems = [
   {
     icon: collectionIcon,
     title: "24/7 Unarmed Security",
-    description:
-      "Constant and dependable protection.",
+    description: "Constant and dependable protection.",
   },
   {
     icon: collectionIcon,
     title: "Advanced Technology",
-    description:
-      "Enhancing security effectiveness.",
+    description: "Enhancing security effectiveness.",
   },
   {
     icon: collectionIcon,
     title: "Rapid Threat Response",
-    description:
-      "Immediate action against potential risks.",
+    description: "Immediate action against potential risks.",
   },
   {
     icon: collectionIcon,
     title: "Strong, Visible Presence",
-    description:
-      "Deterrence and peace of mind.",
+    description: "Deterrence and peace of mind.",
   },
 ];
 
@@ -122,21 +116,21 @@ const Highlight = [
       "Stay updated on constant, dependable protection at all times.",
   },
 ];
-           
+
 const UnarmedSecurity = () => {
   return (
-    <>              
+    <>
       <Header />
       <Hero {...heroData} />
       <IndustriesWeServe />
       <CoreFeatures data={accordionItems} {...coreFeaturesData} />
-     <KeyFeatures data={KeyFeature} {...KeyFeaturesData} />
+      <KeyFeatures data={KeyFeature} {...KeyFeaturesData} />
       <Highlights data={Highlight} {...HighlightsData} />
       <FAQ />
       <FreeQuote />
       <Footer />
-    </>                                                                 
-  );                                           
-};                                             
+    </>
+  );
+};
 
 export default UnarmedSecurity;

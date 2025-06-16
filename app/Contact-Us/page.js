@@ -15,7 +15,8 @@ import GoogleMapComponent from "../../utils/GoogleMapComponent";
 import Call from "../../public/Call.svg";
 import Mail from "../../public/Mail.svg";
 import Location from "../../public/Location.svg";
-import ContactBanner from "../../public/Contact-01.png";
+import ContactBannerA from "../../public/Contact-01.png";
+import ContactBannerB from "../../public/Contact-02.png";
 import SecurityTrustBanner from "@/components/SecurityTrustBanner";
 
 const Contact = () => {
@@ -108,7 +109,7 @@ const Contact = () => {
     name: "",
     userMessage: "",
   });
-
+                                                                                            
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     if (name in freeQuote) {
@@ -122,7 +123,7 @@ const Contact = () => {
   const SecurityTrustData = {
     title: (
       <>
-        Plaza Protection : <br /> Trusted Security Guard Company
+        Plaza Protection : <br className="hidden sm:block" /> Trusted Security Guard Company
       </>
     ),
     btnText: "Request A Quote",
@@ -131,11 +132,11 @@ const Contact = () => {
   return (
     <>
       <Header />
-      <div className="max-w-[1360px] mx-auto mt-[91px] mb-[70px] text-center">
-        <h1 className="font-dmSans text-[56px] !leading-[64px] font-semibold text-[#222A5B] tracking-[-1px] mb-8">
+      <div className="mx-4 sm:mx-6  xl:mx-10 2xl:max-w-[1360px] 2xl:mx-auto mt-10 2xl:mt-[91px] mb-8 2xl:mb-[70px] sm:text-center">
+        <h1 className="font-dmSans text-5xl !leading-[56px] xl:text-[52px] xl:!leading-[60px] 2xl:text-[56px]  2xl:!leading-[64px] font-semibold text-[#222A5B] tracking-[-3px] mb-8">
           Contact Us
         </h1>
-        <p className="font-dmSans text-xl !leading-8 font-normal text-[#45535E] max-w-[1326px] mx-auto ">
+        <p className="px-4 sm:px-0 rounded sm:rounded-none border-l-[3px] sm:border-0 border-[#B0BABF]  font-dmSans text-lg  2xl:text-xl 2xl:!leading-8 font-normal text-[#45535E] max-w-[1326px] mx-auto ">
           Whether you're looking for on-site security, patrol services, or
           advanced monitoring, our team is here to assist you. Reach out to us
           today to learn more about our services or request a quote now. We’re
@@ -143,17 +144,25 @@ const Contact = () => {
           most.
         </p>
       </div>
-
-      <div className="max-w-[1200px] mx-auto mb-20">
+                                                                                                
+      <div className="hidden xs:flex items-center justify-center mx-4 sm:mx-6 xl:max-w-[1200px] xl:mx-auto  mb-10 2xl:mb-20">
         <Image
-          src={ContactBanner}
+          src={ContactBannerA}
           alt="ContactBanner"
           className="object-cover rounded-[40px]"
         />
       </div>
 
-      <div className="max-w-[1440px] mx-auto mb-20 p-20 rounded-[40px] grid grid-cols-12 items-start gap-20 bg-[#EDF5FF]">
-        <div className="col-span-6">
+      <div className="xs:hidden flex items-center justify-start mx-4 sm:mx-6 xl:max-w-[1200px] xl:mx-auto  mb-10 2xl:mb-20">
+        <Image
+          src={ContactBannerB}
+          alt="ContactBanner"
+          className="object-cover rounded-[40px]"
+        />
+      </div>
+
+      <div className="mx-0 sm:mx-6  xl:mx-10 2xl:container 2xl:mx-auto mb-10 2xl:mb-20 py-10 px-4 sm:px-6 xl:px-10 2xl:p-20 rounded-[40px] grid grid-cols-12 items-center gap-8 xl:gap-10 2xl:gap-20 bg-[#EDF5FF]">
+        <div className="col-span-12 xl:col-span-6">
           <Tag title={"Quick View CONTACT Us"} />
           <Heading
             className={"!mt-4"}
@@ -161,7 +170,7 @@ const Contact = () => {
               "Contact Us Today to Discuss Your Security Needs and Ensure Your Peace of Mind"
             }
           />
-          <p className="mt-6 font-dmSans text-xl !leading-8 font-normal text-[#374049]">
+          <p className="mt-6 font-dmSans text-lg 2xl:text-xl 2xl:!leading-8 font-normal text-[#374049]">
             Whether you're looking for personal or business protection, we are
             here to provide reliable and professional services. Let us help you
             safeguard what matters most.
@@ -187,7 +196,7 @@ const Contact = () => {
                   <p className="font-dmSans text-base font-normal text-[#374049]">
                     {item.label}
                   </p>
-                  <h3 className="mt-2 font-dmSans text-lg font-semibold text-[#171A1D] tracking-[-0.5px]">
+                  <h3 className="mt-2 font-dmSans text-xl font-semibold text-[#171A1D] tracking-[-0.5px]">
                     {item.value}
                   </h3>
                 </div>
@@ -195,12 +204,12 @@ const Contact = () => {
             ))}
           </div>
         </div>
-        <div className="col-span-6 p-8 rounded-3xl bg-[#F0F4FF] shadow-[0_5px_15px_0_rgba(19,85,255,0.2)]">
+        <div className="col-span-12 xl:col-span-6 p-4 md:p-6 2xl:p-8 rounded-2xl  md:rounded-3xl bg-[#F0F4FF] shadow-[0_5px_15px_0_rgba(19,85,255,0.2)]">
           <h2 className="mb-6 font-dmSans text-[32px] !leading-10 font-semibold text-[#222A5B]">
             Get Free Quote
           </h2>
-          <div className="w-full flex gap-6 ">
-            <div className="w-1/2">
+          <div className="w-full flex flex-col md:flex-row gap-4 md:gap-6  ">
+            <div className="w-full  md:w-1/2">
               <Input
                 placeholder={"Your Name"}
                 onChange={handleInputChange}
@@ -209,7 +218,7 @@ const Contact = () => {
                 className={"!py-[15px] px-6 border-[#7198FE]/50"}
               />
             </div>
-            <div className="w-1/2">
+            <div className="w-full  md:w-1/2">
               <Input
                 placeholder={"Company Name"}
                 onChange={handleInputChange}
@@ -219,8 +228,8 @@ const Contact = () => {
               />
             </div>
           </div>
-          <div className="w-full flex gap-6 mt-4">
-            <div className=" w-1/2">
+          <div className="w-full flex flex-col md:flex-row gap-4 md:gap-6  mt-4">
+            <div className="w-full  md:w-1/2">
               <Input
                 placeholder={"Email"}
                 onChange={handleInputChange}
@@ -229,7 +238,7 @@ const Contact = () => {
                 className={"!py-[15px] px-6 border-[#7198FE]/50"}
               />
             </div>
-            <div className=" w-1/2">
+            <div className="w-full  md:w-1/2">
               <Input
                 placeholder={"Your Name"}
                 onChange={handleInputChange}
@@ -239,15 +248,15 @@ const Contact = () => {
               />
             </div>
           </div>
-          <div className="w-full flex gap-6 mt-4">
-            <div className="w-1/2">
+          <div className="w-full flex flex-col md:flex-row gap-4 md:gap-6  mt-4">
+            <div className="w-full  md:w-1/2">
               <Dropdown
                 options={ServicesOptions}
                 height="h-[55px]"
                 placeholder="Select Services"
               />
             </div>
-            <div className="w-1/2">
+            <div className="w-full  md:w-1/2">
               <Dropdown
                 options={facilityOptions}
                 height="h-[55px]"
@@ -255,15 +264,15 @@ const Contact = () => {
               />
             </div>
           </div>
-          <div className="w-full flex gap-6 mt-4">
-            <div className="w-1/2">
+          <div className="w-full flex flex-col md:flex-row gap-4 md:gap-6  mt-4">
+            <div className="w-full  md:w-1/2">
               <Dropdown
                 options={areaOptions}
                 height="h-[55px]"
                 placeholder="Select Area"
               />
             </div>
-            <div className="w-1/2">
+            <div className="w-full  md:w-1/2">
               <Dropdown
                 options={durationOptions}
                 height="h-[55px]"
@@ -279,18 +288,18 @@ const Contact = () => {
               className={"!py-[17px] border-[#7198FE]/50"}
             />
           </div>
-          <div className="mt-8">
+          <div className="mt-6 2xl:mt-8 ">
             <Button
               variant="blue"
               icon={<Image src={right} alt="right" className="w-4 h-4" />}
-              style={"!min-w-[175px]"}
+              style={"min-w-full sm:!min-w-[175px]"}
               name="Submit"
             />
           </div>
         </div>
       </div>
 
-      <div className="max-w-[1440px] mx-auto mb-20 rounded-[40px] overflow-hidden">
+      <div className="mx-4 sm:mx-6  xl:mx-10 2xl:container 2xl:mx-auto mb-10 2xl:mb-20 rounded-[40px] overflow-hidden">
         <GoogleMapComponent />
       </div>
       <SecurityTrustBanner {...SecurityTrustData} />

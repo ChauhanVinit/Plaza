@@ -37,7 +37,7 @@ const FAQ = () => {
   };
 
   return (
-    <div className="w-full max-w-[1440px] mx-auto mb-[68px] p-16 bg-[#F1F3F5]/50 rounded-[40px]">
+    <div className="mx-4 sm:mx-6 xl:mx-10 2xl:container 2xl:mx-auto mb-[68px] px-4 py-10 sm:px-6 xl:px-8 2xl:p-16 bg-[#F1F3F5]/50 rounded-[40px]">
       <div className="text-center max-w-[658px] mx-auto">
         <Tag title={"Find out quick answers "} />
         <Heading
@@ -56,7 +56,7 @@ const FAQ = () => {
             className="bg-white p-6 rounded-2xl shadow-[0px_2px_3px_0px_rgba(0,0,0,0.07)] cursor-pointer"
           >
             <div
-              className={`flex items-center justify-between ${
+              className={`flex items-start gap-4 justify-between ${
                 openIndex === index ? "pb-4" : "pb-0"
               }`}
             >
@@ -67,7 +67,7 @@ const FAQ = () => {
                 <Image
                   src={plus}
                   alt="Plus"
-                  className={`w-6 h-6 transition-all duration-200 cubic-bezier(0.4, 0, 0.68, 0.06) ${
+                  className={`min-w-6 h-6 transition-all duration-200 cubic-bezier(0.4, 0, 0.68, 0.06) ${
                     openIndex === index ? " rotate-45" : "rotate-0"
                   }`}
                 />
@@ -77,7 +77,7 @@ const FAQ = () => {
             <div
               className={`border-t border-[#B9CBF3]/50  transition-all duration-200 overflow-hidden cubic-bezier(0.4, 0, 0.68, 0.06) ${
                 openIndex === index
-                  ? "max-h-[90px] opacity-100 pt-4 "
+                  ? "max-h-[280px] opacity-100 pt-4 "
                   : "max-h-0 opacity-0 pt-0"
               }`}
             >

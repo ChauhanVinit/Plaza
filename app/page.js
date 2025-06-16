@@ -18,7 +18,8 @@ import KeyFeature from "../components/HomePage/KeyFeature";
 import Services from "../components/HomePage/Services";
 import Button from "../utils/Button";
 import right from "../public/right.svg";
-export default function Home() {
+import rightDark from "../public/right-dark.svg";
+export default function Home() {                   
   const excelData = [
     {
       icon: licenseThird,
@@ -98,6 +99,7 @@ export default function Home() {
 
               <Button
                 variant="custom"
+                 icon={<Image src={rightDark} alt="right" className="sm:hidden w-4 h-4" />}
                 style={"!min-w-full sm:!min-w-[158px] !bg-transparent"}
                 name="About Us"
                 path="/About-us"

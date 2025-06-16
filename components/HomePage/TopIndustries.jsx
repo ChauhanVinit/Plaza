@@ -13,7 +13,6 @@ const images = [
   { src: essex, alt: "Essex" },
   { src: carnegie, alt: "Carnegie" },
   { src: club, alt: "Club" },
-  { src: essex, alt: "Essexx" },
 ];
 
 const TopIndustries = () => {
@@ -21,7 +20,7 @@ const TopIndustries = () => {
   return (
     <div className="mx-0 sm:mx-6  xl:mx-10 2xl:container 2xl:mx-auto  px-4 py-8  sm:px-6  xl:px-8  2xl:py-20 2xl:px-[70px] grid grid-cols-12 items-center gap-2 2xl:gap-0">
       <div className="col-span-12 lg:col-span-4 mb-4 lg:mb-0">
-        <h3 className="font-dmSans text-[28px] sm:text-[32px] font-semibold leading-9 sm:!leading-10 text-[#171A1D] tracking-[-1px] max-w-[323px]">
+        <h3 className="font-dmSans text-[28px] lg:text-[32px] font-semibold leading-9 lg:!leading-10 text-[#171A1D] tracking-[-1px] max-w-[323px]">
           Trusted By San Jose’s Leading Industries
         </h3>
       </div>

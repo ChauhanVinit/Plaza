@@ -3,35 +3,38 @@ import Button from "../../utils/Button";
 import Image from "next/image";
 import Tag from "../../utils/Tag";
 import Heading from "../../utils/Heading";
+import rightDark from "../../public/right-dark.svg";
 const KeyFeatures = ({ data, title, desc }) => {
   return (
     <div
       id="key-features"
-      className="max-w-[1440px] mx-auto px-16 py-20 rounded-[40px] bg-[#E7E7FF]/20 mb-[68px]"
+      className="mx-4 sm:mx-6 xl:mx-10 2xl:container 2xl:mx-auto px-4 py-10 sm:px-6 xl:px-8 2xl:px-16 2xl:py-20 rounded-[40px] bg-[#E7E7FF]/20 mb-10
+     2xl:mb-[68px]"
     >
-      <div className="flex justify-between items-end">
+      <div className="flex flex-col xl:flex-row  xl:justify-between items-start xl:items-end gap-8 xl:gap-0">
         <div>
           <Tag title={"Key Features"} />
           <Heading title={title} className={"!mb-6 max-w-[1012px] !text-[#222A5B] tracking-[-2px]"} />
-          <p className="font-normal font-dmSans text-base text-[#374049] max-w-[915px]">
+          <p className="font-normal font-dmSans text-lg 2xl:text-xl  2xl:!leading-8 text-[#374049] max-w-full xl:max-w-[915px]">
             {desc}
           </p>
         </div>
-        <div>
+        <div className="w-full xl:w-auto">
           <Button
             variant="custom"
-            style={"!min-w-[162px] !bg-transparent"}
+              icon={<Image src={rightDark} alt="right" className="sm:hidden w-4 h-4" />}
+            style={"!min-w-full sm:!min-w-[162px] !bg-transparent"}
             name="Contact Us"
             path="/Contact-Us"
           />
         </div>
       </div>
 
-      <div className="grid grid-cols-12 gap-6 mt-[60px]">
+      <div className="grid grid-cols-12 gap-4 2xl:gap-6 mt-[60px]">
         {data.map((item, index) => (
           <div
             key={index}
-            className="col-span-3 p-4 rounded-2xl border border-[#FFF0E0] bg-white"
+            className="col-span-12 sm:col-span-6 xl:col-span-3 p-4 rounded-2xl border border-[#FFF0E0] bg-white"
           >
             <Image src={item.icon} alt={item.title} width={32} height={32} />
             <div className="mt-6">

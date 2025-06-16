@@ -36,7 +36,7 @@ const Footer = () => {
                 Call
               </h3>
               <p className="mt-[7px] font-urbanist text-lg !leading-[22px] font-semibold text-[#374049]">
-                1-844-55-557-5292
+                +1 844-557-5292
               </p>
             </div>
           </div>

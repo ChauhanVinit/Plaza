@@ -12,6 +12,7 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import useIsClient from "../../Hook/useClient";
 import Button from "../../utils/Button";
+import rightDark from "../../public/right-dark.svg";
 const AboutusData = [
   {
     image: Residential,
@@ -106,6 +107,7 @@ const AboutUs = () => {
                   <div>
                     <Button
                       variant="custom"
+                       icon={<Image src={rightDark} alt="right" className="sm:hidden w-4 h-4" />}
                       style={"!bg-transparent !min-w-full sm:!min-w-[158px]  !text-center"}
                       name={"Learn More"}
                       path={item.path}

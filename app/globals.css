@@ -62,3 +62,9 @@
 }
 
 
+.slider-prev{
+  @apply left-1/2 -translate-x-[calc(50%-106px)] -bottom-[82px] lg:-bottom-[90px] lg:right-0 lg:left-auto lg:translate-x-0 2xl:right-[284px] lg:-top-[110px]; 
+}
+.slider-next{
+   @apply left-1/2 -translate-x-[calc(50%+106px)] -bottom-[82px] lg:-bottom-[90px] lg:right-[66px] lg:left-auto lg:translate-x-0 2xl:right-[350px] lg:-top-[110px] rotate-180;
+}

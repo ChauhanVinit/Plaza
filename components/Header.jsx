@@ -149,7 +149,7 @@ const Header = ({ ContactUsBtn }) => {
 
   return (
     <div className="w-full sticky top-0 z-[999] bg-white">
-      <div className="2xl:max-w-[1440px] 2xl:mx-auto bg-white flex items-center p-4  2xl:px-[15px] 2xl:py-3 ">
+      <div className="2xl:max-w-[1440px] 2xl:mx-auto bg-z flex items-center p-4  2xl:px-[15px] 2xl:py-3 ">
         <div className="inline-flex items-center gap-[10px] py-3">
           <Image src={Logo} alt="Logo" className="w-auto h-12" />
         </div>
@@ -181,7 +181,7 @@ const Header = ({ ContactUsBtn }) => {
                   className="font-urbanist text-base leading-normal font-semibold 
             text-[#1D2939]"
                 >
-                  1-844-55-557-5292
+                  +1 844-557-5292
                 </p>
               </div>
             </div>

@@ -13,6 +13,7 @@ import Heading from "../../utils/Heading";
 import Button from "../../utils/Button";
 import right from "../../public/right.svg";
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from "@headlessui/react";
+import rightDark from "../../public/right-dark.svg";
 const Services = () => {
   const [activeTab, setActiveTab] = useState(0);
   console.log(activeTab);
@@ -132,6 +133,7 @@ const Services = () => {
 
                       <Button
                         variant="custom"
+                        icon={<Image src={rightDark} alt="right" className="sm:hidden w-4 h-4" />}
                         style="!min-w-full sm:!min-w-[162px] !bg-[#EDF5FF]"
                         name="Learn More"
                         path={item.path}

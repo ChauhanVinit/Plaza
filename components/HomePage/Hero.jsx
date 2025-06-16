@@ -3,7 +3,7 @@ import mapsLocation from "../../public/maps-location.svg";
 import Image from "next/image";
 import Button from "../../utils/Button";
 import right from "../../public/right.svg";
-
+import rightDark from "../../public/right-dark.svg";
 const Hero = () => {
   return (
     <div className="mx-4 sm:mx-6  xl:mx-10 2xl:container 2xl:mx-auto mt-8  lg:mt-[67px] mb-10 lg:mb-20 grid grid-cols-12">
@@ -15,7 +15,7 @@ const Hero = () => {
           </span>
         </div>
 
-        <h1 className="font-dmSans mt-4 mb-6  text-5xl leading-[56px] xs:text-[56px] xs:leading-[64px]  sm:text-6xl sm:leading-[68px] xl:text-[72px] xl:leading-[80px] font-bold tracking-[-1px] text-[#171A1D] lg:max-w-[711px]">
+        <h1 className="font-dmSans mt-4 mb-6 text-5xl  xs:text-[56px] xs:!leading-[64px]  sm:text-6xl sm:!leading-[68px] xl:text-[72px] xl:!leading-[80px] font-bold tracking-[-1px] text-[#171A1D] lg:max-w-[711px]">
           Hire <br className="xs:hidden" />  Professional Security Guard Services
         </h1>
         <p className="text-lg sm:text-xl sm:!leading-8 font-dmSans font-normal text-[#45535E] max-w-full lg:max-w-[589px]">
@@ -33,6 +33,7 @@ const Hero = () => {
 
           <Button
             variant="custom"
+             icon={<Image src={rightDark} alt="right" className="sm:hidden w-4 h-4" />}
             style={"!min-w-full sm:!min-w-[162px]"}
             name="Contact Us"
             path="/Contact-Us"
@@ -46,7 +47,7 @@ const Hero = () => {
           <source type="video/mp4" src="/PPS-Hero-Banner.mp4" />
         </video>
       </div>
-    </div>
+    </div>                                   
   );
 };
 

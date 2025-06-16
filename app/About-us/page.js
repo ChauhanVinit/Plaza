@@ -14,7 +14,8 @@ import IncidentReporting from "../../public/AboutUs/Incident-Reporting.svg";
 import TopIndustries from "../../components/HomePage/TopIndustries";
 import OurServices from "../../components/HomePage/OurServices";
 import SecurityTrustBanner from "@/components/SecurityTrustBanner";
-
+import right from "../../public/right.svg";
+import rightDark from "../../public/right-dark.svg";
 const coreValues = [
   {
     icon: Ourmission,
@@ -59,7 +60,7 @@ const ourTechnologies = [
   const SecurityTrustData = {
     title: (
       <>
-        Plaza Protection : <br /> Trusted Security Guard Company
+        Plaza Protection : <br className="hidden sm:block" /> Trusted Security Guard Company
       </>
     ),
     btnText: "Request A Quote",
@@ -69,13 +70,13 @@ const AboutUs = () => {
   return (
     <>
       <Header />
-      <div className="max-w-[1360px] mx-auto mt-[100px] mb-40">
-        <div className="text-center">
-          <h1 className="font-dmSans text-[56px] !leading-[64px] font-semibold text-[#222A5B] mb-8 tracking-[-1px] max-w-[1162px] mx-auto">
+      <div className="mx-4 sm:mx-6  xl:mx-10 2xl:max-w-[1360px] 2xl:mx-auto  my-10 xl:mt-[60px] xl:mb-20 2xl:mt-[100px] 2xl:mb-40">
+        <div className="sm:text-center">
+          <h1 className="font-dmSans text-5xl !leading-[56px] xl:text-[52px] xl:!leading-[60px] 2xl:text-[56px]  2xl:!leading-[64px] font-semibold text-[#222A5B] mb-8 tracking-[-4px] xs:tracking-[-3px] max-w-[1162px] mx-auto">
             Welcome To Plaza Protection – Your Trusted Security Partner In The
             San Jose Bay Area
           </h1>
-          <p className="font-dmSans text-lg !leading-[30px] font-normal text-[#6B7280] max-w-[1050px] mx-auto">
+          <p className="px-4 sm:px-0 rounded sm:rounded-none border-l-[3px] sm:border-0 border-[#B0BABF]  font-dmSans text-lg  2xl:text-xl 2xl:!leading-8 font-normal text-[#45535E] max-w-[1162px] mx-auto">
             At Plaza Protection, we specialize in delivering top-tier security
             guard services designed to safeguard people, property, and
             businesses throughout the San Jose Bay Area. With years of expertise
@@ -84,16 +85,18 @@ const AboutUs = () => {
             unique needs of our clients.
           </p>
         </div>
-        <div className="w-full mt-14  inline-flex justify-center items-center  gap-4">
+        <div className="w-full mt-12 sm:mt-14  inline-flex flex-col sm:flex-row justify-center items-center  gap-4">
           <Button
             variant="blue"
-            style={"!min-w-[243px]"}
+             icon={<Image src={right} alt="right" className="w-4 h-4" />}
+            style={"min-w-full sm:!min-w-[243px]"}
             name="Request Quote"
           />
 
           <Button
             variant="custom"
-            style={"!min-w-[162px]"}
+            icon={<Image src={rightDark} alt="right" className="sm:hidden w-4 h-4" />}
+            style={"min-w-full sm:!min-w-[162px]"}
             name="Contact Us"
             path="/Contact-Us"
           />
@@ -102,23 +105,23 @@ const AboutUs = () => {
       <TopIndustries />
       <OurServices />
 
-      <div className="max-w-[1440px] mx-auto mb-20 p-20 rounded-[40px] bg-[#EDF5FF]">
-        <Tag title={"Quick view about us"} />
+      <div className="mx-4 sm:mx-6  xl:mx-10 2xl:container 2xl:mx-auto mb-10 2xl:mb-20 px-4 sm:px-6  py-10 xl:px-10 2xl:p-20 rounded-[40px] bg-[#EDF5FF]">
+        <Tag title={"Quick view about us"}  />
         <Heading
           className={"!mt-4 !text-[#222A5B]"}
           title={"Our core values"}
         />
 
-        <div className="grid grid-cols-12 gap-6 mt-10">
+        <div className="flex flex-col lg:flex-row gap-8 lg:gap-4 xl:gap-6 mt-8 lg:mt-10">
           {coreValues.map((item, index) => (
-            <div key={index} className="col-span-6 p-4">
+            <div key={index} className="w-full lg:w-1/2 p-0 lg:p-4">
               <Image
                 src={item.icon}
                 alt={item.title}
-                className="object-cover"
+                className="w-auto"
               />
               <div className="mt-8">
-                <h3 className="font-dmSans text-[#171A1D] font-semibold text-[32px] !leading-10 tracking-[-1px]">
+                <h3 className="font-dmSans text-[#171A1D] font-semibold text-[28px] lg:text-[32px] leading-9 lg:!leading-10 tracking-[-1px]">
                   {item.title}
                 </h3>
                 <p className="mt-4 font-dmSans font-normal text-base  text-[#374049]">
@@ -133,8 +136,8 @@ const AboutUs = () => {
         </div>
       </div>
 
-      <div className="max-w-[1440px] mx-auto mb-20 p-20 rounded-[40px] bg-[#F0F6FF] grid grid-cols-12 gap-20">
-        <div className="col-span-6">
+      <div className="mx-4 sm:mx-6  xl:mx-10 2xl:container 2xl:mx-auto mb-10 2xl:mb-20 px-4 sm:px-6  py-10 xl:px-10 2xl:p-20 rounded-[40px] bg-[#F0F6FF] flex flex-col lg:flex-row gap-8  xl:gap-10 2xl:gap-20">
+        <div className="w-full lg:w-1/2">
           <Tag title={"our technologies"} />
           <Heading
             className={"!mt-4 !text-[#222A5B]"}
@@ -156,7 +159,7 @@ const AboutUs = () => {
             {ourTechnologies.map((item, index) => (
               <div
                 key={index}
-                className="py-4 flex items-center gap-6 border-b border-[#1355FF]/10"
+                className="py-4 flex items-center gap-6 border-b border-[#1355FF]/10 last:border-none"
               >
                 <div className="w-[50px] h-50px inline-flex items-center justify-center">
                   <Image
@@ -178,8 +181,8 @@ const AboutUs = () => {
             ))}
           </div>
         </div>
-        <div className="col-span-6">
-          <Image src={streethouse} alt="streethouse" className="object-cover" />
+        <div className="w-full lg:w-1/2">
+          <Image src={streethouse} alt="streethouse" className="w-full h-full max-w-[600px] lg:max-w-full" />
         </div>
       </div>
 

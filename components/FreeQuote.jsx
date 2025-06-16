@@ -9,6 +9,7 @@ import Textarea from "../utils/Textarea";
 import { nanoid } from "nanoid";
 import Dropdown from "../utils/Dropdown";
 import Button from "../utils/Button";
+import right from "../public/right.svg";
 const FreeQuote = () => {
   const ServicesOptions = [
     {
@@ -121,6 +122,7 @@ const FreeQuote = () => {
           <div className="mt-10">
             <Button
               variant="custom"
+              icon={<Image src={right} alt="right" className="sm:hidden w-4 h-4" />}
               path={"Contact-Us"}
               style={
                 "!min-w-full sm:!min-w-[190px]  !text-white !bg-transparent "
@@ -139,7 +141,7 @@ const FreeQuote = () => {
             className="p-4 md:p-6 2xl:p-8 rounded-2xl md:rounded-[40px] border-[3px] border-[#FFFFFF] 
           bg-[linear-gradient(180deg,_#EBF0FF_23%,_#7198FE_100%)] shadow-[0px_4px_4px_0px_rgba(19,85,255,0.15)] backdrop-blur-[192px]"
           >
-            <h2 className="mb-6 font-dmSans text-[32px] !leading-10 font-semibold text-[#171A1D] tracking-[-1px] capitalize">
+            <h2 className="mb-6 font-dmSans text-[28px] !leading-9  md:text-[32px] md:!leading-10 font-semibold text-[#171A1D] tracking-[-1px] capitalize">
               Get free quote
             </h2>
             <div className="w-full flex flex-col md:flex-row gap-4 ">
@@ -213,6 +215,7 @@ const FreeQuote = () => {
 
             <div className="mt-6 2xl:mt-8">
               <Button
+               icon={<Image src={right} alt="right" className="sm:hidden w-4 h-4" />}
                 variant="blue"
                 style={"!w-full"}
                 name="submit free quote"

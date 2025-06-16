@@ -19,7 +19,7 @@ import ComprehensiveArea from "../../public/Services/Comprehensive-area-coverage
 import Realtime from "../../public/Services/Real-time-communication.svg";
 import VisibleDitterence from "../../public/Services/Visible-Ditterence.svg";
 const heroData = {
-  title: "CCTV Installation Services for Reliable Property Surveillance",
+  title: <>CCTV Installation Services<br className="hidden 2xl:block" /> for Reliable Property<br className="hidden 2xl:block" />  Surveillance</>,
   desc: "Secure your home or business with professional CCTV installation services by Plaza Protection. Get reliable, 24/7 surveillance and real-time monitoring tailored to your property.",
   img: GuardImage,
 };
