@@ -14,6 +14,7 @@ export default {
         dmSans: 'DM Sans',
   		},
       screens: {
+        xxs: '390px',
         xs: "480px",
         sm: "640px",
         md: "790px",

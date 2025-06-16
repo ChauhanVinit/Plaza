@@ -50,11 +50,11 @@ const Hero = ({ title, desc, img }) => {
             />
           </div>
 
-          <div className="inline-flex items-center px-3 sm:px-4 border border-[#E9E9E9] rounded-full gap-2 mt-12 min-h-[62px]">
+          <div className="inline-flex items-center px-2 xxs:px-3 sm:px-4 border border-[#E9E9E9] rounded-full gap-2 mt-12 min-h-[62px]">
             {scrollIntoData.map((item) => (
               <button
                 key={item.id}
-                className="relative   px-2  sm:px-[14px] font-dmSans font-semibold text-sm  sm:text-base text-[#666666] tracking-[-0.5px] after:absolute after:h-5 after:w-[1px] after:bg-[#D7D7D7] after:-right-[3px] after:top-0 after:last:hidden"
+                className="relative px-2  sm:px-[14px] font-dmSans font-semibold text-xs xxs:text-sm  sm:text-base text-[#666666] tracking-[-0.5px] after:absolute after:h-5 after:w-[1px] after:bg-[#D7D7D7] after:-right-[3.5px]  after:top-0 after:last:hidden"
                 onClick={() => handleScrollToSection(item.id)}
               >
                 {item.title}

@@ -26,7 +26,7 @@ export default function Home() {
       title: "Over 10 Years Of Industry Experience",
       description:
         "Bringing a decade of expertise to ensure top-notch security solutions.",
-    },
+    },            
     {
       icon: aiSecurity,
       title: "Licensed And Highly Trained Security Professionals",
@@ -67,23 +67,30 @@ export default function Home() {
               {excelData.map((item, index) => (
                 <div
                   key={index}
-                  className="py-4 flex items-center gap-4 border-b border-[#1355FF]/10 last:border-none"
+                  className="py-4  border-b border-[#1355FF]/10 last:border-none"
                 >
-                  <div className=" inline-flex items-center justify-center min-w-[58px] h-[58px] rounded-[83px] bg-[#EDF5FF]">
+                   <div className="flex items-start sm:items-center gap-4">
+                     <div className="inline-flex items-center justify-center min-w-12 xs:min-w-[58px] h-12 xs:h-[58px] rounded-[83px] bg-[#EDF5FF]">
                     <Image
                       src={item.icon}
                       alt={item.icon}
                       className="w-8 h-8"
                     />
-                  </div>
-                  <div>
+                  </div>                      
+                  <div>                                             
                     <h3 className="font-dmSans text-base  lg:text-lg  2xl:text-xl !leading-6  font-semibold text-[#171A1D] tracking-[-0.5px]">
                       {item.title}
                     </h3>
-                    <p className="mt-2 font-dmSans font-normal text-[15px] lg:text-base leading-5 text-[#45535E] ">
+                    <p className="hidden xs:block mt-2 font-dmSans font-normal text-[15px] lg:text-base leading-5 text-[#45535E] ">
                       {item.description}
                     </p>
                   </div>
+                   </div>
+                   <div className="xs:hidden">
+                      <p className="mt-2 font-dmSans font-normal text-[15px] lg:text-base leading-5 text-[#45535E] ">
+                      {item.description}
+                    </p>
+                   </div>
                 </div>
               ))}
             </div>

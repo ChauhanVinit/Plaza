@@ -137,14 +137,14 @@ const Footer = () => {
         </div>
 
         <div className="pt-6 flex flex-col sm:flex-row gap-4  items-center justify-between">
-          <p className="font-urbanist font-semibold text-sm leading-5 text-[#344054]">
+          <p className="font-urbanist font-semibold text-xs xxs:text-sm xxs:leading-5 text-[#344054]">
             {data.bottomSection.copyRight}
           </p>
           <div className=" inline-flex items-center gap-8">
             {data.bottomSection.links.map((link, index) => (
               <div
                 key={index}
-                className={`font-urbanist font-semibold text-sm leading-5 text-[#344054] relative ${
+                className={`font-urbanist font-semibold text-xs xxs:text-sm xxs:leading-5 text-[#344054] relative ${
                   index > 0
                     ? "before:absolute before:top-2 before:-left-4 before:w-1 before:h-1 before:rounded-[100px] before:bg-[#344054]"
                     : ""
