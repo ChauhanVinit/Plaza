@@ -197,7 +197,7 @@ const Contact = () => {
                   <p className="font-dmSans text-base font-normal text-[#374049]">
                     {item.label}
                   </p>
-                  <h3 className="mt-2 font-dmSans text-xl font-semibold text-[#171A1D] tracking-[-0.5px] break-words">
+                  <h3 className="mt-2 font-dmSans text-xl font-semibold text-[#171A1D] tracking-[-0.5px] break-all">
                     {item.value}
                   </h3>
                 </div>
