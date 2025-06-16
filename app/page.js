@@ -69,7 +69,7 @@ export default function Home() {
                   key={index}
                   className="py-4 flex items-center gap-4 border-b border-[#1355FF]/10 last:border-none"
                 >
-                  <div className=" inline-flex items-center justify-center w-[58px] h-[58px] rounded-[83px] bg-[#EDF5FF]">
+                  <div className=" inline-flex items-center justify-center min-w-[58px] h-[58px] rounded-[83px] bg-[#EDF5FF]">
                     <Image
                       src={item.icon}
                       alt={item.icon}
