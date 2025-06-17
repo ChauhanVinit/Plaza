@@ -100,7 +100,7 @@ export const footerContentData = {
     },
   ],
   bottomSection: {
-    copyRight: "All Right Reserved by PlazaProtection Copyright ©2024",
+    copyRight: "All Right Reserved by PlazaProtection Copyright ©2025",
     links: ["Terms", "Privacy", "Security"],
   },
 };
