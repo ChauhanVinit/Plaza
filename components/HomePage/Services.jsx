@@ -4,6 +4,7 @@ import UnarmedSecurity from "../../public/UnarmedSecurity.svg";
 import fire from "../../public/fire.svg";
 import tvSmart from "../../public/tv-smart.svg";
 import car from "../../public/car-03.svg";
+import cctvcamera from "../../public/cctv-camera.svg";
 import Image from "next/image";
 // import validation from "../../public/validation.svg";
 // import HomeServicesBanner from "../../public/HomeServicesBanner.png";
@@ -51,6 +52,14 @@ const Services = () => {
         "Our vehicle patrol services offer a visible and active security presence, ensuring extensive coverage and rapid response.",
       path: "/Vehicle-patrol",
     },
+     {
+      label: "CCTV Installation",
+      icon: cctvcamera,
+      title: "Mobile Security with Vehicle Patrol Services",
+      description:
+        "Our vehicle patrol services offer a visible and active security presence, ensuring extensive coverage and rapid response.",
+      path: "/CCTV-Installation",
+    },
   ];
 
   return (
@@ -61,14 +70,14 @@ const Services = () => {
         title="Explore Our Range Of Security Solutions"
       />
       <div className="mt-[60px] !text-left">
-        <TabGroup className="flex items-center flex-col 2xl:flex-row  gap-8 2x:gap-20 ">
-          <TabList className="flex  flex-col lg:flex-row justify-center 2xl:flex-col gap-4 2xl:gap-[22px] pl-[34px] lg:pl-0  2xl:pl-[34px]  min-w-max sm:min-w-[291px] lg:min-w-full 2xl:min-w-[291px]">
+        <TabGroup className="flex items-center flex-col 2xl:flex-row  gap-8 2xl:gap-20 ">
+          <TabList className="flex  flex-col  justify-center   pl-[34px]  min-w-max sm:min-w-[291px]">
             {tabs.map((item, index) => (
-              <div key={index} className="relative flex items-center">
+              <div key={index} className="relative flex items-center mb-[22px] last:!mb-0">
                 {/* Connector Line - Only show if not the last tab */}
                 {index !== tabs.length - 1 && (
                   <div
-                    className={`block lg:hidden 2xl:block absolute -left-[30px] top-[33px] w-[2px] h-[80px] transition-colors duration-1000 ease-out ${
+                    className={` absolute -left-[30px] top-[33px] w-[2px] h-[80px] transition-colors duration-1000 ease-out ${
                       index < activeTab ? "bg-[#1355FF]" : "bg-[#88C0FF]"
                     }`}
                   ></div>
@@ -76,7 +85,7 @@ const Services = () => {
 
                 {/* Circular Indicator */}
                 <div
-                  className={`block lg:hidden 2xl:block  w-[10px] h-[10px] rounded-full absolute left-[-34px] top-[48%] transform -translate-y-1/2 transition-colors duration-1000 ease-out ${
+                  className={` w-[10px] h-[10px] rounded-full absolute left-[-34px] top-[48%] transform -translate-y-1/2 transition-colors duration-1000 ease-out ${
                     index <= activeTab ? "bg-[#1355FF]" : "bg-[#88C0FF]"
                   }`}
                 ></div>
@@ -93,7 +102,7 @@ const Services = () => {
                     className="w-full rounded-2xl flex items-center justify-start  px-5  min-h-[60px] leading-normal !bg-[#e6eeff] gap-4 !text-[20px] font-dmSans font-semibold text-[#1355FF] transition-all focus-visible:outline-none data-[selected]:!bg-white data-[selected]:text-[#1355FF] tracking-[-0.5px]"
                   >
                     <Image src={item.icon} alt={item.label} className="w-6 h-6" />
-                    <span>{item.label}</span>
+                    <span >{item.label}</span>
                   </Tab>
                 </div>
               </div>                                                                        

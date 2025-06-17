@@ -2,25 +2,26 @@
 import Image from "next/image";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
-
 import carnegie from "../../public/carnegie.svg";
 import club from "../../public/club.svg";
 import essex from "../../public/essex.svg";
 import walmart from "../../public/walmart.svg";
+import WillisCompany from "../../public/Willis-Company.svg";
 import useIsClient from "../../Hook/useClient";
 const images = [
   { src: walmart, alt: "Walmart" },
-  { src: essex, alt: "Essex" },
   { src: carnegie, alt: "Carnegie" },
+  { src: essex, alt: "Essex" },
   { src: club, alt: "Club" },
+  { src: WillisCompany, alt: "Willis Company" },
 ];
 
 const TopIndustries = () => {
   const isClient = useIsClient();
   return (
-    <div className="mx-0 sm:mx-6  xl:mx-10 2xl:container 2xl:mx-auto  px-4 py-8  sm:px-6  xl:px-8  2xl:py-20 2xl:px-[70px] grid grid-cols-12 items-center gap-2 2xl:gap-0">
-      <div className="col-span-12 lg:col-span-4 mb-4 lg:mb-0">
-        <h3 className="font-dmSans text-[28px] lg:text-[32px] font-semibold leading-9 lg:!leading-10 text-[#171A1D] tracking-[-1px] max-w-[323px]">
+    <div className="mx-0 sm:mx-6  xl:mx-10 2xl:container 2xl:mx-auto  px-4 py-8  sm:px-6  xl:px-8  2xl:py-20 2xl:px-[70px] grid grid-cols-12 items-center gap-4 2xl:gap-0">
+      <div className="col-span-12 lg:col-span-4">
+        <h3 className="font-dmSans text-[28px] 2xl:text-[32px] font-semibold leading-9 2xl:!leading-10 text-[#171A1D] tracking-[-1px] max-w-[323px]">
           Trusted By San Jose’s Leading Industries
         </h3>
       </div>
@@ -33,14 +34,13 @@ const TopIndustries = () => {
               type: "loop",
               perMove: 1,
               rewind: true,
-              perPage: 4,
+              perPage: 5,
               autoplay: true,
               arrows: false,
               interval: 2000,
               pagination: false,
-              gap: "48px",
+              gap: "32px",
               breakpoints: {
-                1440: { gap: "32px" }, 
                 1024: { gap: "24px", perPage: 3 },
                 640: { gap: "16px", perPage: 2 },
               },

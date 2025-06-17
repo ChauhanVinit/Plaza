@@ -51,7 +51,7 @@ const Hero = () => {
         <div className="hidden 2xl:block absolute -right-[63px] max-w-[687px] bottom-0   ml-auto w-full min-h-[120px] bg-[linear-gradient(90deg,_rgba(255,255,255,0)_0%,_rgba(228,239,255,0.42)_50%,_rgba(228,239,255,1)_100%)] "></div>
       </div>
       <div className="col-span-12 lg:col-span-6 mt-10 lg:mt-0">
-        <video autoPlay playsInline muted loop className=" w-full h-full">
+        <video autoPlay playsInline muted loop className="w-full h-full max-w-[720px]">
           <source type="video/mp4" src="/PPS-Hero-Banner.mp4" />
         </video>
       </div>

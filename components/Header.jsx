@@ -4,12 +4,17 @@ import Image from "next/image";
 import Logo from "../public/pps-logo.png";
 import callRinging from "../public/call-ringing.svg";
 import login from "../public/login.svg";
-import vehiclePatrol from "../public/vehicle-patrol.png";
 import down from "../public/down.svg";
 import menu from "../public/menu.svg";
 import close from "../public/Close.svg";
 import Link from "next/link";
 import Button from "../utils/Button";
+import UnarmedSecurity from "../public/UnarmedSecurity.svg";
+import RemoteGuarding from "../public/fire.svg";
+import tvSmart from "../public/tv-smart.svg";
+import car from "../public/car-03.svg";
+import fire from "../public/Services/Fire-risk.svg";
+
 const Header = ({ ContactUsBtn }) => {
   const tobarData = [
     {
@@ -19,31 +24,36 @@ const Header = ({ ContactUsBtn }) => {
         {
           id: "unarmedSecurity",
           name: "Unarmed Security",
-          icon: vehiclePatrol,
+          desc:"Plaza Protection provides top-tier security services across the ",
+          icon: UnarmedSecurity,
           path: "/Unarmed-Security",
         },
         {
           id: "fire-Watch",
           name: "Fire Watch",
-          icon: vehiclePatrol,
+          desc:"Plaza Protection provides top-tier security services across the ",
+          icon: fire,
           path: "/Fire-Watch",
         },
         {
           id: "RemoteGuarding",
           name: "Remote Guarding Service",
-          icon: vehiclePatrol,
+          desc:"Plaza Protection provides top-tier security services across the ",
+          icon: tvSmart,
           path: "/Remote-Guarding-Service",
         },
         {
           id: "Vehiclepatrol",
           name: "Vehicle patrol",
-          icon: vehiclePatrol,
+          desc:"Plaza Protection provides top-tier security services across the ",
+          icon: car,
           path: "/Vehicle-patrol",
         },
         {
           id: "CCTV-Installation",
           name: "CCTV Installation",
-          icon: vehiclePatrol,
+          desc:"Plaza Protection provides top-tier security services across the ",
+          icon: RemoteGuarding,
           path: "/CCTV-Installation",
         },
       ],
@@ -80,10 +90,29 @@ const Header = ({ ContactUsBtn }) => {
       ],
     },
 
-    { id: 3, name: "Contact Us", path: "/Contact-Us", subnavs: [] },
-    { id: 4, name: "About Us", path: "/About-us", subnavs: [] },
-    { id: 5, name: "Blog", path: "/Blog", subnavs: [] },
-  ];
+    {
+      id: 3,
+      name: "Resources",
+      subnavs: [
+        {
+          id: "blog",
+          name: "Blog",
+          path: "/Blog",
+        },
+        {
+          id: "aboutUs",
+          name: "About Us",
+          path: "/About-us",
+        },
+        {
+          id: "help-center",
+          name: "Help Center",
+          path: "/Help-Center",
+        },
+      ],
+    },
+    { id: 4, name: "Contact Us", path: "/Contact-Us", subnavs: [] },
+  ];                                                                                                        
 
   const [openSubnav, setOpenSubnav] = useState(null);
 
@@ -142,7 +171,7 @@ const Header = ({ ContactUsBtn }) => {
               </Link>
             ))}
           </div>
-        )}
+        )}                         
       </div>
     );
   };
