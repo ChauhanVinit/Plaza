@@ -7,29 +7,34 @@ import youtube from "../public/youtube.svg";
 export const footerContentData = {
   description:
     "Plaza Protection delivers top-tier protection across the San Jose Bay Area with personalized onsite services that put your safety front and center.",
-  socialMedia: [
-    {
-      icon: facebook,
-      alt: "facebook",
-      path: "https://www.facebook.com/plazaprotection",
-    },
-    {
-      icon: youtube,
-      alt: "youtube",
-      path: "https://www.youtube.com/channel/UCnQsLIB-ebKJ_J6oW78GDRA",
-    },
-    { icon: X, alt: "twitter", path: "https://x.com/plazaprotection?mx=2" },
-    {
-      icon: linkedin,
-      alt: "linkedin",
-      path: "https://www.linkedin.com/company/plaza-protection",
-    },
-    {
-      icon: instagram,
-      alt: "instagram",
-      path: "https://www.instagram.com/plazaprotection/",
-    },
-  ],
+socialMedia: [
+  {
+    icon: facebook,
+    alt: "Facebook icon - Plaza Protection",
+    path: "https://www.facebook.com/plazaprotection",
+  },
+  {
+    icon: youtube,
+    alt: "YouTube icon - Plaza Protection channel",
+    path: "https://www.youtube.com/channel/UCnQsLIB-ebKJ_J6oW78GDRA",
+  },
+  {
+    icon: X,
+    alt: "X (formerly Twitter) icon - Plaza Protection",
+    path: "https://x.com/plazaprotection?mx=2",
+  },
+  {
+    icon: linkedin,
+    alt: "LinkedIn icon - Plaza Protection profile",
+    path: "https://www.linkedin.com/company/plaza-protection",
+  },
+  {
+    icon: instagram,
+    alt: "Instagram icon - Plaza Protection",
+    path: "https://www.instagram.com/plazaprotection/",
+  },
+],
+
   sections: [
     {
       title: "Services",

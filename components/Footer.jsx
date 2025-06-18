@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import Logo from "../public/pps-logo.png";
+import Logo from "../public/pps-logo.svg";
 import { footerContentData as data } from "../data/FooterContent";
 import callRinging from "../public/call-ringing.svg";
 import estimate from "../public/estimate-02.svg";
@@ -29,7 +29,7 @@ const Footer = () => {
 
           <div className="w-full md:w-1/3 flex md:flex-col lg:flex-row items-start lg:items-center gap-4 justify-start  md:justify-center ">
             <div className="min-w-11 h-11 inline-flex items-center justify-center bg-[#D7E8FF] rounded-full">
-              <Image src={callRinging} alt={callRinging} className=" w-5 h-5" />
+              <Image src={callRinging} alt="Call icon" className=" w-5 h-5" />
             </div>
             <div>
               <h3 className="font-urbanist text-base !leading-5 font-bold text-[#1355FF] ">
@@ -42,7 +42,7 @@ const Footer = () => {
           </div>
           <div className="w-full md:w-1/3 flex md:flex-col lg:flex-row items-start lg:items-center gap-4 justify-start lg:justify-end ">
             <div className="min-w-11 h-11 inline-flex items-center justify-center bg-[#D7E8FF] rounded-full">
-              <Image src={estimate} alt={estimate} className=" w-5 h-5" />
+              <Image src={estimate} alt="Email icon" className=" w-5 h-5" />
             </div>
             <div>
               <h3 className="font-urbanist text-base !leading-5 font-bold text-[#1355FF]">
@@ -55,7 +55,7 @@ const Footer = () => {
           </div>
           <div className="flex md:flex-col lg:flex-row lg:hidden w-full md:w-1/3  items-start lg:items-center gap-4 justify-start lg:justify-end ">
             <div className="min-w-11 h-11 inline-flex items-center justify-center bg-[#D7E8FF] rounded-full">
-              <Image src={location} alt={location} className=" w-5 h-5" />
+              <Image src={location} alt={'Map pin location icon'} className=" w-5 h-5" />
             </div>
             <div>
               <h3 className="font-urbanist text-base !leading-5 font-bold text-[#1355FF]">
@@ -73,7 +73,7 @@ const Footer = () => {
             <div className=" hidden lg:block w-1/3">
               <div className="flex gap-4 justify-start items-start ">
                 <div className="min-w-11 h-11 inline-flex items-center justify-center bg-[#D7E8FF] rounded-full">
-                  <Image src={location} alt={location} className="w-5 h-5" />
+                  <Image src={location} alt={'Map pin location icon'} className="w-5 h-5" />
                 </div>
                 <div>
                   <h3 className="font-urbanist text-base !leading-5 font-bold text-[#1355FF]">
