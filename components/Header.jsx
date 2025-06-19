@@ -191,7 +191,7 @@ const Header = ({ ContactUsBtn }) => {
           <Image src={Logo} alt="Logo" className="w-auto h-10" />
         </div>
         <div
-          className={`bg-white p-4 xl:px-[15px] xl:py-0  absolute top-[calc(100%+0px)]  left-0  w-full h-screen xl:h-auto  xl:relative grow flex flex-col items-start xl:flex-row xl:items-center  smooth shadow-md  xl:shadow-none ${
+          className={`bg-white p-4 xl:px-[15px] xl:py-0  absolute top-[calc(100%+0px)]  left-0  w-full h-[90vh] xl:h-auto  xl:relative grow flex flex-col items-start xl:flex-row xl:items-center  smooth shadow-md  xl:shadow-none ${
             menuOpen ? "scale-100" : "xl:scale-100 scale-0 z-40"
           } `}
         >
@@ -369,11 +369,11 @@ const Header = ({ ContactUsBtn }) => {
             )}
           </div>
           <div
-            className={` fixed bottom-0 xl:relative left-0 z-[1000] flex flex-col xl:flex-row items-start xl:items-center  ${
+            className={`mt-4 w-full xl:w-auto flex justify-between  items-center  ${
               ContactUsBtn ? "gap-10" : " gap-4 xl:gap-3"
             } `}
           >
-            <div className="mt-4 xl:mt-0 flex items-center px-0 xl:px-1 gap-3">
+            <div className="mt-0 flex items-center px-0 xl:px-1 gap-3">
               <button className="h-10 w-10 bg-[#D7E8FF]/50 inline-flex items-center justify-center">
                 <Image
                   src={callRinging}
@@ -401,7 +401,7 @@ const Header = ({ ContactUsBtn }) => {
                 <Link
                   href={"/Request-A-Quote"}
                   // target="_blank"
-                  className="hidden xl:inline-flex px-5 py-1  items-center gap-3 "
+                  className="inline-flex xl:px-5 xl:py-1  items-center gap-3 "
                 >
                   <div className="w-10 h-10 inline-flex items-center justify-center bg-[#1355FF]">
                     <Image src={login} alt="login" width={20} height={20} />
