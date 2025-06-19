@@ -369,7 +369,7 @@ const Header = ({ ContactUsBtn }) => {
             )}
           </div>
           <div
-            className={`mt-4 w-full xl:w-auto flex justify-between  items-center  ${
+            className={`mt-4 2xl:mt-0 w-full xl:w-auto flex justify-between  items-center  ${
               ContactUsBtn ? "gap-10" : " gap-4 xl:gap-3"
             } `}
           >
