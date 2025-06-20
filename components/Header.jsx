@@ -225,9 +225,7 @@ const Header = ({ ContactUsBtn }) => {
                       src={openSubnav === nav.id ? downBlue : down}
                       alt="down"
                       className={`ml-auto xl:ml-0 relative top-[2px] w-4 h-4 ${
-                        openSubnav === nav.id
-                          ? "rotate-180"
-                          : "rotate-0"
+                        openSubnav === nav.id ? "rotate-180" : "rotate-0"
                       }`}
                     />
                   </button>
@@ -369,9 +367,9 @@ const Header = ({ ContactUsBtn }) => {
             )}
           </div>
           <div
-            className={`mt-4 2xl:mt-0 w-full xl:w-auto flex justify-between  items-center  ${
-              ContactUsBtn ? "gap-10" : " gap-4 xl:gap-3"
-            } `}
+            className={`mt-4 2xl:mt-0 w-full xl:w-auto flex justify-between items-center ${
+              ContactUsBtn ? "gap-10" : "gap-4 xl:gap-3"
+            } xl:static absolute bottom-6 left-0 px-4`}
           >
             <div className="mt-0 flex items-center px-0 xl:px-1 gap-3">
               <button className="h-10 w-10 bg-[#D7E8FF]/50 inline-flex items-center justify-center">
