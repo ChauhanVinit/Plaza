@@ -237,8 +237,9 @@ const Header = ({ ContactUsBtn }) => {
                         <h3 className="font-dmSans text-sm !leading-6 tracking-[1px] text-[#666666] font-bold uppercase">
                           {nav.name}
                         </h3>
-                        <button className="xl:hidden text-xs !leading-6 tracking-[1px] text-[#3355FF] font-bold ">Back</button>
-
+                        <button onClick={() => setOpenSubnav(null)} className="xl:hidden text-xs !leading-6 tracking-[1px] text-[#3355FF] font-bold ">
+                          Back
+                        </button>
                       </div>
 
                       {nav.name !== "Resources" ? (
@@ -287,7 +288,7 @@ const Header = ({ ContactUsBtn }) => {
                                 <Image
                                   src={SubNavSmallBg}
                                   alt="SubNavBg"
-                                  className="xl:hidden absolute bottom-0 right-0 z-10 group-hover:scale-105 transition-transform duration-300 ease-in-out"
+                                  className="xl:hidden absolute bottom-0 right-0 z-10"
                                 />
                               </Link>
                             ))}
