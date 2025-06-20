@@ -15,7 +15,7 @@ const clientTestimonials = [
   {
     id: 1,
     clientImage: clientA,
-    clientText: `Plaza Protection has offered valued security patrol services to our customers by making sure that their professional team is on the ground when a situation arises. They are quick to respond to all alerts and handle the matter in a professional manner, we would highly recommend their security patrol services to any organization that wants to work with a professional security guard company.`,
+    clientText: `Plaza Protection has offered valued security patrol services to our customers by making sure that their professional team is on the ground when a situation arises. They are quick to respond to all alerts and handle the matter in a professional manner, we would highly recommend their security patrol services to any organization that wants to work with a professional security guard company. `,
     clientName: "Andre Walington",
     clientRole: "Carnegie Foundation",
   },
@@ -23,30 +23,16 @@ const clientTestimonials = [
   {
     id: 2,
     clientImage: clientB,
-    clientText: `Plaza Protection Has Consistently Delivered Excellent
-      Security Services. Their Team's Quick Response To 
-      Emergencies And Proactive Approach Has Ensured A Safe
-      Environment For Our Organization.`,
-      clientName: "Sophia Martinez",
-      clientRole: "GreenTech Innovations",
+    clientText: `I would like to thank Plaza Protection for providing excellent security guard services to our company. They made sure that our apartments were safe and secure for our residents. The guards are always professional and do an excellent job of meeting our expectations. I would highly recommend Plaza Protection to any company that is looking to hire a professional security patrol company. `,
+      clientName: "Nick L.",
+      clientRole: "Folsom Residential ",
   },
   {
     id: 3,
     clientImage: clientC,
-    clientText: `Working With Plaza Protection Has Been Seamless.
-      Their Professionalism And Dedication Are Unmatched. 
-      Highly Recommend Their Services To Any Organization.`,
-      clientName: "Daniel Thompson",
-      clientRole: "Horizon Capital",
-  },
-  {
-    id: 4,
-    clientImage: clientD,
-    clientText: `Exceptional Service And Support! Plaza Protection 
-      Goes Above And Beyond To Meet Our Security Needs. 
-      Truly A Reliable Security Partner.`,
-      clientName: "Emily Robertson",
-      clientRole: "Summit Enterprises",
+    clientText: `Plaza Protection has been providing excellent security patrol services to our residential community in the Bay Area. From the very beginning, they understood our needs and worked with our staff to address security concerns. Plaza Protection security guards are professional and well-trained. I always recommend Plaza Protection to anyone looking for extra protection for their community. `,
+      clientName: "Steven H.",
+      clientRole: "Country Club Villa",
   },
 ];
 

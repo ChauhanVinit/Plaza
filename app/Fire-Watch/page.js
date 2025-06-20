@@ -39,6 +39,10 @@ const HighlightsData = {
   desc: "With our expert fire watch service, we provide constant monitoring to detect potential fire hazards, ensuring rapid response and immediate alerts.",
   image:BenefitsIMG,
 };
+ 
+const IndustriesWeServeData = {
+  desc: "Whether it’s construction sites, manufacturing facilities, or residential high-rises, our fire watch services provide reliable, around-the-clock monitoring where fire risk is elevated and system failures can’t be ignored. Our trained professionals ensure compliance, mitigate hazards, and maintain constant vigilance — delivering scalable safety solutions that keep your operations running securely, across every industry we serve.",
+};
 
 const accordionItems = [
   {
@@ -115,17 +119,39 @@ const Highlight = [
       "Early identification of fire hazards to prevent escalation.",
   },
 ];
-
+const faqs = [
+  {
+    question: "What is a fire watch service?",
+    answer:
+      "Fire watch services involve trained personnel who monitor a property or facility for signs of fire hazards, especially when fire alarm systems, sprinklers, or water suppression systems are offline or malfunctioning. Fire watch guards patrol the premises regularly, maintain detailed logs, and are prepared to contact emergency services if needed.",
+  },
+  {
+    question: "What's the difference between Fire Watch and Regular Security?",
+    answer:
+      "Unlike general security guards, fire watch personnel are trained specifically for fire hazard monitoring and emergency response. They don’t just protect property from theft—they ensure life safety and code compliance. They know how to identify fire risks, use extinguishers, activate alarms, and assist during evacuations. ",
+  },
+  {
+    question: "What happens if a guard identifies a fire hazard?",
+    answer:
+      "If a fire hazard is discovered, the guard documents it immediately, alerts on-site personnel if needed, and contacts emergency services when appropriate. Guards are trained to take quick, decisive action to prevent escalation and minimize damage.",
+  },
+  {
+    question:
+      "Do you provide 24/7 fire watch coverage?",
+    answer:
+      "Yes. We provide fire watch services around the clock—including nights, weekends, and holidays—to ensure your site is never left unprotected. Our guards rotate shifts to maintain alertness and coverage at all times.",
+  },
+];
 const FireWatch = () => {
   return (
     <>
       <Header />
       <Hero {...heroData} />
-       <IndustriesWeServe />
+       <IndustriesWeServe {...IndustriesWeServeData} />
       <CoreFeatures data={accordionItems} {...coreFeaturesData} />
       <KeyFeatures data={KeyFeature} {...KeyFeaturesData} />
       <Highlights data={Highlight} {...HighlightsData} />
-      <FAQ />
+      <FAQ  data={faqs}/>
       <FreeQuote />
       <Footer />
     </>

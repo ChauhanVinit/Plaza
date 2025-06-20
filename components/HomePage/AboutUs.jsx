@@ -25,7 +25,7 @@ const AboutusData = [
     image: Commercial,
     title: "Commercial Buildings",
     description:
-      "Plaza Protection’s security experts are skilled in addressing the unique challenges of commercial properties, safeguarding your business against.",
+      "Plaza Protection’s security experts are skilled in addressing the unique challenges of commercial properties, safeguarding your business against break-ins, theft, and vandalism.",
     path: "/Commercial-Buildings",
   },
   {
@@ -39,14 +39,14 @@ const AboutusData = [
     image: ShoppingCenter,
     title: "Shopping Center",
     description:
-      "Plaza Protection security guards ensure the safety of shopping centers by preventing theft, monitoring visitor activity, and maintaining a secure environment for shoppers, staff, and businesses.",
+      "Plaza Protection’s security guards offer customized protection for shopping centers, creating a safe and welcoming environment for both shoppers and retailers.",
     path: "/Shopping-Centers",
   },
   {
     image: Healthcare,
     title: "Healthcare Facilities",
     description:
-      "Plaza Protection security guards safeguard healthcare facilities by preventing unauthorized access, monitoring activity, and maintaining a safe and secure environment for patients, staff, and visitors.",
+      "Plaza Protection’s security guards are expertly trained to meet the specific safety needs of healthcare environments, ensuring a secure space for patients, staff, and visitors.",
     path: "/Healthcare-Facilities",
   },
 ];

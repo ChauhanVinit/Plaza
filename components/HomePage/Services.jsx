@@ -31,17 +31,17 @@ const Services = () => {
     {
       label: "Fire Watch",
       icon: fire,
-      title: "Prevent Fire Hazards with Expert Monitoring",
+      title: "Preventing Fire Hazards And Safeguarding Your Property",
       description:
-        "Our fire watch services ensure compliance and safety during high-risk situations. Stay protected with our dedicated fire watch personnel.",
+        "Your ultimate defense against fire risks, our certified fire watch guards not only provide 24/7 surveillance but also ensure all fire detection systems are functioning properly. By adhering to strict safety protocols, we protect your property around the clock, helping you avoid costly fines, downtime, and potential disasters. ",
       path: "/Fire-Watch",
     },
     {
       label: "Remote Monitoring",
       icon: tvSmart,
-      title: "24/7 Surveillance with Advanced Technology",
+      title: " Expert Remote Guarding Facilities For Advanced Surveillance",
       description:
-        "Our remote monitoring solutions provide constant vigilance. We utilize cutting-edge technology to secure your premises at all times.",
+        "Step into the future of security with our revolutionary remote guarding solution. Merging state-of-the-art technology with specialized human expertise. Our virtual guards excel in CCTV surveillance, providing round-the-clock monitoring, lightning-fast response, and unparalleled peace of mind for our clients. ",
       path: "/Remote-Guarding-Service",
     },
     {

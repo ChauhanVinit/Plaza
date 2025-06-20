@@ -40,6 +40,9 @@ const HighlightsData = {
   desc: "Smart video analytics continuously monitors your property, detecting potential threats in real time. With instant alerts and rapid response capabilities, it ensures proactive security and immediate action to protect what matters most.",
   image:BenefitsIMG,
 };
+const IndustriesWeServeData = {
+  desc: "In today’s fast-paced world, effective security requires agility and precision. Our remote guarding services combine cutting-edge technology with vigilant monitoring teams to deliver continuous protection without the need for an on-site presence. Designed to adapt across industries, we provide scalable security solutions that enhance visibility, deter risks, and ensure rapid response—helping you safeguard your assets efficiently and confidently.",
+};
 const accordionItems = [
   {
     icon: collectionIcon,
@@ -114,17 +117,40 @@ const Highlight = [
     description:
       "Preventative measures to safeguard your property.",
   },
-];                                                
+];  
+const faqs = [
+  {
+    question: "What Are the Benefits of Remote Guarding vs. Security Guards?",
+    answer:
+      "While on-site security officers offer a physical presence, remote video surveillance provides broader, real-time coverage with fewer limitations. Though not a direct replacement, remote guarding can monitor virtually any location, often addressing risks and blind spots that on-site guards might miss.",
+  },
+  {
+    question: "How Do Remote Guarding Services Work?",
+    answer:
+      "Remote guarding uses advanced cameras, sensors, and technology to monitor a property from a centralized location. Trained security professionals respond in real time to any threats, assess situations quickly, communicate with on-site personnel if needed, and take immediate action—enhancing or replacing traditional on-site security.",
+  },
+  {
+    question: "What types of properties can benefit from remote guarding?",
+    answer:
+      "Remote guarding is ideal for almost every property type, especially commercial buildings, warehouses, construction sites, gated communities, parking lots, retail stores, and more.",
+  },
+  {
+    question: "Are the recordings encrypted and secure?",
+    answer:
+      "Yes. All video data is encrypted during storage and transmission to prevent unauthorized access or tampering. ",
+  },
+  
+];                                              
 const RemoteGuarding = () => {
   return (
     <>
       <Header />
       <Hero {...heroData} />
-       <IndustriesWeServe />
+       <IndustriesWeServe {...IndustriesWeServeData} />
       <CoreFeatures data={accordionItems} {...coreFeaturesData} />
         <KeyFeatures data={KeyFeature} {...KeyFeaturesData} />
       <Highlights data={Highlight} {...HighlightsData} />
-      <FAQ />
+      <FAQ data={faqs} />
       <FreeQuote />
       <Footer />
     </>

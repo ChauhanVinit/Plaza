@@ -55,6 +55,10 @@ socialMedia: [
           label: "Vehicle Patrol",
           path: "/Vehicle-patrol",
         },
+        {
+          label: "CCTV Installation",
+          path: "/CCTV-Installation",
+        },
       ],
     },
     {

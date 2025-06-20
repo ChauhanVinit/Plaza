@@ -41,6 +41,9 @@ const HighlightsData = {
   image: BenefitsIMG,
 };
 
+const IndustriesWeServeData = {
+  desc: "From retail and healthcare to logistics and corporate offices, our unarmed security services are designed to adapt to the unique demands of every environment. With a focus on visibility, professionalism, and proactive response, we deliver scalable protection that evolves with your industry — ensuring safety without compromise.",
+};
 const accordionItems = [
   {
     icon: collectionIcon,
@@ -117,16 +120,40 @@ const Highlight = [
   },
 ];
 
+const faqs = [
+  {
+    question: "Are unarmed security guards effective without weapons?",
+    answer:
+      "Yes, unarmed guards are effective in many environments such as offices, retail stores, residential communities, schools, and healthcare facilities. Their presence alone can deter criminal behavior, and their training in surveillance and conflict resolution ensures safety without the use of force.",
+  },
+  {
+    question: "How do unarmed guards differ from armed guards?",
+    answer:
+      "The main difference between unarmed and armed guards is the presence of a firearm. Unarmed guards rely on surveillance, communication, and customer service skills to maintain order and safety. Armed guards, on the other hand, are typically deployed in higher-risk areas and require additional training and licensing. Many businesses prefer unarmed guards for environments where a non-threatening, approachable presence is more appropriate.",
+  },
+  {
+    question: "How do unarmed security guards handle emergencies or threats?",
+    answer:
+      "Unarmed guards are trained in emergency response and de-escalation techniques. In serious situations, they follow protocol by securing the area, alerting authorities, and documenting incidents for further investigation.",
+  },
+  {
+    question:
+      "Are unarmed guards trained to work with local law enforcement?",
+    answer:
+      "Yes. Unarmed guards are trained to coordinate with police, fire departments, and emergency medical services when necessary. They know how to report incidents accurately and assist first responders when they arrive on-site, ensuring a smooth handover in emergencies.",
+  },
+];
+
 const UnarmedSecurity = () => {
   return (
     <>
       <Header />
       <Hero {...heroData} />
-      <IndustriesWeServe />
+      <IndustriesWeServe {...IndustriesWeServeData} />
       <CoreFeatures data={accordionItems} {...coreFeaturesData} />
       <KeyFeatures data={KeyFeature} {...KeyFeaturesData} />
       <Highlights data={Highlight} {...HighlightsData} />
-      <FAQ />
+      <FAQ data={faqs} />
       <FreeQuote />
       <Footer />
     </>

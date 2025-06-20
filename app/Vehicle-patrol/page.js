@@ -40,6 +40,9 @@ const HighlightsData = {
   desc: "Our vehicle patrol service combines proactive surveillance with quick response times, ensuring your property is continuously monitored.",
   image:BenefitsIMG
 };
+const IndustriesWeServeData = {
+  desc: "Our vehicle patrol services deliver a visible and mobile security presence tailored to your site’s specific needs. Covering large areas efficiently, our trained patrol officers conduct regular inspections, deter potential threats, and respond quickly to incidents. Designed to adapt across industries, our patrols provide flexible, scalable security solutions that enhance safety and protect your assets around the clock.",
+};
 const accordionItems = [
   {
     icon: collectionIcon,
@@ -116,16 +119,40 @@ const Highlight = [
       "Visible patrols that prevent potential threats.",
   },
 ];
+
+const faqs = [
+  {
+    question: "What are vehicle patrol services?",
+    answer:
+      " Vehicle patrol services involve mobile security officers who monitor and inspect your property using marked security vehicles at scheduled or random times, ensuring high visibility and deterrence.",
+  },
+  {
+    question: " How are vehicle patrols different from on-site guards?",
+    answer:
+      " Unlike static guards who remain in one location, vehicle patrols cover larger areas quickly, making them ideal for properties like parking lots, business parks, gated communities, and construction sites.",
+  },
+  {
+    question: "What types of properties benefit from vehicle patrols?",
+    answer:
+      "Vehicle patrols are ideal for commercial complexes, residential neighborhoods, industrial zones, retail centers, and campuses—anywhere that needs flexible, wide-area coverage.",
+  },
+  {
+    question:
+      "Are vehicle patrols available 24/7?",
+    answer:
+      "Yes. We offer round-the-clock patrols depending on your security needs, including holidays and weekends.",
+  },
+];
 const Vehiclepatrol = () => {
   return (
     <>
       <Header />
       <Hero {...heroData} />
-      <IndustriesWeServe />
+      <IndustriesWeServe {...IndustriesWeServeData} />
       <CoreFeatures data={accordionItems} {...coreFeaturesData} />
       <KeyFeatures data={KeyFeature} {...KeyFeaturesData} />
       <Highlights data={Highlight} {...HighlightsData} />
-      <FAQ />
+      <FAQ data={faqs} />
       <FreeQuote />
       <Footer />
     </>

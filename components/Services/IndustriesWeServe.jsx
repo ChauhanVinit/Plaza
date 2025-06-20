@@ -11,7 +11,7 @@ import Image from "next/image";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import rightDark from "../../public/right-dark.svg";
 import "@splidejs/react-splide/css";
-const IndustriesWeServe = () => {
+const IndustriesWeServe = ({desc}) => {
   const cardItems = [
     {
       src: ResidentialCommunities,
@@ -44,10 +44,7 @@ const IndustriesWeServe = () => {
             className={"!mb-6 !text-[#222A5B]"}
           />
           <p className="font-dmSans font-normal text-xl !leading-8 text-[#333333] max-w-full xl:max-w-[915px]">
-            Unarmed security guard services provide vital protection through
-            professional presence, conflict resolution, and vigilant
-            surveillance. These guards are trained to de-escalate situations,
-            manage access control.
+           {desc}
           </p>
         </div>
         <div className="w-full xl:w-auto">

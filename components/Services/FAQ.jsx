@@ -5,31 +5,8 @@ import Heading from "../../utils/Heading";
 import { useState } from "react";
 import plus from "../../public/Services/plus.svg";
 
-const faqs = [
-  {
-    question: "What are the responsibilities of unarmed security guards?",
-    answer:
-      "While unarmed security guards may not carry weapons, they typically receive training in self-defense techniques. This training equips them with skills to handle physical altercations and defend themselves or others if necessary, using non-lethal means such as hand-to-hand combat, restraining techniques, or the use of defensive tools like pepper spray.",
-  },
-  {
-    question: "Are unarmed security guards trained in self-defense?",
-    answer:
-      "While unarmed security guards may not carry weapons, they typically receive training in self-defense techniques. This training equips them with skills to handle physical altercations and defend themselves or others if necessary, using non-lethal means such as hand-to-hand combat, restraining techniques, or the use of defensive tools like pepper spray.",
-  },
-  {
-    question: "Do unarmed security guards have legal authority?",
-    answer:
-      "While unarmed security guards may not carry weapons, they typically receive training in self-defense techniques. This training equips them with skills to handle physical altercations and defend themselves or others if necessary, using non-lethal means such as hand-to-hand combat, restraining techniques, or the use of defensive tools like pepper spray.",
-  },
-  {
-    question:
-      "What are the qualifications required to become an unarmed security guard?",
-    answer:
-      "While unarmed security guards may not carry weapons, they typically receive training in self-defense techniques. This training equips them with skills to handle physical altercations and defend themselves or others if necessary, using non-lethal means such as hand-to-hand combat, restraining techniques, or the use of defensive tools like pepper spray.",
-  },
-];
 
-const FAQ = () => {
+const FAQ = ({data}) => {
   const [openIndex, setOpenIndex] = useState(null);
 
   const toggle = (index) => {
@@ -49,7 +26,7 @@ const FAQ = () => {
       </div>
 
       <div className="mt-[60px] flex flex-col gap-4">
-        {faqs.map((item, index) => (
+        {data.map((item, index) => (
           <div
             key={index}
             onClick={() => toggle(index)}

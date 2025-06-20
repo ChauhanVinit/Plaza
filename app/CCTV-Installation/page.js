@@ -39,6 +39,9 @@ const HighlightsData = {
   desc: "At Plaza Protection, we’re dedicated to enhancing your security with intelligent, cutting-edge CCTV solutions. Whether you're upgrading your current system or starting fresh, our tailored approach ensures maximum protection and peace of mind.",
   image: BenefitsIMG,
 };
+const IndustriesWeServeData = {
+  desc: "Our CCTV installation services provide comprehensive surveillance solutions designed to enhance security and monitor critical areas effectively. Using the latest technology, we tailor systems to fit your facility’s unique requirements, ensuring clear visibility, reliable recording, and seamless integration with your existing security infrastructure. From small businesses to large industrial sites, our scalable installations help you deter risks, respond proactively, and maintain peace of mind around the clock.",
+};
 const accordionItems = [
   {
     icon: collectionIcon,
@@ -111,16 +114,39 @@ const Highlight = [
     description: "Visible surveillance ensures security and peace of mind for everyone.",
   },
 ];
+const faqs = [
+  {
+    question: "Can I monitor my CCTV system remotely?",
+    answer:
+      " Yes. Our CCTV installations include remote access features, allowing you to view live footage and recordings from your phone, tablet, or computer anytime, anywhere.",
+  },
+  {
+    question: "Do you provide both indoor and outdoor cameras?",
+    answer:
+      " Absolutely. We install weatherproof outdoor cameras and discreet indoor units, all designed to provide maximum coverage and clarity.",
+  },
+  {
+    question: "Are the cameras high-definition?",
+    answer:
+      "Yes. We offer HD and 4K resolution cameras to ensure sharp, clear images that make identification easy even in low-light conditions.",
+  },
+  {
+    question:
+      "Can the system be integrated with other security tools?",
+    answer:
+      "Definitely. Our CCTV systems can integrate with alarms, access control, and remote monitoring for a comprehensive security solution.",
+  },
+];
 const CCTVInstallation = () => {
   return (
     <>
       <Header />
       <Hero {...heroData} />
-      <IndustriesWeServe />
+      <IndustriesWeServe {...IndustriesWeServeData} />
       <CoreFeatures data={accordionItems} {...coreFeaturesData} />
       <KeyFeatures data={KeyFeature} {...KeyFeaturesData} />
       <Highlights data={Highlight} {...HighlightsData} />
-      <FAQ />
+      <FAQ data={faqs} />
       <FreeQuote />
       <Footer />
     </>

@@ -195,10 +195,10 @@ const ShoppingCenter = () => {
           </div>
         </div>
         <div className="flex items-start mt-[74px] gap-[52px] ">
-          <div className="grow flex flex-col md:flex-row items-start md:items-center gap-5 p-6 lg:p-[35px] rounded-3xl bg-[#FFB82E]/5">
+          <div className="grow flex flex-col md:flex-row items-start  gap-5 p-6 lg:p-[35px] rounded-3xl bg-[#FFB82E]/5">
             <div className="flex items-end gap-[14px]">
               <div className="min-w-[206px]">
-                <div className="flex items-end justify-between">
+                <div className="flex items-start justify-between">
                   <Image
                     src={person}
                     alt="person"
@@ -211,7 +211,7 @@ const ShoppingCenter = () => {
                   />
                 </div>
                 <h3 className="mt-1 text-base font-dmSans font-semibold text-[#171A1D]">
-                  Bradley Lawlor
+                  Mark T.
                 </h3>
                 <p className="text-sm font-dmSans font-normal text-[#6B7280]">
                   Manager
@@ -227,10 +227,9 @@ const ShoppingCenter = () => {
             </div>
 
             <div>
-              <p className="font-dmSans text-xl font-semibold text-[#45535E] tracking-[-0.5px] xl:max-w-[595px]">
-                Plaza Protection provides top-tier security without firearms. As
-                San Jose’s leading unarmed security provider, our skilled guards
-                prevent theft and vandalism, offering a reassuring defense.
+              <p className="font-dmSans text-lg font-semibold text-[#45535E] tracking-[-0.5px] xl:max-w-[595px]">
+                Plaza protection provides outstanding security. Their guards are visible, approachable, and handle all situations with professionalism. They are truly reliable security partners. 
+
               </p>
             </div>
           </div>
@@ -372,7 +371,11 @@ const ShoppingCenter = () => {
 
         <div className="w-full flex flex-wrap gap-x-10 gap-y-10 mt-10 2xl:!mt-[60px]">
           {SecurityStrategiesData.map((item, index) => (
-            <Card key={index} item={item} className={"!border-[#FFF0E0] md:w-[calc(50%-20px)]"} />
+            <Card
+              key={index}
+              item={item}
+              className={"!border-[#FFF0E0] md:w-[calc(50%-20px)]"}
+            />
           ))}
         </div>
       </div>
