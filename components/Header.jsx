@@ -191,9 +191,9 @@ const Header = ({ ContactUsBtn }) => {
           <Image src={Logo} alt="Logo" className="w-auto h-10" />
         </div>
         <div
-          className={`bg-white p-4 xl:px-[15px] xl:py-0  absolute top-[calc(100%+0px)]  left-0  w-full h-[90vh] xl:h-auto  xl:relative grow flex flex-col items-start xl:flex-row xl:items-center  smooth shadow-md  xl:shadow-none ${
+          className={`bg-white p-4 xl:px-[15px] xl:py-0 absolute top-[calc(100%+0px)] left-0 w-full h-[90vh] xl:h-auto xl:relative grow flex flex-col justify-between xl:flex-row xl:items-center smooth shadow-md xl:shadow-none ${
             menuOpen ? "scale-100" : "xl:scale-100 scale-0 z-40"
-          } `}
+          }`}
         >
           <div className="hidden xl:block">
             <Image src={Logo} alt="Logo" className="w-auto h-12" />
@@ -209,7 +209,7 @@ const Header = ({ ContactUsBtn }) => {
                   onMouseLeave={handleSubNavLeave}
                 >
                   <button
-                    className={`w-full mb-2 bg-[#1355FF]/5 xl:bg-white  inline-flex gap-2 items-center px-3 xl:px-[14px] py-6 rounded-2xl xl:py-7 text-base font-dmSans font-semibold tracking-[-0.5px] relative xl:after:content-[''] xl:after:absolute xl:after:h-[3px] xl:after:rounded-[50px]   xl:after:bottom-0 xl:after:left-1/2 xl:after:-translate-x-1/2 xl:after:bg-[#1355FF] ${
+                    className={`w-full mb-2 xl:mb-0 bg-[#1355FF]/5 xl:bg-white  inline-flex gap-2 items-center px-3 xl:px-[14px] py-6 rounded-2xl xl:py-7 text-base font-dmSans font-semibold tracking-[-0.5px] relative xl:after:content-[''] xl:after:absolute xl:after:h-[3px] xl:after:rounded-[50px]   xl:after:bottom-0 xl:after:left-1/2 xl:after:-translate-x-1/2 xl:after:bg-[#1355FF] ${
                       openSubnav === nav.id
                         ? "text-[#1355FF] after:w-[20px]"
                         : "text-[#1A1A1A] after:w-0"
@@ -367,10 +367,10 @@ const Header = ({ ContactUsBtn }) => {
             )}
           </div>
           <div
-            className={`mt-4 2xl:mt-0 w-full xl:w-auto flex justify-between items-center ${
-              ContactUsBtn ? "gap-10" : "gap-4 xl:gap-3"
-            } xl:static absolute bottom-6 left-0 px-4`}
-          >
+  className={`w-full xl:w-auto flex justify-between items-center ${
+    ContactUsBtn ? "gap-10" : "gap-4 xl:gap-3"
+  } px-4 xl:px-0 mt-4 xl:mt-0`}
+>
             <div className="mt-0 flex items-center px-0 xl:px-1 gap-3">
               <button className="h-10 w-10 bg-[#D7E8FF]/50 inline-flex items-center justify-center">
                 <Image
