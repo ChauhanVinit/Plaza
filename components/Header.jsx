@@ -237,7 +237,10 @@ const Header = ({ ContactUsBtn }) => {
                         <h3 className="font-dmSans text-sm !leading-6 tracking-[1px] text-[#666666] font-bold uppercase">
                           {nav.name}
                         </h3>
-                        <button onClick={() => setOpenSubnav(null)} className="xl:hidden text-xs !leading-6 tracking-[1px] text-[#3355FF] font-bold ">
+                        <button
+                          onClick={() => setOpenSubnav(null)}
+                          className="xl:hidden text-xs !leading-6 tracking-[1px] text-[#3355FF] font-bold "
+                        >
                           Back
                         </button>
                       </div>
@@ -380,7 +383,7 @@ const Header = ({ ContactUsBtn }) => {
           <div
             className={`w-full xl:w-auto flex justify-between items-center ${
               ContactUsBtn ? "gap-10" : "gap-4 xl:gap-3"
-            } px-4 xl:px-0 mt-4 xl:mt-0`}
+            } px-0 mt-4 xl:mt-0`}
           >
             <div className="mt-0 flex items-center px-0 xl:px-1 gap-3">
               <button className="h-10 w-10 bg-[#D7E8FF]/50 inline-flex items-center justify-center">
