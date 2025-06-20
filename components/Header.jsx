@@ -30,6 +30,7 @@ import ConstructionSitesImg from "../public/Construction-Sites-Img.png";
 import ShoppingCentersImg from "../public/Shopping-Centers-img.png";
 import HealthcareFacilitiesImg from "../public/Healthcare-Facilities-img.png";
 import SubNavBg from "../public/SubNav-Background-image.png";
+import SubNavSmallBg from "../public/SubNav-Small-BG.png";
 import HelpcenterIcon from "../public/Help center.svg";
 import blogIcon from "../public/Blog.svg";
 import AboutusIcon from "../public/About us.svg";
@@ -191,7 +192,7 @@ const Header = ({ ContactUsBtn }) => {
           <Image src={Logo} alt="Logo" className="w-auto h-10" />
         </div>
         <div
-          className={`bg-white p-4 xl:px-[15px] xl:py-0 absolute top-[calc(100%+0px)] left-0 w-full h-[90vh] xl:h-auto xl:relative grow flex flex-col justify-between xl:flex-row xl:items-center smooth shadow-md xl:shadow-none ${
+          className={`bg-white p-4 xl:px-[15px] xl:py-0 absolute top-[calc(100%+0px)] left-0 w-full h-[calc(100vh-72px)] overflow-y-scroll xl:overflow-y-visible xl:h-auto xl:relative grow flex flex-col justify-between xl:flex-row xl:items-center smooth shadow-md xl:shadow-none ${
             menuOpen ? "scale-100" : "xl:scale-100 scale-0 z-40"
           }`}
         >
@@ -231,27 +232,29 @@ const Header = ({ ContactUsBtn }) => {
                   </button>
 
                   {openSubnav === nav.id && (
-                    <div className="absolute top-full left-0 w-full z-50 bg-white px-12 pb-12 pt-6 shadow-sm">
-                      <div className="py-2 border-b border-[#7198FE]/10">
+                    <div className="absolute top-0 xl:top-full left-0 w-full z-50 bg-white p-4 xl:px-12 xl:pb-12 xl:pt-6 shadow-sm">
+                      <div className="py-2 border-b border-[#7198FE]/10 flex items-center justify-between">
                         <h3 className="font-dmSans text-sm !leading-6 tracking-[1px] text-[#666666] font-bold uppercase">
                           {nav.name}
                         </h3>
+                        <button className="xl:hidden text-xs !leading-6 tracking-[1px] text-[#3355FF] font-bold ">Back</button>
+
                       </div>
 
                       {nav.name !== "Resources" ? (
-                        <div className="mt-6 flex items-center gap-6 ">
+                        <div className="mt-4 xl:mt-6 flex flex-col xl:flex-row xl:items-center  gap-4 xl:gap-6 ">
                           {tobarData
                             .find((item) => item.id === nav.id)
                             ?.subnavs.map((sub) => (
                               <Link
                                 key={sub.id}
                                 href={sub.path}
-                                className=" group  relative flex-1  rounded-2xl bg-[linear-gradient(to_bottom,_#1355FF00_0%,_#1355FF1A_100%)] hover:!bg-[linear-gradient(to_top,_#1355FF00_0%,_#1355FF1A_100%)] transition-transform duration-300 ease-in-out overflow-hidden"
+                                className=" group  relative xl:flex-1  rounded-2xl bg-[linear-gradient(to_bottom,_#1355FF00_0%,_#1355FF1A_100%)] hover:!bg-[linear-gradient(to_top,_#1355FF00_0%,_#1355FF1A_100%)] transition-transform duration-300 ease-in-out overflow-hidden"
                               >
                                 <div
-                                  className={`p-4 mb-[18px] ${
+                                  className={`p-4  flex xl:flex-col gap-3 xl:gap-0 ${
                                     nav.name == "Services"
-                                      ? "mb-[18px]"
+                                      ? "!mb-0 xl:!mb-[18px]"
                                       : "!mb-0"
                                   }  `}
                                 >
@@ -260,37 +263,44 @@ const Header = ({ ContactUsBtn }) => {
                                     alt={sub.name}
                                     className="w-[28px] h-[28px]"
                                   />
-                                  <h4 className="mt-4 mb-[2px] font-dmSans text-lg text-[#111B29 group-hover:text-[#1355FF]  font-semibold tracking-[-0.5px] transition-transform duration-300 ease-in-out">
-                                    {sub.name}
-                                  </h4>
-                                  <p className="text-xs font-normal text-[#677489]">
-                                    {sub.desc}
-                                  </p>
+                                  <div className="xl:mt-4">
+                                    <h4 className="mb-[2px] font-dmSans text-lg text-[#111B29 group-hover:text-[#1355FF]  font-semibold tracking-[-0.5px] transition-transform duration-300 ease-in-out">
+                                      {sub.name}
+                                    </h4>
+                                    <p className="text-sm xl:text-xs font-normal text-[#677489]">
+                                      {sub.desc}
+                                    </p>
+                                  </div>
                                 </div>
 
                                 <Image
                                   src={sub.img}
                                   alt={sub.name}
-                                  className="w-full relative z-20 group-hover:scale-105 transition-transform duration-300 ease-in-out"
+                                  className="hidden xl:block w-full relative z-20 group-hover:scale-105 transition-transform duration-300 ease-in-out"
                                 />
 
                                 <Image
                                   src={SubNavBg}
                                   alt="SubNavBg"
-                                  className="absolute bottom-0 right-0 z-10 group-hover:scale-105 transition-transform duration-300 ease-in-out"
+                                  className="hidden xl:block absolute bottom-0 right-0 z-10 group-hover:scale-105 transition-transform duration-300 ease-in-out"
+                                />
+                                <Image
+                                  src={SubNavSmallBg}
+                                  alt="SubNavBg"
+                                  className="xl:hidden absolute bottom-0 right-0 z-10 group-hover:scale-105 transition-transform duration-300 ease-in-out"
                                 />
                               </Link>
                             ))}
                         </div>
                       ) : (
-                        <div className="mt-6 flex items-center gap-6">
-                          <div className="grow">
+                        <div className="mt-4 xl:mt-6  flex flex-col xl:flex-row xl:items-center gap-4 xl:gap-6">
+                          <div className="xl:grow">
                             {tobarData
                               .find((item) => item.id === nav.id)
                               ?.subnavs.map((sub, index, array) => (
                                 <Link key={sub.id} href={sub.path} className="">
                                   <div
-                                    className={`max-w-[326px] flex items-start gap-4 px-[6px] py-2 bg-white hover:bg-[#EBF1FF]/50 smooth rounded-lg ${
+                                    className={`xl:max-w-[326px] flex items-start gap-4 px-[6px] py-2 bg-white hover:bg-[#EBF1FF]/50 smooth rounded-lg ${
                                       index === array.length - 1
                                         ? "mb-0"
                                         : "mb-5"
@@ -367,10 +377,10 @@ const Header = ({ ContactUsBtn }) => {
             )}
           </div>
           <div
-  className={`w-full xl:w-auto flex justify-between items-center ${
-    ContactUsBtn ? "gap-10" : "gap-4 xl:gap-3"
-  } px-4 xl:px-0 mt-4 xl:mt-0`}
->
+            className={`w-full xl:w-auto flex justify-between items-center ${
+              ContactUsBtn ? "gap-10" : "gap-4 xl:gap-3"
+            } px-4 xl:px-0 mt-4 xl:mt-0`}
+          >
             <div className="mt-0 flex items-center px-0 xl:px-1 gap-3">
               <button className="h-10 w-10 bg-[#D7E8FF]/50 inline-flex items-center justify-center">
                 <Image
