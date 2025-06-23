@@ -304,7 +304,7 @@ const CorporateBuildings = () => {
                         <Image
                           src={image}
                           alt={item.label}
-                          className="h-full w-full shadow-[0_21px_32px_0_rgba(0,88,250,0.1)] rounded-3xl"
+                          className="h-full w-full  rounded-3xl"
                         />
                       </div>
                     ))}

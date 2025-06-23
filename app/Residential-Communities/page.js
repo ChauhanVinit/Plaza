@@ -21,9 +21,9 @@ import Footer from "../../components/Footer";
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from "@headlessui/react";
 import Card from "../../components/Card";
 import InstantAlerts from "../../public/Residential/Instant-Threat-Alerts.svg";
-import LocationMonitoringA from "../../public/Residential/LocationMonitoring-01.svg";
-import LocationMnitoringB from "../../public/Residential/LocationMonitoring-02.svg";
-import LocationMnitoringC from "../../public/Residential/LocationMonitoring-03.svg";
+import LocationMonitoringA from "../../public/Residential/LocationMonitoring-01.png";
+import LocationMnitoringB from "../../public/Residential/LocationMonitoring-02.png";
+import LocationMnitoringC from "../../public/Residential/LocationMonitoring-03.png";
 import IncidentManagementA from "../../public/Residential/IncidentManagement-01.svg";
 import IncidentManagementB from "../../public/Residential/IncidentManagement-02.svg";
 import IncidentManagementC from "../../public/Residential/IncidentManagement-03.svg";
@@ -307,7 +307,7 @@ const ResidentialCommunities = () => {
                         <Image
                           src={image}
                           alt={item.label}
-                          className="h-full w-full shadow-[0_21px_32px_0_rgba(0,88,250,0.1)] rounded-3xl"
+                          className="h-full w-full  rounded-3xl"
                         />
                       </div>
                     ))}

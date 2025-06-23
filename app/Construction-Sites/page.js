@@ -27,9 +27,9 @@ import AccessControlC from "../../public/ConstructionSites/Access-Control-03.svg
 import VisitorAssistanceB from "../../public/Residential/Community-Patrol-01.svg";
 import VisitorAssistanceA from "../../public/CommercialBuilding/Visitor-Assistance-01.svg";
 import VisitorAssistanceC from "../../public/CommercialBuilding/Visitor-Assistance-02.svg";
-import LocationMonitoringA from "../../public/Residential/LocationMonitoring-01.svg";
-import LocationMnitoringB from "../../public/Residential/LocationMonitoring-02.svg";
-import LocationMnitoringC from "../../public/Residential/LocationMonitoring-03.svg";
+import LocationMonitoringA from "../../public/Residential/LocationMonitoring-01.png";
+import LocationMnitoringB from "../../public/Residential/LocationMonitoring-02.png";
+import LocationMnitoringC from "../../public/Residential/LocationMonitoring-03.png";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import useIsClient from "../../Hook/useClient";
@@ -302,7 +302,7 @@ const ConstructionSites = () => {
                         <Image
                           src={image}
                           alt={item.label}
-                          className="h-full w-full shadow-[0_21px_32px_0_rgba(0,88,250,0.1)] rounded-3xl"
+                          className="h-full w-full  rounded-3xl"
                         />
                       </div>
                     ))}

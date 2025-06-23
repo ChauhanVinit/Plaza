@@ -221,7 +221,7 @@ const ShoppingCenter = () => {
                 </p>
               </div>
               <div className="md:hidden">
-                {" "}
+               
                 <Image src={Quote} alt="person" className="w-[43px] h-[43px]" />
               </div>
             </div>

@@ -20,9 +20,9 @@ import Card from "../../components/Card";
 import Footer from "../../components/Footer";
 import person from "../../public/Residential/person-01.svg";
 import Quote from "../../public/Residential/iconmonstr-quote.svg";
-import LocationMonitoringA from "../../public/Residential/LocationMonitoring-01.svg";
-import LocationMnitoringB from "../../public/Residential/LocationMonitoring-02.svg";
-import LocationMnitoringC from "../../public/Residential/LocationMonitoring-03.svg";
+import LocationMonitoringA from "../../public/Residential/LocationMonitoring-01.png";
+import LocationMnitoringB from "../../public/Residential/LocationMonitoring-02.png";
+import LocationMnitoringC from "../../public/Residential/LocationMonitoring-03.png";
 import RealTimeA from "../../public/CommercialBuilding/Real-Time-01.svg";
 import RealTimeB from "../../public/CommercialBuilding/Real-Time-02.svg";
 import RealTimeC from "../../public/CommercialBuilding/Real-Time-03.svg";
@@ -301,12 +301,12 @@ const HospitalSecurity = () => {
                         <Image
                           src={image}
                           alt={item.label}
-                          className="h-full w-full shadow-[0_21px_32px_0_rgba(0,88,250,0.1)] rounded-3xl"
+                          className="h-full w-full  rounded-3xl"
                         />
                       </div>
                     ))}
                   </div>
-
+{/* shadow-[0_21px_32px_0_rgba(0,88,250,0.1)] */}
                   {/* Mobile slider view */}
                   {isClient && (
                     <div className="block lg:hidden mt-8">
