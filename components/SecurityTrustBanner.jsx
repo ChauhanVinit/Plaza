@@ -31,9 +31,10 @@ const SecurityTrustBanner = ({title,btnText}) => {
         </p>
 
         <Button
+         bgtransparent={'!text-white !bg-transparent sm:!rounded-2xl'}
           variant="custom"
            icon={<Image src={right} alt="right" className="sm:hidden w-4 h-4" />}
-          style={"!min-w-full sm:!min-w-[190px] !text-white !bg-transparent sm:!rounded-2xl"}
+          style={"w-full sm:max-w-[190px]"}
           name={btnText}
         />
       </div>

@@ -14,7 +14,7 @@ const FAQ = ({data}) => {
   };
 
   return (
-    <div className="mx-4 sm:mx-6 xl:mx-10 2xl:container 2xl:mx-auto mb-[68px] px-4 py-10 sm:px-6 xl:px-8 2xl:p-16 bg-[#F1F3F5]/50 rounded-[40px]">
+    <div className="mx-4 sm:mx-6 xl:mx-10 2xl:max-w-[1440px] 2xl:mx-auto mb-[68px] px-4 py-10 sm:px-6 xl:px-8 2xl:p-16 bg-[#F1F3F5]/50 rounded-[40px]">
       <div className="text-center max-w-[658px] mx-auto">
         <Tag title={"Find out quick answers "} />
         <Heading
@@ -70,3 +70,4 @@ const FAQ = ({data}) => {
 };
 
 export default FAQ;
+

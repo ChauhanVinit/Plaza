@@ -1,7 +1,6 @@
 "use client";
-import Header from "../../components/Header";
+import { useState } from "react";
 import FreeQuote from "../../components/FreeQuote";
-import Footer from "../../components/Footer";
 import Heading from "../../utils/Heading";
 import CommercialA from "../../public/CommercialBuilding/Commercial-image01.png";
 import CommercialB from "../../public/CommercialBuilding/Commercial-image03.png";
@@ -17,17 +16,17 @@ import CustomSecurity from "../../public/CommercialBuilding/Custom-Security-Plan
 import BuildingImage from "../../public/CommercialBuilding/Building-image-01.png";
 import GuardImage from "../../public/CommercialBuilding/Guard-image-01.png";
 import ConectElement from "../../public/Residential/Conect-element.svg";
-import person from "../../public/Residential/person-02.svg";
+import person from "../../public/Residential/person-04.png";
 import Card from "../../components/Card";
-import RealTimeA from "../../public/CommercialBuilding/Real-Time-01.svg";
-import RealTimeB from "../../public/CommercialBuilding/Real-Time-02.svg";
-import RealTimeC from "../../public/CommercialBuilding/Real-Time-03.svg";
-import IncidentManagementA from "../../public/Residential/IncidentManagement-01.svg";
-import IncidentManagementB from "../../public/Residential/IncidentManagement-02.svg";
-import IncidentManagementC from "../../public/Residential/IncidentManagement-03.svg";
-import VisitorAssistanceB from "../../public/Residential/Community-Patrol-01.svg";
-import VisitorAssistanceA from "../../public/CommercialBuilding/Visitor-Assistance-01.svg";
-import VisitorAssistanceC from "../../public/CommercialBuilding/Visitor-Assistance-02.svg";
+import RealTimeA from "../../public/CommercialBuilding/Real-Time-01.png";
+import RealTimeB from "../../public/CommercialBuilding/Real-Time-02.png";
+import RealTimeC from "../../public/CommercialBuilding/Real-Time-03.png";
+import IncidentManagementA from "../../public/Residential/IncidentManagement-01.png";
+import IncidentManagementB from "../../public/Residential/IncidentManagement-02.png";
+import IncidentManagementC from "../../public/Residential/IncidentManagement-03.png";
+import VisitorAssistanceB from "../../public/Residential/Community-Patrol-01.png";
+import VisitorAssistanceA from "../../public/CommercialBuilding/Visitor-Assistance-01.png";
+import VisitorAssistanceC from "../../public/CommercialBuilding/Visitor-Assistance-02.png";
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from "@headlessui/react";
 import Quote from "../../public/Residential/iconmonstr-quote.svg";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
@@ -113,9 +112,11 @@ const CorporateBuildings = () => {
   ];
 
   const isClient = useIsClient();
+   const [openSubnav, setOpenSubnav] = useState(null);
   return (
+     
     <>
-      <Header />
+     
       <div className="w-full px-4 sm:px-6 xl:px-10 2xl:px-0 2xl:max-w-[1342px] mt-10 2xl:mt-20 mb-20 2xl:mb-40 2xl:mx-auto">
         <div className="flex gap-12">
           <div className="relative pt-[14px] hidden xl:block">
@@ -194,10 +195,10 @@ const CorporateBuildings = () => {
           </div>
         </div>
         <div className="flex items-start mt-8 xl:mt-[74px] gap-[52px] ">
-          <div className="grow flex flex-col md:flex-row items-start  gap-5 p-6 lg:p-[35px] rounded-3xl bg-[#FFB82E]/5">
+          <div className="grow flex flex-col item-start md:flex-row md:items-center  gap-5 p-6 lg:p-[35px] rounded-3xl bg-[#FFB82E]/5">
             <div className="flex items-end gap-[14px]">
               <div className="min-w-[206px]">
-                <div className="flex items-start justify-between">
+                <div className="flex items-end justify-between">
                   <Image
                     src={person}
                     alt="person"
@@ -210,27 +211,24 @@ const CorporateBuildings = () => {
                   />
                 </div>
                 <h3 className="mt-1 text-base font-dmSans font-semibold text-[#171A1D]">
-                  Jane C.
+                  Arlene McCoy
                 </h3>
                 <p className="text-sm font-dmSans font-normal text-[#6B7280]">
                   Manager
                 </p>
                 <p className="text-sm font-dmSans font-normal text-[#333333]">
-                  Total Network Development
+                  Carnegie Foundation
                 </p>
               </div>
               <div className="md:hidden">
-                {" "}
+                
                 <Image src={Quote} alt="person" className="w-[43px] h-[43px]" />
               </div>
             </div>
 
             <div>
-              <p className="font-dmSans text-lg font-semibold text-[#45535E] tracking-[-0.5px] xl:max-w-[595px]">
-                We’ve been with plaza protection for over three years, and
-                they’ve been consistently excellent. Their guards are
-                dependable, their management is responsive. Their flexibility
-                and attention to detail have made a huge impact.
+              <p className="font-dmSans text-xl font-semibold text-[#45535E] tracking-[-0.5px] xl:max-w-[595px]">
+                We’ve been with plaza protection for over three years, and they’ve been consistently excellent. Their guards are dependable, their management is responsive.
               </p>
             </div>
           </div>
@@ -258,7 +256,7 @@ const CorporateBuildings = () => {
         </div>
       </div>
 
-      <div className="mx-4 sm:mx-6 xl:mx-10 2xl:container 2xl:mx-auto mb-10 2xl:mb-20 bg-[#F0F6FF] rounded-[40px] px-4 pt-10 pb-[122px] sm:px-6 xl:px-8 2xl:p-20">
+      <div className="mx-4 sm:mx-6 xl:mx-10 2xl:max-w-[1440px] 2xl:mx-auto mb-10 2xl:mb-20 bg-[#F0F6FF] rounded-[40px] px-4 pt-10 pb-[122px] sm:px-6 xl:px-8 2xl:p-20">
         <Heading
           className="!mb-6 !mt-0 !text-[#222A5B] !text-center !tracking-[-2px]"
           title="Expert Security Solutions for Personalized Protection and Peace of Mind"
@@ -312,7 +310,7 @@ const CorporateBuildings = () => {
 
                   {/* Mobile slider view */}
                   {isClient && (
-                    <div className="block lg:hidden mt-8">
+                    <div className="industries-slider block lg:hidden mt-8">
                       <Splide
                         aria-label="My Favorite Images"
                         options={{
@@ -336,7 +334,7 @@ const CorporateBuildings = () => {
                             next: "slider-next",
                           },
                         }}
-                        className="dots:absolute dots:right-0 dots:-bottom-16 sm:dots:-bottom-[72px] dots:p-0 dots:min-w-[300px] dots:justify-center dots:items-center dots:gap-4 dot:!bg-[#88C0FF] dot:w-2 dot:h-2 activeDot:scale-100 activeDot:!bg-[#1355FF] dot:shadow-none dot:outline-none"
+                        // className="dots:absolute dots:right-0 dots:-bottom-16 sm:dots:-bottom-[72px] dots:p-0 dots:min-w-[300px] dots:justify-center dots:items-center dots:gap-4 dot:!bg-[#88C0FF] dot:w-2 dot:h-2 activeDot:scale-100 activeDot:!bg-[#1355FF] dot:shadow-none dot:outline-none"
                       >
                         {[item.image1, item.image2, item.image3].map(
                           (image, imgIndex) => (
@@ -359,7 +357,7 @@ const CorporateBuildings = () => {
         </div>
       </div>
 
-      <div className="mx-4 sm:mx-6 xl:mx-10 2xl:container 2xl:mx-auto mt-10 2xl:mt-20  px-4 py-10 sm:px-6 xl:px-8 2xl:p-20 ">
+      <div className="mx-4 sm:mx-6 xl:mx-10 2xl:max-w-[1440px] 2xl:mx-auto mt-10 2xl:mt-20  px-4 py-10 sm:px-6 xl:px-8 2xl:p-20 ">
         <Heading
           className="!mb-6 !mt-0 !text-[#222A5B] !text-center !tracking-[-2px]"
           title="Empowering your commercial space With Tailored Security solutions"
@@ -381,7 +379,7 @@ const CorporateBuildings = () => {
           ))}
         </div>
       </div>
-      <div className="mx-4 sm:mx-6 xl:mx-10 2xl:container 2xl:mx-auto my-10 2xl:my-20 bg-[#EBFFF1]/30 rounded-[40px] px-4 py-10 sm:px-6 xl:px-8 2xl:p-20">
+      <div className="mx-4 sm:mx-6 xl:mx-10 2xl:max-w-[1440px] 2xl:mx-auto my-10 2xl:my-20 bg-[#EBFFF1]/30 rounded-[40px] px-4 py-10 sm:px-6 xl:px-8 2xl:p-20">
         <Heading
           className="!mb-6 !mt-0 !text-[#222A5B] !text-center !tracking-[-2px]"
           title="Round-The-Clock Vigilance For Your Peace Of Mind"
@@ -426,7 +424,7 @@ const CorporateBuildings = () => {
         </div>
       </div>
       <FreeQuote />
-      <Footer />
+     
     </>
   );
 };

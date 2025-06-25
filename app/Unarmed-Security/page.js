@@ -1,6 +1,4 @@
 "use client";
-import Header from "../../components/Header";
-import Footer from "../../components/Footer";
 import FreeQuote from "../../components/FreeQuote";
 import GuardImage from "../../public/Services/Hero-Guard-02.png";
 import CoreFeature from "../../public/Services/Core-Features-Guard-02.png";
@@ -145,9 +143,10 @@ const faqs = [
 ];
 
 const UnarmedSecurity = () => {
+   
   return (
     <>
-      <Header />
+      
       <Hero {...heroData} />
       <IndustriesWeServe {...IndustriesWeServeData} />
       <CoreFeatures data={accordionItems} {...coreFeaturesData} />
@@ -155,9 +154,10 @@ const UnarmedSecurity = () => {
       <Highlights data={Highlight} {...HighlightsData} />
       <FAQ data={faqs} />
       <FreeQuote />
-      <Footer />
+     
     </>
   );
 };
 
 export default UnarmedSecurity;
+

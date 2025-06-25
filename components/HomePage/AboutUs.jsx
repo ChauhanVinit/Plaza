@@ -104,11 +104,12 @@ const AboutUs = () => {
                   <p className="mb-8 font-dmSans text-base  font-normal text-[#45535E]">
                     {item.description}
                   </p>
-                  <div>
+                  <div className="flex">
                     <Button
                       variant="custom"
-                       icon={<Image src={rightDark} alt="right" className="sm:hidden w-4 h-4" />}
-                      style={"!bg-transparent !min-w-full sm:!min-w-[158px]  !text-center"}
+                      bgtransparent={'!bg-transparent'}
+                       icon={<Image src={rightDark} alt="right" className="w-4 h-4" />}
+                      style={"w-full sm:!max-w-[162px] "}
                       name={"Learn More"}
                       path={item.path}
                     />

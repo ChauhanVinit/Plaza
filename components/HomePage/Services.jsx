@@ -8,7 +8,7 @@ import cctvcamera from "../../public/cctv-camera.svg";
 import Image from "next/image";
 // import validation from "../../public/validation.svg";
 // import HomeServicesBanner from "../../public/HomeServicesBanner.png";
-import FeaturesImg from "../../public/Features-img.png";
+import FeaturesBanner from "../../public/FeaturesBanner.png";
 import Tag from "../../utils/Tag";
 import Heading from "../../utils/Heading";
 import Button from "../../utils/Button";
@@ -47,23 +47,22 @@ const Services = () => {
     {
       label: "Vehicle Patrol",
       icon: car,
-      title: "Mobile Security with Vehicle Patrol Services",
+      title: "Reliable Vehicle Patrol Services",
       description:
-        "Our vehicle patrol services offer a visible and active security presence, ensuring extensive coverage and rapid response.",
+        "Our professional Vehicle Patrol Services provide consistent, high-visibility security to protect your property and deter unwanted activity. Whether for commercial, residential, or industrial properties, our vehicle patrols offer a dependable layer of protection that keeps your site secure around the clock. With comprehensive reporting and a commitment to excellence.",
       path: "/Vehicle-patrol",
     },
      {
       label: "CCTV Installation",
       icon: cctvcamera,
-      title: "Mobile Security with Vehicle Patrol Services",
+      title: "Advanced CCTV Installation Services",
       description:
-        "Our vehicle patrol services offer a visible and active security presence, ensuring extensive coverage and rapid response.",
-      path: "/CCTV-Installation",
+        "Our CCTV Installation Services deliver reliable and effective surveillance solutions to keep your property secure. We assess your site’s unique requirements and install high-definition cameras in strategic locations to maximize coverage and visibility.",
     },
   ];
 
   return (
-    <div className="mx-4 sm:mx-6 xl:mx-10 2xl:container 2xl:mx-auto mt-10 2xl:mt-[60px] py-8 px-4 sm:py-10 sm:px-6 xl:px-8 2xl:py-20 2xl:px-[60px] rounded-[40px] bg-[#F0F6FF] text-center">
+    <div className="mx-4 sm:mx-6 xl:mx-10 2xl:max-w-[1440px] 2xl:mx-auto mt-10 2xl:mt-[60px] py-8 px-4 sm:py-10 sm:px-6 xl:px-8 2xl:py-20 2xl:px-[60px] rounded-[40px] bg-[#F0F6FF] text-center">
       <Tag title="Why Choose Us?" />
       <Heading
         className="!mt-4"
@@ -114,7 +113,7 @@ const Services = () => {
                 <div className="flex flex-col lg:flex-row items-center gap-10 2xl:gap-[60px]">
                   <div>
                     <Image
-                      src={FeaturesImg}
+                      src={FeaturesBanner}
                       alt="HomeServicesBanner"
                       className=" min-w-0  sm:min-w-[428px] w-auto h-[445px]"
                     />
@@ -135,15 +134,16 @@ const Services = () => {
                       <Button
                         icon={<Image src={right} alt="right" className="w-4 h-4" />}
                         variant="blue"
-                        style="!min-w-full sm:!min-w-[243px]"
+                        style="w-full sm:max-w-[243px]"
                         name="Request Quote"
                         path="/Request-A-Quote"
                       />
 
                       <Button
                         variant="custom"
-                        icon={<Image src={rightDark} alt="right" className="sm:hidden w-4 h-4" />}
-                        style="!min-w-full sm:!min-w-[162px] !bg-[#EDF5FF]"
+                        bgtransparent={'!bg-transparent'}
+                        icon={<Image src={rightDark} alt="right" className="w-4 h-4" />}
+                        style="w-full sm:max-w-[162px] !bg-[#EDF5FF]"
                         name="Learn More"
                         path={item.path}
                       />

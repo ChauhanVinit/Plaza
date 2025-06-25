@@ -33,14 +33,14 @@ const IndustriesWeServe = ({desc}) => {
   const isClient = useIsClient();
   return (
     <div
-      className="mx-4 sm:mx-6  xl:mx-10 2xl:container 2xl:mx-auto  px-4 pb-[122px] pt-10  sm:py-10 sm:px-6 xl:px-8 2xl:py-20 2xl:px-16 bg-[#E7E7FF]/20 rounded-[40px] mb-10
+      className="mx-4 sm:mx-6  xl:mx-10 2xl:max-w-[1440px] 2xl:mx-auto  px-4 pb-[122px] pt-10  sm:py-10 sm:px-6 xl:px-8 2xl:py-20 2xl:px-16 bg-[#E7E7FF]/20 rounded-[40px] mb-10
      2xl:mb-[68px] "
     >
       <div className="flex flex-col xl:flex-row  xl:justify-between items-start xl:items-end gap-8 xl:gap-0">
         <div>
           <Tag title={"Industries where we served"} />
           <Heading
-            title={"Industries We Serve"}
+            title={"Solutions That Scale Every Industry"}
             className={"!mb-6 !text-[#222A5B]"}
           />
           <p className="font-dmSans font-normal text-xl !leading-8 text-[#333333] max-w-full xl:max-w-[915px]">
@@ -49,9 +49,10 @@ const IndustriesWeServe = ({desc}) => {
         </div>
         <div className="w-full xl:w-auto">
           <Button
+           bgtransparent={'!bg-transparent'}
             variant="custom"
             icon={<Image src={rightDark} alt="right" className="sm:hidden w-4 h-4" />}
-            style={"!min-w-full sm:!min-w-[162px] !bg-transparent"}
+            style={"w-full sm:max-w-[162px] sm:min-w-[162px]"}
             name="View More"
             // path="/Contact-Us"
           />
@@ -61,6 +62,7 @@ const IndustriesWeServe = ({desc}) => {
       <div className="mt-8  flex  items-center gap-6  sm:hidden">
         {isClient && (
           <Splide
+          className="services-slider"
             aria-label="My Favorite Images"
             options={{
               type: "loop",
@@ -81,7 +83,7 @@ const IndustriesWeServe = ({desc}) => {
               },
               interval: 3000,
             }}
-            className="dots:absolute dots:right-0 dots:-bottom-16 sm:dots:-bottom-[72px]  dots:p-0 dots:min-w-[300px] dots:justify-center  dots:items-center  dots:gap-4 dot:!bg-[#88C0FF] dot:w-2 dot:h-2 activeDot:scale-100 activeDot:!bg-[#1355FF] dot:shadow-none dot:outline-none "
+            // className="dots:absolute dots:right-0 dots:-bottom-16 sm:dots:-bottom-[72px]  dots:p-0 dots:min-w-[300px] dots:justify-center  dots:items-center  dots:gap-4 dot:!bg-[#88C0FF] dot:w-2 dot:h-2 activeDot:scale-100 activeDot:!bg-[#1355FF] dot:shadow-none dot:outline-none "
           >
             {cardItems.map((item, index) => (
               <SplideSlide key={index}>

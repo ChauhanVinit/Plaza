@@ -24,11 +24,11 @@ const Hero = () => {
           ensuring safety while maintaining professionalism.
         </p>
 
-        <div className="w-full mt-12 inline-flex sm:flex-row flex-col items-center gap-4">
+        <div className=" w-full mt-12 flex sm:flex-row flex-col items-center gap-4">
           <Button
             icon={<Image src={right} alt="right" className="w-4 h-4" />}
             variant="blue"
-            style={"!min-w-full sm:!min-w-[243px]"}
+            style={"w-full sm:max-w-[243px]"}
             name="Request Quote"
             path="/Request-A-Quote"
           />
@@ -39,10 +39,10 @@ const Hero = () => {
               <Image
                 src={rightDark}
                 alt="right"
-                className="sm:hidden w-4 h-4"
+                className="w-4 h-4"
               />
             }
-            style={"!min-w-full sm:!min-w-[162px]"}
+            style={"w-full sm:max-w-[162px]"}
             name="Contact Us"
             path="/Contact-Us"
           />

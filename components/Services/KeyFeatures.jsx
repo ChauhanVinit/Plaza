@@ -8,7 +8,7 @@ const KeyFeatures = ({ data, title, desc }) => {
   return (
     <div
       id="key-features"
-      className="mx-4 sm:mx-6 xl:mx-10 2xl:container 2xl:mx-auto px-4 py-10 sm:px-6 xl:px-8 2xl:px-16 2xl:py-20 rounded-[40px] bg-[#E7E7FF]/20 mb-10
+      className="mx-4 sm:mx-6 xl:mx-10 2xl:max-w-[1440px] 2xl:mx-auto px-4 py-10 sm:px-6 xl:px-8 2xl:px-16 2xl:py-20 rounded-[40px] bg-[#E7E7FF]/20 mb-10
      2xl:mb-[68px]"
     >
       <div className="flex flex-col xl:flex-row  xl:justify-between items-start xl:items-end gap-8 xl:gap-0">
@@ -19,11 +19,12 @@ const KeyFeatures = ({ data, title, desc }) => {
             {desc}
           </p>
         </div>
-        <div className="w-full xl:w-auto">
+        <div className="w-full xl:w-auto  inline-flex sm:flex-row flex-col items-center gap-4">
           <Button
             variant="custom"
+            bgtransparent={'!bg-transparent'}
               icon={<Image src={rightDark} alt="right" className="sm:hidden w-4 h-4" />}
-            style={"!min-w-full sm:!min-w-[162px] !bg-transparent"}
+              style={"w-full sm:!max-w-[162px] sm:min-w-[162px]"}
             name="Contact Us"
             path="/Contact-Us"
           />

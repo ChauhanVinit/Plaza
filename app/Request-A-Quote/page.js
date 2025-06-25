@@ -96,11 +96,8 @@ const RequestAQuote = () => {
     ),
     btnText: "Contact Us",
   };
-
   return (
     <>
-      <Header ContactUsBtn={true} />
-
       <div className="mx-4 sm:mx-6 xl:max-w-[1160px] xl:mx-auto sm:text-center mt-10 2xl:mt-[100px] mb-12 2xl:mb-[116px]">
         <h1 className="mb-8 font-dmSans text-5xl !leading-[56px] xl:text-[52px] xl:!leading-[60px] 2xl:text-[56px]  2xl:!leading-[64px] font-semibold text-[#222A5B] tracking-[-3px]">
           Request A Quote
@@ -198,9 +195,10 @@ const RequestAQuote = () => {
           </div>
           <div className="mt-6 2xl:mt-8 ">
             <Button
+            bgtransparent={'sm:!rounded-2xl'}
               variant="blue"
               icon={<Image src={right} alt="right" className="w-4 h-4" />}
-              style={"!min-w-full sm:!min-w-[175px] sm:!rounded-2xl  "}
+              style={"!w-full sm:max-w-[175px]   "}
               name="Submit"
             />
 
@@ -209,7 +207,6 @@ const RequestAQuote = () => {
       </div>
 
       <SecurityTrustBanner {...SecurityTrustData} />
-      <Footer />
     </>
   );
 };

@@ -1,8 +1,6 @@
 "use client";
-import Header from "../../components/Header";
-import Footer from "../../components/Footer";
 import Button from "../../utils/Button";
-import streethouse from "../../public/AboutUs/street-house.png";
+import ourtechnologies from "../../public/AboutUs/our-technologies.png";
 import Ourmission from "../../public/AboutUs/Our-mission.svg";
 import Overview from "../../public/AboutUs/Overview.svg";
 import Image from "next/image";
@@ -67,9 +65,10 @@ const ourTechnologies = [
   };
 
 const AboutUs = () => {
+ 
   return (
     <>
-      <Header />
+     
       <div className="mx-4 sm:mx-6  xl:mx-10 2xl:max-w-[1360px] 2xl:mx-auto  my-10 xl:mt-[60px] xl:mb-20 2xl:mt-[100px] 2xl:mb-40">
         <div className="sm:text-center">
           <h1 className="font-dmSans text-5xl !leading-[56px] xl:text-[52px] xl:!leading-[60px] 2xl:text-[56px]  2xl:!leading-[64px] font-semibold text-[#222A5B] mb-8 tracking-[-4px] xs:tracking-[-3px] max-w-[1162px] mx-auto">
@@ -89,14 +88,14 @@ const AboutUs = () => {
           <Button
             variant="blue"
              icon={<Image src={right} alt="right" className="w-4 h-4" />}
-            style={"min-w-full sm:!min-w-[243px]"}
+            style={"w-full sm:max-w-[243px]"}
             name="Request Quote"
           />
 
           <Button
             variant="custom"
-            icon={<Image src={rightDark} alt="right" className="sm:hidden w-4 h-4" />}
-            style={"min-w-full sm:!min-w-[162px]"}
+            icon={<Image src={rightDark} alt="right" className="w-4 h-4" />}
+            style={"w-full sm:max-w-[162px]"}
             name="Contact Us"
             path="/Contact-Us"
           />
@@ -105,7 +104,7 @@ const AboutUs = () => {
       <TopIndustries />
       <OurServices />
 
-      <div className="mx-4 sm:mx-6  xl:mx-10 2xl:container 2xl:mx-auto mb-10 2xl:mb-20 px-4 sm:px-6  py-10 xl:px-10 2xl:p-20 rounded-[40px] bg-[#EDF5FF]">
+      <div className="mx-4 sm:mx-6  xl:mx-10 2xl:max-w-[1440px] 2xl:mx-auto mb-10 2xl:mb-20 px-4 sm:px-6  py-10 xl:px-10 2xl:p-20 rounded-[40px] bg-[#EDF5FF]">
         <Tag title={"Quick view about us"}  />
         <Heading
           className={"!mt-4 !text-[#222A5B]"}
@@ -136,7 +135,7 @@ const AboutUs = () => {
         </div>
       </div>
 
-      <div className="mx-4 sm:mx-6  xl:mx-10 2xl:container 2xl:mx-auto mb-10 2xl:mb-20 px-4 sm:px-6  py-10 xl:px-10 2xl:p-20 rounded-[40px] bg-[#F0F6FF] flex flex-col lg:flex-row gap-8  xl:gap-10 2xl:gap-20">
+      <div className="mx-4 sm:mx-6  xl:mx-10 2xl:max-w-[1440px] 2xl:mx-auto mb-10 2xl:mb-20 px-4 sm:px-6  py-10 xl:px-10 2xl:p-20 rounded-[40px] bg-[#F0F6FF] flex flex-col lg:flex-row gap-8  xl:gap-10 2xl:gap-20">
         <div className="w-full lg:w-1/2">
           <Tag title={"our technologies"} />
           <Heading
@@ -182,12 +181,12 @@ const AboutUs = () => {
           </div>
         </div>
         <div className="w-full lg:w-1/2">
-          <Image src={streethouse} alt="streethouse" className="w-full h-full max-w-[600px] lg:max-w-full" />
+          <Image src={ourtechnologies} alt="Our Technologies" className="w-full h-full max-w-[600px] lg:max-w-full" />
         </div>
       </div>
 
       <SecurityTrustBanner {...SecurityTrustData} />
-      <Footer />
+    
     </>
   );
 };

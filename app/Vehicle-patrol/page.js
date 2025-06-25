@@ -1,6 +1,5 @@
 "use client";
-import Header from "../../components/Header";
-import Footer from "../../components/Footer";
+
 import FreeQuote from "../../components/FreeQuote";
 import GuardImage from "../../public/Services/Hero-Guard-04.png";
 import CoreFeature from "../../public/Services/Core-Features-Guard-04.png";
@@ -144,9 +143,10 @@ const faqs = [
   },
 ];
 const Vehiclepatrol = () => {
+   
   return (
     <>
-      <Header />
+    
       <Hero {...heroData} />
       <IndustriesWeServe {...IndustriesWeServeData} />
       <CoreFeatures data={accordionItems} {...coreFeaturesData} />
@@ -154,9 +154,10 @@ const Vehiclepatrol = () => {
       <Highlights data={Highlight} {...HighlightsData} />
       <FAQ data={faqs} />
       <FreeQuote />
-      <Footer />
+     
     </>
   );
 };
 
 export default Vehiclepatrol;
+

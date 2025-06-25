@@ -1,5 +1,4 @@
 "use client";
-import Header from "../../components/Header";
 import FreeQuote from "../../components/FreeQuote";
 import Heading from "../../utils/Heading";
 import ResidentialA from "../../public/Residential/residential-image-01.png";
@@ -16,20 +15,19 @@ import Vehicle from "../../public/Residential/Vehicle.svg";
 import streetHouses from "../../public/Residential/banner-image-01.png";
 import GuardImage from "../../public/Residential/GuardImage.png";
 import ConectElement from "../../public/Residential/Conect-element.svg";
-import person from "../../public/Residential/person-01.svg";
-import Footer from "../../components/Footer";
+import person from "../../public/Residential/person-03.png";
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from "@headlessui/react";
 import Card from "../../components/Card";
 import InstantAlerts from "../../public/Residential/Instant-Threat-Alerts.svg";
 import LocationMonitoringA from "../../public/Residential/LocationMonitoring-01.png";
 import LocationMnitoringB from "../../public/Residential/LocationMonitoring-02.png";
 import LocationMnitoringC from "../../public/Residential/LocationMonitoring-03.png";
-import IncidentManagementA from "../../public/Residential/IncidentManagement-01.svg";
-import IncidentManagementB from "../../public/Residential/IncidentManagement-02.svg";
-import IncidentManagementC from "../../public/Residential/IncidentManagement-03.svg";
-import CommunityPatrolA from "../../public/Residential/Community-Patrol-01.svg";
-import CommunityPatrolB from "../../public/Residential/Community-Patrol-02.svg";
-import CommunityPatrolC from "../../public/Residential/Community-Patrol-03.svg";
+import IncidentManagementA from "../../public/Residential/IncidentManagement-01.png";
+import IncidentManagementB from "../../public/Residential/IncidentManagement-02.png";
+import IncidentManagementC from "../../public/Residential/IncidentManagement-03.png";
+import CommunityPatrolA from "../../public/Residential/Community-Patrol-01.png";
+import CommunityPatrolB from "../../public/Residential/Community-Patrol-02.png";
+import CommunityPatrolC from "../../public/Residential/Community-Patrol-03.png";
 import Quote from "../../public/Residential/iconmonstr-quote.svg";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
@@ -118,7 +116,7 @@ const ResidentialCommunities = () => {
 
   return (
     <>
-      <Header />
+      
       <div className="w-full px-4 sm:px-6 xl:px-10 2xl:px-0 2xl:max-w-[1342px] mt-10 2xl:mt-20 mb-20 2xl:mb-40 2xl:mx-auto">
         <div className="flex gap-12">
           <div className="relative pt-[14px] hidden xl:block">
@@ -199,10 +197,10 @@ const ResidentialCommunities = () => {
         </div>
 
         <div className="flex items-start mt-8 xl:mt-[74px] gap-[52px] ">
-          <div className="grow flex flex-col md:flex-row items-start  gap-5 p-6 lg:p-[35px] rounded-3xl bg-[#FFB82E]/5">
+          <div className="grow flex flex-col item-start md:flex-row md:items-center  gap-5 p-6 lg:p-[35px] rounded-3xl bg-[#FFB82E]/5">
             <div className="flex items-end gap-[14px]">
               <div className="min-w-[206px]">
-                <div className="flex items-start justify-between">
+                <div className="flex items-end justify-between">
                   <Image
                     src={person}
                     alt="person"
@@ -215,24 +213,24 @@ const ResidentialCommunities = () => {
                   />
                 </div>
                 <h3 className="mt-1 text-base font-dmSans font-semibold text-[#171A1D]">
-                  Steven H.
+                  James Hall
                 </h3>
                 <p className="text-sm font-dmSans font-normal text-[#6B7280]">
                   Manager
                 </p>
                 <p className="text-sm font-dmSans font-normal text-[#333333]">
-                  Total Network Development
+                   Wallmart
                 </p>
               </div>
               <div className="md:hidden">
-                {" "}
+                
                 <Image src={Quote} alt="person" className="w-[43px] h-[43px]" />
               </div>
             </div>
 
             <div>
-              <p className="font-dmSans text-lg font-semibold text-[#45535E] tracking-[-0.5px] xl:max-w-[595px]">
-                Plaza Protection has been providing excellent security patrol services to our residential community in the Bay Area. From the very beginning, they understood our needs and worked with our staff to address security concerns. Plaza Protection security guards are professional and well-trained. I always recommend Plaza Protection to anyone looking for extra protection for their community. 
+              <p className="font-dmSans text-xl font-semibold text-[#45535E] tracking-[-0.5px] xl:max-w-[595px]">
+                Plaza Protection offers outstanding security patrol services in the Bay Area. They understand our community's needs and collaborate effectively with our staff. Highly recommended. 
 
               </p>
             </div>
@@ -260,7 +258,7 @@ const ResidentialCommunities = () => {
         </div>
       </div>
 
-      <div className="mx-4 sm:mx-6 xl:mx-10 2xl:container 2xl:mx-auto mb-10 2xl:mb-20 bg-[#F0F6FF] rounded-[40px] px-4 pt-10 pb-[122px] sm:px-6 xl:px-8 2xl:p-20">
+      <div className="mx-4 sm:mx-6 xl:mx-10 2xl:max-w-[1440px] 2xl:mx-auto mb-10 2xl:mb-20 bg-[#F0F6FF] rounded-[40px] px-4 pt-10 pb-[122px] sm:px-6 xl:px-8 2xl:p-20">
         <Heading
           className="!mb-6 !mt-0 !text-[#222A5B] !text-center !tracking-[-2px]"
           title="Advanced Security Services for Protecting Residential Communities"
@@ -315,7 +313,7 @@ const ResidentialCommunities = () => {
 
                   {/* Mobile slider view */}
                   {isClient && (
-                    <div className="block lg:hidden mt-8">
+                    <div className="industries-slider block lg:hidden mt-8">
                       <Splide
                         aria-label="My Favorite Images"
                         options={{
@@ -339,7 +337,7 @@ const ResidentialCommunities = () => {
                             next: "slider-next",
                           },
                         }}
-                        className="dots:absolute dots:right-0 dots:-bottom-16 sm:dots:-bottom-[72px] dots:p-0 dots:min-w-[300px] dots:justify-center dots:items-center dots:gap-4 dot:!bg-[#88C0FF] dot:w-2 dot:h-2 activeDot:scale-100 activeDot:!bg-[#1355FF] dot:shadow-none dot:outline-none"
+                        // className="dots:absolute dots:right-0 dots:-bottom-16 sm:dots:-bottom-[72px] dots:p-0 dots:min-w-[300px] dots:justify-center dots:items-center dots:gap-4 dot:!bg-[#88C0FF] dot:w-2 dot:h-2 activeDot:scale-100 activeDot:!bg-[#1355FF] dot:shadow-none dot:outline-none"
                       >
                         {[item.image1, item.image2, item.image3].map(
                           (image, imgIndex) => (
@@ -362,7 +360,7 @@ const ResidentialCommunities = () => {
         </div>
       </div>
 
-      <div className="mx-4 sm:mx-6 xl:mx-10 2xl:container 2xl:mx-auto mt-10 2xl:mt-20  px-4 py-10 sm:px-6 xl:px-8 2xl:p-20 ">
+      <div className="mx-4 sm:mx-6 xl:mx-10 2xl:max-w-[1440px] 2xl:mx-auto mt-10 2xl:mt-20  px-4 py-10 sm:px-6 xl:px-8 2xl:p-20 ">
         <Heading
           className="!mb-6 !mt-0 !text-[#222A5B] !text-center !tracking-[-2px]"
           title="Tailored Security Strategies For Your Gated Community"
@@ -387,7 +385,7 @@ const ResidentialCommunities = () => {
         </div>
       </div>
 
-      <div className="mx-4 sm:mx-6 xl:mx-10 2xl:container 2xl:mx-auto my-10 2xl:my-20 bg-[#EBFFF1]/30 rounded-[40px] px-4 py-10 sm:px-6 xl:px-8 2xl:p-20">
+      <div className="mx-4 sm:mx-6 xl:mx-10 2xl:max-w-[1440px] 2xl:mx-auto my-10 2xl:my-20 bg-[#EBFFF1]/30 rounded-[40px] px-4 py-10 sm:px-6 xl:px-8 2xl:p-20">
         <Heading
           className="!mb-6 !mt-0 !text-[#222A5B] !text-center !tracking-[-2px]"
           title="Consistent, Round-The-Clock Protection For Gated Communities"
@@ -432,7 +430,7 @@ const ResidentialCommunities = () => {
         </div>
       </div>
       <FreeQuote />
-      <Footer />
+     
     </>
   );
 };

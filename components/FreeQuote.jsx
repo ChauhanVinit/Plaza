@@ -119,13 +119,14 @@ const FreeQuote = () => {
             Serving the San Jose area, our expert team is ready to protect what
             matters most. Contact us today for a free risk assessment!
           </p>
-          <div className="mt-10">
+          <div className="mt-10 flex">
             <Button
               variant="custom"
-              icon={<Image src={right} alt="right" className="sm:hidden w-4 h-4" />}
+              bgtransparent={'!bg-transparent !text-white'}
+              icon={<Image src={right} alt="right" className="w-4 h-4" />}
               path={"Contact-Us"}
               style={
-                "!min-w-full sm:!min-w-[190px]  !text-white !bg-transparent "
+                "w-full sm:max-w-[190px]  !text-white  "
               }
               name={"Contact Us"}
             />
