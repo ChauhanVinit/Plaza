@@ -142,13 +142,11 @@ const CorporateBuildings = () => {
           <div className="relative">
             <div>
               <h1 className="font-dmSans text-5xl !leading-[56px] lg:text-[52px] lg:!leading-[60px] 2xl:text-[56px] 2xl:!leading-[64px] font-semibold text-[#222A5B] tracking-[-3px] mb-6 capitalize">
-                Comprehensive Security Services for All Types of Commercial
-                Spaces
+                Reliable Security Guards for Corporate 	Buildings
+
               </h1>
               <p className="px-4 rounded border-l-[3px] border-l-[#B0BABF] font-dmSans text-lg  2xl:text-xl 2xl:!leading-8 font-normal text-[#45535E] max-w-[806px] ">
-                At Plaza Protection provides customized security for commercial
-                spaces of all sizes, ensuring reliable protection tailored to
-                your needs.
+                Professional, trained security guards ensuring safety, access control, and peace of mind for your corporate facility
               </p>
             </div>
 
@@ -259,7 +257,7 @@ const CorporateBuildings = () => {
       <div className="mx-4 sm:mx-6 xl:mx-10 2xl:max-w-[1440px] 2xl:mx-auto mb-10 2xl:mb-20 bg-[#F0F6FF] rounded-[40px] px-4 pt-10 pb-[122px] sm:px-6 xl:px-8 2xl:p-20">
         <Heading
           className="!mb-6 !mt-0 !text-[#222A5B] !text-center !tracking-[-2px]"
-          title="Expert Security Solutions for Personalized Protection and Peace of Mind"
+          title="Expert Security Solutions for Corporate buildings"
         />
         <p className="text-center font-dmSans text-lg 2xl:text-xl 2xl:!leading-8 text-[#333333] font-normal max-w-[1126px] mx-auto">
           Our expert security solutions are designed to offer peace of mind by
