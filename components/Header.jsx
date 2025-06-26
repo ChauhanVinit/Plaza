@@ -46,7 +46,7 @@ import IllustrationB from "../public/Illustration-02.png";
 import arrowright from "../public/arrow-right.svg";
 import { usePathname } from "next/navigation";
 
-const Header = ({ ContactUsBtn }) => {
+const Header = () => {
   const navData = [
     {
       id: 1,
@@ -238,7 +238,7 @@ const Header = ({ ContactUsBtn }) => {
                     <div
                       onClick={() => setOpenMobNav(nav.id)}
                       className={` relative cursor-pointer w-full mb-2 xl:mb-0 bg-[#1355FF]/5 xl:bg-white inline-flex gap-2 items-center px-3 xl:px-[14px] py-6 rounded-2xl xl:py-7 text-base font-dmSans font-semibold tracking-[-0.5px]  xl:after:content-[''] xl:after:absolute xl:after:h-[3px] xl:after:rounded-[50px] xl:after:bottom-0 xl:after:left-1/2 xl:after:-translate-x-1/2 xl:after:bg-[#1355FF] 
-                        group-hover:text-[#1355FF] group-hover:after:w-[20px] text-[#1A1A1A] after:w-0 after:transition-all after:duration-250 after:ease-in-out`}
+                        xl:group-hover:text-[#1355FF] group-hover:after:w-[20px] text-[#1A1A1A] after:w-0 after:transition-all after:duration-250 after:ease-in-out`}
                     >
                       <Image
                         src={nav.icon}
@@ -248,7 +248,7 @@ const Header = ({ ContactUsBtn }) => {
                       {nav.name}
                       <div
                         className={`w-4 h-4  absolute right-3 top-7 xl:relative xl:right-0 xl:top-[2px] transition-transform duration-250 ease-in-out ${
-                          hoveredNavId === nav.id ? "rotate-180" : "rotate-0"
+                          hoveredNavId === nav.id ? "rotate-0 xl:rotate-180" : "rotate-0"
                         }`}
                       >
                         <Image
@@ -256,15 +256,15 @@ const Header = ({ ContactUsBtn }) => {
                           alt="down"
                           className={`absolute inset-0 w-full h-full transition-opacity duration-250 ${
                             hoveredNavId === nav.id
-                              ? "opacity-0"
+                              ? "opacity-100 xl:opacity-0"
                               : "opacity-100"
                           }`}
                         />
-        
+
                         <Image
                           src={downBlue}
                           alt="downBlue"
-                          className={`absolute inset-0 w-full h-full transition-opacity duration-300 ${
+                          className={`hidden xl:block absolute inset-0 w-full h-full transition-opacity duration-300 ${
                             hoveredNavId === nav.id
                               ? "opacity-100"
                               : "opacity-0"
@@ -423,7 +423,7 @@ const Header = ({ ContactUsBtn }) => {
                   </div>
                 ) : (
                   <Link
-                    className={`w-full bg-[#1355FF]/5 xl:bg-white  xl:w-auto inline-flex items-center gap-2 px-4 xl:px-[14px] py-6 xl:py-7 rounded-2xl text-base font-dmSans font-semibold tracking-[-0.5px] text-[#1A1A1A] smooth relative  xl:after:content-['']  xl:after:absolute  xl:after:h-[3px]  xl:after:rounded-[50px]  xl:after:bottom-0  xl:after:left-1/2  xl:after:w-0  xl:after:-translate-x-1/2  xl:after:bg-[#1355FF] hover:text-[#1355FF]  xl:hover:after:w-[20px]`}
+                    className={`w-full bg-[#1355FF]/5 xl:bg-white  xl:w-auto inline-flex items-center gap-2 px-4 xl:px-[14px] py-6 xl:py-7 rounded-2xl text-base font-dmSans font-semibold tracking-[-0.5px] text-[#1A1A1A] smooth relative  xl:after:content-['']  xl:after:absolute  xl:after:h-[3px]  xl:after:rounded-[50px]  xl:after:bottom-0  xl:after:left-1/2  xl:after:w-0  xl:after:-translate-x-1/2  xl:after:bg-[#1355FF] xl:hover:text-[#1355FF]  xl:hover:after:w-[20px]`}
                     href={nav.path}
                     key={nav.id}
                   >
@@ -439,7 +439,7 @@ const Header = ({ ContactUsBtn }) => {
             </div>
             <div
               className={`w-full xl:w-auto flex justify-between items-center ${
-                ContactUsBtn ? "gap-10" : "gap-4 xl:gap-3"
+                pathname === "/Request-A-Quote" ? "gap-10" : "gap-4 xl:gap-3"
               } px-0 mt-4 xl:mt-0`}
             >
               <div className="mt-0 flex items-center px-0 xl:px-1 gap-3">
