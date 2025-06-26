@@ -56,7 +56,7 @@ const Header = () => {
         {
           id: "unarmedSecurity",
           name: "Unarmed Security",
-          desc: "Plaza Protection provides top-tier security services across the ",
+          desc: "Plaza Protection provides top-tier security services across the",
           subIcon: UnarmedSecurity,
           img: UnarmedImg,
           path: "/Unarmed-Security",
@@ -64,7 +64,7 @@ const Header = () => {
         {
           id: "fire-Watch",
           name: "Fire Watch",
-          desc: "Plaza Protection provides top-tier security services across the ",
+          desc: "Plaza Protection provides top-tier security services across the",
           subIcon: fire,
           img: FireWatchImg,
           path: "/Fire-Watch",
@@ -72,7 +72,7 @@ const Header = () => {
         {
           id: "RemoteGuarding",
           name: "Remote Guarding Service",
-          desc: "Plaza Protection provides top-tier security services across the ",
+          desc: "Plaza Protection provides top-tier security services across the",
           subIcon: tvSmart,
           img: RemoteGuardingImg,
           path: "/Remote-Guarding-Service",
@@ -203,7 +203,7 @@ const Header = () => {
   return (
     <>
       <div
-        className={`hidden xl:block bg-black/15 transition-all duration-150 ease-in-out ${
+        className={`hidden xl:block bg-black/15 transition-all duration-200 ease-in-out ${
           hoveredNavId
             ? "backdrop-blur-sm visible opacity-100"
             : "backdrop-blur-none invisible opacity-0"
@@ -247,14 +247,14 @@ const Header = () => {
                       />
                       {nav.name}
                       <div
-                        className={`w-4 h-4  absolute right-3 top-7 xl:relative xl:right-0 xl:top-[2px] transition-transform duration-250 ease-in-out ${
+                        className={`w-4 h-4  absolute right-3 top-7 xl:relative xl:right-0 xl:top-[2px] transition-transform duration-200 ease-in-out ${
                           hoveredNavId === nav.id ? "rotate-0 xl:rotate-180" : "rotate-0"
                         }`}
                       >
                         <Image
                           src={down}
                           alt="down"
-                          className={`absolute inset-0 w-full h-full transition-opacity duration-250 ${
+                          className={`absolute inset-0 w-full h-full transition-opacity duration-200 ${
                             hoveredNavId === nav.id
                               ? "opacity-100 xl:opacity-0"
                               : "opacity-100"
@@ -264,7 +264,7 @@ const Header = () => {
                         <Image
                           src={downBlue}
                           alt="downBlue"
-                          className={`hidden xl:block absolute inset-0 w-full h-full transition-opacity duration-300 ${
+                          className={`hidden xl:block absolute inset-0 w-full h-full transition-opacity duration-200 ${
                             hoveredNavId === nav.id
                               ? "opacity-100"
                               : "opacity-0"
@@ -321,7 +321,7 @@ const Header = () => {
                                       <h4 className="subnav-title mb-[2px] font-dmSans text-lg font-semibold tracking-[-0.5px] text-[#111B29] group-subnav-hover:text-[#1355FF] transition-transform duration-300 ease-in-out">
                                         {sub.name}
                                       </h4>
-                                      <p className="text-sm xl:text-xs font-normal text-[#677489]">
+                                      <p className="text-sm xl:text-xs font-normal text-[#677489] max-w-[217px]">
                                         {sub.desc}
                                       </p>
                                     </div>
