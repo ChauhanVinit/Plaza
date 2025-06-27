@@ -477,11 +477,11 @@ const Header = () => {
             </div>
             <div
               className={`w-full xl:w-auto flex justify-between items-center ${
-                pathname === "/Request-A-Quote" ? "gap-10" : "gap-4 xl:gap-3"
+                pathname === "/Request-A-Quote" ? "gap-10" : " gap-2 xxs:gap-4 xl:gap-3"
               } px-0 mt-4 xl:mt-0`}
             >
               <div className="mt-0 flex items-center px-0 xl:px-1 gap-3 group">
-                <button className="h-10 w-10 bg-[#D7E8FF]/50 group-hover:bg-[#D7E8FF] transition-colors duration-300 ease-in-out inline-flex items-center justify-center">
+                <button className="h-10 min-w-10 bg-[#D7E8FF]/50 group-hover:bg-[#D7E8FF] transition-colors duration-300 ease-in-out inline-flex items-center justify-center">
                   <Image
                     src={callRinging}
                     className="w-5 h-5"
@@ -490,12 +490,12 @@ const Header = () => {
                 </button>
                 <div className="relative h-6 overflow-hidden flex items-center justify-center">
                   <div className="transition-all duration-300 ease-in-out translate-y-0 group-hover:-translate-y-full flex items-center justify-center">
-                    <p className="text-base font-dmSans font-semibold tracking-[-0.5px] text-[#1A1A1A]">
+                    <p className="text-sm  xxs:text-base font-dmSans font-semibold tracking-[-0.5px] text-[#1A1A1A]">
                       +1 844-557-5292
                     </p>
                   </div>
                   <div className="absolute top-full transition-all duration-300 ease-in-out group-hover:translate-y-[-100%] flex items-center justify-center">
-                    <p className="text-base font-dmSans font-semibold tracking-[-0.5px] text-[#1A1A1A]">
+                    <p className="text-sm  xxs:text-base font-dmSans font-semibold tracking-[-0.5px] text-[#1A1A1A]">
                       +1 844-557-5292
                     </p>
                   </div>
@@ -506,7 +506,7 @@ const Header = () => {
                 <div className="flex items-center justify-center">
                   <Button
                     variant="custom"
-                    style={"!min-w-[162px]"}
+                    style={"xs:!min-w-[162px]"}
                     name="Contact Us"
                     path="/Contact-Us"
                   />
@@ -524,12 +524,12 @@ const Header = () => {
 
                     <div className="relative h-6 overflow-hidden flex items-center justify-center">
                       <div className="transition-all duration-300 ease-in-out translate-y-0 group-hover:-translate-y-full flex items-center justify-center">
-                        <h3 className="text-base font-dmSans font-semibold tracking-[-0.5px] text-[#1A1A1A]">
+                        <h3 className="text-sm  xxs:text-base font-dmSans font-semibold tracking-[-0.5px] text-[#1A1A1A]">
                           Request Quote
                         </h3>
                       </div>
                       <div className="absolute top-full transition-all duration-300 ease-in-out group-hover:translate-y-[-100%] flex items-center justify-center">
-                        <h3 className="text-base font-dmSans font-semibold tracking-[-0.5px] text-[#1A1A1A]">
+                        <h3 className="text-sm  xxs:text-base font-dmSans font-semibold tracking-[-0.5px] text-[#1A1A1A]">
                           Request Quote
                         </h3>
                       </div>

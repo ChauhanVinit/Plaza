@@ -13,7 +13,7 @@ const Button = ({
 }) => {
   const buttonContent = (
     <div
-      className={`w-full transition-all duration-300 ease-in-out group flex items-center justify-between  sm:justify-center  gap-2 cursor-pointer text-base font-semibold font-dmSans capitalize px-6 sm:py-2 sm:px-2 h-14 xs:h-16 overflow-hidden ${bgtransparent} ${
+      className={`w-full transition-all duration-300 ease-in-out group flex items-center justify-between  sm:justify-center  gap-2 cursor-pointer text-sm  xxs:text-base font-semibold font-dmSans capitalize px-6 sm:py-2 sm:px-2 h-14 xs:h-16 overflow-hidden ${bgtransparent} ${
         variant === "custom"
           ? "bg-white border border-[#98A2B3] text-[#1D2939]"
           : "text-white bg-[#1355FF] hover:bg-[#222A5B]"
