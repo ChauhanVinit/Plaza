@@ -10,7 +10,7 @@ const Hero = () => {
       <div className="col-span-12 lg:col-span-6 relative pt-[15px] ">
         <div className="px-5 py-2 inline-flex items-center gap-3 rounded-[50px] border border-[#B6CAFF]/50  h-12">
           <Image src={mapsLocation} className="w-6 h-6" alt="mapsLocation" />
-          <span className="text-lg !leading-6 font-urbanist  font-semibold text-[#1355FF] tracking-[-0.5px]">
+          <span className="text-lg !leading-6 font-dmSans  font-semibold text-[#1355FF] tracking-[-0.5px]">
             San Jose, CA/Bay Area
           </span>
         </div>

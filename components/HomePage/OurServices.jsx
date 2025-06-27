@@ -2,7 +2,6 @@
 import clientA from "../../public/Client-img-01.png";
 import clientB from "../../public/Client-img-02.png";
 import clientC from "../../public/Client-img-03.png";
-import clientD from "../../public/Client-img-04.png";
 import lineShape02 from "../../public/line-shape02.svg";
 import Image from "next/image";
 import Tag from "../../utils/Tag";

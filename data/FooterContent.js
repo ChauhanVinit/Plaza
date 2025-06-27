@@ -109,7 +109,7 @@ socialMedia: [
     },
   ],
   bottomSection: {
-    copyRight: "All Right Reserved by PlazaProtection Copyright ©2025",
+    copyRight: "All Right Reserved by PlazaProtection Copyright © 2025",
     links: ["Terms", "Privacy", "Security"],
   },
 };

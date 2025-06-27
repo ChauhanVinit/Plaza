@@ -90,7 +90,7 @@ const AboutUs = () => {
             {AboutusData.map((item, index) => (
               <SplideSlide key={index}>
                 <div className="p-2 xl:p-4">
-                  <div className="overflow-hidden max-h-[350px] max-w-full shadow-[0_4px_4px_rgba(0,0,0,0.25)] rounded-2xl">
+                  <div className="overflow-hidden max-h-[350px] max-w-full  rounded-2xl">
                     <Image
                       src={item.image}
                       alt={item.title}

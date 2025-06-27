@@ -1,18 +1,10 @@
-import { Plus_Jakarta_Sans, Urbanist, DM_Sans } from "next/font/google";
+import {DM_Sans } from "next/font/google";
 import "./globals.css";
 import Head from "next/head";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-const jakarta = Plus_Jakarta_Sans({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-});
 
-const urbanist = Urbanist({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-});
 
 const dmSans = DM_Sans({
   subsets: ["latin"],
@@ -36,7 +28,7 @@ export default function RootLayout({ children }) {
         <meta name="robots" content="index, follow" />
       </Head>
       <html lang="en">
-        <body className={`${jakarta.className} ${urbanist.className} ${dmSans.className}  `}>
+        <body className={`${dmSans.className}`}>
           <Header />
           {children}
           <Footer />

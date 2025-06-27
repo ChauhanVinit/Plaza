@@ -38,7 +38,7 @@ import ShoppingCentersImg from "../public/Shopping-Centers-img.png";
 import HealthcareFacilitiesImg from "../public/Healthcare-Facilities-img.png";
 import SubNavBg from "../public/SubNav-Background-image.png";
 import SubNavSmallBg from "../public/SubNav-Small-BG.png";
-import HelpcenterIcon from "../public/Help center.svg";
+import HiringIcon from "../public/Hiring.svg";
 import blogIcon from "../public/Blog.svg";
 import AboutusIcon from "../public/About us.svg";
 import IllustrationA from "../public/Illustration-01.png";
@@ -56,7 +56,13 @@ const Header = () => {
         {
           id: "unarmedSecurity",
           name: "Unarmed Security",
-          desc: "Plaza Protection provides top-tier security services across the",
+          desc: (
+            <>
+              Deliver professional, reliable on-site protection with a strong
+              focus on
+              <br className="hidden xl:block" /> safety, and service.
+            </>
+          ),
           subIcon: UnarmedSecurity,
           img: UnarmedImg,
           path: "/Unarmed-Security",
@@ -64,7 +70,13 @@ const Header = () => {
         {
           id: "fire-Watch",
           name: "Fire Watch",
-          desc: "Plaza Protection provides top-tier security services across the",
+          desc: (
+            <>
+              Preventing hazards and maintaining full compliance with fire
+              safety
+              <br className="hidden xl:block" /> regulations.
+            </>
+          ),
           subIcon: fire,
           img: FireWatchImg,
           path: "/Fire-Watch",
@@ -72,7 +84,12 @@ const Header = () => {
         {
           id: "RemoteGuarding",
           name: "Remote Guarding Service",
-          desc: "Plaza Protection provides top-tier security services across the",
+          desc: (
+            <>
+              Advanced surveillance technology with live monitoring to detect,
+              respond to threats in real time.
+            </>
+          ),
           subIcon: tvSmart,
           img: RemoteGuardingImg,
           path: "/Remote-Guarding-Service",
@@ -80,7 +97,7 @@ const Header = () => {
         {
           id: "Vehiclepatrol",
           name: "Vehicle patrol",
-          desc: "Plaza Protection provides top-tier security services across the ",
+          desc: "High-visibility security with routine checks, rapid response, and real-time reporting across your property.",
           subIcon: car,
           img: VehiclepatrolImg,
           path: "/Vehicle-patrol",
@@ -88,7 +105,14 @@ const Header = () => {
         {
           id: "CCTV-Installation",
           name: "CCTV Installation",
-          desc: "Plaza Protection provides top-tier security services across the ",
+          desc: (
+            <>
+              Expert CCTV installation tailored to
+              <br className="hidden xl:block" /> your property—enhancing
+              visibility,
+              <br className="hidden xl:block" /> deterring threats.
+            </>
+          ),
           subIcon: CCTV,
           img: CCTVInstallationImg,
           path: "/CCTV-Installation",
@@ -103,7 +127,7 @@ const Header = () => {
         {
           id: "residential-Communities",
           name: "Residential Communities",
-          desc: "Plaza Protection provides top-tier security services across the ",
+          desc: "Ensuring a safe, welcoming, and well-monitored living environment.",
           subIcon: Residentialicon,
           img: ResidentialCommunitiesImg,
           path: "/Residential-Communities",
@@ -111,7 +135,7 @@ const Header = () => {
         {
           id: "commercial-Buildings",
           name: "Commercial Buildings",
-          desc: "Plaza Protection provides top-tier security services across the ",
+          desc: "Ensuring safe operations, controlled access, and 24/7 protection.",
           subIcon: Buildingsicon,
           img: CommercialBuildingsImg,
           path: "Commercial-Buildings",
@@ -119,7 +143,12 @@ const Header = () => {
         {
           id: "construction-Sites",
           name: "Construction Sites",
-          desc: "Plaza Protection provides top-tier security services across the ",
+          desc: (
+            <>
+              Keep secured, protected—day and
+              <br className="hidden xl:block" /> night, start to finish.
+            </>
+          ),
           subIcon: Sitesicon,
           img: ConstructionSitesImg,
           path: "/Construction-Sites",
@@ -127,7 +156,7 @@ const Header = () => {
         {
           id: "shopping-Center",
           name: "Shopping Centers",
-          desc: "Plaza Protection provides top-tier security services across the ",
+          desc: "Provides a safe, environment for shoppers, staff, and tenants.",
           subIcon: ShoppingCentersicon,
           img: ShoppingCentersImg,
           path: "/Shopping-Centers",
@@ -135,7 +164,12 @@ const Header = () => {
         {
           id: "healthcare-facilities",
           name: "Healthcare Facilities",
-          desc: "Plaza Protection provides top-tier security services across the ",
+          desc: (
+            <>
+              Specialized security that ensures a
+              <br className="hidden xl:block" /> safe, controlled environment.
+            </>
+          ),
           subIcon: Healthcareicon,
           img: HealthcareFacilitiesImg,
           path: "/Healthcare-Facilities",
@@ -151,23 +185,23 @@ const Header = () => {
         {
           id: "blog",
           name: "Blog",
-          desc: "Connect to your warehouse",
+          desc: "Expert insights & updates on security solutions.",
           subIcon: blogIcon,
           path: "/Blog",
         },
         {
           id: "aboutUs",
           name: "About Us",
-          desc: "Keep data clean & usable",
+          desc: "Your reliable partner for expert security services and peace of mind.",
           subIcon: AboutusIcon,
           path: "/About-us",
         },
         {
-          id: "help-center",
-          desc: "Protect customer data",
-          subIcon: HelpcenterIcon,
-          name: "Help Center",
-          path: "/Help-Center",
+          id: "Hiring",
+          desc: "Explore our current vacancies right here.",
+          subIcon: HiringIcon,
+          name: "Hiring",
+          path: "/Hiring",
         },
       ],
     },
@@ -216,8 +250,10 @@ const Header = () => {
             <Image src={Logo} alt="Logo" className="w-auto h-10" />
           </Link>
           <div
-            className={`bg-white p-4 xl:px-[15px] xl:py-0 absolute top-full h-[calc(100dvh-72px)] left-0 w-full overflow-y-scroll xl:overflow-y-visible xl:h-auto xl:top-0 xl:relative grow flex flex-col justify-between xl:flex-row xl:items-center smooth shadow-md xl:shadow-none ${
-              menuOpen ? "scale-100" : "xl:scale-100 scale-0 z-40"
+            className={`bg-white p-4 xl:px-[15px] xl:py-0 absolute left-0 w-full h-[calc(100dvh-72px)] overflow-y-scroll xl:overflow-y-visible xl:h-auto xl:top-0 xl:relative grow flex flex-col justify-between xl:flex-row xl:items-center shadow-md xl:shadow-none transition-all duration-300 ease-in-out transform z-40 ${
+              menuOpen
+                ? "top-[72px] opacity-100 visible"
+                : "top-0 opacity-0 invisible xl:opacity-100 xl:visible"
             }`}
           >
             <Link href={"/"} className="hidden xl:block">
@@ -248,7 +284,9 @@ const Header = () => {
                       {nav.name}
                       <div
                         className={`w-4 h-4  absolute right-3 top-7 xl:relative xl:right-0 xl:top-[2px] transition-transform duration-200 ease-in-out ${
-                          hoveredNavId === nav.id ? "rotate-0 xl:rotate-180" : "rotate-0"
+                          hoveredNavId === nav.id
+                            ? "rotate-0 xl:rotate-180"
+                            : "rotate-0"
                         }`}
                       >
                         <Image
@@ -277,7 +315,7 @@ const Header = () => {
                         openMobNav === nav.id
                           ? "opacity-100 visible"
                           : "opacity-0 invisible"
-                      } top-0 xl:!top-10 left-0 w-full xl:-z-[1] z-10 bg-white p-4 xl:px-12 xl:pb-12 xl:pt-6 transition-all xl:duration-150 ease-in-out xl:invisible xl:opacity-0 xl:group-hover:!top-20 xl:group-hover:opacity-100 xl:group-hover:visible`}
+                      } top-0 xl:!top-10 left-0 w-full xl:-z-[1] z-10 bg-white p-4 xl:px-12 xl:pb-12 xl:pt-6 transition-all xl:duration-150 ease-in-out xl:invisible xl:opacity-0 xl:group-hover:!top-24 xl:group-hover:opacity-100 xl:group-hover:visible xl:rounded-[40px]`}
                     >
                       <div className="py-2 border-b border-[#7198FE]/10 flex items-center justify-between">
                         <h3 className="font-dmSans text-sm !leading-6 tracking-[1px] text-[#666666] font-bold uppercase">
@@ -321,7 +359,7 @@ const Header = () => {
                                       <h4 className="subnav-title mb-[2px] font-dmSans text-lg font-semibold tracking-[-0.5px] text-[#111B29] group-subnav-hover:text-[#1355FF] transition-transform duration-300 ease-in-out">
                                         {sub.name}
                                       </h4>
-                                      <p className="text-sm xl:text-xs font-normal text-[#677489] max-w-[217px]">
+                                      <p className="text-sm xl:text-xs font-normal text-[#677489] xl:max-w-[217px]">
                                         {sub.desc}
                                       </p>
                                     </div>
@@ -442,18 +480,25 @@ const Header = () => {
                 pathname === "/Request-A-Quote" ? "gap-10" : "gap-4 xl:gap-3"
               } px-0 mt-4 xl:mt-0`}
             >
-              <div className="mt-0 flex items-center px-0 xl:px-1 gap-3">
-                <button className="h-10 w-10 bg-[#D7E8FF]/50 inline-flex items-center justify-center">
+              <div className="mt-0 flex items-center px-0 xl:px-1 gap-3 group">
+                <button className="h-10 w-10 bg-[#D7E8FF]/50 group-hover:bg-[#D7E8FF] transition-colors duration-300 ease-in-out inline-flex items-center justify-center">
                   <Image
                     src={callRinging}
                     className="w-5 h-5"
                     alt="callRinging"
                   />
                 </button>
-                <div>
-                  <p className="text-base font-dmSans font-semibold tracking-[-0.5px] text-[#1A1A1A]">
-                    +1 844-557-5292
-                  </p>
+                <div className="relative h-6 overflow-hidden flex items-center justify-center">
+                  <div className="transition-all duration-300 ease-in-out translate-y-0 group-hover:-translate-y-full flex items-center justify-center">
+                    <p className="text-base font-dmSans font-semibold tracking-[-0.5px] text-[#1A1A1A]">
+                      +1 844-557-5292
+                    </p>
+                  </div>
+                  <div className="absolute top-full transition-all duration-300 ease-in-out group-hover:translate-y-[-100%] flex items-center justify-center">
+                    <p className="text-base font-dmSans font-semibold tracking-[-0.5px] text-[#1A1A1A]">
+                      +1 844-557-5292
+                    </p>
+                  </div>
                 </div>
               </div>
 
@@ -468,18 +513,27 @@ const Header = () => {
                 </div>
               ) : (
                 <>
-                  <div className=" hidden xl:block h-7 w-[1px] bg-[#E6E6E6]"></div>
+                  <div className=" hidden xl:block h-7 w-[1px] bg-[#E6E6E6] hover:bg-[#d8d8d8] smooth"></div>
                   <Link
-                    href={"/Request-A-Quote"}
-                    // target="_blank"
-                    className="inline-flex xl:px-5 xl:py-1  items-center gap-3 "
+                    href="/Request-A-Quote"
+                    className="inline-flex xl:px-5 xl:py-1 items-center gap-3 group"
                   >
-                    <div className="w-10 h-10 inline-flex items-center justify-center bg-[#1355FF]">
+                    <div className="w-10 h-10 inline-flex items-center justify-center bg-[#1355FF] group-hover:bg-[#222A5B] transition-colors duration-300 ease-in-out">
                       <Image src={login} alt="login" width={20} height={20} />
                     </div>
-                    <h3 className="text-base font-dmSans font-semibold tracking-[-0.5px] text-[#1A1A1A]">
-                      Request Quote
-                    </h3>
+
+                    <div className="relative h-6 overflow-hidden flex items-center justify-center">
+                      <div className="transition-all duration-300 ease-in-out translate-y-0 group-hover:-translate-y-full flex items-center justify-center">
+                        <h3 className="text-base font-dmSans font-semibold tracking-[-0.5px] text-[#1A1A1A]">
+                          Request Quote
+                        </h3>
+                      </div>
+                      <div className="absolute top-full transition-all duration-300 ease-in-out group-hover:translate-y-[-100%] flex items-center justify-center">
+                        <h3 className="text-base font-dmSans font-semibold tracking-[-0.5px] text-[#1A1A1A]">
+                          Request Quote
+                        </h3>
+                      </div>
+                    </div>
                   </Link>
                 </>
               )}

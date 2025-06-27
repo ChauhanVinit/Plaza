@@ -38,7 +38,7 @@ const Contact = () => {
       alt: "Location",
       label: "Address",
       value:
-        "Plaza Protection 1900 Camden Ave San Jose, CA 95124 United States",
+        <>Plaza Protection 1900 Camden Ave San Jose,<br className="hidden xl:block" /> CA 95124 United States</>,
       border: false,
     },
   ];
@@ -195,7 +195,7 @@ const Contact = () => {
                   <p className="font-dmSans text-base font-normal text-[#374049]">
                     {item.label}
                   </p>
-                  <h3 className="mt-2 font-dmSans text-xl font-semibold text-[#171A1D] tracking-[-0.5px] break-all">
+                  <h3 className="mt-2 font-dmSans text-xl font-semibold text-[#171A1D] tracking-[-0.5px] break-all ">
                     {item.value}
                   </h3>
                 </div>

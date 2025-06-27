@@ -41,7 +41,6 @@ export default function Home() {
   
   return (
     <>
-      
       <Hero />
       <TopIndustries />
       <div className="mx-4 sm:mx-6  xl:mx-10  2xl:max-w-[1440px] 2xl:mx-auto mt-10 2xl:mt-[60px] py-8 px-4 sm:py-10 sm:px-6  xl:px-8  2xl:px-[60px] 2xl:py-20 bg-[#FAFAFA] rounded-[40px]">
