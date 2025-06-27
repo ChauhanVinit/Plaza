@@ -39,7 +39,7 @@ const Dropdown = ({ options, className = "", height = "", btnStyle = "", placeho
       <button
         onClick={toggleMenu}
         type="button"
-        className={`w-full flex bg-white rounded items-center justify-between px-5 bg-transparent border border-[#7198FE]/50 font-urbanist text-base font-medium ${
+        className={`w-full flex bg-white rounded items-center justify-between px-5 bg-transparent border border-[#7198FE]/50 font-dmSans text-base font-medium ${
           selectedOption === placeholder ? "text-[#45535E]" : "text-[#171A1D]"
         } gap-2 smooth ${btnStyle} ${height || "h-[50px]"}`}
       >
@@ -59,7 +59,7 @@ const Dropdown = ({ options, className = "", height = "", btnStyle = "", placeho
               key={option.id}
               onClick={() => handleOptionSelect(option)}
               type="button"
-              className={` outline-none p-2 rounded-md hover:bg-[#EDEFFE] w-full text-left text-[#171A1D] text-sm font-urbanist font-semibold smooth ${
+              className={` outline-none p-2 rounded-md hover:bg-[#EDEFFE] w-full text-left text-[#171A1D] text-sm font-dmSans font-semibold smooth ${
                 selectedOption === option.name ? "bg-[#EDEFFE]" : "bg-[#EDEFFE]/40"
               }`}
             >
