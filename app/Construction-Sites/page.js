@@ -1,7 +1,5 @@
 "use client";
-import { useState } from "react";
 import FreeQuote from "../../components/FreeQuote";
-import Heading from "../../utils/Heading";
 import ConstructionB from "../../public/ConstructionSites/Construction-B.png";
 import ConstructionA from "../../public/ConstructionSites/Construction-A.png";
 import Image from "next/image";
@@ -15,9 +13,7 @@ import Surveillance from "../../public/ConstructionSites/On-site-Surveillance.sv
 import SiteImage from "../../public/ConstructionSites/Construction-Sites-Image.png";
 import GuardImage from "../../public/ConstructionSites/Construction-Sites-Guard.png";
 import ConectElement from "../../public/Residential/Conect-element.svg";
-import Card from "../../components/Card";
 import person from "../../public/Residential/person-06.png";
-import { Tab, TabGroup, TabList, TabPanel, TabPanels } from "@headlessui/react";
 import Quote from "../../public/Residential/iconmonstr-quote.svg";
 import VisibleDitterence from "../../public/CommercialBuilding/Visible-Ditterence.svg";
 import AccessControlA from "../../public/ConstructionSites/Access-Control-01.png";
@@ -29,13 +25,13 @@ import VisitorAssistanceC from "../../public/CommercialBuilding/Visitor-Assistan
 import LocationMonitoringA from "../../public/Residential/LocationMonitoring-01.png";
 import LocationMnitoringB from "../../public/Residential/LocationMonitoring-02.png";
 import LocationMnitoringC from "../../public/Residential/LocationMonitoring-03.png";
-import { Splide, SplideSlide } from "@splidejs/react-splide";
-import "@splidejs/react-splide/css";
-import useIsClient from "../../Hook/useClient";
 import ConstructionC from "../../public/ConstructionSites/Construction-C.png";
+import IndustryTabs from "@/components/Industries/IndustryTabs";
+import IndustryHighlights from "@/components/Industries/IndustryHighlights";
+import IndustryFeatureList from "@/components/Industries/IndustryFeatureList";
 
 const ConstructionSites = () => {
-  const tabs = [
+  const tabsdata = [
     {
       label: "Access Control",
       icon: AcessControl,
@@ -58,7 +54,7 @@ const ConstructionSites = () => {
       image3: VisitorAssistanceC,
     },
   ];
-  const SecurityStrategiesData = [
+  const IndustryHighlightsData = [
     {
       icon: Emergencyprotocol,
       title: "Emergency Protocols",
@@ -84,7 +80,7 @@ const ConstructionSites = () => {
         "Our tailored security services are designed to provide each community with a personalized approach to safety. From sophisticated surveillance systems to expertly ",
     },
   ];
-  const residentialFeatures = [
+  const featuresListdata = [
     {
       icon: checkmarkCircle,
       title: "24/7 Monitoring",
@@ -110,8 +106,21 @@ const ConstructionSites = () => {
         "Our tailored security services are designed to provide each community with a personalized approach to safety. ",
     },
   ];
-
-  const isClient = useIsClient();
+const industryTabContent  = {
+  title:"Customized Security Solutions For Seamless Construction Operations",
+  desc: "Every construction site has unique challenges, requiring tailored security solutions to ensure smooth and secure operations.By aligning security measures with the specific needs of your project, customized solutions ensure the safety of workers equipment, and materials, fostering a secure environment that supports uninterrupted construction progress.",
+};
+ const HighlightsContent  = {
+  title:"Mitigating Risks And Enhancing Security At Construction Sites",
+  desc: "Effective security at construction sites involves proactive measures to reduce risks like theft, vandalism, and accidents. Trained security personnel, access control systems, and surveillance tools help protect equipment, materials, and workers.",
+};
+const featuresListContent  = {
+  title:"Expert Security Solutions Designed For The Unique Needs Of Construction Sites.",
+  desc: "Construction sites present unique security challenges, from safeguarding valuable equipment and materials to managing access and preventing vandalism. Expert security solutions address these specific needs with a combination of advanced technology and professional personnel.",
+  imgA:ConstructionB,
+  imgB:ConstructionA,
+  imgC:ConstructionC,
+};
 
   return (
     <>
@@ -253,178 +262,9 @@ const ConstructionSites = () => {
           </div>
         </div>
       </div>
-
-      <div className="mx-4 sm:mx-6 xl:mx-10 2xl:max-w-[1440px] 2xl:mx-auto mb-10 2xl:mb-20 bg-[#F0F6FF] rounded-[40px] px-4 pt-10 pb-[122px] sm:px-6 xl:px-8 2xl:p-20">
-        <Heading
-          className="!mb-6 !mt-0 !text-[#222A5B] !text-center !tracking-[-2px]"
-          title="Customized Security Solutions For Seamless Construction Operations"
-        />
-        <p className="text-center font-dmSans text-lg 2xl:text-xl 2xl:!leading-8 text-[#333333] font-normal max-w-[1126px] mx-auto">
-          Every construction site has unique challenges, requiring tailored
-          security solutions to ensure smooth and secure operations.By aligning
-          security measures with the specific needs of your project, customized
-          solutions ensure the safety of workers, equipment, and materials,
-          fostering a secure environment that supports uninterrupted
-          construction progress.
-        </p>
-
-        <div className="mt-8 xl:mt-10 2xl:mt-14">
-          <TabGroup>
-            <TabList className="mx-auto max-w-[390px] lg:max-w-full flex flex-col lg:flex-row lg:items-center gap-8 p-4">
-              {tabs.map((item, index) => (
-                <Tab
-                  key={index}
-                  className="inline-flex items-center gap-2 flex-1 !text-left rounded border-b-2 border-transparent focus-visible:outline-none data-[selected]:border-[#1355FF]"
-                  role="tab"
-                >
-                  <div className="h-[58px] w-[58px] inline-flex items-center justify-center">
-                    <Image
-                      src={item.icon}
-                      alt={item.label}
-                      height={32}
-                      width={32}
-                    />
-                  </div>
-                  <span className="font-dmSans text-xl font-semibold text-[#171A1D] tracking-[-0.5px]">
-                    {item.label}
-                  </span>
-                </Tab>
-              ))}
-            </TabList>
-
-            <TabPanels>
-              {tabs.map((item, index) => (
-                <TabPanel key={index}>
-                  {/* Desktop grid view */}
-                  <div className="hidden lg:grid grid-cols-12 gap-6 mt-10 2xl:mt-[60px]">
-                    {[item.image1, item.image2, item.image3].map((image, i) => (
-                      <div key={i} className="col-span-4">
-                        <Image
-                          src={image}
-                          alt={item.label}
-                          className="h-full w-full  rounded-3xl"
-                        />
-                      </div>
-                    ))}
-                  </div>
-
-                  {/* Mobile slider view */}
-                  {isClient && (
-                    <div className="industries-slider block lg:hidden mt-8">
-                      <Splide
-                        aria-label="My Favorite Images"
-                        options={{
-                          type: "loop",
-                          perMove: 1,
-                          rewind: true,
-                          perPage: 1,
-                          gap: "24px",
-                          pagination: true,
-                          autoplay: false,
-                          arrows: true,
-                          interval: 3000,
-                          breakpoints: {
-                            1040: {
-                              perPage: 1,
-                            },
-                          },
-                          classes: {
-                            arrow: "custom-arrow",
-                            prev: "slider-prev",
-                            next: "slider-next",
-                          },
-                        }}
-                        // className="dots:absolute dots:right-0 dots:-bottom-16 sm:dots:-bottom-[72px] dots:p-0 dots:min-w-[300px] dots:justify-center dots:items-center dots:gap-4 dot:!bg-[#88C0FF] dot:w-2 dot:h-2 activeDot:scale-100 activeDot:!bg-[#1355FF] dot:shadow-none dot:outline-none"
-                      >
-                        {[item.image1, item.image2, item.image3].map(
-                          (image, imgIndex) => (
-                            <SplideSlide key={imgIndex}>
-                              <Image
-                                src={image}
-                                alt={item.label}
-                                className="h-full w-auto mx-auto lg:w-full shadow-[0_21px_32px_0_rgba(0,88,250,0.1)] rounded-3xl"
-                              />
-                            </SplideSlide>
-                          )
-                        )}
-                      </Splide>
-                    </div>
-                  )}
-                </TabPanel>
-              ))}
-            </TabPanels>
-          </TabGroup>
-        </div>
-      </div>
-
-      <div className="mx-4 sm:mx-6 xl:mx-10 2xl:max-w-[1440px] 2xl:mx-auto mt-10 2xl:mt-20  px-4 py-10 sm:px-6 xl:px-8 2xl:p-20 ">
-        <Heading
-          className="!mb-6 !mt-0 !text-[#222A5B] !text-center !tracking-[-2px]"
-          title="Mitigating Risks And Enhancing Security At Construction Sites"
-        />
-        <p className="font-dmSans text-lg  xl:text-xl xl:!leading-8 text-[#333333] font-normal !text-center max-w-[1126px] mx-auto">
-          Effective security at construction sites involves proactive measures
-          to reduce risks like theft, vandalism, and accidents. Trained security
-          personnel, access control systems, and surveillance tools help protect
-          equipment, materials, and workers.
-        </p>
-
-        <div className="w-full flex flex-wrap gap-x-10 gap-y-10 mt-10 2xl:!mt-[60px]">
-          {SecurityStrategiesData.map((item, index) => (
-            <Card
-              key={index}
-              item={item}
-              className={"!border-[#FFF0E0] md:w-[calc(50%-20px)]"}
-            />
-          ))}
-        </div>
-      </div>
-      <div className="mx-4 sm:mx-6 xl:mx-10 2xl:max-w-[1440px] 2xl:mx-auto my-10 2xl:my-20 bg-[#EBFFF1]/30 rounded-[40px] px-4 py-10 sm:px-6 xl:px-8 2xl:p-20">
-        <Heading
-          className="!mb-6 !mt-0 !text-[#222A5B] !text-center !tracking-[-2px] !max-w-[1126px] !mx-auto"
-          title="Expert Security Solutions Designed For The Unique Needs Of Construction Sites."
-        />
-        <p className="font-dmSans text-lg  xl:text-xl xl:!leading-8  text-[#333333] font-normal text-center max-w-[1126px] mx-auto">
-          Construction sites present unique security challenges, from
-          safeguarding valuable equipment and materials to managing access and
-          preventing vandalism. Expert security solutions address these specific
-          needs with a combination of advanced technology and professional
-          personnel.
-        </p>
-
-        <div className="flex flex-col md:flex-row gap-8 md:gap-6 xl:gap-8 mt-[60px]">
-          <div className="w-full rounded-[40px] md:w-[47%] flex justify-center">
-            <Image
-              src={ConstructionB}
-              alt="ResidentialA"
-              className="w-full rounded-[40px] max-w-[329px] md:max-w-full object-cover"
-              loading="lazy"
-            />
-          </div>
-          <div className="w-full  md:grow flex justify-center">
-            <Image
-              src={ConstructionA}
-              alt="ResidentialB"
-              className="w-full max-w-[329px] md:max-w-full hidden md:block object-cover"
-              loading="lazy"
-            />
-
-            <Image
-              src={ConstructionC}
-              alt="ResidentialC"
-              className="w-full max-w-[329px] md:hidden object-cover"
-              loading="lazy"
-            />
-          </div>
-        </div>
-
-        <div className="w-full flex flex-wrap gap-x-6 gap-y-6 mt-10 2xl:mt-[60px]">
-          {residentialFeatures.map((item, index) => (
-            <Card key={index} item={item} />
-          ))}
-        </div>
-      </div>
-
+      <IndustryTabs data={tabsdata} {...industryTabContent } />
+       <IndustryHighlights data={IndustryHighlightsData} {...HighlightsContent} />
+       <IndustryFeatureList data={featuresListdata} {...featuresListContent}  />
       <FreeQuote />
      
     </>
