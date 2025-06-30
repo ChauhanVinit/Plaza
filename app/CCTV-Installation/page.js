@@ -20,6 +20,7 @@ const heroData = {
   title: <>CCTV Installation Services<br className="hidden 2xl:block" /> for Reliable Property<br className="hidden 2xl:block" />  Surveillance</>,
   desc: "Secure your home or business with professional CCTV installation services by Plaza Protection. Get reliable, 24/7 surveillance and real-time monitoring tailored to your property.",
   img: GuardImage,
+  alt:"CCTV Installation Security Guard"
 };
 const coreFeaturesData = {
   title: "Why Plaza Protection Is The Smart Choice For CCTV Installation?",

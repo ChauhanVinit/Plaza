@@ -16,27 +16,28 @@ import Services from "../components/HomePage/Services";
 import Button from "../utils/Button";
 import right from "../public/right.svg";
 import rightDark from "../public/right-dark.svg";
+
 export default function Home() {
-  const excelData = [
-    {
-      icon: licenseThird,
-      title: "Over 10 Years Of Industry Experience",
-      description:
-        "Bringing a decade of expertise to ensure top-notch security solutions.",
-    },
-    {
-      icon: aiSecurity,
-      title: "Licensed And Highly Trained Security Professionals",
-      description:
-        "Our guards are certified and skilled to provide superior protection.",
-    },
-    {
-      icon: folderSecurity,
-      title: "Custom Security Guard Services To Meet Your Unique Needs",
-      description:
-        "Tailoring our services to fit your specific security requirements.",
-    },
-  ];
+const excelData = [
+  {
+    icon: licenseThird,
+    alt: "Industry experience icon",
+    title: "Over 10 Years Of Industry Experience",
+    description: "Bringing a decade of expertise to ensure top-notch security solutions.",
+  },
+  {
+    icon: aiSecurity,
+    alt: "Certified security guard icon",
+    title: "Licensed And Highly Trained Security Professionals",
+    description: "Our guards are certified and skilled to provide superior protection.",
+  },
+  {
+    icon: folderSecurity,
+    alt: "Custom security services icon",
+    title: "Custom Security Guard Services To Meet Your Unique Needs",
+    description: "Tailoring our services to fit your specific security requirements.",
+  },
+];
 
   
   return (
@@ -49,7 +50,8 @@ export default function Home() {
             <Image
               src={ExpertSecurity}
               className="object-cover"
-              alt="ExpertSecurity"
+              alt="Experienced security guard – Over 10 years of industry expertise"
+              title="Over 10 years of security industry experience"
             />
           </div>
           <div className="w-full xl:w-[58%]">
@@ -75,7 +77,8 @@ export default function Home() {
                     <div className="inline-flex items-center justify-center min-w-12 xs:min-w-[58px] h-12 xs:h-[58px] rounded-[83px] bg-[#EDF5FF]">
                       <Image
                         src={item.icon}
-                        alt={item.icon}
+                       alt={item.alt}
+                       title={item.title} 
                         className="w-8 h-8"
                       />
                     </div>
@@ -99,7 +102,7 @@ export default function Home() {
 
             <div className="w-full mt-12 inline-flex sm:flex-row flex-col items-center gap-4">
               <Button
-                icon={<Image src={right} alt="right" className="w-4 h-4" />}
+                icon={<Image src={right} alt="Right arrow icon" className="w-4 h-4" />}
                 variant="blue"
                 style={"w-full sm:max-w-[243px]"}
                 name="Request Quote"
@@ -112,7 +115,7 @@ export default function Home() {
                 icon={
                   <Image
                     src={rightDark}
-                    alt="right"
+                    alt="Right arrow icon"
                     className="w-4 h-4"
                   />
                 }

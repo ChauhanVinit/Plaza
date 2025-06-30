@@ -9,7 +9,7 @@ const scrollIntoData = [
   { id: "highlights", title: "Highlights" },
 ];
 
-const Hero = ({ title, desc, img }) => {
+const Hero = ({ title, desc, img , alt}) => {
   const handleScrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
     if (section) {
@@ -35,7 +35,7 @@ const Hero = ({ title, desc, img }) => {
           </p>
           <div className="w-full mt-12 inline-flex sm:flex-row flex-col items-center gap-4">
             <Button
-              icon={<Image src={right} alt="right" className="w-4 h-4" />}
+              icon={<Image src={right} alt="Right arrow icon" className="w-4 h-4" />}
               variant="blue"
               style={"!w-full sm:max-w-[243px]"}
               name="Request Quote"
@@ -43,7 +43,7 @@ const Hero = ({ title, desc, img }) => {
             />
             <Button
               variant="custom"
-              icon={<Image src={rightDark} alt="right" className="w-4 h-4" />}
+              icon={<Image src={rightDark} alt="Right arrow icon" className="w-4 h-4" />}
               style={"w-full sm:max-w-[162px]"}
               name="Contact Us"
               path="/Contact-Us"
@@ -62,9 +62,8 @@ const Hero = ({ title, desc, img }) => {
             ))}
           </div>
         </div>
-
         <div className="w-full hidden lg:block lg:w-1/2  2xl:grow flex-shrink-0 z-0">
-          <Image src={img} alt="GuardImage" className="object-cover h-full" />
+          <Image src={img} alt={alt} className="object-cover h-full" />
         </div>
       </div>
     </div>

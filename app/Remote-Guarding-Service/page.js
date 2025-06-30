@@ -23,6 +23,7 @@ const heroData = {
   title: "Secure Your Property With Remote Guarding Services",
   desc: "By leveraging cutting-edge technology and a highly skilled team, Plaza Protection delivers comprehensive security solutions including video surveillance, security guards, remote guarding, alarms, and access control.",
   img: GuardImage,
+  alt:"Remote Guarding Security Guard"
 };
 const coreFeaturesData = {
   title: "Smart Video Surveillance For Proactive Security",

@@ -247,7 +247,12 @@ const Header = () => {
       <div className="w-full sticky top-0 z-[999] bg-white">
         <div className="2xl:max-w-[1440px] 2xl:mx-auto bg-white flex items-center relative p-4 xl:px-0 xl:pt-1 xl:pb-0">
           <Link href="/" className="xl:hidden">
-            <Image src={Logo} alt="Logo" className="w-auto h-10" />
+            <Image
+              src={Logo}
+              alt="Plaza Protection logo – Professional Security Guard Services"
+              title="Plaza Protection – Professional Security Services"
+              className="w-auto h-12"
+            />
           </Link>
           <div
             className={`bg-white p-4 xl:px-[15px] xl:py-0 absolute left-0 w-full h-[calc(100dvh-72px)] overflow-y-scroll xl:overflow-y-visible xl:h-auto xl:top-0 xl:relative grow flex flex-col justify-between xl:flex-row xl:items-center shadow-md xl:shadow-none transition-all duration-300 ease-in-out transform z-40 ${
@@ -257,7 +262,12 @@ const Header = () => {
             }`}
           >
             <Link href={"/"} className="hidden xl:block">
-              <Image src={Logo} alt="Logo" className="w-auto h-12" />
+              <Image
+                src={Logo}
+                alt="Plaza Protection logo – Professional Security Guard Services"
+                title="Plaza Protection – Professional Security Services"
+                className="w-auto h-12"
+              />
             </Link>
 
             <div className="w-full xl:w-auto xl:ml-auto 2xl:ml-[180px] mr-auto flex flex-col xl:flex-row items-start xl:items-center">
@@ -279,6 +289,7 @@ const Header = () => {
                       <Image
                         src={nav.icon}
                         alt={`${nav.name} icon`}
+                        title={`${nav.name}`}
                         className="w-4 h-4"
                       />
                       {nav.name}
@@ -352,7 +363,8 @@ const Header = () => {
                                   >
                                     <Image
                                       src={sub.subIcon}
-                                      alt={sub.name}
+                                      alt={`${sub.name} Icon`}
+                                      title={`${sub.name}`}
                                       className="w-[28px] h-[28px]"
                                     />
                                     <div className="xl:mt-4">
@@ -367,18 +379,23 @@ const Header = () => {
 
                                   <Image
                                     src={sub.img}
-                                    alt={sub.name}
+                                      alt={`${sub.name} illustration`}
+                                    title={sub.name}
                                     className="subnav-image hidden xl:block w-full relative z-20  transition-transform duration-300 ease-in-out"
                                   />
 
                                   <Image
                                     src={SubNavBg}
-                                    alt="SubNavBg"
+                                    alt=""
+                                    role="presentation"
+                                    aria-hidden="true"
                                     className="subnav-bg hidden xl:block absolute bottom-0 right-0 z-10  transition-transform duration-300 ease-in-out"
                                   />
                                   <Image
                                     src={SubNavSmallBg}
-                                    alt="SubNavBg"
+                                   alt=""
+                                    role="presentation"
+                                    aria-hidden="true"
                                     className="xl:hidden absolute bottom-0 right-0 z-10"
                                   />
                                 </div>
@@ -426,7 +443,7 @@ const Header = () => {
                           <div>
                             <Image
                               src={IllustrationA}
-                              alt="Illustration Image"
+                             alt="Visual representation of security demo video"
                             />
                             <div className="mt-5 inline-flex items-center gap-[10px]">
                               <h3 className="font-dmSans font-semibold text-lg !leading-8 text-[#111B29] tracking-[-0.58px] ">
@@ -435,14 +452,15 @@ const Header = () => {
                               <Image
                                 src={arrowright}
                                 className="w-[18px] h-[18px]"
-                                alt="arrow right icon"
+                                alt="" // Empty alt hides it from screen readers
+                                aria-hidden="true"
                               />
                             </div>
                           </div>
                           <div>
                             <Image
                               src={IllustrationB}
-                              alt="Illustration Image"
+                              alt="Visual representation of security demo video"
                             />
                             <div className="mt-5 inline-flex items-center gap-[10px]">
                               <h3 className="font-dmSans font-semibold text-lg !leading-8 text-[#111B29] tracking-[-0.58px] ">
@@ -451,7 +469,8 @@ const Header = () => {
                               <Image
                                 src={arrowright}
                                 className="w-[18px] h-[18px]"
-                                alt="arrow right icon"
+                               alt="" // Empty alt hides it from screen readers
+                                aria-hidden="true"
                               />
                             </div>
                           </div>
@@ -467,6 +486,7 @@ const Header = () => {
                   >
                     <Image
                       src={nav.icon}
+                      title={nav.name}
                       alt={`${nav.name} icon`}
                       className="w-4 h-4"
                     />
@@ -477,7 +497,9 @@ const Header = () => {
             </div>
             <div
               className={`w-full xl:w-auto flex justify-between items-center ${
-                pathname === "/Request-A-Quote" ? "gap-10" : " gap-2 xxs:gap-4 xl:gap-3"
+                pathname === "/Request-A-Quote"
+                  ? "gap-10"
+                  : " gap-2 xxs:gap-4 xl:gap-3"
               } px-0 mt-4 xl:mt-0`}
             >
               <div className="mt-0 flex items-center px-0 xl:px-1 gap-3 group">
@@ -485,7 +507,8 @@ const Header = () => {
                   <Image
                     src={callRinging}
                     className="w-5 h-5"
-                    alt="callRinging"
+                    title="Call Plaza Protection"
+                    alt="Phone number icon"
                   />
                 </button>
                 <div className="relative h-6 overflow-hidden flex items-center justify-center">
@@ -519,7 +542,13 @@ const Header = () => {
                     className="inline-flex xl:px-5 xl:py-1 items-center gap-3 group"
                   >
                     <div className="w-10 h-10 inline-flex items-center justify-center bg-[#1355FF] group-hover:bg-[#222A5B] transition-colors duration-300 ease-in-out">
-                      <Image src={login} alt="login" width={20} height={20} />
+                      <Image
+                        src={login}
+                        alt="Request Quote icon"
+                        title="Request a Quote"
+                        width={20}
+                        height={20}
+                      />
                     </div>
 
                     <div className="relative h-6 overflow-hidden flex items-center justify-center">
@@ -554,7 +583,8 @@ const Header = () => {
             <Image
               src={menuOpen ? close : menu}
               className="w-5 h-5"
-              alt="Menu"
+              alt={menuOpen ? "Close menu icon" : "Open menu icon"}
+              title={menuOpen ? "Close menu" : "Open menu"}
             />
           </button>
         </div>

@@ -57,7 +57,6 @@ const AboutUs = () => {
     <div className="w-full 2xl:pl-[calc((100%-1440px)/2)] ">
       <div className="rounded-[40px] sm:rounded-tr-[0px] sm:rounded-br-[0px]  sm:rounded-tl-[40px] sm:rounded-bl-[40px]  relative mt-10  sm:-mt-[116px] pb-[114px]  pt-8 px-4 sm:pb-[122px] sm:pt-10  sm:px-6 md:py-10  xl:px-8  2xl:py-20 2xl:pr-[0px] 2xl:pl-[60px] bg-[#EDF5FF]  mx-4 sm:ml-6 sm:mr-0  xl:ml-10 2xl:mx-0">
         <Tag title={"Quick view about us"} />
-
         <Heading title={"Trusted Security Services For Every Industry"} className={'      md:max-w-[600px] lg:max-w-full'} />
         {isClient && (
           <Splide
@@ -94,6 +93,7 @@ const AboutUs = () => {
                     <Image
                       src={item.image}
                       alt={item.title}
+                      title={item.title}
                       className=" w-full h-auto"
                     />
                   </div>
@@ -108,7 +108,7 @@ const AboutUs = () => {
                     <Button
                       variant="custom"
                       bgtransparent={'!bg-transparent'}
-                       icon={<Image src={rightDark} alt="right" className="w-4 h-4" />}
+                       icon={<Image src={rightDark} alt="Right arrow icon" className="w-4 h-4" />}
                       style={"w-full sm:!max-w-[162px] "}
                       name={"Learn More"}
                       path={item.path}

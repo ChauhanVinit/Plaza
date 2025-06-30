@@ -100,7 +100,7 @@ const Services = () => {
                     onClick={() => setActiveTab(index)}
                     className="w-full rounded-2xl flex items-center justify-start  px-5  min-h-[60px] leading-normal !bg-[#e6eeff] gap-4 !text-[20px] font-dmSans font-semibold text-[#1355FF] transition-all focus-visible:outline-none data-[selected]:!bg-white data-[selected]:text-[#1355FF] tracking-[-0.5px]"
                   >
-                    <Image src={item.icon} alt={item.label} className="w-6 h-6" />
+                    <Image src={item.icon} alt={`${item.label} Icon`} className="w-6 h-6" />
                     <span >{item.label}</span>
                   </Tab>
                 </div>
@@ -114,7 +114,8 @@ const Services = () => {
                   <div>
                     <Image
                       src={FeaturesBanner}
-                      alt="HomeServicesBanner"
+                      alt="Security guard dashboard interface with greeting and question prompts"
+                      title="Interactive dashboard for security guards with smart assistance"
                       className=" min-w-0  sm:min-w-[428px] w-auto h-[445px]"
                     />
                   </div>
@@ -132,7 +133,7 @@ const Services = () => {
                     </p>
                     <div className="w-full mt-10 inline-flex sm:flex-row flex-col items-center justify-start sm:justify-center lg:justify-start gap-4">
                       <Button
-                        icon={<Image src={right} alt="right" className="w-4 h-4" />}
+                        icon={<Image src={right} alt="Right arrow icon" className="w-4 h-4" />}
                         variant="blue"
                         style="w-full sm:max-w-[243px]"
                         name="Request Quote"
@@ -142,7 +143,7 @@ const Services = () => {
                       <Button
                         variant="custom"
                         bgtransparent={'!bg-transparent'}
-                        icon={<Image src={rightDark} alt="right" className="w-4 h-4" />}
+                        icon={<Image src={rightDark} alt="Right arrow icon" className="w-4 h-4" />}
                         style="w-full sm:max-w-[162px] !bg-[#EDF5FF]"
                         name="Learn More"
                         path={item.path}

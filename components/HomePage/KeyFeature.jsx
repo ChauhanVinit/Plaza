@@ -78,12 +78,12 @@ const KeyFeature = () => {
         <Image
           src={lineShape}
           className="z-0 absolute top-0 left-0 w-[431px] h-[357px]"
-          alt="lineShape"
+            alt=""
         />
         <Image
           src={bottomShape}
           className="z-0 absolute bottom-0 left-0 w-[462px] h-[465px]"
-          alt="bottomShape"
+            alt=""
         />
 
         <div className="ml-auto max-w-[1440px]  py-8 px-4 sm:py-10 sm:px-6  xl:px-8  2xl:py-20 2xl:px-[60px] relative z-10">

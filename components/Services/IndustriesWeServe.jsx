@@ -2,33 +2,42 @@
 import Tag from "../../utils/Tag";
 import useIsClient from "../../Hook/useClient";
 import Heading from "../../utils/Heading";
-import Button from "../../utils/Button";
+// import Button from "../../utils/Button";
 import ResidentialCommunities from "../../public/Services/Residential Communities.png";
 import CommercialBuilding from "../../public/Services/Commercial Building.png";
 import ConstructionSite from "../../public/Services/Construction Site.png";
 import ShoppingMall from "../../public/Services/Shopping Mall.png";
 import Image from "next/image";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
-import rightDark from "../../public/right-dark.svg";
+// import rightDark from "../../public/right-dark.svg";
 import "@splidejs/react-splide/css";
-const IndustriesWeServe = ({desc}) => {
+import Link from "next/link";
+const IndustriesWeServe = ({ desc }) => {
   const cardItems = [
     {
       src: ResidentialCommunities,
       alt: "Residential Communities",
       title: "Residential Communities",
+      path: "/Residential-Communities",
     },
     {
       src: CommercialBuilding,
       alt: "Commercial Building",
       title: "Commercial Building",
+      path: "/Commercial-Buildings",
     },
     {
       src: ConstructionSite,
       alt: "Construction Site",
       title: "Construction Site",
+      path: "/Construction-Sites",
     },
-    { src: ShoppingMall, alt: "Shopping Mall", title: "Shopping Mall" },
+    {
+      src: ShoppingMall,
+      alt: "Shopping Mall",
+      title: "Shopping Mall",
+      path: "/Shopping-Centers",
+    },
   ];
   const isClient = useIsClient();
   return (
@@ -43,11 +52,11 @@ const IndustriesWeServe = ({desc}) => {
             title={"Solutions That Scale Every Industry"}
             className={"!mb-6 !text-[#222A5B]"}
           />
-          <p className="font-dmSans font-normal text-xl !leading-8 text-[#333333] max-w-full xl:max-w-[915px]">
-           {desc}
+          <p className="font-dmSans font-normal text-xl !leading-8 text-[#333333] ">
+            {desc}
           </p>
         </div>
-        <div className="w-full xl:w-auto">
+        {/* <div className="w-full xl:w-auto">
           <Button
            bgtransparent={'!bg-transparent'}
             variant="custom"
@@ -56,13 +65,13 @@ const IndustriesWeServe = ({desc}) => {
             name="View More"
             // path="/Contact-Us"
           />
-        </div>
+        </div> */}
       </div>
 
       <div className="mt-8  flex  items-center gap-6  sm:hidden">
         {isClient && (
           <Splide
-          className="services-slider"
+            className="services-slider"
             aria-label="My Favorite Images"
             options={{
               type: "loop",
@@ -87,7 +96,8 @@ const IndustriesWeServe = ({desc}) => {
           >
             {cardItems.map((item, index) => (
               <SplideSlide key={index}>
-                <div
+                <Link
+                  href={item.path}
                   key={index}
                   className="w-full max-w-[310px] mx-auto relative rounded-2xl overflow-hidden"
                 >
@@ -102,7 +112,7 @@ const IndustriesWeServe = ({desc}) => {
                       {item.title}
                     </h3>
                   </div>
-                </div>
+                </Link>
               </SplideSlide>
             ))}
           </Splide>
@@ -110,7 +120,8 @@ const IndustriesWeServe = ({desc}) => {
       </div>
       <div className="mt-[60px] hidden sm:grid  grid-cols-12 items-center gap-4 2xl:gap-6 ">
         {cardItems.map((item, index) => (
-          <div
+          <Link
+            href={item.path}
             key={index}
             className="col-span-6 md:col-span-4 lg:col-span-3  relative rounded-2xl overflow-hidden mx-auto"
           >
@@ -121,7 +132,7 @@ const IndustriesWeServe = ({desc}) => {
                 {item.title}
               </h3>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </div>

@@ -22,6 +22,7 @@ const heroData = {
   title: "24/7 Vehicle Patrols For Constant Protection",
   desc: "With 24/7 vehicle patrols, we provide continuous security to ensure your property is always protected.",
   img: GuardImage,
+   alt:"Vehicle patrol Security Guard"
 };
 const coreFeaturesData = {
   title: "Unmatched Security With Vehicle Patrol Services",

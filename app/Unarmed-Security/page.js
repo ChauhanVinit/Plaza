@@ -21,6 +21,7 @@ const heroData = {
   title: `Round-The-Clock Unarmed Security For Protection And Peace Of Mind`,
   desc: "Providing 24/7 unarmed security services, our guards ensure safety with a constant, reassuring presence. More than just patrols, we foster peace of mind for businesses and communities alike.",
   img: GuardImage,
+  alt:"Unarmed Security Guard"
 };
 const coreFeaturesData = {
   title: "24/7 Unarmed Security For Reliable Protection And Rapid Response",

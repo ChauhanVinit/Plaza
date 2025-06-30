@@ -79,11 +79,12 @@ const OurServices = () => {
                 <Image
                   src={testimonial.clientImage}
                   className=" w-auto min-w-0 xl:min-w-[344px]  h-[399px]"
-                  alt={`client${testimonial.id}`}
+                 alt={`Photo of ${testimonial.clientName}, ${testimonial.clientRole}`}
+                 title={`${testimonial.clientName} – ${testimonial.clientRole}`}
                 />
 
                 <div className="min-w-[222px] max-w-[222px] border border-[#B9D8FF] absolute right-0 bottom-3  p-[18.17px] bg-[#EDF5FF]  rounded-bl-[18.17px] rounded-tr-[18.17px] ">
-                  <h3 className="mb-1 font-urbanist font-bold text-xl !leading-6 text-[#1355FF]">
+                  <h3 className="mb-1 font-dmSans font-bold text-xl !leading-6 text-[#1355FF]">
                     {testimonial.clientName}
                   </h3>
                   <p className="font-dmSans text-sm font-semibold text-[#11205A] !leading-[18px]">

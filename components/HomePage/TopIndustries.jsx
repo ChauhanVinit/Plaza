@@ -6,11 +6,11 @@ import essex from "../../public/essex.svg";
 import walmart from "../../public/walmart.svg";
 import WillisCompany from "../../public/Willis-Company.svg";
 const images = [
-  { src: walmart, alt: "Walmart" },
-  { src: carnegie, alt: "Carnegie" },
-  { src: essex, alt: "Essex" },
-  { src: club, alt: "Club" },
-  { src: WillisCompany, alt: "Willis Company" },
+  { src: walmart, alt: "Walmart logo" },
+  { src: carnegie, alt: "Carnegie logo" },
+  { src: essex, alt: "Essex logo" },
+  { src: club, alt: "Club logo" },
+  { src: WillisCompany, alt: "Willis Company logo" },
 ];
 
 const TopIndustries = () => {
@@ -30,6 +30,7 @@ const TopIndustries = () => {
                 <Image
                   src={item.src}
                   alt={item.alt}
+                  title={item.alt}
                   className="w-auto h-[70px]"
                 />
               </div>

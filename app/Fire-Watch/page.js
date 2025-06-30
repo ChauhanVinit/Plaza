@@ -24,6 +24,7 @@ const heroData = {
   title: <>Reliable Fire Watch Services<br className="hidden lg:block" /> in South Bay Area</>,
   desc: "Plaza Protection offers expert fire watch security, ensuring continuous monitoring and rapid response during fire system failures to keep properties and occupants safe.",
   img: GuardImage,
+  alt:"Fire Watch Security Guard"
 };
 const coreFeaturesData = {
   title: "Reliable Fire Watch Services for Enhanced Safety in San Jose",

@@ -9,7 +9,7 @@ const Hero = () => {
     <div className="mx-4 sm:mx-6  xl:mx-10 2xl:container 2xl:mx-auto mt-8  lg:mt-[67px] mb-10 lg:mb-20 grid grid-cols-12">
       <div className="col-span-12 lg:col-span-6 relative pt-[15px] ">
         <div className="px-5 py-2 inline-flex items-center gap-3 rounded-[50px] border border-[#B6CAFF]/50  h-12">
-          <Image src={mapsLocation} className="w-6 h-6" alt="mapsLocation" />
+          <Image src={mapsLocation} className="w-6 h-6"  alt="Location pin icon" title="San Jose, CA location" />
           <span className="text-lg !leading-6 font-dmSans  font-semibold text-[#1355FF] tracking-[-0.5px]">
             San Jose, CA/Bay Area
           </span>
@@ -26,7 +26,7 @@ const Hero = () => {
 
         <div className=" w-full mt-12 flex sm:flex-row flex-col items-center gap-4">
           <Button
-            icon={<Image src={right} alt="right" className="w-4 h-4" />}
+            icon={<Image src={right} alt="Right arrow icon" className="w-4 h-4" />}
             variant="blue"
             style={"w-full sm:max-w-[243px]"}
             name="Request Quote"
@@ -38,7 +38,7 @@ const Hero = () => {
             icon={
               <Image
                 src={rightDark}
-                alt="right"
+                alt="Right arrow icon"
                 className="w-4 h-4"
               />
             }

@@ -103,7 +103,7 @@ const FreeQuote = () => {
       <Image
         src={lineShape}
         className="z-0 absolute top-0 left-0 max-h-[612px] "
-        alt="lineShape"
+        alt=""
       />
       <div className="relative flex flex-col lg:flex-row gap-10 lg:gap-5 items-start">
         <div className="pt-8 sm:pt-10 pb-0 lg:py-10 2xl:py-[60px] w-full lg:w-1/3">
@@ -123,7 +123,7 @@ const FreeQuote = () => {
             <Button
               variant="custom"
               bgtransparent={'!bg-transparent !text-white'}
-              icon={<Image src={right} alt="right" className="w-4 h-4" />}
+              icon={<Image src={right} alt="Right arrow icon" className="w-4 h-4" />}
               path={"Contact-Us"}
               style={
                 "w-full sm:max-w-[190px]  !text-white  "
@@ -216,7 +216,7 @@ const FreeQuote = () => {
 
             <div className="mt-6 2xl:mt-8">
               <Button
-               icon={<Image src={right} alt="right" className="sm:hidden w-4 h-4" />}
+               icon={<Image src={right} alt="Right arrow icon" className="sm:hidden w-4 h-4" />}
                 variant="blue"
                 style={"!w-full"}
                 name="submit free quote"

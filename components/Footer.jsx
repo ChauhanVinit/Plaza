@@ -29,7 +29,7 @@ const Footer = () => {
 
           <div className="w-full md:w-1/3 flex md:flex-col lg:flex-row items-start lg:items-center gap-4 justify-start  md:justify-center ">
             <div className="min-w-11 h-11 inline-flex items-center justify-center bg-[#D7E8FF] rounded-full">
-              <Image src={callRinging} alt="Call icon" className=" w-5 h-5" />
+              <Image src={callRinging} alt="Phone number icon" className=" w-5 h-5" />
             </div>
             <div>
               <h3 className="font-dmSans text-base !leading-5 font-bold text-[#1355FF] tracking-[-0.5px]">
