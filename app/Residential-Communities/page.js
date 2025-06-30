@@ -114,12 +114,12 @@ const industryTabContent  = {
 };
 
 const HighlightsContent  = {
-  title:"Tailored Security Strategies For Your Gated Community",
-  desc: "Every gated neighborhood is unique, and Plaza Protection understands that one size doesn’t fit all. We work closely with your community to develop a security plan that’s personalized to meet your specific needs. From concierge services to monitoring visitor access, our team ensures that your residents are safe and your community is well-protected.",
+  title:"Customized Security Plans for Optimal Protection of Your Community",
+  desc: "We understand that one size doesn’t fit all. We work closely with your community to develop a security plan that’s personalized to meet your specific needs. From concierge services to monitoring visitor access, our team ensures that your residents are safe and your community is well-protected.",
 };
 const featuresListContent  = {
-  title:"Consistent, Round-The-Clock Protection For Gated Communities",
-  desc: "With Plaza Protection, your gated community benefits from continuous security coverage. Our well-trained guards maintain vigilance 24/7, providing a visible deterrent to crime and responding quickly to any incidents. Whether it's a minor complaint or a major security concern, our team is ready to address it promptly and professionally.",
+  title:"24/7 Vigilant Security Guards for Reliable Protection and Quick Response",
+  desc: "Our well-trained guards maintain vigilance 24/7, providing a visible deterrent to crime and responding quickly to any incidents. Whether it's a minor complaint or a major security concern, our team is always ready to address it promptly and professionally.",
   imgA:ResidentialA,
   imgB:ResidentialB,
   imgC:ResidentialC,

@@ -5,7 +5,7 @@ import Tag from "../utils/Tag";
 import Heading from "../utils/Heading";
 import Button from "../utils/Button";
 import right from "../public/right.svg";
-const SecurityTrustBanner = ({title,btnText}) => {
+const SecurityTrustBanner = ({ title, btnText, path }) => {
   return (
     <div className="relative mx-[5px] sm:mx-6  xl:mx-10 2xl:max-w-[1440px] 2xl:mx-auto  mb-10 2xl:mb-20 px-4 py-6  sm:py-10 sm:px-6 xl:px-8 2xl:p-20 rounded-2xl sm:rounded-[40px] bg-[#0C2459] text-left sm:text-center overflow-hidden">
       <Image
@@ -30,13 +30,18 @@ const SecurityTrustBanner = ({title,btnText}) => {
           matters most. Contact us today for a free risk assessment!
         </p>
 
-        <Button
-         bgtransparent={'!text-white !bg-transparent sm:!rounded-2xl'}
-          variant="custom"
-           icon={<Image src={right} alt="right" className="sm:hidden w-4 h-4" />}
-          style={"w-full sm:max-w-[190px]"}
-          name={btnText}
-        />
+        <div className="flex items-center justify-center">
+          <Button
+            bgtransparent={"!text-white !bg-transparent sm:!rounded-2xl"}
+            variant="custom"
+            icon={
+              <Image src={right} alt="right" className="sm:hidden w-4 h-4" />
+            }
+            style={"w-full sm:max-w-[190px]"}
+            name={btnText}
+            path={path}
+          />
+        </div>
       </div>
     </div>
   );

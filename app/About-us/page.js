@@ -62,6 +62,7 @@ const ourTechnologies = [
       </>
     ),
     btnText: "Request A Quote",
+    path:'/Request-A-Quote'
   };
 
 const AboutUs = () => {
@@ -90,6 +91,7 @@ const AboutUs = () => {
              icon={<Image src={right} alt="right" className="w-4 h-4" />}
             style={"w-full sm:max-w-[243px]"}
             name="Request Quote"
+            path={'/Request-A-Quote'}
           />
 
           <Button

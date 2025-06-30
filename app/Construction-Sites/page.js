@@ -153,8 +153,7 @@ const featuresListContent  = {
                 Comprehensive Security Guard Services For Construction Sites
               </h1>
               <p className="px-4 rounded border-l-[3px] border-l-[#B0BABF] font-dmSans text-lg  2xl:text-xl 2xl:!leading-8 font-normal text-[#45535E] max-w-[806px] ">
-                Protecting Your Investments with Expert Construction Site
-                Security Solutions
+                Plaza Protection delivers construction-site security through trained guards who secure equipment, materials, and personnel via strict access control, regular patrols, and proactive hazard monitoring.
               </p>
             </div>
 

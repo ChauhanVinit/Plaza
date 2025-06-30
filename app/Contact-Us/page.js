@@ -126,6 +126,7 @@ const Contact = () => {
       </>
     ),
     btnText: "Request A Quote",
+    path:'/Request-A-Quote'
   };
  
   return (

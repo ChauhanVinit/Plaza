@@ -159,8 +159,7 @@ const ShoppingCenter = () => {
                 Center
               </h1>
               <p className="px-4 rounded border-l-[3px] border-l-[#B0BABF] font-dmSans text-lg  2xl:text-xl 2xl:!leading-8 font-normal text-[#45535E] max-w-[806px] ">
-                Ensuring peace of mind with reliable protection for your
-                shopping center
+                Plaza Protection offers full-spectrum security services to keep your shopping center safe and secure. Our experienced guards maintain a strong, visible presence while our patrols and monitoring systems help prevent theft, vandalism, and disturbances. 
               </p>
             </div>
 

@@ -107,7 +107,7 @@ const CorporateBuildings = () => {
     },
   ];
   const industryTabContent = {
-    title: "Expert Security Solutions for Corporate buildings",
+    title: "Expert Security Solutions for Personalized Protection and Peace of Mind ",
     desc: "Our expert security solutions are designed to offer peace of mind by blending advanced technology with experienced guards. We provide personalized protection plans tailored to your specific needs, ensuring that everyone feels safe and secure around the clock.",
   };
   const HighlightsContent = {
@@ -148,11 +148,11 @@ const CorporateBuildings = () => {
           <div className="relative">
             <div>
               <h1 className="font-dmSans text-5xl !leading-[56px] lg:text-[52px] lg:!leading-[60px] 2xl:text-[56px] 2xl:!leading-[64px] font-semibold text-[#222A5B] tracking-[-3px] mb-6 capitalize">
-                Reliable Security Guards for Corporate Buildings
+                Comprehensive Security Services for All Types of Commercial Spaces
+
               </h1>
               <p className="px-4 rounded border-l-[3px] border-l-[#B0BABF] font-dmSans text-lg  2xl:text-xl 2xl:!leading-8 font-normal text-[#45535E] max-w-[806px] ">
-                Professional, trained security guards ensuring safety, access
-                control, and peace of mind for your corporate facility
+                 Plaza Protection offers tailored security solutions for commercial environments—office buildings, retail centers, warehouses, and more—with vigilant guards, advanced surveillance, and proactive patrols to protect your assets, employees, and customers.
               </p>
             </div>
 
