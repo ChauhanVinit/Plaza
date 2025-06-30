@@ -22,7 +22,6 @@ export const metadata = {
   ],
   robots: "index, follow",
   authors: [{ name: "Plaza Protection" }],
-  themeColor: "#000000",
   metadataBase: new URL("https://www.plazaprotection.com"),
   openGraph: {
     title: "Plaza Protection | Security Services San Jose Bay Area | Security Patrol Experts",

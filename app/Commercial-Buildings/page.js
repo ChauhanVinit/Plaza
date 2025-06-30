@@ -151,7 +151,7 @@ const CorporateBuildings = () => {
                 Comprehensive Security Services for All Types of Commercial Spaces
 
               </h1>
-              <p className="px-4 rounded border-l-[3px] border-l-[#B0BABF] font-dmSans text-lg  2xl:text-xl 2xl:!leading-8 font-normal text-[#45535E] max-w-[806px] ">
+              <p className="px-4 rounded border-l-[3px] border-l-[#B0BABF] font-dmSans text-lg  2xl:text-xl 2xl:!leading-8 font-normal text-[#45535E] max-w-[830px] ">
                  Plaza Protection offers tailored security solutions for commercial environments—office buildings, retail centers, warehouses, and more—with vigilant guards, advanced surveillance, and proactive patrols to protect your assets, employees, and customers.
               </p>
             </div>
