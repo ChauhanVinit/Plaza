@@ -266,7 +266,7 @@ const Header = () => {
                 src={Logo}
                 alt="Plaza Protection logo – Professional Security Guard Services"
                 title="Plaza Protection – Professional Security Services"
-                className="w-auto h-12"
+                className="w-auto h-10 xl:h-11 2xl:h-12"
               />
             </Link>
 
