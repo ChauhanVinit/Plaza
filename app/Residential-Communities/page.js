@@ -137,14 +137,14 @@ const ResidentialCommunities = () => {
               width={302}
               height={470}
               className="rounded-3xl min-w-[302px] h-auto"
-              alt="streetHouses"
+              alt="Security guard standing in front of residential houses"
               loading="lazy"
             />
             <div className="z-[51] absolute -right-[180px] bottom-[101px] inline-flex items-center gap-2  px-3 py-[9px] rounded-[50px] bg-white border-[1.5px] border-[#E7E7E7]  shadow-[0_17.33px_25.99px_0_rgba(0,0,0,0.05)]">
               <div className="w-[30px] h-[30px] inline-flex justify-center items-center rounded-full bg-[#EDF5FF]">
                 <Image
                   src={Surveillance}
-                  alt="Surveillance"
+                  alt="Surveillance Camera Monitoring"
                   className="w-4 h-4"
                 />
               </div>
@@ -184,7 +184,7 @@ const ResidentialCommunities = () => {
             <div className="w-[18px] h-[18px] sm:w-[30px] sm:h-[30px] inline-flex justify-center items-center rounded-full bg-[#EDF5FF]">
               <Image
                 src={Surveillance}
-                alt="Surveillance"
+                alt="Surveillance Camera Monitoring"
                 className="w-[10px] h-[10px] sm:w-4 sm:h-4"
               />
             </div>
@@ -197,7 +197,7 @@ const ResidentialCommunities = () => {
             <div className="w-[18px] h-[18px] sm:w-[30px] sm:h-[30px] inline-flex justify-center items-center rounded-full bg-[#EDF5FF]">
               <Image
                 src={Visitorcheck}
-                alt="Fire"
+                alt="Visitor & Vendor Check-In Services"
                 className="w-[10px] h-[10px] sm:w-4 sm:h-4"
               />
             </div>
@@ -215,12 +215,12 @@ const ResidentialCommunities = () => {
                 <div className="flex items-end justify-between">
                   <Image
                     src={person}
-                    alt="person"
+                    alt="Client profile photo"
                     className="w-[60px] h-[60px]"
                   />
                   <Image
                     src={Quote}
-                    alt="person"
+                    alt="Quote icon representing client testimonial"
                     className=" hidden md:block w-[43px] h-[43px]"
                   />
                 </div>
@@ -236,7 +236,7 @@ const ResidentialCommunities = () => {
               </div>
               <div className="md:hidden">
                 
-                <Image src={Quote} alt="person" className="w-[43px] h-[43px]" />
+                <Image src={Quote} alt="Quote icon representing client testimonial" className="w-[43px] h-[43px]" />
               </div>
             </div>
 
@@ -254,13 +254,13 @@ const ResidentialCommunities = () => {
               width={399}
               height={429}
               className="min-w-[399px] h-auto rounded-3xl"
-              alt="Guard Image"
+              alt="Security guard standing in front of residential houses"
               loading="lazy"
             />
 
             <div className="z-[51] absolute -left-[52px] top-[121px] inline-flex items-center gap-2 px-3 py-[9px] rounded-[50px] bg-white border-[1.5px] border-[#E7E7E7]  shadow-[0_17.33px_25.99px_0_rgba(0,0,0,0.05)]">
               <div className="w-[30px] h-[30px] inline-flex justify-center items-center rounded-full bg-[#EDF5FF]">
-                <Image src={Visitorcheck} alt="Fire" width={16} height={16} />
+                <Image src={Visitorcheck} alt="Visitor & Vendor Check-In Services" width={16} height={16} />
               </div>
               <div className="font-dmSans text-xs font-medium text-[#1A1A1A]">
                 Visitor & Vendor Check-In Services

@@ -15,7 +15,7 @@ const Hero = () => {
           </span>
         </div>
 
-        <h1 className="font-dmSans mt-4 mb-6 text-5xl  xs:text-[56px] xs:!leading-[64px]  sm:text-6xl sm:!leading-[68px] xl:text-[72px] xl:!leading-[80px] font-bold tracking-[-1px] text-[#171A1D] lg:max-w-[711px]">
+        <h1 className="font-dmSans mt-4 mb-6 text-5xl  xs:text-[56px] xs:!leading-[64px]  sm:text-6xl sm:!leading-[68px] xl:text-[72px] xl:!leading-[80px] font-bold tracking-[-2px] text-[#171A1D] lg:max-w-[711px]">
           Hire <br className="xs:hidden" /> Professional Security Guard Services
         </h1>
         <p className="text-lg sm:text-xl sm:!leading-8 font-dmSans font-normal text-[#45535E] max-w-full lg:max-w-[589px]">

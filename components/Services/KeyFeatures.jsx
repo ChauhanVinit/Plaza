@@ -23,7 +23,7 @@ const KeyFeatures = ({ data, title, desc }) => {
           <Button
             variant="custom"
             bgtransparent={'!bg-transparent'}
-              icon={<Image src={rightDark} alt="right" className="sm:hidden w-4 h-4" />}
+              icon={<Image src={rightDark} alt="Right arrow icon" className="sm:hidden w-4 h-4" />}
               style={"w-full sm:!max-w-[162px] sm:min-w-[162px]"}
             name="Contact Us"
             path="/Contact-Us"
@@ -37,7 +37,7 @@ const KeyFeatures = ({ data, title, desc }) => {
             key={index}
             className="col-span-12 sm:col-span-6 xl:col-span-3 p-4 rounded-2xl border border-[#FFF0E0] bg-white"
           >
-            <Image src={item.icon} alt={item.title} width={32} height={32} />
+            <Image src={item.icon} alt={item.title} title={item.title} width={32} height={32} />
             <div className="mt-6">
               <h3 className="mb-2 font-dmSans font-bold text-xl  !leading-6 text-[#171A1D] tracking-[-0.5px]">
                 {item.title}

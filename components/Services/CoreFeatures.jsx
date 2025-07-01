@@ -18,7 +18,7 @@ const CoreFeatures = ({ data, title, desc, img }) => {
       className="mx-0 sm:mx-6 xl:mx-10 2xl:max-w-[1440px] 2xl:mx-auto px-4 py-10 sm:px-6 xl:px-8 2xl:py-20 2xl:px-16 flex flex-col-reverse lg:flex-row   items-center gap-8 lg:gap-10 2xl:gap-20 rounded-[40px] mb-10 2xl:mb-[68px]"
     >  
       <div className="w-full lg:w-1/2">
-        <Image src={img} className="object-cover" alt="Why Choose Us" />
+        <Image src={img} className="object-cover" alt="title" title={title} />
       </div>
 
       <div className="w-full lg:w-1/2">
@@ -30,7 +30,7 @@ const CoreFeatures = ({ data, title, desc, img }) => {
          <div className="flex">
             <Button
           variant="custom"
-          icon={<Image src={rightDark} alt="right" className="w-4 h-4" />}
+          icon={<Image src={rightDark} alt="Right arrow icon" className="w-4 h-4" />}
           style={"w-full sm:max-w-[162px]"}
           name="Contact Us"
           path="/Contact-Us"

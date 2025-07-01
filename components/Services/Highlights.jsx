@@ -22,7 +22,7 @@ const Highlights = ({ data, title, desc, image }) => {
               className="flex-1 xl:flex-none p-4 rounded-2xl border border-[#E8E8E8]"
             >
               <div className="w-12 h-12  inline-flex items-center justify-center">
-                <Image src={item.icon} alt={item.title} className="w-10 h-10" />
+                <Image src={item.icon} alt={item.title} title={item.title} className="w-10 h-10" />
               </div>
               <h3 className="mt-5 mb-2 font-dmSans text-xl font-semibold text-[#171A1D] max-w-full xl:max-w-[284px]">
                 {item.title}
@@ -35,7 +35,7 @@ const Highlights = ({ data, title, desc, image }) => {
         </div>
 
         <div className="grow flex items-center justify-center  sm:px-4">
-          <Image src={image} alt="BenefitsIMG" className="min-w-full sm:min-w-[440px] max-w-[440px]" />
+          <Image src={image} alt={title}  className="min-w-full sm:min-w-[440px] max-w-[440px]" />
         </div>
 
         <div className="flex flex-col sm:flex-row xl:flex-col gap-4 xl:gap-10  2xl:gap-[60px]">
@@ -45,7 +45,7 @@ const Highlights = ({ data, title, desc, image }) => {
               className="flex-1 xl:flex-none p-4 rounded-2xl border border-[#E8E8E8]"
             >
               <div className="w-12 h-12 inline-flex items-center justify-center">
-                <Image src={item.icon} alt={item.title} className="w-10 h-10" />
+                <Image src={item.icon} alt={item.title} title={item.title} className="w-10 h-10" />
               </div>
               <h3 className="mt-5 mb-2 font-dmSans text-xl font-semibold text-[#171A1D] max-w-full xl:max-w-[284px]">
                 {item.title}

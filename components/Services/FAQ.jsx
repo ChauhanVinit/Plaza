@@ -43,7 +43,7 @@ const FAQ = ({data}) => {
               <button>
                 <Image
                   src={plus}
-                  alt="Plus"
+                  alt="Plus Icon"
                   className={`min-w-6 h-6 transition-all duration-200 cubic-bezier(0.4, 0, 0.68, 0.06) ${
                     openIndex === index ? " rotate-45" : "rotate-0"
                   }`}
