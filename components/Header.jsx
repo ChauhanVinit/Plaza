@@ -502,7 +502,7 @@ const Header = () => {
                   : " gap-2 xxs:gap-4 xl:gap-3"
               } px-0 mt-4 xl:mt-0`}
             >
-              <div className="mt-0 flex items-center px-0 xl:px-1 gap-3 group">
+              <Link href="tel:+18445575292" className="mt-0 flex items-center px-0 xl:px-1 gap-3 group">
                 <button className="h-10 min-w-10 bg-[#D7E8FF]/50 group-hover:bg-[#D7E8FF] transition-colors duration-300 ease-in-out inline-flex items-center justify-center">
                   <Image
                     src={callRinging}
@@ -511,7 +511,7 @@ const Header = () => {
                     alt="Phone number icon"
                   />
                 </button>
-                <Link href="tel:+18445575292" className="relative h-6 overflow-hidden flex items-center justify-center">
+                <div className="relative h-6 overflow-hidden flex items-center justify-center">
                   <div className="transition-all duration-300 ease-in-out translate-y-0 group-hover:-translate-y-full flex items-center justify-center">
                     <p className="text-sm  xxs:text-base font-dmSans font-semibold tracking-[-0.5px] text-[#1A1A1A]">
                       +1 844-557-5292
@@ -522,8 +522,8 @@ const Header = () => {
                       +1 844-557-5292
                     </p>
                   </div>
-                </Link>
-              </div>
+                </div>
+              </Link>
 
               {pathname === "/Request-A-Quote" ? (
                 <div className="flex items-center justify-center">
