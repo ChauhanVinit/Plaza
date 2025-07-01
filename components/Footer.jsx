@@ -137,7 +137,7 @@ const Footer = () => {
           <div className="lg:hidden mt-8 flex items-center justify-start sm:justify-center gap-4">
             {data.socialMedia.map((media, index) => (
               <Link href={media.path} target="_blank" key={index}>
-               <div>
+               <div className="h-10 w-10 inline-flex items-center justify-center bg-white hover:bg-[#D7E8FF] smooth border border-[#D7E8FF]">
                        <Image
                       src={media.icon}
                       alt={media.alt}
