@@ -251,13 +251,13 @@ const Header = () => {
               src={Logo}
               alt="Plaza Protection logo – Professional Security Guard Services"
               title="Plaza Protection – Professional Security Services"
-              className="w-auto h-12"
+              className="w-auto h-10 xl:h-11 2xl:h-12"
             />
           </Link>
           <div
-            className={`bg-red-500 p-4 xl:px-[15px] xl:py-0 absolute left-0 w-full h-[calc(100vh-80px)] overflow-y-scroll xl:overflow-y-visible xl:h-auto xl:top-0 xl:relative grow flex flex-col justify-between xl:flex-row xl:items-center shadow-md xl:shadow-none transition-all duration-200 ease-in-out transform z-40 ${
+            className={`bg-white p-4 xl:px-[15px] xl:py-0 absolute left-0 w-full h-[calc(100vh-72px)] overflow-y-scroll xl:overflow-y-visible xl:h-auto xl:top-0 xl:relative grow flex flex-col justify-between xl:flex-row xl:items-center shadow-md xl:shadow-none transition-all duration-200 ease-in-out transform z-40 ${
               menuOpen
-                ? "top-20 opacity-100 visible"
+                ? "top-[72px] opacity-100 visible"
                 : "top-[64px] opacity-0 invisible xl:opacity-100 xl:visible"
             }`}
           >
@@ -570,7 +570,7 @@ const Header = () => {
           </div>
           <Link
             href={"/Request-A-Quote"}
-            className="mr-2 ml-auto xl:hidden  p-[10px] bg-[#D7E8FF]/50 text-sm font-dmSans font-semibold tracking-[-0.5px] text-[#1A1A1A]"
+            className="mr-2 ml-auto xl:hidden p-[10px] bg-[#D7E8FF]/50 text-sm font-dmSans font-semibold tracking-[-0.5px] text-[#1A1A1A]"
           >
             Request Quote
           </Link>
