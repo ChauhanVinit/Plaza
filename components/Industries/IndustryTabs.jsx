@@ -50,7 +50,7 @@ const IndustryTabs = ({data, title, desc}) => {
                       <div key={i} className="col-span-4">
                         <Image
                           src={image}
-                          alt={item.label}
+                          alt={`${item.label} - Image ${i + 1}`}
                           className="h-full w-full  rounded-3xl"
                         />
                       </div>

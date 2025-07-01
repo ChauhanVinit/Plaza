@@ -129,7 +129,7 @@ const CorporateBuildings = () => {
             <Image
               src={BuildingImage}
               className="rounded-3xl min-w-[302px] h-auto"
-              alt="BuildingImage"
+              alt="Commercial Building"
               loading="lazy"
             />
             <div className="z-[51] absolute -right-[122px] bottom-[101px] inline-flex items-center gap-2 px-3 py-[9px] rounded-[50px] bg-white border-[1.5px] border-[#E7E7E7]  shadow-[0_17.33px_25.99px_0_rgba(0,0,0,0.05)]">
@@ -159,7 +159,7 @@ const CorporateBuildings = () => {
             <div className="hidden xl:block absolute bottom-[9px] -left-20 z-50">
               <Image
                 src={ConectElement}
-                alt="ConectElement"
+                alt=""
                 className="w-[713px]"
               />
             </div>
@@ -168,7 +168,7 @@ const CorporateBuildings = () => {
         <div className="xl:hidden relative mt-8  w-full max-w-[713px] mx-auto z-50">
           <Image
             src={ConectElement}
-            alt="ConectElement"
+            alt=""
             className=" object-cover"
           />
 
@@ -176,7 +176,7 @@ const CorporateBuildings = () => {
             <div className="w-[18px] h-[18px] sm:w-[30px] sm:h-[30px] inline-flex justify-center items-center rounded-full bg-[#EDF5FF]">
               <Image
                 src={VisitorManagement}
-                alt="Surveillance"
+                alt="Visitor Management"
                 className="w-[10px] h-[10px] sm:w-4 sm:h-4"
               />
             </div>
@@ -189,7 +189,7 @@ const CorporateBuildings = () => {
             <div className="w-[18px] h-[18px] sm:w-[30px] sm:h-[30px] inline-flex justify-center items-center rounded-full bg-[#EDF5FF]">
               <Image
                 src={Continuousvigilance}
-                alt="Fire"
+                alt="Continuous Vigilance"
                 className="w-[10px] h-[10px] sm:w-4 sm:h-4"
               />
             </div>
@@ -205,12 +205,12 @@ const CorporateBuildings = () => {
                 <div className="flex items-end justify-between">
                   <Image
                     src={person}
-                    alt="person"
+                    alt="Client profile photo"
                     className="w-[60px] h-[60px]"
                   />
                   <Image
                     src={Quote}
-                    alt="person"
+                    alt="Quote icon representing client testimonial"
                     className=" hidden md:block w-[43px] h-[43px]"
                   />
                 </div>
@@ -225,7 +225,7 @@ const CorporateBuildings = () => {
                 </p>
               </div>
               <div className="md:hidden">
-                <Image src={Quote} alt="person" className="w-[43px] h-[43px]" />
+                <Image src={Quote} alt="Quote icon representing client testimonial" className="w-[43px] h-[43px]" />
               </div>
             </div>
 
@@ -241,7 +241,7 @@ const CorporateBuildings = () => {
             <Image
               src={GuardImage}
               className="rounded-3xl min-w-[399px] h-auto"
-              alt="GuardImage"
+              alt="Security Guard Monitoring Property"
               loading="lazy"
             />
 

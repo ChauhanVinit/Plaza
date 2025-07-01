@@ -136,7 +136,7 @@ const ShoppingCenter = () => {
             <Image
               src={Shoppingmall}
               className="rounded-3xl min-w-[302px] h-auto"
-              alt="streetHouses"
+              alt="Shopping Mall Exterior"
               loading="lazy"
             />
             <div className="z-[51] absolute -right-[126px] bottom-[101px] inline-flex items-center gap-2 px-3 py-[9px] rounded-[50px] bg-white border-[1.5px] border-[#E7E7E7]  shadow-[0_17.33px_25.99px_0_rgba(0,0,0,0.05)]">
@@ -166,7 +166,7 @@ const ShoppingCenter = () => {
             <div className="hidden xl:block absolute bottom-[9px] -left-20 z-50">
               <Image
                 src={ConectElement}
-                alt="ConectElement"
+                alt=""
                 className="w-[713px]"
               />
             </div>
@@ -175,7 +175,7 @@ const ShoppingCenter = () => {
         <div className="xl:hidden relative mt-8  w-full max-w-[713px] mx-auto z-50">
           <Image
             src={ConectElement}
-            alt="ConectElement"
+            alt=""
             className=" object-cover"
           />
 
@@ -183,7 +183,7 @@ const ShoppingCenter = () => {
             <div className="w-[18px] h-[18px] sm:w-[30px] sm:h-[30px] inline-flex justify-center items-center rounded-full bg-[#EDF5FF]">
               <Image
                 src={Emergencyprotocol}
-                alt="Surveillance"
+                alt="Emergency Protocols"
                 className="w-[10px] h-[10px] sm:w-4 sm:h-4"
               />
             </div>
@@ -196,7 +196,7 @@ const ShoppingCenter = () => {
             <div className="w-[18px] h-[18px] sm:w-[30px] sm:h-[30px] inline-flex justify-center items-center rounded-full bg-[#EDF5FF]">
               <Image
                 src={TrainedSecurity}
-                alt="Fire"
+                alt="Trained Security Personnel"
                 className="w-[10px] h-[10px] sm:w-4 sm:h-4"
               />
             </div>
@@ -212,13 +212,13 @@ const ShoppingCenter = () => {
                 <div className="flex items-end justify-between">
                   <Image
                     src={person}
-                    alt="person"
+                    alt="Client profile photo"
                     className="w-[60px] h-[60px]"
                   />
                   <Image
                     src={Quote}
-                    alt="person"
-                    className=" hidden md:block w-[43px] h-[43px]"
+                    alt="Quote icon representing client testimonial"
+                    className="hidden md:block w-[43px] h-[43px]"
                   />
                 </div>
                 <h3 className="mt-1 text-base font-dmSans font-semibold text-[#171A1D]">
@@ -232,7 +232,7 @@ const ShoppingCenter = () => {
                 </p>
               </div>
               <div className="md:hidden">
-                <Image src={Quote} alt="person" className="w-[43px] h-[43px]" />
+                <Image src={Quote} alt="Quote icon representing client testimonial" className="w-[43px] h-[43px]" />
               </div>
             </div>
 
@@ -249,13 +249,13 @@ const ShoppingCenter = () => {
             <Image
               src={guard}
               className="rounded-3xl min-w-[399px] h-auto"
-              alt="Security-Guard"
+              alt="Professional Security Guard Standing on Duty"
               loading="lazy"
             />
 
             <div className="z-[51] absolute -left-[105px] top-[121px] inline-flex items-center gap-2 px-3 py-[9px] rounded-[50px] bg-white border-[1.5px] border-[#E7E7E7]  shadow-[0_17.33px_25.99px_0_rgba(0,0,0,0.05)]">
               <div className="w-[30px] h-[30px] inline-flex justify-center items-center rounded-full bg-[#EDF5FF]">
-                <Image src={TrainedSecurity} alt="Gun" className="w-4 h-4" />
+                <Image src={TrainedSecurity} alt="Trained Security Personnel" className="w-4 h-4" />
               </div>
               <div className="font-dmSans text-xs font-medium text-[#1A1A1A]">
                 Trained Security Personnel

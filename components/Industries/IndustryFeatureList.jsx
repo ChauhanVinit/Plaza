@@ -18,7 +18,7 @@ const IndustryFeatureList = ({data, title, desc ,imgA,imgB,imgC}) => {
           <div className="w-full md:w-[47%] flex justify-center">
             <Image
               src={imgA}
-              alt="ResidentialA"
+              alt="Plaza Protection Security Guard Providing Industry-Specific Protection"
               className="w-full rounded-[40px] max-w-[329px] md:max-w-full object-cover"
               loading="lazy"
             />
@@ -26,13 +26,13 @@ const IndustryFeatureList = ({data, title, desc ,imgA,imgB,imgC}) => {
           <div className="w-full  md:grow flex justify-center">
             <Image
               src={imgB}
-              alt="ResidentialB"
+              alt="Plaza Protection Security Guard Providing Industry-Specific Protection"
               className="w-full rounded-[40px] max-w-[329px] md:max-w-full hidden md:block object-cover"
               loading="lazy"
             />
             <Image
               src={imgC}
-              alt="ResidentialC"
+              alt="Plaza Protection Security Guard Providing Industry-Specific Protection"
               className="w-full max-w-[329px] md:hidden object-cover"
               loading="lazy"
             />

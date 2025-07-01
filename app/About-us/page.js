@@ -36,21 +36,21 @@ const coreValues = [
 const ourTechnologies = [
   {
     icon: SurveillanceSystems,
-    alt: "SurveillanceSystems",
+     alt: "High-Definition Surveillance Camera System Icon",
     title: "Surveillance Systems",
     description:
       "High-definition cameras and motion detectors create a seamless security network.",
   },
   {
     icon: LiveGPS,
-    alt: "Live GPS Tracking",
+    alt: "Live GPS Location Tracking Icon",
     title: "Live GPS Tracking",
     description:
       "Our guards are equipped with GPS devices, ensuring efficient, on-schedule mobile and full coverage.",
   },
   {
     icon: IncidentReporting,
-    alt: "Incident Reporting",
+      alt: "Incident Reporting and Alert Notification Icon",
     title: "Incident Reporting",
     description: "Real-time alerts enable fast response and full transparency.",
   },
@@ -88,7 +88,7 @@ const AboutUs = () => {
         <div className="w-full mt-12 sm:mt-14  inline-flex flex-col sm:flex-row justify-center items-center  gap-4">
           <Button
             variant="blue"
-             icon={<Image src={right} alt="right" className="w-4 h-4" />}
+             icon={<Image src={right} alt="Right arrow icon" className="w-4 h-4" />}
             style={"w-full sm:max-w-[243px]"}
             name="Request Quote"
             path={'/Request-A-Quote'}
@@ -96,7 +96,7 @@ const AboutUs = () => {
 
           <Button
             variant="custom"
-            icon={<Image src={rightDark} alt="right" className="w-4 h-4" />}
+            icon={<Image src={rightDark} alt="Right arrow icon" className="w-4 h-4" />}
             style={"w-full sm:max-w-[162px]"}
             name="Contact Us"
             path="/Contact-Us"
@@ -183,7 +183,7 @@ const AboutUs = () => {
           </div>
         </div>
         <div className="w-full lg:w-1/2">
-          <Image src={ourtechnologies} alt="Our Technologies" className="w-full h-full max-w-[600px] lg:max-w-full" />
+          <Image src={ourtechnologies} alt="Security guard monitoring a seated individual, demonstrating real-time protection with cutting-edge technology" className="w-full h-full max-w-[600px] lg:max-w-full" />
         </div>
       </div>
 

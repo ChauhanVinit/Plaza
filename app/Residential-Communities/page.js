@@ -168,7 +168,7 @@ const ResidentialCommunities = () => {
             </div>
 
             <div className="hidden xl:block absolute bottom-[9px] -left-20 z-50">
-              <Image src={ConectElement} alt="ConectElement" width={713} />
+              <Image src={ConectElement} alt="" width={713} />
             </div>
           </div>
         </div>
@@ -176,8 +176,8 @@ const ResidentialCommunities = () => {
         <div className="xl:hidden relative mt-8  w-full max-w-[713px] mx-auto z-50">
           <Image
             src={ConectElement}
-            alt="ConectElement"
-            className=" object-cover"
+            alt=""
+            className="object-cover"
           />
 
           <div className="z-[51] absolute left-0 translate-x-6  top-0 translate-y-[3px] inline-flex items-center gap-1  sm:gap-2 px-2 sm:px-3 py-[5px] sm:py-[9px] rounded-[50px] bg-white border-[1.5px] border-[#E7E7E7]  shadow-[0_17.33px_25.99px_0_rgba(0,0,0,0.05)]">
@@ -221,7 +221,7 @@ const ResidentialCommunities = () => {
                   <Image
                     src={Quote}
                     alt="Quote icon representing client testimonial"
-                    className=" hidden md:block w-[43px] h-[43px]"
+                    className="hidden md:block w-[43px] h-[43px]"
                   />
                 </div>
                 <h3 className="mt-1 text-base font-dmSans font-semibold text-[#171A1D]">

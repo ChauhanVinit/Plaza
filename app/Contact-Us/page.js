@@ -21,21 +21,21 @@ const Contact = () => {
   const contactDetails = [
     {
       icon: Call,
-      alt: "Call",
+       alt: "24/7 Phone Call Support Icon",
       label: "Get in touch with us now",
       value: "1-844-55-557-5292",
       border: true,
     },
     {
       icon: Mail,
-      alt: "Mail",
+      alt: "Email Contact Icon",
       label: "Email:",
       value: "contact@plazaprotection.com",
       border: true,
     },
     {
       icon: Location,
-      alt: "Location",
+       alt: "Office Location Icon",
       label: "Address",
       value:
         <>Plaza Protection 1900 Camden Ave San Jose,<br className="hidden xl:block" /> CA 95124 United States</>,
@@ -148,7 +148,7 @@ const Contact = () => {
       <div className="hidden sm:flex items-center justify-center mx-4 sm:mx-6 xl:max-w-[1200px] xl:mx-auto  mb-10 2xl:mb-20">
         <Image
           src={ContactBannerA}
-          alt="ContactBanner"
+            alt="Plaza Protection security team standing in formation, ready to serve"
           className="object-cover rounded-[40px]"
         />
       </div>
@@ -156,7 +156,7 @@ const Contact = () => {
       <div className="sm:hidden flex items-center justify-start mx-4 sm:mx-6 xl:max-w-[1200px] xl:mx-auto  mb-10 2xl:mb-20">
         <Image
           src={ContactBannerB}
-          alt="ContactBanner"
+          alt="Trained Plaza Protection security guards ensuring safety and readiness"
           className="object-cover rounded-[40px]"
         />
       </div>
@@ -291,7 +291,7 @@ const Contact = () => {
           <div className="mt-6 2xl:mt-8 ">
             <Button
               variant="blue"
-              icon={<Image src={right} alt="right" className="w-4 h-4" />}
+              icon={<Image src={right} alt="Right arrow icon" className="w-4 h-4" />}
               style={"min-w-full sm:!min-w-[175px]"}
               name="Submit"
             />
