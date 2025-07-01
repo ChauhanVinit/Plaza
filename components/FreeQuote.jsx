@@ -22,63 +22,62 @@ const FreeQuote = () => {
     },
     {
       id: nanoid(),
-      name: "Remote Monitoring",
+      name: "Remote Guarding Service",
     },
     {
       id: nanoid(),
       name: "Vehicle Patrol",
+    },
+    {
+      id: nanoid(),
+      name: "CCTV Installation",
     },
   ];
   const facilityOptions = [
     {
       id: nanoid(),
-      name: "Vehicle Patrol",
+      name: "Residential Communities",
     },
     {
       id: nanoid(),
-      name: "Foot Patrol",
+      name: "Commercial Buildings",
     },
     {
       id: nanoid(),
-      name: "Fire Watch",
+      name: "Construction Sites",
+    },
+    {
+      id: nanoid(),
+      name: "Shopping Centers",
+    },
+    {
+      id: nanoid(),
+      name: "Healthcare Facilities",
     },
   ];
   const areaOptions = [
-    {
-      id: nanoid(),
-      name: "Vehicle Patrol",
-    },
-    {
-      id: nanoid(),
-      name: "Foot Patrol",
-    },
-    {
-      id: nanoid(),
-      name: "Fire Watch",
-    },
-  ];
-  const durationOptions = [
-    {
-      id: nanoid(),
-      name: "6 months",
-    },
-    {
-      id: nanoid(),
-      name: "1 Year",
-    },
-    {
-      id: nanoid(),
-      name: "2 Years",
-    },
-    {
-      id: nanoid(),
-      name: "3 Years",
-    },
-    {
-      id: nanoid(),
-      name: "5 Years",
-    },
-  ];
+  { id: nanoid(), name: "Downtown San Jose" },
+  { id: nanoid(), name: "Willow Glen" },
+  { id: nanoid(), name: "Cambrian Park" },
+  { id: nanoid(), name: "Almaden Valley" },
+  { id: nanoid(), name: "Berryessa" },
+  { id: nanoid(), name: "Evergreen" },
+  { id: nanoid(), name: "Rose Garden" },
+  { id: nanoid(), name: "North San Jose" },
+  { id: nanoid(), name: "West San Jose" },
+  { id: nanoid(), name: "East San Jose" },
+  { id: nanoid(), name: "South San Jose" },
+];
+ const durationOptions = [
+  { id: nanoid(), name: "15 Days" },
+  { id: nanoid(), name: "1 Month" },
+  { id: nanoid(), name: "3 Months" },
+  { id: nanoid(), name: "6 Months" },
+  { id: nanoid(), name: "1 Year" },
+  { id: nanoid(), name: "2 Years" },
+  { id: nanoid(), name: "3 Years" },
+  { id: nanoid(), name: "5 Years" },
+];
 
   const [freeQuote, setFreeQuote] = useState({
     userName: "",
@@ -86,8 +85,11 @@ const FreeQuote = () => {
     userEmail: "",
     userAddress: "",
     userMessage: "",
+    service: "", 
+    facility: "", 
+    area: "", 
+    duration: "",
   });
-
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     if (name in freeQuote) {
@@ -97,6 +99,33 @@ const FreeQuote = () => {
       });
     }
   };
+const handleDropdownChange = (name, value) => {
+  setFreeQuote((prev) => ({
+    ...prev,
+    [name]: value,
+  }));
+};
+
+const handleSubmit = (e) => {
+  e.preventDefault(); // prevent default form submit
+
+  // validate inputs if needed
+
+  console.log("Submitted:", freeQuote);
+
+  // Reset all fields after submit
+  setFreeQuote({
+    userName: "",
+    companyName: "",
+    userEmail: "",
+    userAddress: "",
+     userMessage: "",
+    service: "",
+    facility: "",
+    area: "",
+    duration: "",
+  });
+};
 
   return (
     <div className="relative h-auto lg:h-[490px] 2xl:h-[568px] 2xl:max-w-[1200px]  mx-4 sm:mx-6 xl:mx-10 2xl:mx-auto mb-10 mt-10 lg:mt-0 lg:mb-[160px] 2xl:mb-[140px] px-4 sm:px-6 xl:px-8 2xl:px-[60px] bg-[#0C2459] rounded-[40px]">
@@ -122,12 +151,12 @@ const FreeQuote = () => {
           <div className="mt-10 flex">
             <Button
               variant="custom"
-              bgtransparent={'!bg-transparent !text-white'}
-              icon={<Image src={right} alt="Right arrow icon" className="w-4 h-4" />}
-              path={"Contact-Us"}
-              style={
-                "w-full sm:max-w-[190px]  !text-white  "
+              bgtransparent={"!bg-transparent !text-white"}
+              icon={
+                <Image src={right} alt="Right arrow icon" className="w-4 h-4" />
               }
+              path={"Contact-Us"}
+              style={"w-full sm:max-w-[190px]  !text-white  "}
               name={"Contact Us"}
             />
           </div>
@@ -138,7 +167,8 @@ const FreeQuote = () => {
          w-full
          lg:w-auto lg:grow"
         >
-          <div
+          <form
+            onSubmit={handleSubmit}
             className="p-4 md:p-6 2xl:p-8 rounded-2xl md:rounded-[40px] border-[3px] border-[#FFFFFF] 
           bg-[linear-gradient(180deg,_#EBF0FF_23%,_#7198FE_100%)] shadow-[0px_4px_4px_0px_rgba(19,85,255,0.15)] backdrop-blur-[192px]"
           >
@@ -186,23 +216,39 @@ const FreeQuote = () => {
                 <Dropdown
                   options={ServicesOptions}
                   placeholder="Select Services"
+                  name="service"
+                  onSelect={handleDropdownChange}
+                   value={freeQuote.service}
                 />
               </div>
               <div className="w-full  md:w-1/2">
                 <Dropdown
                   options={facilityOptions}
                   placeholder="Type Of Facility"
+                  name="facility"
+                  onSelect={handleDropdownChange}
+                   value={freeQuote.facility}
                 />
               </div>
             </div>
             <div className="w-full flex flex-col md:flex-row gap-4 mt-4">
               <div className="w-full md:w-1/2">
-                <Dropdown options={areaOptions} placeholder="Select Area" />
+                <Dropdown 
+                options={areaOptions} 
+                placeholder="Select Area"
+                name="area"
+                onSelect={handleDropdownChange}
+                value={freeQuote.area}
+                />
+                
               </div>
               <div className="w-full md:w-1/2">
                 <Dropdown
                   options={durationOptions}
                   placeholder="Duration Of Service"
+                  name="duration"
+                  onSelect={handleDropdownChange}
+                   value={freeQuote.duration}
                 />
               </div>
             </div>
@@ -211,18 +257,26 @@ const FreeQuote = () => {
                 placeholder={"Assignment Details"}
                 value={freeQuote.userMessage}
                 name={"userMessage"}
+                 onChange={handleInputChange}
               />
             </div>
 
             <div className="mt-6 2xl:mt-8">
               <Button
-               icon={<Image src={right} alt="Right arrow icon" className="sm:hidden w-4 h-4" />}
+                icon={
+                  <Image
+                    src={right}
+                    alt="Right arrow icon"
+                    className="sm:hidden w-4 h-4"
+                  />
+                }
                 variant="blue"
                 style={"!w-full"}
                 name="submit free quote"
+                onClick={handleSubmit}
               />
             </div>
-          </div>
+          </form>
         </div>
       </div>
     </div>

@@ -11,61 +11,72 @@ import { nanoid } from "nanoid";
 import right from "../../public/right.svg";
 import SecurityTrustBanner from "@/components/SecurityTrustBanner";
 
-const ServicesOptions = [
-  {
-    id: nanoid(),
-    name: "Vehicle Patrol",
-  },
-  {
-    id: nanoid(),
-    name: "Foot Patrol",
-  },
-  {
-    id: nanoid(),
-    name: "Fire Watch",
-  },
+  const ServicesOptions = [
+    {
+      id: nanoid(),
+      name: "Unarmed Security",
+    },
+    {
+      id: nanoid(),
+      name: "Fire Watch",
+    },
+    {
+      id: nanoid(),
+      name: "Remote Guarding Service",
+    },
+    {
+      id: nanoid(),
+      name: "Vehicle Patrol",
+    },
+    {
+      id: nanoid(),
+      name: "CCTV Installation",
+    },
+  ];
+  const facilityOptions = [
+    {
+      id: nanoid(),
+      name: "Residential Communities",
+    },
+    {
+      id: nanoid(),
+      name: "Commercial Buildings",
+    },
+    {
+      id: nanoid(),
+      name: "Construction Sites",
+    },
+    {
+      id: nanoid(),
+      name: "Shopping Centers",
+    },
+    {
+      id: nanoid(),
+      name: "Healthcare Facilities",
+    },
+  ];
+  const areaOptions = [
+  { id: nanoid(), name: "Downtown San Jose" },
+  { id: nanoid(), name: "Willow Glen" },
+  { id: nanoid(), name: "Cambrian Park" },
+  { id: nanoid(), name: "Almaden Valley" },
+  { id: nanoid(), name: "Berryessa" },
+  { id: nanoid(), name: "Evergreen" },
+  { id: nanoid(), name: "Rose Garden" },
+  { id: nanoid(), name: "North San Jose" },
+  { id: nanoid(), name: "West San Jose" },
+  { id: nanoid(), name: "East San Jose" },
+  { id: nanoid(), name: "South San Jose" },
 ];
-const facilityOptions = [
-  {
-    id: nanoid(),
-    name: "Vehicle Patrol",
-  },
-  {
-    id: nanoid(),
-    name: "Foot Patrol",
-  },
-  {
-    id: nanoid(),
-    name: "Fire Watch",
-  },
-];
-const areaOptions = [
-  {
-    id: nanoid(),
-    name: "Vehicle Patrol",
-  },
-  {
-    id: nanoid(),
-    name: "Foot Patrol",
-  },
-  {
-    id: nanoid(),
-    name: "Fire Watch",
-  },
-];
-const durationOptions = [
-  {
-    id: nanoid(),
-    name: "Vehicle Patrol",
-  },
-  {
-    id: nanoid(),
-    name: "Foot Patrol",
-  },
-  {
-    id: nanoid(),
-    name: "Fire Watch",
-  },
+ const durationOptions = [
+  { id: nanoid(), name: "15 Days" },
+  { id: nanoid(), name: "1 Month" },
+  { id: nanoid(), name: "3 Months" },
+  { id: nanoid(), name: "6 Months" },
+  { id: nanoid(), name: "1 Year" },
+  { id: nanoid(), name: "2 Years" },
+  { id: nanoid(), name: "3 Years" },
+  { id: nanoid(), name: "5 Years" },
 ];
 
 const RequestAQuote = () => {
@@ -73,10 +84,13 @@ const RequestAQuote = () => {
     userName: "",
     companyName: "",
     userEmail: "",
-    name: "",
+    userAddress: "",
     userMessage: "",
+    service: "", 
+    facility: "", 
+    area: "", 
+    duration: "",
   });
-
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     if (name in freeQuote) {
@@ -86,7 +100,32 @@ const RequestAQuote = () => {
       });
     }
   };
+const handleDropdownChange = (name, value) => {
+  setFreeQuote((prev) => ({
+    ...prev,
+    [name]: value,
+  }));
+};
+const handleSubmit = (e) => {
+  e.preventDefault(); // prevent default form submit
 
+  // validate inputs if needed
+
+  console.log("Submitted:", freeQuote);
+
+  // Reset all fields after submit
+  setFreeQuote({
+    userName: "",
+    companyName: "",
+    userEmail: "",
+    userAddress: "",
+     userMessage: "",
+    service: "",
+    facility: "",
+    area: "",
+    duration: "",
+  });
+};
   const SecurityTrustData = {
     title: (
       <>
@@ -109,7 +148,7 @@ const RequestAQuote = () => {
         </p>
       </div>
       <div className="2xl:max-w-[1440px] 2xl:mx-auto px-4 sm:px-6 xl:px-10 2xl:p-20 mb-10  2xl:mb-20 2xl:bg-[#EDF5FF]/40 rounded-[40px]">
-        <div className="p-4 md:p-6 2xl:p-8 rounded-2xl  md:rounded-3xl bg-[#F0F4FF] shadow-[0_5px_15px_0_rgba(19,85,255,0.2)]">
+        <form  onSubmit={handleSubmit} className="p-4 md:p-6 2xl:p-8 rounded-2xl  md:rounded-3xl bg-[#F0F4FF] shadow-[0_5px_15px_0_rgba(19,85,255,0.2)]">
           <h2 className="mb-6 font-dmSans text-[28px] !leading-9  md:text-[32px] md:!leading-10 font-semibold text-[#222A5B] tracking-[-1px]">
             Get Free Quote
           </h2>
@@ -145,10 +184,10 @@ const RequestAQuote = () => {
             </div>
             <div className="w-full  md:w-1/2">
               <Input
-                placeholder={"Your Name"}
-                onChange={handleInputChange}
-                value={freeQuote.name}
-                name={"name"}
+                placeholder={"Your Address"}
+                  onChange={handleInputChange}
+                  value={freeQuote.userAddress}
+                  name={"userAddress"}
                 className={"!py-[15px] px-6 border-[#7198FE]/50"}
               />
             </div>
@@ -159,6 +198,9 @@ const RequestAQuote = () => {
                 options={ServicesOptions}
                 height="h-[55px]"
                 placeholder="Select Services"
+                name="service"
+                  onSelect={handleDropdownChange}
+                   value={freeQuote.service}
               />
             </div>
             <div className="w-full  md:w-1/2">
@@ -166,6 +208,9 @@ const RequestAQuote = () => {
                 options={facilityOptions}
                 height="h-[55px]"
                 placeholder="Type Of Facility"
+                name="facility"
+                  onSelect={handleDropdownChange}
+                  value={freeQuote.facility}
               />
             </div>
           </div>
@@ -175,6 +220,9 @@ const RequestAQuote = () => {
                 options={areaOptions}
                 height="h-[55px]"
                 placeholder="Select Area"
+                name="area"
+                onSelect={handleDropdownChange}
+                value={freeQuote.area}
               />
             </div>
             <div className="w-full  md:w-1/2">
@@ -182,6 +230,9 @@ const RequestAQuote = () => {
                 options={durationOptions}
                 height="h-[55px]"
                 placeholder="Duration Of Service"
+                name="duration"
+                onSelect={handleDropdownChange}
+                 value={freeQuote.duration}
               />
             </div>
           </div>
@@ -190,6 +241,7 @@ const RequestAQuote = () => {
               placeholder={"Assignment Details"}
               value={freeQuote.userMessage}
               name={"userMessage"}
+              onChange={handleInputChange}
               className={"!py-[17px] border-[#7198FE]/50"}
             />
           </div>
@@ -197,13 +249,14 @@ const RequestAQuote = () => {
             <Button
             bgtransparent={'sm:!rounded-2xl'}
               variant="blue"
-              icon={<Image src={right} alt="right" className="w-4 h-4" />}
+              icon={<Image src={right} alt="Right arrow icon" className="w-4 h-4" />}
               style={"!w-full sm:max-w-[175px]   "}
               name="Submit"
+               onClick={handleSubmit}
             />
 
           </div>
-        </div>
+        </form>
       </div>
 
       <SecurityTrustBanner {...SecurityTrustData} />

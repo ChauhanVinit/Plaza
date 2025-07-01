@@ -27,7 +27,7 @@ const Footer = () => {
             </p>
           </div>
 
-          <Link href="tel:+18445575292" className="w-full md:w-1/3 flex md:flex-col lg:flex-row items-start lg:items-center gap-4 justify-start  md:justify-center ">
+          <a href="tel:+18445575292" className="w-full md:w-1/3 flex md:flex-col lg:flex-row items-start lg:items-center gap-4 justify-start  md:justify-center ">
             <div className="min-w-11 h-11 inline-flex items-center justify-center bg-[#D7E8FF] rounded-full">
               <Image src={callRinging} alt="Phone number icon" className=" w-5 h-5" />
             </div>
@@ -39,8 +39,8 @@ const Footer = () => {
                 +1 844-557-5292
               </p>
             </div>
-          </Link>
-          <Link href="mailto:contact@plazaprotection.com" className="w-full md:w-1/3 flex md:flex-col lg:flex-row items-start lg:items-center gap-4 justify-start lg:justify-end ">
+          </a>
+          <a href="mailto:contact@plazaprotection.com" className="w-full md:w-1/3 flex md:flex-col lg:flex-row items-start lg:items-center gap-4 justify-start lg:justify-end ">
             <div className="min-w-11 h-11 inline-flex items-center justify-center bg-[#D7E8FF] rounded-full">
               <Image src={estimate} alt="Email icon" className=" w-5 h-5" />
             </div>
@@ -52,7 +52,7 @@ const Footer = () => {
                 contact@plazaprotection.com
               </p>
             </div>
-          </Link>
+          </a>
           <div className="flex md:flex-col lg:flex-row lg:hidden w-full md:w-1/3  items-start lg:items-center gap-4 justify-start lg:justify-end ">
             <div className="min-w-11 h-11 inline-flex items-center justify-center bg-[#D7E8FF] rounded-full">
               <Image

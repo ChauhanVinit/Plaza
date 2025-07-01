@@ -46,68 +46,82 @@ const Contact = () => {
   const ServicesOptions = [
     {
       id: nanoid(),
-      name: "Vehicle Patrol",
-    },
-    {
-      id: nanoid(),
-      name: "Foot Patrol",
+      name: "Unarmed Security",
     },
     {
       id: nanoid(),
       name: "Fire Watch",
+    },
+    {
+      id: nanoid(),
+      name: "Remote Guarding Service",
+    },
+    {
+      id: nanoid(),
+      name: "Vehicle Patrol",
+    },
+    {
+      id: nanoid(),
+      name: "CCTV Installation",
     },
   ];
   const facilityOptions = [
     {
       id: nanoid(),
-      name: "Vehicle Patrol",
+      name: "Residential Communities",
     },
     {
       id: nanoid(),
-      name: "Foot Patrol",
+      name: "Commercial Buildings",
     },
     {
       id: nanoid(),
-      name: "Fire Watch",
+      name: "Construction Sites",
+    },
+    {
+      id: nanoid(),
+      name: "Shopping Centers",
+    },
+    {
+      id: nanoid(),
+      name: "Healthcare Facilities",
     },
   ];
   const areaOptions = [
-    {
-      id: nanoid(),
-      name: "Vehicle Patrol",
-    },
-    {
-      id: nanoid(),
-      name: "Foot Patrol",
-    },
-    {
-      id: nanoid(),
-      name: "Fire Watch",
-    },
-  ];
-  const durationOptions = [
-    {
-      id: nanoid(),
-      name: "Vehicle Patrol",
-    },
-    {
-      id: nanoid(),
-      name: "Foot Patrol",
-    },
-    {
-      id: nanoid(),
-      name: "Fire Watch",
-    },
-  ];
+  { id: nanoid(), name: "Downtown San Jose" },
+  { id: nanoid(), name: "Willow Glen" },
+  { id: nanoid(), name: "Cambrian Park" },
+  { id: nanoid(), name: "Almaden Valley" },
+  { id: nanoid(), name: "Berryessa" },
+  { id: nanoid(), name: "Evergreen" },
+  { id: nanoid(), name: "Rose Garden" },
+  { id: nanoid(), name: "North San Jose" },
+  { id: nanoid(), name: "West San Jose" },
+  { id: nanoid(), name: "East San Jose" },
+  { id: nanoid(), name: "South San Jose" },
+];
+ const durationOptions = [
+  { id: nanoid(), name: "15 Days" },
+  { id: nanoid(), name: "1 Month" },
+  { id: nanoid(), name: "3 Months" },
+  { id: nanoid(), name: "6 Months" },
+  { id: nanoid(), name: "1 Year" },
+  { id: nanoid(), name: "2 Years" },
+  { id: nanoid(), name: "3 Years" },
+  { id: nanoid(), name: "5 Years" },
+];
 
   const [freeQuote, setFreeQuote] = useState({
     userName: "",
     companyName: "",
     userEmail: "",
-    name: "",
+    userAddress: "",
     userMessage: "",
+    service: "", 
+    facility: "", 
+    area: "", 
+    duration: "",
   });
-
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     if (name in freeQuote) {
@@ -117,7 +131,32 @@ const Contact = () => {
       });
     }
   };
+const handleDropdownChange = (name, value) => {
+  setFreeQuote((prev) => ({
+    ...prev,
+    [name]: value,
+  }));
+};
+const handleSubmit = (e) => {
+  e.preventDefault(); // prevent default form submit
 
+  // validate inputs if needed
+
+  console.log("Submitted:", freeQuote);
+
+  // Reset all fields after submit
+  setFreeQuote({
+    userName: "",
+    companyName: "",
+    userEmail: "",
+    userAddress: "",
+     userMessage: "",
+    service: "",
+    facility: "",
+    area: "",
+    duration: "",
+  });
+};
   const SecurityTrustData = {
     title: (
       <>
@@ -204,7 +243,7 @@ const Contact = () => {
             ))}
           </div>
         </div>
-        <div className="w-full xl:w-[calc(50%-20px)] 2xl:w-[calc(50%-40px)] p-4 md:p-6 2xl:p-8 rounded-2xl  md:rounded-3xl bg-[#F0F4FF] shadow-[0_5px_15px_0_rgba(19,85,255,0.2)]">
+        <form onSubmit={handleSubmit} className="w-full xl:w-[calc(50%-20px)] 2xl:w-[calc(50%-40px)] p-4 md:p-6 2xl:p-8 rounded-2xl  md:rounded-3xl bg-[#F0F4FF] shadow-[0_5px_15px_0_rgba(19,85,255,0.2)]">
           <h2 className="mb-6 font-dmSans text-[32px] !leading-10 font-semibold text-[#222A5B]">
             Get Free Quote
           </h2>
@@ -240,10 +279,10 @@ const Contact = () => {
             </div>
             <div className="w-full  md:w-1/2">
               <Input
-                placeholder={"Your Name"}
-                onChange={handleInputChange}
-                value={freeQuote.name}
-                name={"name"}
+               placeholder={"Your Address"}
+                  onChange={handleInputChange}
+                  value={freeQuote.userAddress}
+                  name={"userAddress"}
                 className={"!py-[15px] px-6 border-[#7198FE]/50"}
               />
             </div>
@@ -254,6 +293,9 @@ const Contact = () => {
                 options={ServicesOptions}
                 height="h-[55px]"
                 placeholder="Select Services"
+                 name="service"
+                  onSelect={handleDropdownChange}
+                  value={freeQuote.service}
               />
             </div>
             <div className="w-full  md:w-1/2">
@@ -261,6 +303,9 @@ const Contact = () => {
                 options={facilityOptions}
                 height="h-[55px]"
                 placeholder="Type Of Facility"
+                name="facility"
+                  onSelect={handleDropdownChange}
+                   value={freeQuote.facility}
               />
             </div>
           </div>
@@ -270,6 +315,9 @@ const Contact = () => {
                 options={areaOptions}
                 height="h-[55px]"
                 placeholder="Select Area"
+                name="area"
+                onSelect={handleDropdownChange}
+                value={freeQuote.area}
               />
             </div>
             <div className="w-full  md:w-1/2">
@@ -277,6 +325,9 @@ const Contact = () => {
                 options={durationOptions}
                 height="h-[55px]"
                 placeholder="Duration Of Service"
+                name="duration"
+                  onSelect={handleDropdownChange}
+                  value={freeQuote.duration}
               />
             </div>
           </div>
@@ -286,6 +337,7 @@ const Contact = () => {
               value={freeQuote.userMessage}
               name={"userMessage"}
               className={"!py-[17px] border-[#7198FE]/50"}
+               onChange={handleInputChange}
             />
           </div>
           <div className="mt-6 2xl:mt-8 ">
@@ -294,9 +346,10 @@ const Contact = () => {
               icon={<Image src={right} alt="Right arrow icon" className="w-4 h-4" />}
               style={"min-w-full sm:!min-w-[175px]"}
               name="Submit"
+              onClick={handleSubmit}
             />
           </div>
-        </div>
+        </form>
       </div>
 
       <div className="mx-4 sm:mx-6  xl:mx-10 2xl:container 2xl:mx-auto mb-10 2xl:mb-20 rounded-[40px] overflow-hidden">

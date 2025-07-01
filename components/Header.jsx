@@ -502,7 +502,7 @@ const Header = () => {
                   : " gap-2 xxs:gap-4 xl:gap-3"
               } px-0 mt-4 xl:mt-0`}
             >
-              <Link href="tel:+18445575292" className="mt-0 flex items-center px-0 xl:px-1 gap-3 group">
+              <a href="tel:+18445575292" className="mt-0 flex items-center px-0 xl:px-1 gap-3 group">
                 <button className="h-10 min-w-10 bg-[#D7E8FF]/50 group-hover:bg-[#D7E8FF] transition-colors duration-300 ease-in-out inline-flex items-center justify-center">
                   <Image
                     src={callRinging}
@@ -523,7 +523,7 @@ const Header = () => {
                     </p>
                   </div>
                 </div>
-              </Link>
+              </a>
 
               {pathname === "/Request-A-Quote" ? (
                 <div className="flex items-center justify-center">

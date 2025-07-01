@@ -3,17 +3,21 @@ import { useState, useRef, useEffect } from "react";
 import Caret from "../public/right-02.svg";
 import Image from "next/image";
 
-const Dropdown = ({ options, className = "", height = "", btnStyle = "", placeholder }) => {
+const Dropdown = ({
+  options,
+  className = "",
+  height = "",
+  btnStyle = "",
+  placeholder,
+  name,
+  onSelect,
+  value, 
+}) => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [selectedOption, setSelectedOption] = useState(placeholder);
   const menuRef = useRef(null);
 
-  // Toggle menu visibility
-  const toggleMenu = () => {
-    setMenuOpen((prevState) => !prevState);
-  };
+  const toggleMenu = () => setMenuOpen((prev) => !prev);
 
-  // Close the menu when clicking outside
   const handleClickOutside = (event) => {
     if (menuRef.current && !menuRef.current.contains(event.target)) {
       setMenuOpen(false);
@@ -27,19 +31,19 @@ const Dropdown = ({ options, className = "", height = "", btnStyle = "", placeho
     };
   }, []);
 
-  // Handle option selection
   const handleOptionSelect = (option) => {
-    setSelectedOption(option.name);
+    if (onSelect) onSelect(name, option.name);
     setMenuOpen(false);
   };
 
+  const selectedOption = value || placeholder; 
+
   return (
     <div className={`relative ${className}`} ref={menuRef}>
-      {/* Dropdown Button */}
       <button
         onClick={toggleMenu}
         type="button"
-        className={`w-full flex bg-white rounded items-center justify-between px-5 bg-transparent border border-[#7198FE]/50 font-dmSans tracking-[-0.5px] text-base font-medium ${
+        className={`w-full flex bg-white rounded items-center justify-between px-5 border border-[#7198FE]/50 font-dmSans tracking-[-0.5px] text-base font-medium ${
           selectedOption === placeholder ? "text-[#45535E]" : "text-[#171A1D]"
         } gap-2 smooth ${btnStyle} ${height || "h-[50px]"}`}
       >
@@ -51,15 +55,14 @@ const Dropdown = ({ options, className = "", height = "", btnStyle = "", placeho
         />
       </button>
 
-      {/* Dropdown Menu */}
       {menuOpen && (
-        <div className="flex flex-col gap-1 origin-top absolute top-[calc(100%+3px)] w-full bg-white z-40 border border-[#7198FE]/50 rounded-xl p-3 shadow-[0_6px_8px_-6px_rgba(0,0,0,0.08),0_8px_16px_-6px_rgba(0,0,0,0.08)] smooth max-h-36 overflow-y-auto invisible-scroll ">
+        <div className="flex flex-col gap-1 origin-top absolute top-[calc(100%+3px)] w-full bg-white z-40 border border-[#7198FE]/50 rounded-xl p-3 shadow-[0_6px_8px_-6px_rgba(0,0,0,0.08),0_8px_16px_-6px_rgba(0,0,0,0.08)] smooth max-h-36 overflow-y-auto invisible-scroll">
           {options.map((option) => (
             <button
               key={option.id}
               onClick={() => handleOptionSelect(option)}
               type="button"
-              className={` outline-none p-2 rounded-md hover:bg-[#EDEFFE] w-full text-left text-[#171A1D] text-sm font-dmSans tracking-[-0.5px] font-semibold smooth ${
+              className={`outline-none p-2 rounded-md hover:bg-[#EDEFFE] w-full text-left text-[#171A1D] text-sm font-dmSans tracking-[-0.5px] font-semibold smooth ${
                 selectedOption === option.name ? "bg-[#EDEFFE]" : "bg-[#EDEFFE]/40"
               }`}
             >
@@ -71,6 +74,8 @@ const Dropdown = ({ options, className = "", height = "", btnStyle = "", placeho
     </div>
   );
 };
+
+
 
 export default Dropdown;
 
