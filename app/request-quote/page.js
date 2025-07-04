@@ -58,7 +58,9 @@ const RequestAQuote = () => {
         Inside Out
       </>
     ),
-   path:'/contact-us'
+   path:'/contact-us',
+   btnText:'Contact Us'
+   
   };
   return (
     <>
