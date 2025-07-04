@@ -109,7 +109,7 @@ const ourTechnologies = [
       </>
     ),
     btnText: "Request A Quote",
-    path:'/Request-A-Quote'
+    path:'/request-quote'
   };
 
 const AboutUs = () => {

@@ -16,13 +16,11 @@ import tvSmart from "../public/tv-smart.svg";
 import car from "../public/car-03.svg";
 import fire from "../public/Services/Fire-risk.svg";
 import Services from "../public/work-history.svg";
-
 import Residentialicon from "../public/Residential.svg";
 import Buildingsicon from "../public/Buildings.svg";
 import Sitesicon from "../public/Sites.svg";
 import ShoppingCentersicon from "../public/Shopping-Centers.svg";
 import Healthcareicon from "../public/Healthcare.svg";
-
 import Industries from "../public/building-06.svg";
 import Resources from "../public/resources-add.svg";
 import contractsUs from "../public/contracts.svg";
