@@ -65,7 +65,7 @@ const Header = () => {
           ),
           subIcon: UnarmedSecurity,
           img: UnarmedImg,
-          path: "/Unarmed-Security",
+          path: "/unarmed-security",
         },
         {
           id: "fire-Watch",
@@ -79,7 +79,7 @@ const Header = () => {
           ),
           subIcon: fire,
           img: FireWatchImg,
-          path: "/Fire-Watch",
+          path: "/fire-watch",
         },
         {
           id: "RemoteGuarding",
@@ -92,7 +92,7 @@ const Header = () => {
           ),
           subIcon: tvSmart,
           img: RemoteGuardingImg,
-          path: "/Remote-Guarding-Service",
+          path: "/remote-guarding-service",
         },
         {
           id: "Vehiclepatrol",
@@ -100,7 +100,7 @@ const Header = () => {
           desc: "High-visibility security with routine checks, rapid response, and real-time reporting across your property.",
           subIcon: car,
           img: VehiclepatrolImg,
-          path: "/Vehicle-patrol",
+          path: "/vehicle-patrol",
         },
         {
           id: "CCTV-Installation",
@@ -115,7 +115,7 @@ const Header = () => {
           ),
           subIcon: CCTV,
           img: CCTVInstallationImg,
-          path: "/CCTV-Installation",
+          path: "/cctv-installation",
         },
       ],
     },
@@ -130,7 +130,7 @@ const Header = () => {
           desc: "Ensuring a safe, welcoming, and well-monitored living environment.",
           subIcon: Residentialicon,
           img: ResidentialCommunitiesImg,
-          path: "/Residential-Communities",
+          path: "/residential-communities",
         },
         {
           id: "commercial-Buildings",
@@ -138,7 +138,7 @@ const Header = () => {
           desc: "Ensuring safe operations, controlled access, and 24/7 protection.",
           subIcon: Buildingsicon,
           img: CommercialBuildingsImg,
-          path: "Commercial-Buildings",
+          path: "/commercial-buildings",
         },
         {
           id: "construction-Sites",
@@ -151,7 +151,7 @@ const Header = () => {
           ),
           subIcon: Sitesicon,
           img: ConstructionSitesImg,
-          path: "/Construction-Sites",
+          path: "/construction-sites",
         },
         {
           id: "shopping-Center",
@@ -159,7 +159,7 @@ const Header = () => {
           desc: "Provides a safe, environment for shoppers, staff, and tenants.",
           subIcon: ShoppingCentersicon,
           img: ShoppingCentersImg,
-          path: "/Shopping-Centers",
+          path: "/shopping-centers",
         },
         {
           id: "healthcare-facilities",
@@ -172,7 +172,7 @@ const Header = () => {
           ),
           subIcon: Healthcareicon,
           img: HealthcareFacilitiesImg,
-          path: "/Healthcare-Facilities",
+          path: "/healthcare-facilities",
         },
       ],
     },
@@ -187,21 +187,21 @@ const Header = () => {
           name: "Blog",
           desc: "Expert insights & updates on security solutions.",
           subIcon: blogIcon,
-          path: "/Blog",
+          path: "/blog",
         },
         {
           id: "aboutUs",
           name: "About Us",
           desc: "Your reliable partner for expert security services and peace of mind.",
           subIcon: AboutusIcon,
-          path: "/About-us",
+          path: "/about-us",
         },
         {
           id: "Hiring",
           desc: "Explore our current vacancies right here.",
           subIcon: HiringIcon,
           name: "Hiring",
-          path: "/Hiring",
+          path: "/hiring",
         },
       ],
     },
@@ -209,7 +209,7 @@ const Header = () => {
       id: 4,
       name: "Contact Us",
       icon: contractsUs,
-      path: "/Contact-Us",
+      path: "/contact-us",
       subnavs: [],
     },
   ];
@@ -497,7 +497,7 @@ const Header = () => {
             </div>
             <div
               className={`w-full xl:w-auto flex justify-between items-center ${
-                pathname === "/Request-A-Quote"
+                pathname === "/request-quote"
                   ? "gap-10"
                   : " gap-2 xxs:gap-4 xl:gap-3"
               } px-0 mt-4 xl:mt-0`}
@@ -525,20 +525,20 @@ const Header = () => {
                 </div>
               </a>
 
-              {pathname === "/Request-A-Quote" ? (
+              {pathname === "/request-quote" ? (
                 <div className="flex items-center justify-center">
                   <Button
                     variant="custom"
                     style={"xs:!min-w-[162px]"}
                     name="Contact Us"
-                    path="/Contact-Us"
+                    path="/contact-us"
                   />
                 </div>
               ) : (
                 <>
                   <div className=" hidden xl:block h-7 w-[1px] bg-[#E6E6E6] hover:bg-[#d8d8d8] smooth"></div>
                   <Link
-                    href="/Request-A-Quote"
+                    href="/request-quote"
                     className="inline-flex xl:px-5 xl:py-1 items-center gap-3 group"
                   >
                     <div className="w-10 h-10 inline-flex items-center justify-center bg-[#1355FF] group-hover:bg-[#222A5B] transition-colors duration-300 ease-in-out">
@@ -569,7 +569,7 @@ const Header = () => {
             </div>
           </div>
           <Link
-            href={"/Request-A-Quote"}
+            href={"/request-quote"}
             className="mr-2 ml-auto xl:hidden p-[10px] bg-[#D7E8FF]/50 text-sm font-dmSans font-semibold tracking-[-0.5px] text-[#1A1A1A]"
           >
             Request Quote

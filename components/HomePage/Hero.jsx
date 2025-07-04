@@ -30,7 +30,7 @@ const Hero = () => {
             variant="blue"
             style={"w-full sm:max-w-[243px]"}
             name="Request Quote"
-            path="/Request-A-Quote"
+            path="/request-quote"
           />
 
           <Button
@@ -44,7 +44,7 @@ const Hero = () => {
             }
             style={"w-full sm:max-w-[162px]"}
             name="Contact Us"
-            path="/Contact-Us"
+            path="/contact-us"
           />
         </div>
 

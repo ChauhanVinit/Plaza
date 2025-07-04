@@ -155,9 +155,10 @@ const handleSubmit = (e) => {
               icon={
                 <Image src={right} alt="Right arrow icon" className="w-4 h-4" />
               }
-              path={"Contact-Us"}
+              path={"/contact-us"}
               style={"w-full sm:max-w-[190px]  !text-white  "}
               name={"Contact Us"}
+              
             />
           </div>
         </div>

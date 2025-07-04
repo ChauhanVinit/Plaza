@@ -1,4 +1,4 @@
-"use client";
+export { metadata } from './metadata';
 import FreeQuote from "../../components/FreeQuote";
 import Image from "next/image";
 import checkmarkCircle from "../../public/Residential/checkmark-circle.svg";

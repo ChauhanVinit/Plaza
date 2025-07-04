@@ -26,7 +26,7 @@ const Services = () => {
       title: "Unarmed Security That You Can Blindly Trust",
       description:
         "At Plaza Protection, we understand that the presence of firearms can make people uneasy. That’s why our highly trained guards provide top-tier security without the need for weapons. As San Jose's leading unarmed security provider, our officers effectively deter crimes like theft and vandalism, serving as a reassuring first line of defense.",
-      path: "/Unarmed-Security",
+      path: "/unarmed-security",
     },
     {
       label: "Fire Watch",
@@ -34,7 +34,7 @@ const Services = () => {
       title: "Preventing Fire Hazards And Safeguarding Your Property",
       description:
         "Your ultimate defense against fire risks, our certified fire watch guards not only provide 24/7 surveillance but also ensure all fire detection systems are functioning properly. By adhering to strict safety protocols, we protect your property around the clock, helping you avoid costly fines, downtime, and potential disasters. ",
-      path: "/Fire-Watch",
+      path: "/fire-watch",
     },
     {
       label: "Remote Monitoring",
@@ -42,7 +42,7 @@ const Services = () => {
       title: " Expert Remote Guarding Facilities For Advanced Surveillance",
       description:
         "Step into the future of security with our revolutionary remote guarding solution. Merging state-of-the-art technology with specialized human expertise. Our virtual guards excel in CCTV surveillance, providing round-the-clock monitoring, lightning-fast response, and unparalleled peace of mind for our clients. ",
-      path: "/Remote-Guarding-Service",
+      path: "/remote-guarding-service",
     },
     {
       label: "Vehicle Patrol",
@@ -50,7 +50,7 @@ const Services = () => {
       title: "Reliable Vehicle Patrol Services",
       description:
         "Our professional Vehicle Patrol Services provide consistent, high-visibility security to protect your property and deter unwanted activity. Whether for commercial, residential, or industrial properties, our vehicle patrols offer a dependable layer of protection that keeps your site secure around the clock. With comprehensive reporting and a commitment to excellence.",
-      path: "/Vehicle-patrol",
+      path: "/vehicle-patrol",
     },
      {
       label: "CCTV Installation",
@@ -58,6 +58,7 @@ const Services = () => {
       title: "Advanced CCTV Installation Services",
       description:
         "Our CCTV Installation Services deliver reliable and effective surveillance solutions to keep your property secure. We assess your site’s unique requirements and install high-definition cameras in strategic locations to maximize coverage and visibility.",
+        path: "/cctv-installation",
     },
   ];
 
@@ -137,7 +138,7 @@ const Services = () => {
                         variant="blue"
                         style="w-full sm:max-w-[243px]"
                         name="Request Quote"
-                        path="/Request-A-Quote"
+                        path="/request-quote"
                       />
 
                       <Button

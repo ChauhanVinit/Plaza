@@ -33,7 +33,7 @@ const CoreFeatures = ({ data, title, desc, img }) => {
           icon={<Image src={rightDark} alt="Right arrow icon" className="w-4 h-4" />}
           style={"w-full sm:max-w-[162px]"}
           name="Contact Us"
-          path="/Contact-Us"
+          path="/contact-us"
         />    
            </div>      
         <div className="mt-8 lg:mt-10 2xl:mt-[60px] flex flex-col gap-4">

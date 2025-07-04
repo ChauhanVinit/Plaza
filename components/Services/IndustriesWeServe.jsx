@@ -18,25 +18,25 @@ const IndustriesWeServe = ({ desc }) => {
       src: ResidentialCommunities,
       alt: "Residential Communities",
       title: "Residential Communities",
-      path: "/Residential-Communities",
+      path: "/residential-communities",
     },
     {
       src: CommercialBuilding,
       alt: "Commercial Building",
       title: "Commercial Building",
-      path: "/Commercial-Buildings",
+      path: "/commercial-buildings",
     },
     {
       src: ConstructionSite,
       alt: "Construction Site",
       title: "Construction Site",
-      path: "/Construction-Sites",
+      path: "/construction-sites",
     },
     {
       src: ShoppingMall,
       alt: "Shopping Mall",
       title: "Shopping Mall",
-      path: "/Shopping-Centers",
+      path: "/shopping-centers",
     },
   ];
   const isClient = useIsClient();
@@ -63,7 +63,7 @@ const IndustriesWeServe = ({ desc }) => {
             icon={<Image src={rightDark} alt="right" className="sm:hidden w-4 h-4" />}
             style={"w-full sm:max-w-[162px] sm:min-w-[162px]"}
             name="View More"
-            // path="/Contact-Us"
+            // path="/contact-us"
           />
         </div> */}
       </div>

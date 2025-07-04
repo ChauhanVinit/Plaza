@@ -1,4 +1,52 @@
-"use client";
+export const metadata = {
+  title: "Unarmed Security | San Jose Bay Area Security Patrol Experts | Plaza Protection",
+  description:
+    "Plaza Protection offers professional unarmed security guards trained to provide a strong security presence and ensure safety in the San Jose Bay Area.",
+  keywords: [
+    "Unarmed Security Guards",
+    "Security Services In San Jose",
+    "Unarmed Guard Services",
+    "Bay Area Security Patrol",
+    "San Jose Security Company",
+    "Private Security Services",
+  ],
+  abstract:
+    "Our unarmed security guards are trained to handle situations calmly and professionally, offering a reliable presence for your business or property in the San Jose Bay Area.",
+  metadataBase: new URL("https://www.plazaprotection.com"),
+  alternates: {
+    canonical: "/unarmed-security",
+  },
+  openGraph: {
+    title: "Unarmed Security | San Jose Bay Area Security Patrol Experts | Plaza Protection",
+    description:
+      "Plaza Protection offers professional unarmed security guards trained to provide a strong security presence and ensure safety in the San Jose Bay Area.",
+    url: "https://plazaprotection.com/unarmed-security",
+    siteName: "PlazaProtection",
+    images: [
+      {
+        url: "https://plazaprotection.com/includes/img/plazaprotection.png",
+        width: 1200,
+        height: 630,
+        alt: "Plaza Protection",
+      },
+    ],
+    locale: "en_US",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@plazaprotection",
+    creator: "@plazaprotection",
+    title: "Unarmed Security | San Jose Bay Area Security Patrol Experts | Plaza Protection",
+    description:
+      "Plaza Protection offers professional unarmed security guards trained to provide a strong security presence and ensure safety in the San Jose Bay Area.",
+    images: ["https://plazaprotection.com/includes/img/plazaprotection.png"],
+  },
+  icons: {
+    icon: "/favicon.ico",
+  },
+};
+
 import FreeQuote from "../../components/FreeQuote";
 import GuardImage from "../../public/Services/Hero-Guard-02.png";
 import CoreFeature from "../../public/Services/Core-Features-Guard-02.png";

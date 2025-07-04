@@ -1,4 +1,50 @@
-"use client";
+export const metadata = {
+  title: "About Us | San Jose Bay Area Security Patrol Experts | Plaza Protection",
+  description:
+    "Plaza Protection with over 10 years of extensive experience in providing effective security solutions is ensuring the safety of our clients & their assets.",
+  keywords: [
+    "security guard services",
+    "Security Services San Jose Bay Area",
+    "Security Services San Jose Bay Area"
+  ],
+  abstract:
+    "Plaza Protection is a security guard and patrol services company headquartered in the San Jose Bay Area with over 10 years of experience.",
+  metadataBase: new URL("https://www.plazaprotection.com"),
+  alternates: {
+    canonical: "/about-us",
+  },
+  openGraph: {
+    title: "About Us | San Jose Bay Area Security Patrol Experts | Plaza Protection",
+    description:
+      "Plaza Protection with over 10 years of extensive experience in providing effective security solutions is ensuring the safety of our clients & their assets.",
+    url: "https://www.plazaprotection.com/about-us",
+    siteName: "PlazaProtection",
+    images: [
+      {
+        url: "https://plazaprotection.com/includes/img/plazaprotection.png",
+        width: 1200,
+        height: 630,
+        alt: "Plaza Protection",
+      },
+    ],
+    locale: "en_US",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@plazaprotection",
+    creator: "@plazaprotection",
+    title: "About Us | San Jose Bay Area Security Patrol Experts | Plaza Protection",
+    description:
+      "Plaza Protection with over 10 years of extensive experience in providing effective security solutions is ensuring the safety of our clients & their assets.",
+    images: ["https://plazaprotection.com/includes/img/plazaprotection.png"],
+  },
+  icons: {
+    icon: "/favicon.ico",
+  },
+};
+
+
 import Button from "../../utils/Button";
 import ourtechnologies from "../../public/AboutUs/our-technologies.png";
 import Ourmission from "../../public/AboutUs/Our-mission.svg";
@@ -14,6 +60,7 @@ import OurServices from "../../components/HomePage/OurServices";
 import SecurityTrustBanner from "@/components/SecurityTrustBanner";
 import right from "../../public/right.svg";
 import rightDark from "../../public/right-dark.svg";
+
 const coreValues = [
   {
     icon: Ourmission,

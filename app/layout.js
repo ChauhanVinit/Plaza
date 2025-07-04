@@ -9,7 +9,7 @@ const dmSans = DM_Sans({
 });
 
 export const metadata = {
-  title: "Plaza Protection | Security Services San Jose Bay Area | Security Patrol Experts",
+  title: "Security Services San Jose Bay Area | Security Patrol Experts | Plaza Protection",
   description:
     "At Plaza Protection, we provide excellent private patrol services to businesses throughout California to ensure the safety of our clients and their assets.",
   keywords: [
@@ -65,3 +65,4 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+                        

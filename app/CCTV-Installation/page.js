@@ -1,4 +1,53 @@
-"use client";
+export const metadata = {
+  title: "CCTV Installation | San Jose Bay Area Security Experts | Plaza Protection",
+  description:
+    "Plaza Protection offers professional CCTV installation services, providing advanced video surveillance systems to enhance property security across the San Jose Bay Area.",
+  keywords: [
+    "Security Services In San Jose",
+    "CCTV Installation San Jose",
+    "Security Camera Installation",
+    "Video Surveillance Systems",
+    "Security Guard Services",
+    "Property Surveillance",
+    "Security Services San Jose Bay Area",
+  ],
+  abstract:
+    "Secure your property with Plaza Protection’s expert CCTV installation services. We deliver customized surveillance solutions using cutting-edge technology to monitor and protect your assets.",
+  metadataBase: new URL("https://www.plazaprotection.com"),
+  alternates: {
+    canonical: "/cctv-installation",
+  },      
+  openGraph: {
+    title: "CCTV Installation | San Jose Bay Area Security Experts | Plaza Protection",
+    description:
+      "Plaza Protection offers professional CCTV installation services, providing advanced video surveillance systems to enhance property security across the San Jose Bay Area.",
+    url: "https://plazaprotection.com/cctv-installation",
+    siteName: "PlazaProtection",
+    images: [
+      {
+        url: "https://plazaprotection.com/includes/img/plazaprotection.png",
+        width: 1200,
+        height: 630,
+        alt: "Plaza Protection",
+      },
+    ],
+    locale: "en_US",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@plazaprotection",
+    creator: "@plazaprotection",
+    title: "CCTV Installation | San Jose Bay Area Security Experts | Plaza Protection",
+    description:
+      "Plaza Protection offers professional CCTV installation services, providing advanced video surveillance systems to enhance property security across the San Jose Bay Area.",
+    images: ["https://plazaprotection.com/includes/img/plazaprotection.png"],
+  },
+  icons: {
+    icon: "/favicon.ico",
+  },
+};
+
 import FreeQuote from "../../components/FreeQuote";
 import GuardImage from "../../public/Services/Hero-Guard-05.png";
 import CoreFeature from "../../public/Services/Core-Features-Guard-05.png";

@@ -1,4 +1,52 @@
-"use client";
+export const metadata = {
+  title:
+    "Vehicle Patrol | San Jose Bay Area | Security Patrol Experts | Plaza Protection",
+  description:
+    "Plaza Protection offers dedicated vehicle patrol teams equipped to address the needs of our clients proficiently & proactively in the San Jose Bay Area.",
+  keywords: [
+    "Vehicle patrol",
+    "Security patrol",
+    "vehicle patrol security",
+    "Security Services San Jose Bay Area",
+  ],
+  abstract:
+    "Plaza Protection is one of the leading security guard & vehicle patrol services provider in the San Jose Bay Area you’ll ever need.",
+  metadataBase: new URL("https://www.plazaprotection.com"),
+  alternates: {
+    canonical: "/vehicle-patrol",
+  },
+  openGraph: {
+    title:
+      "Vehicle Patrol | San Jose Bay Area | Security Patrol Experts | Plaza Protection",
+    description:
+      "Plaza Protection offers dedicated vehicle patrol teams equipped to address the needs of our clients proficiently & proactively in the San Jose Bay Area.",
+    url: "https://www.plazaprotection.com/vehicle-patrol",
+    siteName: "PlazaProtection",
+    images: [
+      {
+        url: "https://plazaprotection.com/includes/img/plazaprotection.png",
+        width: 1200,
+        height: 630,
+        alt: "Plaza Protection",
+      },
+    ],
+    locale: "en_US",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@plazaprotection",
+    creator: "@plazaprotection",
+    title:
+      "Vehicle Patrol | San Jose Bay Area | Security Patrol Experts | Plaza Protection",
+    description:
+      "Plaza Protection offers dedicated vehicle patrol teams equipped to address the needs of our clients proficiently & proactively in the San Jose Bay Area.",
+    images: ["https://plazaprotection.com/includes/img/plazaprotection.png"],
+  },
+  icons: {
+    icon: "/favicon.ico",
+  },
+};
 
 import FreeQuote from "../../components/FreeQuote";
 import GuardImage from "../../public/Services/Hero-Guard-04.png";
@@ -22,14 +70,13 @@ const heroData = {
   title: "24/7 Vehicle Patrols For Constant Protection",
   desc: "With 24/7 vehicle patrols, we provide continuous security to ensure your property is always protected.",
   img: GuardImage,
-   alt:"Vehicle patrol Security Guard"
+  alt: "Vehicle patrol Security Guard",
 };
 const coreFeaturesData = {
   title: "Unmatched Security With Vehicle Patrol Services",
   desc: "Our vehicle patrol services offer unmatched security by ensuring continuous, on-the-go protection. With mobile units patrolling your property 24/7, we provide a proactive and swift response to any potential threats.",
   img: CoreFeature,
 };
-
 
 const KeyFeaturesData = {
   title: "Reliable Vehicle Patrol Services For Enhanced Security",
@@ -38,7 +85,7 @@ const KeyFeaturesData = {
 const HighlightsData = {
   title: "Understanding The Operation Of Our Vehicle Patrol Service",
   desc: "Our vehicle patrol service combines proactive surveillance with quick response times, ensuring your property is continuously monitored.",
-  image:BenefitsIMG
+  image: BenefitsIMG,
 };
 const IndustriesWeServeData = {
   desc: "Our vehicle patrol services deliver a visible and mobile security presence tailored to your site’s specific needs. Covering large areas efficiently, our trained patrol officers conduct regular inspections, deter potential threats, and respond quickly to incidents. Designed to adapt across industries, our patrols provide flexible, scalable security solutions that enhance safety and protect your assets around the clock.",
@@ -62,7 +109,8 @@ const accordionItems = [
   {
     icon: collectionIcon,
     title: "Immediate Alerts",
-    description: "Quick action and real-time notifications for any security incidents.",
+    description:
+      "Quick action and real-time notifications for any security incidents.",
   },
 ];
 
@@ -97,26 +145,22 @@ const Highlight = [
   {
     icon: Rapidincident,
     title: "Rapid Incident Response",
-    description:
-      "Quick intervention to handle security breaches.",
+    description: "Quick intervention to handle security breaches.",
   },
   {
     icon: ComprehensiveArea,
     title: "Comprehensive Area Coverage",
-    description:
-      "Ensuring all key locations are consistently patrolled.",
+    description: "Ensuring all key locations are consistently patrolled.",
   },
   {
     icon: Realtime,
     title: "Real-Time Communication",
-    description:
-      "Instant alerts and updates for immediate action.",
+    description: "Instant alerts and updates for immediate action.",
   },
   {
     icon: VisibleDitterence,
     title: "Enhanced Deterrence",
-    description:
-      "Visible patrols that prevent potential threats.",
+    description: "Visible patrols that prevent potential threats.",
   },
 ];
 
@@ -137,17 +181,14 @@ const faqs = [
       "Vehicle patrols are ideal for commercial complexes, residential neighborhoods, industrial zones, retail centers, and campuses—anywhere that needs flexible, wide-area coverage.",
   },
   {
-    question:
-      "Are vehicle patrols available 24/7?",
+    question: "Are vehicle patrols available 24/7?",
     answer:
       "Yes. We offer round-the-clock patrols depending on your security needs, including holidays and weekends.",
   },
 ];
 const Vehiclepatrol = () => {
-   
   return (
     <>
-    
       <Hero {...heroData} />
       <IndustriesWeServe {...IndustriesWeServeData} />
       <CoreFeatures data={accordionItems} {...coreFeaturesData} />
@@ -155,10 +196,8 @@ const Vehiclepatrol = () => {
       <Highlights data={Highlight} {...HighlightsData} />
       <FAQ data={faqs} />
       <FreeQuote />
-     
     </>
   );
 };
 
 export default Vehiclepatrol;
-

@@ -1,6 +1,52 @@
-"use client";
-
-import Footer from "../../components/Footer";
+export const metadata = {
+  title: "Fire Watch | San Jose Bay Area Security Patrol Experts | Plaza Protection",
+  description:
+    "Plaza Protection employs a team of highly motivated fire watch guards, ready to provide reliable fire watch security services in San Jose Bay Area.",
+  keywords: [
+    "Security Services In San Jose",
+    "Security Guard Services",
+    "Private Patrol Services",
+    "vehicle patrol",
+    "Security patrol",
+    "Security Services San Jose Bay Area",
+  ],
+  abstract:
+    "Plaza Protection offers fire watch guards, fully trained & equipped to monitor & identify hazards to ensure the safety of your property & personnel.",
+  metadataBase: new URL("https://www.plazaprotection.com"),
+  alternates: {
+    canonical: "/fire-watch",
+  },
+  openGraph: {
+    title: "Fire Watch | San Jose Bay Area Security Patrol Experts | Plaza Protection",
+    description:
+      "Plaza Protection employs a team of highly motivated fire watch guards, ready to provide reliable fire watch security services in San Jose Bay Area.",
+    url: "https://plazaprotection.com/fire-watch",
+    siteName: "PlazaProtection",
+    images: [
+      {
+        url: "https://plazaprotection.com/includes/img/plazaprotection.png",
+        width: 1200,
+        height: 630,
+        alt: "Plaza Protection",
+      },
+    ],
+    locale: "en_US",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@plazaprotection",
+    creator: "@plazaprotection",
+    title: "Fire Watch | San Jose Bay Area Security Patrol Experts | Plaza Protection",
+    description:
+      "Plaza Protection employs a team of highly motivated fire watch guards, ready to provide reliable fire watch security services in San Jose Bay Area.",
+    images: ["https://plazaprotection.com/includes/img/plazaprotection.png"],
+  },
+  icons: {
+    icon: "/favicon.ico",
+  },
+};
+                           
 import FreeQuote from "../../components/FreeQuote";
 import GuardImage from "../../public/Services/Hero-Guard-01.png";
 import CoreFeature from "../../public/Services/Core-Features-Guard-01.png";

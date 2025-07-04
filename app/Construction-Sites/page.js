@@ -1,4 +1,4 @@
-"use client";
+export { metadata } from './metadata';
 import FreeQuote from "../../components/FreeQuote";
 import ConstructionB from "../../public/ConstructionSites/Construction-B.png";
 import ConstructionA from "../../public/ConstructionSites/Construction-A.png";

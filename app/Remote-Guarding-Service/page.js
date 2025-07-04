@@ -1,5 +1,54 @@
-"use client";
-
+export const metadata = {
+  title:
+    "Remote Guarding Service | San Jose Bay Area Security Experts | Plaza Protection",
+  description:
+    "Plaza Protection provides advanced remote guarding services using real-time video surveillance and analytics to proactively deter threats across the San Jose Bay Area.",
+  keywords: [
+    "Remote Guarding Services",
+    "Remote Surveillance San Jose",
+    "Video Monitoring Security",
+    "Virtual Security Guards",
+    "Security Services Bay Area",
+    "Plaza Protection Remote Guarding",
+  ],
+  abstract:
+    "Enhance your security with Plaza Protection’s remote guarding services, combining live video surveillance, analytics, and trained operators for round-the-clock threat prevention.",
+  metadataBase: new URL("https://www.plazaprotection.com"),
+  alternates: {
+    canonical: "/remote-guarding-service",
+  },
+  openGraph: {
+    title:
+      "Remote Guarding Service | San Jose Bay Area Security Experts | Plaza Protection",
+    description:
+      "Plaza Protection provides advanced remote guarding services using real-time video surveillance and analytics to proactively deter threats across the San Jose Bay Area.",
+    url: "https://plazaprotection.com/remote-guarding-service",
+    siteName: "PlazaProtection",
+    images: [
+      {
+        url: "https://plazaprotection.com/includes/img/plazaprotection.png",
+        width: 1200,
+        height: 630,
+        alt: "Plaza Protection",
+      },
+    ],
+    locale: "en_US",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@plazaprotection",
+    creator: "@plazaprotection",
+    title:
+      "Remote Guarding Service | San Jose Bay Area Security Experts | Plaza Protection",
+    description:
+      "Plaza Protection provides advanced remote guarding services using real-time video surveillance and analytics to proactively deter threats across the San Jose Bay Area.",
+    images: ["https://plazaprotection.com/includes/img/plazaprotection.png"],
+  },
+  icons: {
+    icon: "/favicon.ico",
+  },
+};
 import FreeQuote from "../../components/FreeQuote";
 import GuardImage from "../../public/Services/Hero-Guard-03.png";
 import CoreFeature from "../../public/Services/Core-Features-Guard-03.png";
@@ -18,12 +67,11 @@ import BenefitsIMG from "../../public/Services/Benefits-image-03.png";
 import Rapidincident from "../../public/ShoppingCenter/Rapid-incident-response.svg";
 import ProactiveSecurity from "../../public/Services/Proactive Security.svg";
 
-
 const heroData = {
   title: "Secure Your Property With Remote Guarding Services",
   desc: "By leveraging cutting-edge technology and a highly skilled team, Plaza Protection delivers comprehensive security solutions including video surveillance, security guards, remote guarding, alarms, and access control.",
   img: GuardImage,
-  alt:"Remote Guarding Security Guard"
+  alt: "Remote Guarding Security Guard",
 };
 const coreFeaturesData = {
   title: "Smart Video Surveillance For Proactive Security",
@@ -38,7 +86,7 @@ const KeyFeaturesData = {
 const HighlightsData = {
   title: "How Smart Video Analytics Enhances Your Security",
   desc: "Smart video analytics continuously monitors your property, detecting potential threats in real time. With instant alerts and rapid response capabilities, it ensures proactive security and immediate action to protect what matters most.",
-  image:BenefitsIMG,
+  image: BenefitsIMG,
 };
 const IndustriesWeServeData = {
   desc: "In today’s fast-paced world, effective security requires agility and precision. Our remote guarding services combine cutting-edge technology with vigilant monitoring teams to deliver continuous protection without the need for an on-site presence. Designed to adapt across industries, we provide scalable security solutions that enhance visibility, deter risks, and ensure rapid response—helping you safeguard your assets efficiently and confidently.",
@@ -52,7 +100,8 @@ const accordionItems = [
   {
     icon: collectionIcon,
     title: "Real-Time Monitoring",
-    description: "Enables continuous surveillance for immediate threat detection.",
+    description:
+      "Enables continuous surveillance for immediate threat detection.",
   },
   {
     icon: collectionIcon,
@@ -80,44 +129,37 @@ const KeyFeature = [
   {
     icon: checkmark,
     title: "24/7 Protection",
-    description:
-      "Provides continuous monitoring, even in high-risk areas.",
+    description: "Provides continuous monitoring, even in high-risk areas.",
   },
   {
     icon: checkmark,
     title: "Rapid Incident Response",
-    description:
-      "Enables swift action to security threats.",
+    description: "Enables swift action to security threats.",
   },
 ];
-
 
 const Highlight = [
   {
     icon: Realtimeincident,
     title: "Real-Time Threat Detection",
-    description:
-      "Immediate identification of potential risks.",
+    description: "Immediate identification of potential risks.",
   },
   {
-     icon: InstantAlert,
+    icon: InstantAlert,
     title: "Instant Alerts",
-    description:
-      "Prompt notifications to respond quickly to incidents.",
+    description: "Prompt notifications to respond quickly to incidents.",
   },
   {
     icon: Rapidincident,
     title: "Rapid Response Capabilities",
-    description:
-      "Fast action to address security concerns.",
+    description: "Fast action to address security concerns.",
   },
   {
     icon: ProactiveSecurity,
     title: "Proactive Security",
-    description:
-      "Preventative measures to safeguard your property.",
+    description: "Preventative measures to safeguard your property.",
   },
-];  
+];
 const faqs = [
   {
     question: "What Are the Benefits of Remote Guarding vs. Security Guards?",
@@ -139,23 +181,19 @@ const faqs = [
     answer:
       "Yes. All video data is encrypted during storage and transmission to prevent unauthorized access or tampering. ",
   },
-  
-];                                              
+];
 const RemoteGuarding = () => {
-   
   return (
     <>
-       
       <Hero {...heroData} />
-       <IndustriesWeServe {...IndustriesWeServeData} />
+      <IndustriesWeServe {...IndustriesWeServeData} />
       <CoreFeatures data={accordionItems} {...coreFeaturesData} />
-        <KeyFeatures data={KeyFeature} {...KeyFeaturesData} />
+      <KeyFeatures data={KeyFeature} {...KeyFeaturesData} />
       <Highlights data={Highlight} {...HighlightsData} />
       <FAQ data={faqs} />
       <FreeQuote />
-     
     </>
-  );       
-};                  
+  );
+};
 
 export default RemoteGuarding;

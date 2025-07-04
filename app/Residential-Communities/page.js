@@ -1,4 +1,4 @@
-"use client";
+export { metadata } from './metadata';
 import FreeQuote from "../../components/FreeQuote";
 import ResidentialA from "../../public/Residential/residential-image-01.png";
 import ResidentialB from "../../public/Residential/residential-image-02.png";
@@ -127,8 +127,7 @@ const featuresListContent  = {
 const ResidentialCommunities = () => {
 
   return (
-    <>
-      
+    <>      
       <div className="w-full px-4 sm:px-6 xl:px-10 2xl:px-0 2xl:max-w-[1342px] mt-10 2xl:mt-20 mb-20 2xl:mb-40 2xl:mx-auto">
         <div className="flex gap-12">
           <div className="relative pt-[14px] hidden xl:block">

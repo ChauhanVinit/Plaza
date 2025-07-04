@@ -16,7 +16,7 @@ import Services from "../components/HomePage/Services";
 import Button from "../utils/Button";
 import right from "../public/right.svg";
 import rightDark from "../public/right-dark.svg";
-
+                                                     
 export default function Home() {
 const excelData = [
   {
@@ -38,7 +38,7 @@ const excelData = [
     description: "Tailoring our services to fit your specific security requirements.",
   },
 ];
-
+                             
   
   return (
     <>
@@ -106,7 +106,7 @@ const excelData = [
                 variant="blue"
                 style={"w-full sm:max-w-[243px]"}
                 name="Request Quote"
-                path="/Request-A-Quote"
+                path="/request-quote"
               />
 
               <Button
@@ -135,7 +135,7 @@ const excelData = [
       <AboutUs />
       <OurServices />
       <FreeQuote />
-     
+                
     </>                                                                 
   );
-}
+}                             

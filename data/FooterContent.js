@@ -41,23 +41,23 @@ socialMedia: [
       links: [
         {
           label: "Unarmed Security",
-          path: "/Unarmed-Security",
+          path: "/unarmed-security",
         },
         {
           label: "Fire Watch",
-          path: "/Fire-Watch",
+          path: "/fire-watch",
         },
         {
           label: "Remote Monitoring",
-          path: "/Remote-Guarding-Service",
+          path: "/remote-guarding-service",
         },
         {
           label: "Vehicle Patrol",
-          path: "/Vehicle-patrol",
+          path: "/vehicle-patrol",
         },
         {
           label: "CCTV Installation",
-          path: "/CCTV-Installation",
+          path: "/cctv-installation",
         },
       ],
     },
@@ -66,23 +66,23 @@ socialMedia: [
       links: [
         {
           label: "Residential Communities",
-          path: "/Residential-Communities",
+          path: "/residential-communities",
         },
         {
           label: "Commercial Buildings",
-          path: "/Commercial-Buildings",
+          path: "/commercial-buildings",
         },
         {
           label: "Construction Sites",
-          path: "/Construction-Sites",
+          path: "/construction-sites",
         },
         {
           label: "Shopping Centers",
-          path: "/Shopping-Centers",
+          path: "/shopping-centers",
         },
         {
           label: "Healthcare Facilities",
-          path: "/Healthcare-Facilities",
+          path: "/healthcare-facilities",
         },
       ],
     },
@@ -91,19 +91,19 @@ socialMedia: [
       links: [
         {
           label: "About Us",
-          path: "/About-us",
+          path: "/about-us",
         },
         {
           label: "Contact Us",
-          path: "/Contact-Us",
+          path: "/contact-us",
         },
         {
           label: "Blog",
-          path: "/Blog",
+          path: "/blog",
         },
         {
           label: "Request A Quote",
-          path: "/Request-A-Quote",
+          path: "/request-quote",
         },
       ],
     },

@@ -26,7 +26,7 @@ const KeyFeatures = ({ data, title, desc }) => {
               icon={<Image src={rightDark} alt="Right arrow icon" className="sm:hidden w-4 h-4" />}
               style={"w-full sm:!max-w-[162px] sm:min-w-[162px]"}
             name="Contact Us"
-            path="/Contact-Us"
+            path="/contact-us"
           />
         </div>
       </div>
