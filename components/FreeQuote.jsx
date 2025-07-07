@@ -56,28 +56,28 @@ const FreeQuote = () => {
     },
   ];
   const areaOptions = [
-  { id: nanoid(), name: "Downtown San Jose" },
-  { id: nanoid(), name: "Willow Glen" },
-  { id: nanoid(), name: "Cambrian Park" },
-  { id: nanoid(), name: "Almaden Valley" },
-  { id: nanoid(), name: "Berryessa" },
-  { id: nanoid(), name: "Evergreen" },
-  { id: nanoid(), name: "Rose Garden" },
-  { id: nanoid(), name: "North San Jose" },
-  { id: nanoid(), name: "West San Jose" },
-  { id: nanoid(), name: "East San Jose" },
-  { id: nanoid(), name: "South San Jose" },
-];
- const durationOptions = [
-  { id: nanoid(), name: "15 Days" },
-  { id: nanoid(), name: "1 Month" },
-  { id: nanoid(), name: "3 Months" },
-  { id: nanoid(), name: "6 Months" },
-  { id: nanoid(), name: "1 Year" },
-  { id: nanoid(), name: "2 Years" },
-  { id: nanoid(), name: "3 Years" },
-  { id: nanoid(), name: "5 Years" },
-];
+    { id: nanoid(), name: "Downtown San Jose" },
+    { id: nanoid(), name: "Willow Glen" },
+    { id: nanoid(), name: "Cambrian Park" },
+    { id: nanoid(), name: "Almaden Valley" },
+    { id: nanoid(), name: "Berryessa" },
+    { id: nanoid(), name: "Evergreen" },
+    { id: nanoid(), name: "Rose Garden" },
+    { id: nanoid(), name: "North San Jose" },
+    { id: nanoid(), name: "West San Jose" },
+    { id: nanoid(), name: "East San Jose" },
+    { id: nanoid(), name: "South San Jose" },
+  ];
+  const durationOptions = [
+    { id: nanoid(), name: "15 Days" },
+    { id: nanoid(), name: "1 Month" },
+    { id: nanoid(), name: "3 Months" },
+    { id: nanoid(), name: "6 Months" },
+    { id: nanoid(), name: "1 Year" },
+    { id: nanoid(), name: "2 Years" },
+    { id: nanoid(), name: "3 Years" },
+    { id: nanoid(), name: "5 Years" },
+  ];
 
   const [freeQuote, setFreeQuote] = useState({
     userName: "",
@@ -85,9 +85,9 @@ const FreeQuote = () => {
     userEmail: "",
     userAddress: "",
     userMessage: "",
-    service: "", 
-    facility: "", 
-    area: "", 
+    service: "",
+    facility: "",
+    area: "",
     duration: "",
   });
   const handleInputChange = (e) => {
@@ -99,33 +99,33 @@ const FreeQuote = () => {
       });
     }
   };
-const handleDropdownChange = (name, value) => {
-  setFreeQuote((prev) => ({
-    ...prev,
-    [name]: value,
-  }));
-};
+  const handleDropdownChange = (name, value) => {
+    setFreeQuote((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
 
-const handleSubmit = (e) => {
-  e.preventDefault(); // prevent default form submit
+  const handleSubmit = (e) => {
+    e.preventDefault(); // prevent default form submit
 
-  // validate inputs if needed
+    // validate inputs if needed
 
-  console.log("Submitted:", freeQuote);
+    console.log("Submitted:", freeQuote);
 
-  // Reset all fields after submit
-  setFreeQuote({
-    userName: "",
-    companyName: "",
-    userEmail: "",
-    userAddress: "",
-     userMessage: "",
-    service: "",
-    facility: "",
-    area: "",
-    duration: "",
-  });
-};
+    // Reset all fields after submit
+    setFreeQuote({
+      userName: "",
+      companyName: "",
+      userEmail: "",
+      userAddress: "",
+      userMessage: "",
+      service: "",
+      facility: "",
+      area: "",
+      duration: "",
+    });
+  };
 
   return (
     <div className="relative h-auto lg:h-[490px] 2xl:h-[568px] 2xl:max-w-[1200px]  mx-4 sm:mx-6 xl:mx-10 2xl:mx-auto mb-10 mt-10 lg:mt-0 lg:mb-[160px] 2xl:mb-[140px] px-4 sm:px-6 xl:px-8 2xl:px-[60px] bg-[#0C2459] rounded-[40px]">
@@ -158,7 +158,6 @@ const handleSubmit = (e) => {
               path={"/contact-us"}
               style={"w-full sm:max-w-[190px]  !text-white  "}
               name={"Contact Us"}
-              
             />
           </div>
         </div>
@@ -219,7 +218,7 @@ const handleSubmit = (e) => {
                   placeholder="Select Services"
                   name="service"
                   onSelect={handleDropdownChange}
-                   value={freeQuote.service}
+                  value={freeQuote.service}
                 />
               </div>
               <div className="w-full  md:w-1/2">
@@ -228,20 +227,19 @@ const handleSubmit = (e) => {
                   placeholder="Type Of Facility"
                   name="facility"
                   onSelect={handleDropdownChange}
-                   value={freeQuote.facility}
+                  value={freeQuote.facility}
                 />
               </div>
             </div>
             <div className="w-full flex flex-col md:flex-row gap-4 mt-4">
               <div className="w-full md:w-1/2">
-                <Dropdown 
-                options={areaOptions} 
-                placeholder="Select Area"
-                name="area"
-                onSelect={handleDropdownChange}
-                value={freeQuote.area}
+                <Dropdown
+                  options={areaOptions}
+                  placeholder="Select Area"
+                  name="area"
+                  onSelect={handleDropdownChange}
+                  value={freeQuote.area}
                 />
-                
               </div>
               <div className="w-full md:w-1/2">
                 <Dropdown
@@ -249,7 +247,7 @@ const handleSubmit = (e) => {
                   placeholder="Duration Of Service"
                   name="duration"
                   onSelect={handleDropdownChange}
-                   value={freeQuote.duration}
+                  value={freeQuote.duration}
                 />
               </div>
             </div>
@@ -258,7 +256,7 @@ const handleSubmit = (e) => {
                 placeholder={"Assignment Details"}
                 value={freeQuote.userMessage}
                 name={"userMessage"}
-                 onChange={handleInputChange}
+                onChange={handleInputChange}
               />
             </div>
 
@@ -283,5 +281,5 @@ const handleSubmit = (e) => {
     </div>
   );
 };
-
+           
 export default FreeQuote;

@@ -16,9 +16,10 @@ import Services from "../components/HomePage/Services";
 import Button from "../utils/Button";
 import right from "../public/right.svg";
 import rightDark from "../public/right-dark.svg";
+// import videoBanner from "../public/video-banner.png";
                                                      
 export default function Home() {
-const excelData = [
+const SafeExpertData = [
   {
     icon: licenseThird,
     alt: "Industry experience icon",
@@ -38,8 +39,7 @@ const excelData = [
     description: "Tailoring our services to fit your specific security requirements.",
   },
 ];
-                             
-  
+                            
   return (
     <>
       <Hero />
@@ -68,7 +68,7 @@ const excelData = [
             </p>
 
             <div className=" mt-8 px-4 bg-[#EDF5FF]/20 rounded-3xl ">
-              {excelData.map((item, index) => (
+              {SafeExpertData.map((item, index) => (
                 <div
                   key={index}
                   className="py-4  border-b border-[#1355FF]/10 last:border-none"
@@ -135,7 +135,7 @@ const excelData = [
       <AboutUs />
       <OurServices />
       <FreeQuote />
-                
+                                        
     </>                                                                 
-  );
-}                             
+  );                          
+}                
