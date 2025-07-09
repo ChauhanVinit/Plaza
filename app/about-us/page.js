@@ -138,7 +138,7 @@ const AboutUs = () => {
              icon={<Image src={right} alt="Right arrow icon" className="w-4 h-4" />}
             style={"w-full sm:max-w-[243px]"}
             name="Request Quote"
-            path={'/Request-A-Quote'}
+            path={'/request-quote'}
           />
 
           <Button
@@ -146,7 +146,7 @@ const AboutUs = () => {
             icon={<Image src={rightDark} alt="Right arrow icon" className="w-4 h-4" />}
             style={"w-full sm:max-w-[162px]"}
             name="Contact Us"
-            path="/Contact-Us"
+            path="/contact-us"
           />
         </div>
       </div>
