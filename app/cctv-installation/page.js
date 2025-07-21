@@ -1,5 +1,6 @@
 export const metadata = {
-  title: "CCTV Installation | San Jose Bay Area Security Experts | Plaza Protection",
+  title:
+    "CCTV Installation | San Jose Bay Area Security Experts | Plaza Protection",
   description:
     "Plaza Protection offers professional CCTV installation services, providing advanced video surveillance systems to enhance property security across the San Jose Bay Area.",
   keywords: [
@@ -16,9 +17,10 @@ export const metadata = {
   metadataBase: new URL("https://www.plazaprotection.com"),
   alternates: {
     canonical: "/cctv-installation",
-  },      
+  },
   openGraph: {
-    title: "CCTV Installation | San Jose Bay Area Security Experts | Plaza Protection",
+    title:
+      "CCTV Installation | San Jose Bay Area Security Experts | Plaza Protection",
     description:
       "Plaza Protection offers professional CCTV installation services, providing advanced video surveillance systems to enhance property security across the San Jose Bay Area.",
     url: "https://plazaprotection.com/cctv-installation",
@@ -38,7 +40,8 @@ export const metadata = {
     card: "summary_large_image",
     site: "@plazaprotection",
     creator: "@plazaprotection",
-    title: "CCTV Installation | San Jose Bay Area Security Experts | Plaza Protection",
+    title:
+      "CCTV Installation | San Jose Bay Area Security Experts | Plaza Protection",
     description:
       "Plaza Protection offers professional CCTV installation services, providing advanced video surveillance systems to enhance property security across the San Jose Bay Area.",
     images: ["https://plazaprotection.com/includes/img/plazaprotection.png"],
@@ -66,17 +69,22 @@ import ComprehensiveArea from "../../public/Services/Comprehensive-area-coverage
 import Realtime from "../../public/Services/Real-time-communication.svg";
 import VisibleDitterence from "../../public/Services/Visible-Ditterence.svg";
 const heroData = {
-  title: <>CCTV Installation Services<br className="hidden 2xl:block" /> for Reliable Property<br className="hidden 2xl:block" />  Surveillance</>,
+  title: (
+    <>
+      CCTV Installation Services
+      <br className="hidden 2xl:block" /> for Reliable Property
+      <br className="hidden 2xl:block" /> Surveillance
+    </>
+  ),
   desc: "Secure your home or business with professional CCTV installation services by Plaza Protection. Get reliable, 24/7 surveillance and real-time monitoring tailored to your property.",
   img: GuardImage,
-  alt:"CCTV Installation Security Guard"
+  alt: "CCTV Installation Security Guard",
 };
 const coreFeaturesData = {
   title: "Why Plaza Protection Is The Smart Choice For CCTV Installation?",
   desc: "Secure your property with Plaza Protection's expert CCTV installation services. Customized solutions, advanced tech, and 24/7 support for complete peace of mind.",
   img: CoreFeature,
 };
-
 
 const KeyFeaturesData = {
   title: "Trusted CCTV Installation Services for Smarter Security",
@@ -94,26 +102,22 @@ const accordionItems = [
   {
     icon: collectionIcon,
     title: "Tailored Surveillance Strategies",
-    description:
-      "Custom CCTV design for full property coverage.",
+    description: "Custom CCTV design for full property coverage.",
   },
   {
     icon: collectionIcon,
     title: "Crystal-Clear Visuals",
-    description:
-      "HD and 4K cameras for sharp, detailed footage.",
+    description: "HD and 4K cameras for sharp, detailed footage.",
   },
   {
     icon: collectionIcon,
     title: "Access From Anywhere",
-    description:
-      "Monitor your property remotely.",
+    description: "Monitor your property remotely.",
   },
   {
     icon: collectionIcon,
     title: "Expert Installation & Support",
-    description:
-      "Expert tech installation & upkeep",
+    description: "Expert tech installation & upkeep",
   },
 ];
 
@@ -121,22 +125,26 @@ const KeyFeature = [
   {
     icon: checkmark,
     title: "Strategic System Design",
-    description: "We install CCTV to cover key entry points, blind spots, and vulnerable areas.",
+    description:
+      "We install CCTV to cover key entry points, blind spots, and vulnerable areas.",
   },
   {
     icon: checkmark,
     title: "Ultra-HD Video Quality",
-    description: "Experience best image resolution with our HD and 4K cameras, ensuring all detail is captured clear.",
+    description:
+      "Experience best image resolution with our HD and 4K cameras, ensuring all detail is captured clear.",
   },
   {
     icon: checkmark,
     title: "Remote Monitoring & Alerts",
-    description: "Access live footage from any device and receive instant alerts to stay informed even when you're away.",
+    description:
+      "Access live footage from any device and receive instant alerts to stay informed even when you're away.",
   },
   {
     icon: checkmark,
     title: "Reliable, Scalable Technology",
-    description: "Our CCTV systems are easily upgraded and integrated for full security coverage.",
+    description:
+      "Our CCTV systems are easily upgraded and integrated for full security coverage.",
   },
 ];
 
@@ -149,7 +157,8 @@ const Highlight = [
   {
     icon: ComprehensiveArea,
     title: "Real-Time Incident Management",
-    description: "Access live feeds and alerts to respond to threats instantly.",
+    description:
+      "Access live feeds and alerts to respond to threats instantly.",
   },
   {
     icon: Realtime,
@@ -159,7 +168,8 @@ const Highlight = [
   {
     icon: VisibleDitterence,
     title: "Improved Safety Culture",
-    description: "Visible surveillance ensures security and peace of mind for everyone.",
+    description:
+      "Visible surveillance ensures security and peace of mind for everyone.",
   },
 ];
 const faqs = [
@@ -179,28 +189,26 @@ const faqs = [
       "Yes. We offer HD and 4K resolution cameras to ensure sharp, clear images that make identification easy even in low-light conditions.",
   },
   {
-    question:
-      "Can the system be integrated with other security tools?",
+    question: "Can the system be integrated with other security tools?",
     answer:
       "Definitely. Our CCTV systems can integrate with alarms, access control, and remote monitoring for a comprehensive security solution.",
   },
 ];
 const CCTVInstallation = () => {
-    
   return (
     <>
-     
       <Hero {...heroData} />
       <IndustriesWeServe {...IndustriesWeServeData} />
       <CoreFeatures data={accordionItems} {...coreFeaturesData} />
       <KeyFeatures data={KeyFeature} {...KeyFeaturesData} />
       <Highlights data={Highlight} {...HighlightsData} />
-      <FAQ data={faqs} />
+      <FAQ
+        data={faqs}
+        title={"Frequently asked questions about CCTV Installation"}
+      />
       <FreeQuote />
-     
     </>
   );
 };
 
 export default CCTVInstallation;
-

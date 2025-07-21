@@ -194,7 +194,7 @@ const Vehiclepatrol = () => {
       <CoreFeatures data={accordionItems} {...coreFeaturesData} />
       <KeyFeatures data={KeyFeature} {...KeyFeaturesData} />
       <Highlights data={Highlight} {...HighlightsData} />
-      <FAQ data={faqs} />
+      <FAQ data={faqs} title={'Frequently asked questions about Vehicle Patrol Services'} />
       <FreeQuote />
     </>
   );

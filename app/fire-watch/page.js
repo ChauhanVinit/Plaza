@@ -193,13 +193,12 @@ const FireWatch = () => {
   
   return (
     <>
-     
       <Hero {...heroData} />
        <IndustriesWeServe {...IndustriesWeServeData} />
       <CoreFeatures data={accordionItems} {...coreFeaturesData} />
       <KeyFeatures data={KeyFeature} {...KeyFeaturesData} />
       <Highlights data={Highlight} {...HighlightsData} />
-      <FAQ  data={faqs}/>
+      <FAQ  data={faqs} title={'Frequently asked questions about fire watch services'} />
       <FreeQuote />
       
     </>

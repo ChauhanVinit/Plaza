@@ -6,7 +6,7 @@ import { useState } from "react";
 import plus from "../../public/Services/plus.svg";
 
 
-const FAQ = ({data}) => {
+const FAQ = ({data,title}) => {
   const [openIndex, setOpenIndex] = useState(null);
 
   const toggle = (index) => {
@@ -18,9 +18,7 @@ const FAQ = ({data}) => {
       <div className="text-center max-w-[658px] mx-auto">
         <Tag title={"Find out quick answers "} />
         <Heading
-          title={
-            "Frequently Asked Questions About Unarmed Security Guards Services"
-          }
+          title={title}
           className={'!text-[#222A5B]'}
         />
       </div>

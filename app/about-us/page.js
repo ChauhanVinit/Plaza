@@ -1,11 +1,12 @@
 export const metadata = {
-  title: "About Us | San Jose Bay Area Security Patrol Experts | Plaza Protection",
+  title:
+    "About Us | San Jose Bay Area Security Patrol Experts | Plaza Protection",
   description:
     "Plaza Protection with over 10 years of extensive experience in providing effective security solutions is ensuring the safety of our clients & their assets.",
   keywords: [
     "security guard services",
     "Security Services San Jose Bay Area",
-    "Security Services San Jose Bay Area"
+    "Security Services San Jose Bay Area",
   ],
   abstract:
     "Plaza Protection is a security guard and patrol services company headquartered in the San Jose Bay Area with over 10 years of experience.",
@@ -14,7 +15,8 @@ export const metadata = {
     canonical: "/about-us",
   },
   openGraph: {
-    title: "About Us | San Jose Bay Area Security Patrol Experts | Plaza Protection",
+    title:
+      "About Us | San Jose Bay Area Security Patrol Experts | Plaza Protection",
     description:
       "Plaza Protection with over 10 years of extensive experience in providing effective security solutions is ensuring the safety of our clients & their assets.",
     url: "https://www.plazaprotection.com/about-us",
@@ -34,7 +36,8 @@ export const metadata = {
     card: "summary_large_image",
     site: "@plazaprotection",
     creator: "@plazaprotection",
-    title: "About Us | San Jose Bay Area Security Patrol Experts | Plaza Protection",
+    title:
+      "About Us | San Jose Bay Area Security Patrol Experts | Plaza Protection",
     description:
       "Plaza Protection with over 10 years of extensive experience in providing effective security solutions is ensuring the safety of our clients & their assets.",
     images: ["https://plazaprotection.com/includes/img/plazaprotection.png"],
@@ -43,7 +46,6 @@ export const metadata = {
     icon: "/favicon.ico",
   },
 };
-
 
 import Button from "../../utils/Button";
 import ourtechnologies from "../../public/AboutUs/our-technologies.png";
@@ -83,7 +85,7 @@ const coreValues = [
 const ourTechnologies = [
   {
     icon: SurveillanceSystems,
-     alt: "High-Definition Surveillance Camera System Icon",
+    alt: "High-Definition Surveillance Camera System Icon",
     title: "Surveillance Systems",
     description:
       "High-definition cameras and motion detectors create a seamless security network.",
@@ -97,26 +99,25 @@ const ourTechnologies = [
   },
   {
     icon: IncidentReporting,
-      alt: "Incident Reporting and Alert Notification Icon",
+    alt: "Incident Reporting and Alert Notification Icon",
     title: "Incident Reporting",
     description: "Real-time alerts enable fast response and full transparency.",
   },
 ];
-  const SecurityTrustData = {
-    title: (
-      <>
-        Plaza Protection : <br className="hidden sm:block" /> Trusted Security Guard Company
-      </>
-    ),
-    btnText: "Request A Quote",
-    path:'/request-quote'
-  };
+const SecurityTrustData = {
+  title: (
+    <>
+      Plaza Protection : <br className="hidden sm:block" /> Trusted Security
+      Guard Company
+    </>
+  ),
+  btnText: "Request A Quote",
+  path: "/request-quote",
+};
 
 const AboutUs = () => {
- 
   return (
     <>
-     
       <div className="mx-4 sm:mx-6  xl:mx-10 2xl:max-w-[1360px] 2xl:mx-auto  my-10 xl:mt-[60px] xl:mb-20 2xl:mt-[100px] 2xl:mb-40">
         <div className="sm:text-center">
           <h1 className="font-dmSans text-5xl !leading-[56px] xl:text-[52px] xl:!leading-[60px] 2xl:text-[56px]  2xl:!leading-[64px] font-semibold text-[#222A5B] mb-8 tracking-[-4px] xs:tracking-[-3px] max-w-[1162px] mx-auto">
@@ -135,15 +136,23 @@ const AboutUs = () => {
         <div className="w-full mt-12 sm:mt-14  inline-flex flex-col sm:flex-row justify-center items-center  gap-4">
           <Button
             variant="blue"
-             icon={<Image src={right} alt="Right arrow icon" className="w-4 h-4" />}
+            icon={
+              <Image src={right} alt="Right arrow icon" className="w-4 h-4" />
+            }
             style={"w-full sm:max-w-[243px]"}
             name="Request Quote"
-            path={'/request-quote'}
+            path={"/request-quote"}
           />
 
           <Button
             variant="custom"
-            icon={<Image src={rightDark} alt="Right arrow icon" className="w-4 h-4" />}
+            icon={
+              <Image
+                src={rightDark}
+                alt="Right arrow icon"
+                className="w-4 h-4"
+              />
+            }
             style={"w-full sm:max-w-[162px]"}
             name="Contact Us"
             path="/contact-us"
@@ -154,7 +163,7 @@ const AboutUs = () => {
       <OurServices />
 
       <div className="mx-4 sm:mx-6  xl:mx-10 2xl:max-w-[1440px] 2xl:mx-auto mb-10 2xl:mb-20 px-4 sm:px-6  py-10 xl:px-10 2xl:p-20 rounded-[40px] bg-[#EDF5FF]">
-        <Tag title={"Quick view about us"}  />
+        <Tag title={"Quick view about us"} />
         <Heading
           className={"!mt-4 !text-[#222A5B]"}
           title={"Our core values"}
@@ -163,11 +172,7 @@ const AboutUs = () => {
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-4 xl:gap-6 mt-8 lg:mt-10">
           {coreValues.map((item, index) => (
             <div key={index} className="w-full lg:w-1/2 p-0 lg:p-4">
-              <Image
-                src={item.icon}
-                alt={item.title}
-                className="w-auto"
-              />
+              <Image src={item.icon} alt={item.title} className="w-auto" />
               <div className="mt-8">
                 <h3 className="font-dmSans text-[#171A1D] font-semibold text-[28px] lg:text-[32px] leading-9 lg:!leading-10 tracking-[-1px]">
                   {item.title}
@@ -230,12 +235,14 @@ const AboutUs = () => {
           </div>
         </div>
         <div className="w-full lg:w-1/2">
-          <Image src={ourtechnologies} alt="Security guard monitoring a seated individual, demonstrating real-time protection with cutting-edge technology" className="w-full h-full max-w-[600px] lg:max-w-full" />
+          <Image
+            src={ourtechnologies}
+            alt="Security guard monitoring a seated individual, demonstrating real-time protection with cutting-edge technology"
+            className="w-full h-full max-w-[600px] lg:max-w-full"
+          />
         </div>
       </div>
-
       <SecurityTrustBanner {...SecurityTrustData} />
-    
     </>
   );
 };
