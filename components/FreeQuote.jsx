@@ -83,7 +83,7 @@ const FreeQuote = () => {
     userName: "",
     companyName: "",
     userEmail: "",
-    userAddress: "",
+    phoneNumber: "",
     userMessage: "",
     service: "",
     facility: "",
@@ -118,7 +118,7 @@ const FreeQuote = () => {
       userName: "",
       companyName: "",
       userEmail: "",
-      userAddress: "",
+      phoneNumber: "",
       userMessage: "",
       service: "",
       facility: "",
@@ -128,7 +128,7 @@ const FreeQuote = () => {
   };
 
   return (
-    <div className="relative h-auto lg:h-[490px] 2xl:h-[568px] 2xl:max-w-[1200px]  mx-4 sm:mx-6 xl:mx-10 2xl:mx-auto mb-10 mt-10 lg:mt-0 lg:mb-[160px] 2xl:mb-[140px] px-4 sm:px-6 xl:px-8 2xl:px-[60px] bg-[#0C2459] rounded-[40px]">
+    <div className="relative h-auto lg:h-[450px] 2xl:h-[512px] 2xl:max-w-[1200px]  mx-4 sm:mx-6 xl:mx-10 2xl:mx-auto mb-10 mt-10 lg:mt-0 lg:mb-[160px] 2xl:mb-[140px] px-4 sm:px-6 xl:px-8 2xl:px-[60px] bg-[#0C2459] rounded-[40px]">
       <Image
         src={lineShape}
         className="z-0 absolute top-0 left-0 max-h-[612px] "
@@ -144,7 +144,7 @@ const FreeQuote = () => {
             title={"Plaza Protection Securing San Jose Inside Out"}
             className={" !text-white max-w-full lg:!max-w-[350px]"}
           />
-          <p className="mt-6 font-dmSans font-normal text-lg 2xl:text-xl 2xl:!leading-8  text-white max-w-full lg:max-w-[351px]">
+          <p className="mt-6 font-dmSans font-normal text-base  text-white max-w-full lg:max-w-[351px]">
             Serving the San Jose area, our expert team is ready to protect what
             matters most. Contact us today for a free risk assessment!
           </p>
@@ -163,7 +163,7 @@ const FreeQuote = () => {
         </div>
 
         <div
-          className="relative right-0 2xl:-right-[108px] pb-8 sm:pb-10 pt-0 lg:pb-0 lg:pt-10  2xl:pt-[60px] 
+          className="relative lg:top-[60px] right-0 2xl:-right-[108px] pb-8 sm:pb-10 pt-0 lg:pb-0 lg:pt-10  2xl:pt-[60px] 
          w-full
          lg:w-auto lg:grow"
         >
@@ -204,14 +204,14 @@ const FreeQuote = () => {
               </div>
               <div className="w-full md:w-1/2">
                 <Input
-                  placeholder={"Your Address"}
+                  placeholder={"Phone Number"}
                   onChange={handleInputChange}
-                  value={freeQuote.userAddress}
-                  name={"userAddress"}
+                  value={freeQuote.phoneNumber}
+                  name={"phoneNumber"}
                 />
               </div>
             </div>
-            <div className="w-full flex flex-col md:flex-row gap-4 mt-4">
+            {/* <div className="w-full flex flex-col md:flex-row gap-4 mt-4">
               <div className="w-full md:w-1/2">
                 <Dropdown
                   options={ServicesOptions}
@@ -250,7 +250,7 @@ const FreeQuote = () => {
                   value={freeQuote.duration}
                 />
               </div>
-            </div>
+            </div> */}
             <div className="w-full  mt-4">
               <Textarea
                 placeholder={"Assignment Details"}

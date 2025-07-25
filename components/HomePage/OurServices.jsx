@@ -1,8 +1,6 @@
 "use client";
-import clientA from "../../public/Client-img-01.png";
-import clientB from "../../public/Client-img-02.png";
-import clientC from "../../public/Client-img-03.png";
-import lineShape02 from "../../public/line-shape02.svg";
+import quoteIcon from "../../public/quote-blue.svg";
+import quote from "../../public/quote.svg";
 import Image from "next/image";
 import Tag from "../../utils/Tag";
 import Heading from "../../utils/Heading";
@@ -13,7 +11,6 @@ import useIsClient from "../../Hook/useClient";
 const clientTestimonials = [
   {
     id: 1,
-    clientImage: clientA,
     clientText: `Plaza Protection has offered valued security patrol services to our customers by making sure that their professional team is on the ground when a situation arises. They are quick to respond to all alerts and handle the matter in a professional manner, we would highly recommend their security patrol services to any organization that wants to work with a professional security guard company. `,
     clientName: "Andre Walington",
     clientRole: "Carnegie Foundation",
@@ -21,89 +18,75 @@ const clientTestimonials = [
 
   {
     id: 2,
-    clientImage: clientB,
     clientText: `I would like to thank Plaza Protection for providing excellent security guard services to our company. They made sure that our apartments were safe and secure for our residents. The guards are always professional and do an excellent job of meeting our expectations. I would highly recommend Plaza Protection to any company that is looking to hire a professional security patrol company. `,
-      clientName: "Nick L.",
-      clientRole: "Folsom Residential ",
+    clientName: "Nick L.",
+    clientRole: "Folsom Residential ",
   },
   {
     id: 3,
-    clientImage: clientC,
     clientText: `Plaza Protection has been providing excellent security patrol services to our residential community in the Bay Area. From the very beginning, they understood our needs and worked with our staff to address security concerns. Plaza Protection security guards are professional and well-trained. I always recommend Plaza Protection to anyone looking for extra protection for their community. `,
-      clientName: "Steven H.",
-      clientRole: "Country Club Villa",
+    clientName: "Steven H.",
+    clientRole: "Country Club Villa",
   },
 ];
 
 const OurServices = () => {
   const isClient = useIsClient();
   return (
-    <div className="relative mx-4 sm:mx-6 xl:mx-10 my-10 2xl:my-[60px] 2xl:max-w-[1300px] 2xl:mx-auto py-8 px-0 sm:py-10 sm:px-6 xl:px-8 2xl:py-20 2xl:px-[60px] rounded-[40px]">
-      <Image
-        src={lineShape02}
-        className="z-0 absolute top-[160px] -left-60 w-[548px]  h-[640px]"
-        alt="lineShape"
-      />
-      <Tag title={"Don’t trust us? Trust businesses like yours"} />
-      <Heading title={"Hear What Our Clients Say"} />
-       {
-        isClient &&  <Splide
-        aria-label="My Favorite Images"
-        options={{
-          type: "loop",
-          perMove: 1,
-          rewind: true,
-          perPage: 1,
-          gap: "24px",
-          autoplay: false,
-          arrows: true,
-          pagination: false,
-          breakpoints: {
-                768: {pagination: true },
-                
-              },
-          classes: {
-            arrow: "custom-arrow", 
-            prev: "custom-prev",  
-            next: "custom-next", 
-          },
-          interval: 3000,
-          pagination: false,
-        }}
-        className="dots:absolute dots:right-0 dots:bottom-[18px]  dots:p-0 dots:min-w-[300px] dots:justify-center  dots:items-center  dots:gap-4 dot:!bg-[#88C0FF] dot:w-2 dot:h-2 activeDot:scale-100 activeDot:!bg-[#1355FF] dot:shadow-none dot:outline-none mt-20"
-      >
-        {clientTestimonials.map((testimonial, index) => (
-          <SplideSlide key={index} >
-            <div className="flex flex-col items-start lg:flex-row lg:items-center gap-8 lg:gap-10 xl:gap-20   2xl:gap-[200px] pb-[90px] lg:pb-[110px]">
-              <div className="relative lg:w-[30%]">
-                <Image
-                  src={testimonial.clientImage}
-                  className=" w-auto min-w-0 xl:min-w-[344px]  h-[399px]"
-                 alt={`Photo of ${testimonial.clientName}, ${testimonial.clientRole}`}
-                 title={`${testimonial.clientName} – ${testimonial.clientRole}`}
-                />
-
-                <div className="min-w-[222px] max-w-[222px] border border-[#B9D8FF] absolute right-0 bottom-3  p-[18.17px] bg-[#EDF5FF]  rounded-bl-[18.17px] rounded-tr-[18.17px] ">
-                  <h3 className="mb-1 font-dmSans font-bold text-xl !leading-6 text-[#1355FF]">
-                    {testimonial.clientName}
-                  </h3>
-                  <p className="font-dmSans text-sm font-semibold text-[#11205A] !leading-[18px]">
-                    {testimonial.clientRole}
-                  </p>
-                </div>
-              </div>
-              <div className="py-0 lg:py-[22px] lg:w-[70%]">
-                <p className="text-[#171A1D] font-dmSans text-xl !leading-9 xl:!text-[22px] xl:!leading-[38px] 2xl:text-2xl 2xl:!leading-10 font-normal tracking-[-0.5px]">
-                  {/* <span className="text-[50px]">“</span> */}
-                  {testimonial.clientText}
-                </p>
-              </div>
-            </div>
-          </SplideSlide>
-        ))}
-      </Splide>
-       }
+    <div className="relative mx-4 sm:mx-6 xl:mx-10 my-10 2xl:my-[60px] 2xl:max-w-[1440px] 2xl:mx-auto pt-8 pb-[142px] px-0 sm:pt-10 sm:pb-[150px] sm:px-6 xl:px-8 2xl:pt-20 2xl:pb-[190px] 2xl:px-[70px] rounded-[40px]">
      
+      <div className="text-center">
+        <Tag title={"Don’t trust us? Trust businesses like yours"} />
+        <Heading title={"Hear What Our Clients Say"} />
+      </div>
+      {
+        isClient && <Splide
+          aria-label="My Favorite Images"
+          options={{
+            type: "loop",
+            perMove: 1,
+            rewind: true,
+            perPage: 1,
+            gap: "24px",
+            autoplay: false,
+            arrows: true,
+            pagination: false,
+            breakpoints: {
+              768: { pagination: true },
+
+            },
+            classes: {
+              arrow: "custom-arrow",
+              prev: "custom-prev",
+              next: "custom-next",
+            },
+            interval: 3000,
+            pagination: false,
+          }}
+          className="relative overflow-visible dots:absolute dots:right-0 dots:-bottom-[92px]  dots:p-0 dots:min-w-[300px] dots:justify-center  dots:items-center  dots:gap-4 dot:!bg-[#88C0FF] dot:w-2 dot:h-2 activeDot:scale-100 activeDot:!bg-[#1355FF] dot:shadow-none dot:outline-none mt-[60px]"
+        >
+          {clientTestimonials.map((testimonial, index) => (
+            <SplideSlide key={index} >
+              <div className="relative px-4 py-8 sm:py-10 sm:px-8 xl:p-10 2xl:p-[60px] bg-[#F7FDFF] border border-[#1355FF] ">
+                   <Image src={quoteIcon} alt="quote" className="w-auto h-10" />
+                    <p className="text-[#171A1D] font-dmSans font-normal  text-xl leading-8 xl:text-3xl xl:!leading-[48px] tracking-[-0.5px] mt-6 mb-6">
+                        {testimonial.clientText}
+                    </p>
+                   <div className="h-[1px] w-full xl:max-w-[780px] bg-[#1355FF]/10"></div>
+                   <h3 className="text-[#1A1A1A] font-dmSans font-semibold text-xl  mt-6 mb-1">
+                    {testimonial.clientName}
+                   </h3>
+                   <p className="text-[#666666] font-dmSans font-normal text-base">
+                    {testimonial.clientRole}
+                   </p>
+
+                   <Image src={quote} alt="quote" className="hidden xl:block absolute bottom-0 xl:bottom-10 2xl:bottom-[52px] right-[60px]" />
+              </div>
+            </SplideSlide>
+          ))}
+          </Splide>
+      }
+
     </div>
   );
 };

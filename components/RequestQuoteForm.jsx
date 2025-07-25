@@ -80,7 +80,7 @@ const RequestQuoteForm = () => {
     userName: "",
     companyName: "",
     userEmail: "",
-    userAddress: "",
+    phoneNumber: "",
     userMessage: "",
     service: "",
     facility: "",
@@ -114,7 +114,7 @@ const RequestQuoteForm = () => {
       userName: "",
       companyName: "",
       userEmail: "",
-      userAddress: "",
+      phoneNumber: "",
       userMessage: "",
       service: "",
       facility: "",
@@ -163,15 +163,15 @@ const RequestQuoteForm = () => {
           </div>
           <div className="w-full  md:w-1/2">
             <Input
-              placeholder={"Your Address"}
+              placeholder={"Phone Number"}
               onChange={handleInputChange}
-              value={freeQuote.userAddress}
-              name={"userAddress"}
+              value={freeQuote.phoneNumber}
+              name={"phoneNumber"}
               className={"!py-[15px] px-6 border-[#7198FE]/50"}
             />
           </div>
         </div>
-        <div className="w-full flex flex-col md:flex-row gap-4 md:gap-6 mt-4">
+        {/* <div className="w-full flex flex-col md:flex-row gap-4 md:gap-6 mt-4">
           <div className="w-full  md:w-1/2">
             <Dropdown
               options={ServicesOptions}
@@ -214,7 +214,7 @@ const RequestQuoteForm = () => {
               value={freeQuote.duration}
             />
           </div>
-        </div>
+        </div> */}
         <div className="w-full  mt-4">
           <Textarea
             placeholder={"Assignment Details"}

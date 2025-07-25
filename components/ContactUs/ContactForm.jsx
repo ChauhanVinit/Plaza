@@ -113,7 +113,7 @@ const ContactForm = () => {
     userName: "",
     companyName: "",
     userEmail: "",
-    userAddress: "",
+    phoneNumber: "",
     userMessage: "",
     service: "",
     facility: "",
@@ -147,7 +147,7 @@ const ContactForm = () => {
       userName: "",
       companyName: "",
       userEmail: "",
-      userAddress: "",
+      phoneNumber: "",
       userMessage: "",
       service: "",
       facility: "",
@@ -157,7 +157,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="mx-0 sm:mx-6  xl:mx-10 2xl:container 2xl:mx-auto mb-10 2xl:mb-20 py-10 px-4 sm:px-6 xl:px-10 2xl:p-20 rounded-[40px] flex flex-col xl:flex-row items-center gap-8 xl:gap-10 2xl:gap-20 bg-[#EDF5FF]">
+    <div className="mx-0 sm:mx-6  xl:mx-10 2xl:container 2xl:mx-auto mb-10 2xl:mb-20 py-10 px-4 sm:px-6 xl:px-10 2xl:p-20 rounded-[40px] flex flex-col xl:flex-row items-start gap-8 xl:gap-10 2xl:gap-20 bg-[#EDF5FF]">
       <div className="w-full xl:w-[calc(50%-20px)] 2xl:w-[calc(50%-40px)]">
         <Tag title={"Quick View CONTACT Us"} />
         <Heading
@@ -202,8 +202,8 @@ const ContactForm = () => {
         <h2 className="mb-6 font-dmSans text-[32px] !leading-10 font-semibold text-[#222A5B]">
           Get Free Quote
         </h2>
-        <div className="w-full flex flex-col md:flex-row gap-4 md:gap-6  ">
-          <div className="w-full  md:w-1/2">
+        <div className="w-full flex flex-col gap-4">
+          <div className="w-full">
             <Input
               placeholder={"Your Name"}
               onChange={handleInputChange}
@@ -212,7 +212,7 @@ const ContactForm = () => {
               className={"!py-[15px] px-6 border-[#7198FE]/50"}
             />
           </div>
-          <div className="w-full  md:w-1/2">
+          <div className="w-full">
             <Input
               placeholder={"Company Name"}
               onChange={handleInputChange}
@@ -222,8 +222,8 @@ const ContactForm = () => {
             />
           </div>
         </div>
-        <div className="w-full flex flex-col md:flex-row gap-4 md:gap-6  mt-4">
-          <div className="w-full  md:w-1/2">
+        <div className="w-full flex flex-col gap-4 mt-4 ">
+          <div className="w-full">
             <Input
               placeholder={"Email"}
               onChange={handleInputChange}
@@ -232,17 +232,17 @@ const ContactForm = () => {
               className={"!py-[15px] px-6 border-[#7198FE]/50"}
             />
           </div>
-          <div className="w-full  md:w-1/2">
+          <div className="w-full">
             <Input
-              placeholder={"Your Address"}
+              placeholder={"Phone Number"}
               onChange={handleInputChange}
-              value={freeQuote.userAddress}
-              name={"userAddress"}
+              value={freeQuote.phoneNumber}
+              name={"phoneNumber"}
               className={"!py-[15px] px-6 border-[#7198FE]/50"}
             />
           </div>
         </div>
-        <div className="w-full flex flex-col md:flex-row gap-4 md:gap-6  mt-4">
+        {/* <div className="w-full flex flex-col md:flex-row gap-4 md:gap-6  mt-4">
           <div className="w-full  md:w-1/2">
             <Dropdown
               options={ServicesOptions}
@@ -285,7 +285,7 @@ const ContactForm = () => {
               value={freeQuote.duration}
             />
           </div>
-        </div>
+        </div> */}
         <div className="w-full  mt-4">
           <Textarea
             placeholder={"Write Your Message"}

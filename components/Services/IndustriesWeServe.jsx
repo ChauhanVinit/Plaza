@@ -92,14 +92,14 @@ const IndustriesWeServe = ({ desc }) => {
               },
               interval: 3000,
             }}
-            // className="dots:absolute dots:right-0 dots:-bottom-16 sm:dots:-bottom-[72px]  dots:p-0 dots:min-w-[300px] dots:justify-center  dots:items-center  dots:gap-4 dot:!bg-[#88C0FF] dot:w-2 dot:h-2 activeDot:scale-100 activeDot:!bg-[#1355FF] dot:shadow-none dot:outline-none "
+          // className="dots:absolute dots:right-0 dots:-bottom-16 sm:dots:-bottom-[72px]  dots:p-0 dots:min-w-[300px] dots:justify-center  dots:items-center  dots:gap-4 dot:!bg-[#88C0FF] dot:w-2 dot:h-2 activeDot:scale-100 activeDot:!bg-[#1355FF] dot:shadow-none dot:outline-none "
           >
             {cardItems.map((item, index) => (
               <SplideSlide key={index}>
                 <Link
                   href={item.path}
                   key={index}
-                  className="w-full max-w-[310px] mx-auto relative rounded-2xl overflow-hidden"
+                  className="w-full flex items-center justify-center relative rounded-2xl overflow-hidden"
                 >
                   <Image
                     src={item.src}
@@ -123,7 +123,7 @@ const IndustriesWeServe = ({ desc }) => {
           <Link
             href={item.path}
             key={index}
-            className="col-span-6 md:col-span-4 lg:col-span-3  relative rounded-2xl overflow-hidden mx-auto"
+            className="col-span-6  md:col-span-4 lg:col-span-3  relative rounded-2xl overflow-hidden mx-auto"
           >
             <Image src={item.src} alt={item.alt} />
             <div className="absolute bottom-0 h-1/2 bg-[linear-gradient(to_bottom,_rgba(255,255,255,0)_0%,_rgba(255,255,255,0.7)_41%,_rgba(255,255,255,1)_88%)] w-full"></div>

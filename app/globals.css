@@ -45,15 +45,15 @@
 }
 
 .custom-arrow {
-  @apply absolute bottom-0 z-10 inline-flex items-center justify-center h-[50px] w-[50px] border border-[#98A2B3] bg-transparent;
+  @apply absolute -bottom-[110px] z-10 inline-flex items-center justify-center h-[50px] w-[50px] border border-[#98A2B3] bg-transparent;
 }
 
 .custom-prev {
-  @apply left-1/2 -translate-x-[calc(50%-106px)] md:right-0 md:left-auto md:translate-x-0;
+  @apply left-1/2  -translate-x-[calc(50%-106px)]  md:-translate-x-[calc(50%-33px)];
 }
 
 .custom-next {
-  @apply left-1/2 -translate-x-[calc(50%+106px)] md:right-[66px] md:left-auto md:translate-x-0 rotate-180;
+  @apply left-1/2 -translate-x-[calc(50%+106px)]   md:-translate-x-[calc(50%+33px)] rotate-180;
 }
 
 .serv-prev {
@@ -120,3 +120,4 @@
 .nav-item-hover-wrapper:hover .subnav-bg {
   transform: scale(1.05);
 }
+
