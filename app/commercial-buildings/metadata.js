@@ -1,17 +1,14 @@
 export const metadata = {
   title: "Commercial Buildings | San Jose Bay Area | Security Patrol Experts | Plaza Protection",
   description:
-    "Commercial security services offer protection and value for commercial properties. Choose an experienced security guard company like Plaza Protection.",
+    "Ensure the safety of your business with our expert commercial security services in the San Jose Bay Area. Our professional security guards provide customized protection for offices, retail stores, and commercial properties.",
   abstract:
     "Leverage Plaza Protection’s commercial security guard services to counter any unforeseen security threats that may arise with utmost precision.",
   keywords: [
-    "Commercial Buildings",
-    "commercial building security",
-    "commercial security services",
-    "commercial building",
-    "security services",
-    "commercial building security guards",
-    "commercial security guard services",
+    "Commercial building security services in bay area",
+    "Commercial building security services in san jose",
+    "Security guards for commercial properties",
+    "Commercial property security guards",
   ],
   metadataBase: new URL("https://www.plazaprotection.com"),
   alternates: {
@@ -20,7 +17,7 @@ export const metadata = {
   openGraph: {
     title: "Commercial Buildings | San Jose Bay Area | Security Patrol Experts | Plaza Protection",
     description:
-      "Commercial security services offer protection and value for commercial properties. Choose an experienced security guard company like Plaza Protection.",
+      "Ensure the safety of your business with our expert commercial security services in the San Jose Bay Area. Our professional security guards provide customized protection for offices, retail stores, and commercial properties.",
     url: "https://www.plazaprotection.com/commercial-buildings",
     siteName: "PlazaProtection",
     images: [
@@ -40,7 +37,7 @@ export const metadata = {
     creator: "@plazaprotection",
     title: "Commercial Buildings | San Jose Bay Area | Security Patrol Experts | Plaza Protection",
     description:
-      "Commercial security services offer protection and value for commercial properties. Choose an experienced security guard company like Plaza Protection.",
+      "Ensure the safety of your business with our expert commercial security services in the San Jose Bay Area. Our professional security guards provide customized protection for offices, retail stores, and commercial properties.",
     images: ["https://plazaprotection.com/includes/img/plazaprotection.png"],
   },
   icons: {

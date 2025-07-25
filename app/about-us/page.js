@@ -2,11 +2,12 @@ export const metadata = {
   title:
     "About Us | San Jose Bay Area Security Patrol Experts | Plaza Protection",
   description:
-    "Plaza Protection with over 10 years of extensive experience in providing effective security solutions is ensuring the safety of our clients & their assets.",
+    "Learn more about our trusted security guard company in the San Jose Bay Area. With experienced, professional guards and a commitment to safety, we provide reliable security solutions tailored to your needs.",
   keywords: [
-    "security guard services",
-    "Security Services San Jose Bay Area",
-    "Security Services San Jose Bay Area",
+    "Security guard services in bay area",
+    "Security guard services in san jose",
+    "Security services",
+    "Security guards"
   ],
   abstract:
     "Plaza Protection is a security guard and patrol services company headquartered in the San Jose Bay Area with over 10 years of experience.",
@@ -18,7 +19,7 @@ export const metadata = {
     title:
       "About Us | San Jose Bay Area Security Patrol Experts | Plaza Protection",
     description:
-      "Plaza Protection with over 10 years of extensive experience in providing effective security solutions is ensuring the safety of our clients & their assets.",
+      "Learn more about our trusted security guard company in the San Jose Bay Area. With experienced, professional guards and a commitment to safety, we provide reliable security solutions tailored to your needs.",
     url: "https://www.plazaprotection.com/about-us",
     siteName: "PlazaProtection",
     images: [
@@ -39,7 +40,7 @@ export const metadata = {
     title:
       "About Us | San Jose Bay Area Security Patrol Experts | Plaza Protection",
     description:
-      "Plaza Protection with over 10 years of extensive experience in providing effective security solutions is ensuring the safety of our clients & their assets.",
+      "Learn more about our trusted security guard company in the San Jose Bay Area. With experienced, professional guards and a commitment to safety, we provide reliable security solutions tailored to your needs.",
     images: ["https://plazaprotection.com/includes/img/plazaprotection.png"],
   },
   icons: {

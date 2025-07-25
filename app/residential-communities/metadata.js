@@ -1,13 +1,13 @@
 export const metadata = {
   title: "Residential Communities | San Jose Bay Area | Security Patrol Experts | Plaza Protection",
   description:
-    "Building a security-conscious residential community isn’t easy, but not impossible. All you need is the right security patrol services & technology.",
+    "Protect your home and community with our professional residential security services. Serving the San Jose Bay Area, our trusted security guards provide reliable and personalized protection for neighborhoods, condos, and apartment complexes.",
   keywords: [
-    "Security Guard Services",
-    "Private Patrol Services",
-    "vehicle patrol",
-    "Security patrol",
-    "Security Services In San Jose Bay Area",
+    "Residential security guard services in bay area",
+    "Residential security guard services in san jose",
+    "Security guards for residential areas",
+    "Residential security services",
+    "Residential security patrol",
   ],
   abstract:
     "Plaza Protection security services for residential communities are tailor-made to meet the unique challenges  & maximize the safety of the residents & visitors.",
@@ -18,7 +18,7 @@ export const metadata = {
   openGraph: {
     title: "Residential Communities | San Jose Bay Area | Security Patrol Experts | Plaza Protection",
     description:
-      "Building a security-conscious residential community isn’t easy, but not impossible. All you need is the right security patrol services & technology.",
+      "Protect your home and community with our professional residential security services. Serving the San Jose Bay Area, our trusted security guards provide reliable and personalized protection for neighborhoods, condos, and apartment complexes.",
     url: "https://www.plazaprotection.com/residential-communities",
     siteName: "PlazaProtection",
     images: [
@@ -38,7 +38,7 @@ export const metadata = {
     creator: "@plazaprotection",
     title: "Residential Communities | San Jose Bay Area | Security Patrol Experts | Plaza Protection",
     description:
-      "Building a security-conscious residential community isn’t easy, but not impossible. All you need is the right security patrol services & technology.",
+      "Protect your home and community with our professional residential security services. Serving the San Jose Bay Area, our trusted security guards provide reliable and personalized protection for neighborhoods, condos, and apartment complexes.",
     images: ["https://plazaprotection.com/includes/img/plazaprotection.png"],
   },
   icons: {

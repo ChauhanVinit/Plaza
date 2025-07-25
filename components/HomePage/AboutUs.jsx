@@ -4,7 +4,6 @@ import Commercial from "../../public/Commercial.png";
 import Construction from "../../public/Construction.png";
 import ShoppingCenter from "../../public/Shopping-Center.png";
 import Healthcare from "../../public/Healthcare.png";
-
 import Image from "next/image";
 import Tag from "../../utils/Tag";
 import Heading from "../../utils/Heading";

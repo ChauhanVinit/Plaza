@@ -1,14 +1,15 @@
 export const metadata = {
   title: "Unarmed Security | San Jose Bay Area Security Patrol Experts | Plaza Protection",
   description:
-    "Plaza Protection offers professional unarmed security guards trained to provide a strong security presence and ensure safety in the San Jose Bay Area.",
+    "Secure your property with our reliable unarmed security services in the San Jose Bay Area. Our professional unarmed security guards provide vigilant protection tailored to your business or residential needs.",
   keywords: [
-    "Unarmed Security Guards",
-    "Security Services In San Jose",
+    "Unarmed Security guard services in bay area",
+    "Unarmed security guard services in san jose",
     "Unarmed Guard Services",
-    "Bay Area Security Patrol",
-    "San Jose Security Company",
-    "Private Security Services",
+    "Unarmed Security Guards",
+    "Unarmed security services",
+    "Security Services",
+    "Security Guards",
   ],
   abstract:
     "Our unarmed security guards are trained to handle situations calmly and professionally, offering a reliable presence for your business or property in the San Jose Bay Area.",
@@ -19,7 +20,7 @@ export const metadata = {
   openGraph: {
     title: "Unarmed Security | San Jose Bay Area Security Patrol Experts | Plaza Protection",
     description:
-      "Plaza Protection offers professional unarmed security guards trained to provide a strong security presence and ensure safety in the San Jose Bay Area.",
+      "Secure your property with our reliable unarmed security services in the San Jose Bay Area. Our professional unarmed security guards provide vigilant protection tailored to your business or residential needs.",
     url: "https://plazaprotection.com/unarmed-security",
     siteName: "PlazaProtection",
     images: [
@@ -39,7 +40,7 @@ export const metadata = {
     creator: "@plazaprotection",
     title: "Unarmed Security | San Jose Bay Area Security Patrol Experts | Plaza Protection",
     description:
-      "Plaza Protection offers professional unarmed security guards trained to provide a strong security presence and ensure safety in the San Jose Bay Area.",
+      "Secure your property with our reliable unarmed security services in the San Jose Bay Area. Our professional unarmed security guards provide vigilant protection tailored to your business or residential needs.",
     images: ["https://plazaprotection.com/includes/img/plazaprotection.png"],
   },
   icons: {

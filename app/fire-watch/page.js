@@ -1,14 +1,15 @@
 export const metadata = {
   title: "Fire Watch | San Jose Bay Area Security Patrol Experts | Plaza Protection",
   description:
-    "Plaza Protection employs a team of highly motivated fire watch guards, ready to provide reliable fire watch security services in San Jose Bay Area.",
+    "Protect your property from fire hazards with our professional fire watch security services in the San Jose Bay Area. Our trained fire watch guards provide continuous monitoring to ensure safety and compliance.",
   keywords: [
-    "Security Services In San Jose",
-    "Security Guard Services",
-    "Private Patrol Services",
-    "vehicle patrol",
-    "Security patrol",
-    "Security Services San Jose Bay Area",
+    "Fire Watch Services in bay area",
+    "Fire Watch services in san jose",
+    "Fire Watch security services",
+    "Fire watch security",
+    "Fire watch services",
+    "Fire watch security guards",
+    "Fire watch guards",
   ],
   abstract:
     "Plaza Protection offers fire watch guards, fully trained & equipped to monitor & identify hazards to ensure the safety of your property & personnel.",
@@ -19,7 +20,7 @@ export const metadata = {
   openGraph: {
     title: "Fire Watch | San Jose Bay Area Security Patrol Experts | Plaza Protection",
     description:
-      "Plaza Protection employs a team of highly motivated fire watch guards, ready to provide reliable fire watch security services in San Jose Bay Area.",
+      "Protect your property from fire hazards with our professional fire watch security services in the San Jose Bay Area. Our trained fire watch guards provide continuous monitoring to ensure safety and compliance.",
     url: "https://plazaprotection.com/fire-watch",
     siteName: "PlazaProtection",
     images: [
@@ -39,7 +40,7 @@ export const metadata = {
     creator: "@plazaprotection",
     title: "Fire Watch | San Jose Bay Area Security Patrol Experts | Plaza Protection",
     description:
-      "Plaza Protection employs a team of highly motivated fire watch guards, ready to provide reliable fire watch security services in San Jose Bay Area.",
+      "Protect your property from fire hazards with our professional fire watch security services in the San Jose Bay Area. Our trained fire watch guards provide continuous monitoring to ensure safety and compliance.",
     images: ["https://plazaprotection.com/includes/img/plazaprotection.png"],
   },
   icons: {

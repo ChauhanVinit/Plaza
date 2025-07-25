@@ -11,14 +11,12 @@ const dmSans = DM_Sans({
 export const metadata = {
   title: "Security Services San Jose Bay Area | Security Patrol Experts | Plaza Protection",
   description:
-    "At Plaza Protection, we provide excellent private patrol services to businesses throughout California to ensure the safety of our clients and their assets.",
+    "Protect your business and property with professional security guard services in the San Jose Bay Area.Our licensed and trained security guards offer 24/7 protection tailored to your specific needs.",
   keywords: [
-    "Security Services In San Jose",
-    "Security Guard Services",
-    "Private Patrol Services",
-    "vehicle patrol",
-    "Security patrol",
-    "Security Services San Jose Bay Area",
+    "Security guard services in bay area",
+    "Security guard services in san jose",
+    "Security Services",
+    "Security Guards",
   ],
   robots: "index, follow",
   authors: [{ name: "Plaza Protection" }],
@@ -26,7 +24,7 @@ export const metadata = {
   openGraph: {
     title: "Plaza Protection | Security Services San Jose Bay Area | Security Patrol Experts",
     description:
-      "At Plaza Protection, we provide excellent private patrol services to businesses throughout California to ensure the safety of our clients and their assets.",
+      "Protect your business and property with professional security guard services in the San Jose Bay Area.Our licensed and trained security guards offer 24/7 protection tailored to your specific needs.",
     url: "https://www.plazaprotection.com",
     siteName: "Plaza Protection",
     images: [
@@ -46,7 +44,7 @@ export const metadata = {
     creator: "@plazaprotection",
     title: "Plaza Protection | Security Services San Jose Bay Area | Security Patrol Experts",
     description:
-      "At Plaza Protection, we provide excellent private patrol services to businesses throughout California to ensure the safety of our clients and their assets.",
+      "Protect your business and property with professional security guard services in the San Jose Bay Area.Our licensed and trained security guards offer 24/7 protection tailored to your specific needs.",
     images: ["https://plazaprotection.com/includes/img/plazaprotection.png"],
   },
   icons: {

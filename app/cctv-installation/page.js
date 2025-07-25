@@ -2,15 +2,13 @@ export const metadata = {
   title:
     "CCTV Installation | San Jose Bay Area Security Experts | Plaza Protection",
   description:
-    "Plaza Protection offers professional CCTV installation services, providing advanced video surveillance systems to enhance property security across the San Jose Bay Area.",
+    "Enhance your property’s security with professional CCTV installation services in the San Jose Bay Area. Our expert technicians install reliable security cameras tailored to your home or business needs.",
   keywords: [
-    "Security Services In San Jose",
-    "CCTV Installation San Jose",
-    "Security Camera Installation",
-    "Video Surveillance Systems",
-    "Security Guard Services",
-    "Property Surveillance",
-    "Security Services San Jose Bay Area",
+    "CCTV installation services in bay area",
+    "CCTV installation services in san jose",
+    "CCTV installation",
+    "Security camera installation",
+    "CCTV camera installation services",
   ],
   abstract:
     "Secure your property with Plaza Protection’s expert CCTV installation services. We deliver customized surveillance solutions using cutting-edge technology to monitor and protect your assets.",
@@ -22,7 +20,7 @@ export const metadata = {
     title:
       "CCTV Installation | San Jose Bay Area Security Experts | Plaza Protection",
     description:
-      "Plaza Protection offers professional CCTV installation services, providing advanced video surveillance systems to enhance property security across the San Jose Bay Area.",
+      "Enhance your property’s security with professional CCTV installation services in the San Jose Bay Area. Our expert technicians install reliable security cameras tailored to your home or business needs.",
     url: "https://plazaprotection.com/cctv-installation",
     siteName: "PlazaProtection",
     images: [
@@ -43,7 +41,7 @@ export const metadata = {
     title:
       "CCTV Installation | San Jose Bay Area Security Experts | Plaza Protection",
     description:
-      "Plaza Protection offers professional CCTV installation services, providing advanced video surveillance systems to enhance property security across the San Jose Bay Area.",
+      "Enhance your property’s security with professional CCTV installation services in the San Jose Bay Area. Our expert technicians install reliable security cameras tailored to your home or business needs.",
     images: ["https://plazaprotection.com/includes/img/plazaprotection.png"],
   },
   icons: {

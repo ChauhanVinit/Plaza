@@ -1,15 +1,13 @@
 export const metadata = {
   title: "Shopping Centers | San Jose Bay Area | Security Patrol Experts | Plaza Protection",
   description:
-    "Plaza Protection shopping centers security guards act as the first line of defense & a visual deterrent from crime, ensuring positive customer experience.",
+    "Keep your shopping centre safe and secure with our professional security guard services in the San Jose Bay Area. We provide expert retail security solutions to protect shoppers, staff, and property around the clock.",
   abstract:
     "Plaza Protection's dedicated shopping center security solution is designed to ensure enhanced security in shopping centers & department stores.",
   keywords: [
-    "shopping centers",
-    "shopping center security",
-    "Shopping center security guard",
-    "Shopping center security services",
-    "Shopping center security solution",
+    "Shopping centre security services in bay area",
+    "Shopping centre security services in san jose",
+    "Security guards for shopping centres",
   ],
   metadataBase: new URL("https://plazaprotection.com"),
   alternates: {
@@ -18,7 +16,7 @@ export const metadata = {
   openGraph: {
     title: "Shopping Centers | San Jose Bay Area | Security Patrol Experts | Plaza Protection",
     description:
-      "Plaza Protection shopping centers security guards act as the first line of defense & a visual deterrent from crime, ensuring positive customer experience.",
+      "Keep your shopping centre safe and secure with our professional security guard services in the San Jose Bay Area. We provide expert retail security solutions to protect shoppers, staff, and property around the clock.",
     url: "https://plazaprotection.com/shopping-centers",
     siteName: "PlazaProtection",
     images: [
@@ -38,7 +36,7 @@ export const metadata = {
     creator: "@plazaprotection",
     title: "Shopping Centers | San Jose Bay Area | Security Patrol Experts | Plaza Protection",
     description:
-      "Plaza Protection shopping centers security guards act as the first line of defense & a visual deterrent from crime, ensuring positive customer experience.",
+      "Keep your shopping centre safe and secure with our professional security guard services in the San Jose Bay Area. We provide expert retail security solutions to protect shoppers, staff, and property around the clock.",
     images: ["https://plazaprotection.com/includes/img/plazaprotection.png"],
   },
   icons: {

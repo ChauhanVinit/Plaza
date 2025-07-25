@@ -1,16 +1,16 @@
 export const metadata = {
   title: "Healthcare Facilities | San Jose Bay Area | Security Patrol Experts | Plaza Protection",
   description:
-    "Plaza Protection healthcare security services aren’t a one-size fit all. They are meant to solve unique problems to deliver reliable & efficient security.",
+    "Protect patients, staff, and property with our specialized healthcare security services in the San Jose Bay Area. Our professional guards ensure a safe and secure environment for hospitals, clinics, and medical centers.",
   abstract:
     "Healthcare facilities today must provide reasonable security measures to maintain a safe atmosphere and to prevent theft, abductions, and the potential for injuries.",
   keywords: [
-    "healthcare facilities",
-    "healthcare security services",
-    "healthcare security guard",
-    "healthcare security",
-    "healthcare facility security",
-    "services",
+    "Hospital security services in bay area",
+    "Hospital security services in san jose",
+    "Security guards for healthcare facilities",
+    "Hospital security guards",
+    "Security guards for Hospitals",
+    
   ],
   metadataBase: new URL("https://www.plazaprotection.com"),
   alternates: {
@@ -19,7 +19,7 @@ export const metadata = {
   openGraph: {
     title: "Healthcare Facilities | San Jose Bay Area | Security Patrol Experts | Plaza Protection",
     description:
-      "Plaza Protection healthcare security services aren’t a one-size fit all. They are meant to solve unique problems to deliver reliable & efficient security.",
+      "Protect patients, staff, and property with our specialized healthcare security services in the San Jose Bay Area. Our professional guards ensure a safe and secure environment for hospitals, clinics, and medical centers.",
     url: "https://www.plazaprotection.com/healthcare-facilities",
     siteName: "PlazaProtection",
     images: [
@@ -39,7 +39,7 @@ export const metadata = {
     creator: "@plazaprotection",
     title: "Healthcare Facilities | San Jose Bay Area | Security Patrol Experts | Plaza Protection",
     description:
-      "Plaza Protection healthcare security services aren’t a one-size fit all. They are meant to solve unique problems to deliver reliable & efficient security.",
+      "Protect patients, staff, and property with our specialized healthcare security services in the San Jose Bay Area. Our professional guards ensure a safe and secure environment for hospitals, clinics, and medical centers.",
     images: ["https://plazaprotection.com/includes/img/plazaprotection.png"],
   },
   icons: {

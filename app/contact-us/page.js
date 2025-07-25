@@ -1,14 +1,13 @@
 export const metadata = {
   title: "Contact Us | San Jose Bay Area Security Patrol Experts | Plaza Protection",
   description:
-    "Plaza Protection - San Jose Bay Area Security Patrol Experts. Contact us today to find how our security solutions can help your business 1-844-557-5292",
+    "Get in touch with our trusted security guard company in the San Jose Bay Area. Contact us today for quotes, consultations, and expert security solutions tailored to your needs.",
   keywords: [
-    "Security Services In San Jose",
-    "Security Guard Services",
-    "Private Patrol Services",
-    "vehicle patrol",
-    "Security patrol",
-    "Security Services San Jose Bay Area",
+    "Security guard services in bay area",
+    "security guard services in san jose",
+    "Security services",
+    "Security Guards",
+    
   ],
   abstract:
     "Contact us if you have any queries, want to share feedback, or want to know more about how our security solutions can help your business.",
@@ -19,7 +18,7 @@ export const metadata = {
   openGraph: {
     title: "Contact Us | San Jose Bay Area Security Patrol Experts | Plaza Protection",
     description:
-      "Plaza Protection - San Jose Bay Area Security Patrol Experts. Contact us today to find how our security solutions can help your business 1-844-557-5292",
+      "Get in touch with our trusted security guard company in the San Jose Bay Area. Contact us today for quotes, consultations, and expert security solutions tailored to your needs.",
     url: "https://www.plazaprotection.com/contact-us",
     siteName: "PlazaProtection",
     images: [
@@ -39,7 +38,7 @@ export const metadata = {
     creator: "@plazaprotection",
     title: "Contact Us | San Jose Bay Area Security Patrol Experts | Plaza Protection",
     description:
-      "Plaza Protection - San Jose Bay Area Security Patrol Experts. Contact us today to find how our security solutions can help your business 1-844-557-5292",
+      "Get in touch with our trusted security guard company in the San Jose Bay Area. Contact us today for quotes, consultations, and expert security solutions tailored to your needs.",
     images: ["https://plazaprotection.com/includes/img/plazaprotection.png"],
   },
   icons: {

@@ -3,12 +3,11 @@ export const metadata = {
   description:
     "Request a quote customized to your needs today to hire San Jose Bay Area's most dependable security services without any hassle.",
   keywords: [
-    "Security Services In San Jose",
+    "Security guard services in bay area",
     "Security Guard Services",
-    "Private Patrol Services",
-    "vehicle patrol",
-    "Security patrol",
-    "Security Services San Jose Bay Area",
+    "Security Services",
+    "Security Guards",
+    "Security guard services in san jose",
   ],
   abstract:
     "Plaza Protection offers special pricing for custom plans. Request a quote to know more.",

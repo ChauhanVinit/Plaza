@@ -2,14 +2,14 @@ export const metadata = {
   title:
     "Remote Guarding Service | San Jose Bay Area Security Experts | Plaza Protection",
   description:
-    "Plaza Protection provides advanced remote guarding services using real-time video surveillance and analytics to proactively deter threats across the San Jose Bay Area.",
+    "Experience cutting-edge security with our remote guarding services in the San Jose Bay Area. Our virtual security guards monitor your property 24/7 using advanced technology for rapid response and protection.",
   keywords: [
-    "Remote Guarding Services",
-    "Remote Surveillance San Jose",
-    "Video Monitoring Security",
-    "Virtual Security Guards",
-    "Security Services Bay Area",
-    "Plaza Protection Remote Guarding",
+    "Remote Guarding Services in bay area",
+    "Remote Guarding Services in san jose",
+    "Remote guarding services",
+    "Remote surveillance services",
+    "Live video monitoring services",
+    "Remote CCTV monitoring",
   ],
   abstract:
     "Enhance your security with Plaza Protection’s remote guarding services, combining live video surveillance, analytics, and trained operators for round-the-clock threat prevention.",
@@ -21,7 +21,7 @@ export const metadata = {
     title:
       "Remote Guarding Service | San Jose Bay Area Security Experts | Plaza Protection",
     description:
-      "Plaza Protection provides advanced remote guarding services using real-time video surveillance and analytics to proactively deter threats across the San Jose Bay Area.",
+      "Experience cutting-edge security with our remote guarding services in the San Jose Bay Area. Our virtual security guards monitor your property 24/7 using advanced technology for rapid response and protection.",
     url: "https://plazaprotection.com/remote-guarding-service",
     siteName: "PlazaProtection",
     images: [
@@ -42,7 +42,7 @@ export const metadata = {
     title:
       "Remote Guarding Service | San Jose Bay Area Security Experts | Plaza Protection",
     description:
-      "Plaza Protection provides advanced remote guarding services using real-time video surveillance and analytics to proactively deter threats across the San Jose Bay Area.",
+      "Experience cutting-edge security with our remote guarding services in the San Jose Bay Area. Our virtual security guards monitor your property 24/7 using advanced technology for rapid response and protection.",
     images: ["https://plazaprotection.com/includes/img/plazaprotection.png"],
   },
   icons: {

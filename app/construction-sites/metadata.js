@@ -1,17 +1,16 @@
 export const metadata = {
   title: "Construction Sites | San Jose Bay Area | Security Patrol Experts | Plaza Protection",
   description:
-    "Equipped with cutting edge technology & backed by supervisors, our professional construction site security services provide around the clock monitoring.",
+    "Secure your construction site with our reliable security services in the San Jose Bay Area. Our trained security guards specialize in protecting construction sites from theft, vandalism, and unauthorized access—24/7.",
   abstract:
     "Plaza Protection security is a premier provider of construction site security due to its vulnerability to problems that can easily escalate into an emergency.",
   keywords: [
-    "construction sites",
-    "construction site",
-    "construction site security",
-    "construction site security services",
-    "construction site security guard",
-    "security guard",
-    "vehicle patrol services",
+    "Construction site security services in bay area",
+    "Construction site security services in san jose",
+    "Security for construction sites",
+    "Construction site patrol services",
+    "Construction site guard services",
+    
   ],
   metadataBase: new URL("https://plazaprotection.com"),
   alternates: {
@@ -20,7 +19,7 @@ export const metadata = {
   openGraph: {
     title: "Construction Sites | San Jose Bay Area | Security Patrol Experts | Plaza Protection",
     description:
-      "Equipped with cutting edge technology & backed by supervisors, our professional construction site security services provide around the clock monitoring.",
+      "Secure your construction site with our reliable security services in the San Jose Bay Area. Our trained security guards specialize in protecting construction sites from theft, vandalism, and unauthorized access—24/7.",
     url: "https://plazaprotection.com/construction-sites",
     siteName: "PlazaProtection",
     images: [
@@ -40,7 +39,7 @@ export const metadata = {
     creator: "@plazaprotection",
     title: "Construction Sites | San Jose Bay Area | Security Patrol Experts | Plaza Protection",
     description:
-      "Equipped with cutting edge technology & backed by supervisors, our professional construction site security services provide around the clock monitoring.",
+      "Secure your construction site with our reliable security services in the San Jose Bay Area. Our trained security guards specialize in protecting construction sites from theft, vandalism, and unauthorized access—24/7.",
     images: ["https://plazaprotection.com/includes/img/plazaprotection.png"],
   },
   icons: {

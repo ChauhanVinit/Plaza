@@ -2,12 +2,13 @@ export const metadata = {
   title:
     "Vehicle Patrol | San Jose Bay Area | Security Patrol Experts | Plaza Protection",
   description:
-    "Plaza Protection offers dedicated vehicle patrol teams equipped to address the needs of our clients proficiently & proactively in the San Jose Bay Area.",
+    "Protect your property with our professional vehicle patrol services in the San Jose Bay Area. Our mobile security guards provide 24/7 patrols to deter theft, vandalism, and unauthorized access.",
   keywords: [
-    "Vehicle patrol",
-    "Security patrol",
-    "vehicle patrol security",
-    "Security Services San Jose Bay Area",
+    "Vehicle Patrol Services in bay area",
+    "Vehicle patrol Services in san jose",
+    "Vehicle patrol services",
+    "Mobile patrol services",
+     "Vehicle security patrols",
   ],
   abstract:
     "Plaza Protection is one of the leading security guard & vehicle patrol services provider in the San Jose Bay Area you’ll ever need.",
@@ -19,7 +20,7 @@ export const metadata = {
     title:
       "Vehicle Patrol | San Jose Bay Area | Security Patrol Experts | Plaza Protection",
     description:
-      "Plaza Protection offers dedicated vehicle patrol teams equipped to address the needs of our clients proficiently & proactively in the San Jose Bay Area.",
+      "Protect your property with our professional vehicle patrol services in the San Jose Bay Area. Our mobile security guards provide 24/7 patrols to deter theft, vandalism, and unauthorized access.",
     url: "https://www.plazaprotection.com/vehicle-patrol",
     siteName: "PlazaProtection",
     images: [
@@ -40,7 +41,7 @@ export const metadata = {
     title:
       "Vehicle Patrol | San Jose Bay Area | Security Patrol Experts | Plaza Protection",
     description:
-      "Plaza Protection offers dedicated vehicle patrol teams equipped to address the needs of our clients proficiently & proactively in the San Jose Bay Area.",
+      "Protect your property with our professional vehicle patrol services in the San Jose Bay Area. Our mobile security guards provide 24/7 patrols to deter theft, vandalism, and unauthorized access.",
     images: ["https://plazaprotection.com/includes/img/plazaprotection.png"],
   },
   icons: {
