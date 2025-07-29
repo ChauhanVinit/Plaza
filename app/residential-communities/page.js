@@ -158,11 +158,8 @@ const ResidentialCommunities = () => {
                 Comprehensive Security Services For Residential Communities In
                 San Jose
               </h1>
-              <p className="px-4 rounded border-l-[3px] border-l-[#B0BABF] font-dmSans text-lg  2xl:text-xl 2xl:!leading-8 font-normal text-[#45535E] max-w-[806px] ">
-                Ensuring the safety and security of residential communities in
-                San Jose is our top priority. We provide professional security
-                services tailored to the unique needs of gated communities,
-                apartment complexes, and private neighborhoods.
+              <p className="px-4 rounded border-l-[3px] border-l-[#B0BABF] font-dmSans text-lg  2xl:text-xl 2xl:!leading-8 font-normal text-[#45535E] max-w-[850px] ">
+                Ensuring the safety and security of residential communities in San Jose is our top priority. We provide professional security guards for residential areas tailored to the unique needs of gated communities, apartment complexes, and private neighborhoods.
               </p>
             </div>
 

@@ -148,11 +148,11 @@ const CorporateBuildings = () => {
           <div className="relative">
             <div>
               <h1 className="font-dmSans text-5xl !leading-[56px] lg:text-[52px] lg:!leading-[60px] 2xl:text-[56px] 2xl:!leading-[64px] font-semibold text-[#222A5B] tracking-[-3px] mb-6 capitalize">
-                Comprehensive Security Services for All Types of Commercial Spaces
+                Comprehensive Security Guard Services for Commercial Properties
 
               </h1>
-              <p className="px-4 rounded border-l-[3px] border-l-[#B0BABF] font-dmSans text-lg  2xl:text-xl 2xl:!leading-8 font-normal text-[#45535E] max-w-[830px] ">
-                 Plaza Protection offers tailored security solutions for commercial environments—office buildings, retail centers, warehouses, and more—with vigilant guards, advanced surveillance, and proactive patrols to protect your assets, employees, and customers.
+              <p className="px-4 rounded border-l-[3px] border-l-[#B0BABF] font-dmSans text-lg  2xl:text-xl 2xl:!leading-8 font-normal text-[#45535E]">
+                 Plaza Protection offers tailored security solutions for commercial environments—office buildings, retail centers, warehouses, and more—with our Commercial property security guards, advanced surveillance, and proactive patrols to protect your assets, employees, and customers.
               </p>
             </div>
 

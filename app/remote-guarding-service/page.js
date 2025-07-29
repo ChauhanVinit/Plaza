@@ -68,20 +68,20 @@ import Rapidincident from "../../public/ShoppingCenter/Rapid-incident-response.s
 import ProactiveSecurity from "../../public/Services/Proactive Security.svg";
 
 const heroData = {
-  title: "Secure Your Property With Remote Guarding Services",
+  title: "Secure Your Property With Remote Guarding Services In bay area",
   desc: "By leveraging cutting-edge technology and a highly skilled team, Plaza Protection delivers comprehensive security solutions including video surveillance, security guards, remote guarding, alarms, and access control.",
   img: GuardImage,
   alt: "Remote Guarding Security Guard",
 };
 const coreFeaturesData = {
   title: "Smart Video Surveillance For Proactive Security",
-  desc: "Plaza Protection’s video surveillance ensures real-time monitoring, rapid threat detection, and a safer business environment.",
+  desc: "Plaza Protection’s remote surveillance services ensure real-time monitoring, rapid threat detection, and a safer business environment.",
   img: CoreFeature,
 };
 
 const KeyFeaturesData = {
   title: "AI-Powered Remote Guarding For 24/7 Security",
-  desc: "Smart remote guarding combines AI-driven monitoring, 24/7 surveillance, and instant threat response to ensure seamless security across multiple locations.",
+  desc: "Smart remote guarding combines AI-driven Live video monitoring Services, 24/7 surveillance, and instant threat response to ensure seamless security across multiple locations.",
 };
 const HighlightsData = {
   title: "How Smart Video Analytics Enhances Your Security",
@@ -89,7 +89,7 @@ const HighlightsData = {
   image: BenefitsIMG,
 };
 const IndustriesWeServeData = {
-  desc: "In today’s fast-paced world, effective security requires agility and precision. Our remote guarding services combine cutting-edge technology with vigilant monitoring teams to deliver continuous protection without the need for an on-site presence. Designed to adapt across industries, we provide scalable security solutions that enhance visibility, deter risks, and ensure rapid response—helping you safeguard your assets efficiently and confidently.",
+  desc: "In today’s fast-paced world, effective security requires agility and precision. Our remote guarding services in San Jose Bay Area, We combine cutting-edge technology with vigilant monitoring teams to deliver continuous protection without the need for an on-site presence. Designed to adapt across industries, we provide scalable security solutions that enhance visibility, deter risks, and ensure rapid response—helping you safeguard your assets efficiently and confidently.",
 };
 const accordionItems = [
   {

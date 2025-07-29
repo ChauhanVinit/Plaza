@@ -112,11 +112,11 @@ const industryTabContent  = {
 };
  const HighlightsContent  = {
   title:"Mitigating Risks And Enhancing Security At Construction Sites",
-  desc: "Effective security at construction sites involves proactive measures to reduce risks like theft, vandalism, and accidents. Trained security personnel, access control systems, and surveillance tools help protect equipment, materials, and workers.",
+  desc: "Effective construction site guard services involve proactive measures to reduce risks like theft, vandalism, and accidents. Trained security personnel, access control systems, and surveillance tools help protect equipment, materials, and workers.",
 };
 const featuresListContent  = {
   title:"Expert Security Solutions Designed For The Unique Needs Of Construction Sites.",
-  desc: "Construction sites present unique security challenges, from safeguarding valuable equipment and materials to managing access and preventing vandalism. Expert security solutions address these specific needs with a combination of advanced technology and professional personnel.",
+  desc: "Construction site patrol services present unique security challenges, from safeguarding valuable equipment and materials to managing access and preventing vandalism. Expert security solutions address these specific needs with a combination of advanced technology and professional personnel.",
   imgA:ConstructionB,
   imgB:ConstructionA,
   imgC:ConstructionC,

@@ -69,7 +69,7 @@ import ComprehensiveArea from "../../public/Services/Comprehensive-area-coverage
 
 const heroData = {
   title: "24/7 Vehicle Patrols For Constant Protection",
-  desc: "With 24/7 vehicle patrols, we provide continuous security to ensure your property is always protected.",
+  desc: "With 24/7 vehicle patrol services in bay area, we provide continuous security to ensure your property is always protected.",
   img: GuardImage,
   alt: "Vehicle patrol Security Guard",
 };
@@ -81,7 +81,7 @@ const coreFeaturesData = {
 
 const KeyFeaturesData = {
   title: "Reliable Vehicle Patrol Services For Enhanced Security",
-  desc: "Vehicle patrol services provide reliable and efficient security with frequent, scheduled checks to deter criminal activity. Security officers use marked vehicles equipped with communication tools and GPS for quick responses to incidents or emergencies.",
+  desc: "Our Vehicle patrol security provides reliable and efficient security with frequent, scheduled checks to deter criminal activity. Security officers use marked vehicles equipped with communication tools and GPS for quick responses to incidents or emergencies.",
 };
 const HighlightsData = {
   title: "Understanding The Operation Of Our Vehicle Patrol Service",
@@ -89,7 +89,7 @@ const HighlightsData = {
   image: BenefitsIMG,
 };
 const IndustriesWeServeData = {
-  desc: "Our vehicle patrol services deliver a visible and mobile security presence tailored to your site’s specific needs. Covering large areas efficiently, our trained patrol officers conduct regular inspections, deter potential threats, and respond quickly to incidents. Designed to adapt across industries, our patrols provide flexible, scalable security solutions that enhance safety and protect your assets around the clock.",
+  desc: "Our vehicle patrol services in San Jose bay area, We deliver a visible and mobile security presence tailored to your site’s specific needs. Covering large areas efficiently, our trained patrol officers conduct regular inspections, deter potential threats, and respond quickly to incidents. Designed to adapt across industries, our patrols provide flexible, scalable security solutions that enhance safety and protect your assets around the clock.",
 };
 const accordionItems = [
   {
@@ -169,12 +169,12 @@ const faqs = [
   {
     question: "What are vehicle patrol services?",
     answer:
-      " Vehicle patrol services involve mobile security officers who monitor and inspect your property using marked security vehicles at scheduled or random times, ensuring high visibility and deterrence.",
+      "Vehicle patrol services involve mobile security officers who monitor and inspect your property using marked security vehicles at scheduled or random times, ensuring high visibility and deterrence.",
   },
   {
-    question: " How are vehicle patrols different from on-site guards?",
+    question: "How are vehicle patrols different from on-site guards?",
     answer:
-      " Unlike static guards who remain in one location, vehicle patrols cover larger areas quickly, making them ideal for properties like parking lots, business parks, gated communities, and construction sites.",
+      "Unlike static guards who remain in one location, vehicle patrols cover larger areas quickly, making them ideal for properties like parking lots, business parks, gated communities, and construction sites.",
   },
   {
     question: "What types of properties benefit from vehicle patrols?",

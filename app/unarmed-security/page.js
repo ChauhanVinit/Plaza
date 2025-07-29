@@ -68,13 +68,13 @@ import InstantAlerts from "../../public/Residential/Instant-Threat-Alerts.svg";
 
 const heroData = {
   title: `Round-The-Clock Unarmed Security For Protection And Peace Of Mind`,
-  desc: "Providing 24/7 unarmed security services, our guards ensure safety with a constant, reassuring presence. More than just patrols, we foster peace of mind for businesses and communities alike.",
+  desc: "Providing 24/7 unarmed security guard services in bay area, our guards ensure safety with a constant, reassuring presence. More than just patrols, we foster peace of mind for businesses and communities alike.",
   img: GuardImage,
   alt:"Unarmed Security Guard"
 };
 const coreFeaturesData = {
   title: "24/7 Unarmed Security For Reliable Protection And Rapid Response",
-  desc: "Plaza Protection provides 24/7 unarmed security with trained guards and advanced technology. Our team ensures rapid response and a strong, visible presence for constant safety. ",
+  desc: "Plaza Protection provides 24/7 unarmed security guard services in San Jose with trained guards and advanced technology. Our team ensures rapid response and a strong, visible presence for constant safety.",
   img: CoreFeature,
 };
 

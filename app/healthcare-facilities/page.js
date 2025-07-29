@@ -157,10 +157,8 @@ const HospitalSecurity = () => {
                 Comprehensive Security for Patient and Staff Safety
               </h1>
               <p className="px-4 rounded border-l-[3px] border-l-[#B0BABF] font-dmSans text-lg  2xl:text-xl 2xl:!leading-8 font-normal text-[#45535E] max-w-[806px] ">
-                Plaza Protection delivers expert security for healthcare
-                facilities—our trained personnel ensure vigilant monitoring,
-                access control, and rapid response to keep patients, staff, and
-                visitors safe and compliant.
+                Plaza Protection delivers expert security guard services for healthcare facilities—our trained personnel ensure vigilant monitoring, access control, and rapid response to keep patients, staff, and visitors safe and compliant.
+
               </p>
             </div>
 

@@ -68,8 +68,8 @@ import CustomizedPlans from "../../public/ConstructionSites/Tailored-security-pl
 
 
 const heroData = {
-  title: <>Reliable Fire Watch Services<br className="hidden lg:block" /> in South Bay Area</>,
-  desc: "Plaza Protection offers expert fire watch security, ensuring continuous monitoring and rapid response during fire system failures to keep properties and occupants safe.",
+  title: <>Reliable Fire Watch Services<br className="hidden lg:block" /> In Bay Area</>,
+  desc: "Plaza Protection offers expert fire watch security Services, ensuring continuous monitoring and rapid response during fire system failures to keep properties and occupants safe.",
   img: GuardImage,
   alt:"Fire Watch Security Guard"
 };
@@ -79,12 +79,12 @@ const coreFeaturesData = {
   img: CoreFeature,
 };
 const KeyFeaturesData = {
-  title: "Professional Fire Watch Services For Hazard Prevention And Safety Compliance",
+  title: "Professional Fire Watch Services In San Jose For Hazard Prevention And Safety Compliance",
   desc: "Professional fire watch services provide critical protection by monitoring high-risk areas to prevent potential fire hazards. Trained fire watch personnel ensure compliance with fire safety regulations and respond quickly to any signs of danger.",
 };
 const HighlightsData = {
   title: "Expert Fire Watch Service For Continuous Monitoring And Rapid Response",
-  desc: "With our expert fire watch service, we provide constant monitoring to detect potential fire hazards, ensuring rapid response and immediate alerts.",
+  desc: "With our expert fire watch security guards, we provide constant monitoring to detect potential fire hazards, ensuring rapid response and immediate alerts.",
   image:BenefitsIMG,
 };
  

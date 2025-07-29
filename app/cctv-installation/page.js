@@ -74,13 +74,13 @@ const heroData = {
       <br className="hidden 2xl:block" /> Surveillance
     </>
   ),
-  desc: "Secure your home or business with professional CCTV installation services by Plaza Protection. Get reliable, 24/7 surveillance and real-time monitoring tailored to your property.",
+  desc: "Secure your home or business with professional CCTV installation services in bay area by Plaza Protection. Get reliable, 24/7 surveillance and real-time monitoring tailored to your property.",
   img: GuardImage,
   alt: "CCTV Installation Security Guard",
 };
 const coreFeaturesData = {
   title: "Why Plaza Protection Is The Smart Choice For CCTV Installation?",
-  desc: "Secure your property with Plaza Protection's expert CCTV installation services. Customized solutions, advanced tech, and 24/7 support for complete peace of mind.",
+  desc: "Secure your property with Plaza Protection's expert Security Camera installation services. Customized solutions, advanced tech, and 24/7 support for complete peace of mind.",
   img: CoreFeature,
 };
 
@@ -94,7 +94,7 @@ const HighlightsData = {
   image: BenefitsIMG,
 };
 const IndustriesWeServeData = {
-  desc: "Our CCTV installation services provide comprehensive surveillance solutions designed to enhance security and monitor critical areas effectively. Using the latest technology, we tailor systems to fit your facility’s unique requirements, ensuring clear visibility, reliable recording, and seamless integration with your existing security infrastructure. From small businesses to large industrial sites, our scalable installations help you deter risks, respond proactively, and maintain peace of mind around the clock.",
+  desc: "Our CCTV installation services in san jose bay area provides comprehensive surveillance solutions designed to enhance security and monitor critical areas effectively. Using the latest technology, we tailor systems to fit your facility’s unique requirements, ensuring clear visibility, reliable recording, and seamless integration with your existing security infrastructure. From small businesses to large industrial sites, our scalable installations help you deter risks, respond proactively, and maintain peace of mind around the clock.",
 };
 const accordionItems = [
   {
