@@ -5,11 +5,10 @@ export const metadata = {
   abstract:
     "Plaza Protection security is a premier provider of construction site security due to its vulnerability to problems that can easily escalate into an emergency.",
   keywords: [
-    "Construction site security services in bay area",
-    "Construction site security services in san jose",
-    "Security for construction sites",
+    "Security guard services for construction sites",
     "Construction site patrol services",
     "Construction site guard services",
+  
     
   ],
   metadataBase: new URL("https://plazaprotection.com"),

@@ -8,6 +8,7 @@ export const metadata = {
     "Shopping centre security services in bay area",
     "Shopping centre security services in san jose",
     "Security guards for shopping centres",
+    "Shopping mall security",
   ],
   metadataBase: new URL("https://plazaprotection.com"),
   alternates: {

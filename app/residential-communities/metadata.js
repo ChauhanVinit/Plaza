@@ -3,8 +3,6 @@ export const metadata = {
   description:
     "Protect your home and community with our professional residential security services. Serving the San Jose Bay Area, our trusted security guards provide reliable and personalized protection for neighborhoods, condos, and apartment complexes.",
   keywords: [
-    "Residential security guard services in bay area",
-    "Residential security guard services in san jose",
     "Security guards for residential areas",
     "Residential security services",
     "Residential security patrol",

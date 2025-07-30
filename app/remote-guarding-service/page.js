@@ -4,8 +4,8 @@ export const metadata = {
   description:
     "Experience cutting-edge security with our remote guarding services in the San Jose Bay Area. Our virtual security guards monitor your property 24/7 using advanced technology for rapid response and protection.",
   keywords: [
-    "Remote Guarding Services in bay area",
-    "Remote Guarding Services in san jose",
+    "Remote guarding services in bay area",
+    "Remote guarding services in san jose",
     "Remote guarding services",
     "Remote surveillance services",
     "Live video monitoring services",

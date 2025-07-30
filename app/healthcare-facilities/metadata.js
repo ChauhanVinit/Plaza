@@ -5,11 +5,11 @@ export const metadata = {
   abstract:
     "Healthcare facilities today must provide reasonable security measures to maintain a safe atmosphere and to prevent theft, abductions, and the potential for injuries.",
   keywords: [
-    "Hospital security services in bay area",
-    "Hospital security services in san jose",
-    "Security guards for healthcare facilities",
+    "Security guard services for healthcare facilities",
     "Hospital security guards",
     "Security guards for Hospitals",
+    "Hospital Security",
+    
     
   ],
   metadataBase: new URL("https://www.plazaprotection.com"),

@@ -5,9 +5,7 @@ export const metadata = {
   abstract:
     "Leverage Plaza Protection’s commercial security guard services to counter any unforeseen security threats that may arise with utmost precision.",
   keywords: [
-    "Commercial building security services in bay area",
-    "Commercial building security services in san jose",
-    "Security guards for commercial properties",
+    "Security guard services for commercial properties",
     "Commercial property security guards",
   ],
   metadataBase: new URL("https://www.plazaprotection.com"),

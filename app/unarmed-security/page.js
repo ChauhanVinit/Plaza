@@ -5,11 +5,11 @@ export const metadata = {
   keywords: [
     "Unarmed Security guard services in bay area",
     "Unarmed security guard services in san jose",
-    "Unarmed Guard Services",
     "Unarmed Security Guards",
-    "Unarmed security services",
+    "Unarmed Security services",
     "Security Services",
     "Security Guards",
+
   ],
   abstract:
     "Our unarmed security guards are trained to handle situations calmly and professionally, offering a reliable presence for your business or property in the San Jose Bay Area.",
