@@ -4,77 +4,8 @@ import Image from "next/image";
 import Button from "../utils/Button";
 import Input from "../utils/Input";
 import Textarea from "../utils/Textarea";
-import Dropdown from "../utils/Dropdown";
-import { nanoid } from "nanoid";
 import right from "../public/right.svg";
 
-const ServicesOptions = [
-  {
-    id: nanoid(),
-    name: "Unarmed Security",
-  },
-  {
-    id: nanoid(),
-    name: "Fire Watch",
-  },
-  {
-    id: nanoid(),
-    name: "Remote Guarding Service",
-  },
-  {
-    id: nanoid(),
-    name: "Vehicle Patrol",
-  },
-  {
-    id: nanoid(),
-    name: "CCTV Installation",
-  },
-];
-const facilityOptions = [
-  {
-    id: nanoid(),
-    name: "Residential Communities",
-  },
-  {
-    id: nanoid(),
-    name: "Commercial Buildings",
-  },
-  {
-    id: nanoid(),
-    name: "Construction Sites",
-  },
-  {
-    id: nanoid(),
-    name: "Shopping Centers",
-  },
-  {
-    id: nanoid(),
-    name: "Healthcare Facilities",
-  },
-];
-const areaOptions = [
-  { id: nanoid(), name: "Downtown San Jose" },
-  { id: nanoid(), name: "Willow Glen" },
-  { id: nanoid(), name: "Cambrian Park" },
-  { id: nanoid(), name: "Almaden Valley" },
-  { id: nanoid(), name: "Berryessa" },
-  { id: nanoid(), name: "Evergreen" },
-  { id: nanoid(), name: "Rose Garden" },
-  { id: nanoid(), name: "North San Jose" },
-  { id: nanoid(), name: "West San Jose" },
-  { id: nanoid(), name: "East San Jose" },
-  { id: nanoid(), name: "South San Jose" },
-];
-const durationOptions = [
-  { id: nanoid(), name: "15 Days" },
-  { id: nanoid(), name: "1 Month" },
-  { id: nanoid(), name: "3 Months" },
-  { id: nanoid(), name: "6 Months" },
-  { id: nanoid(), name: "1 Year" },
-  { id: nanoid(), name: "2 Years" },
-  { id: nanoid(), name: "3 Years" },
-  { id: nanoid(), name: "5 Years" },
-];
 const RequestQuoteForm = () => {
   const [freeQuote, setFreeQuote] = useState({
     userName: "",
@@ -82,10 +13,6 @@ const RequestQuoteForm = () => {
     userEmail: "",
     phoneNumber: "",
     userMessage: "",
-    service: "",
-    facility: "",
-    area: "",
-    duration: "",
   });
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -95,12 +22,6 @@ const RequestQuoteForm = () => {
         [name]: value,
       });
     }
-  };
-  const handleDropdownChange = (name, value) => {
-    setFreeQuote((prev) => ({
-      ...prev,
-      [name]: value,
-    }));
   };
   const handleSubmit = (e) => {
     e.preventDefault(); // prevent default form submit
@@ -116,10 +37,7 @@ const RequestQuoteForm = () => {
       userEmail: "",
       phoneNumber: "",
       userMessage: "",
-      service: "",
-      facility: "",
-      area: "",
-      duration: "",
+     
     });
   };
   return (
@@ -171,50 +89,7 @@ const RequestQuoteForm = () => {
             />
           </div>
         </div>
-        {/* <div className="w-full flex flex-col md:flex-row gap-4 md:gap-6 mt-4">
-          <div className="w-full  md:w-1/2">
-            <Dropdown
-              options={ServicesOptions}
-              height="h-[55px]"
-              placeholder="Select Services"
-              name="service"
-              onSelect={handleDropdownChange}
-              value={freeQuote.service}
-            />
-          </div>
-          <div className="w-full  md:w-1/2">
-            <Dropdown
-              options={facilityOptions}
-              height="h-[55px]"
-              placeholder="Type Of Facility"
-              name="facility"
-              onSelect={handleDropdownChange}
-              value={freeQuote.facility}
-            />
-          </div>
-        </div>
-        <div className="w-full flex flex-col md:flex-row gap-4 md:gap-6 mt-4">
-          <div className="w-full  md:w-1/2">
-            <Dropdown
-              options={areaOptions}
-              height="h-[55px]"
-              placeholder="Select Area"
-              name="area"
-              onSelect={handleDropdownChange}
-              value={freeQuote.area}
-            />
-          </div>
-          <div className="w-full  md:w-1/2">
-            <Dropdown
-              options={durationOptions}
-              height="h-[55px]"
-              placeholder="Duration Of Service"
-              name="duration"
-              onSelect={handleDropdownChange}
-              value={freeQuote.duration}
-            />
-          </div>
-        </div> */}
+        
         <div className="w-full  mt-4">
           <Textarea
             placeholder={"Assignment Details"}

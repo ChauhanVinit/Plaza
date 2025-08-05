@@ -1,12 +1,11 @@
 "use client";
 import { useState } from "react";
+import { toast, Toaster } from "react-hot-toast";
 import Image from "next/image";
 import Tag from "../../utils/Tag";
 import Heading from "../../utils/Heading";
 import Input from "../../utils/Input";
 import Textarea from "../../utils/Textarea";
-import Dropdown from "../../utils/Dropdown";
-import { nanoid } from "nanoid";
 import Button from "../../utils/Button";
 import right from "../../public/right.svg";
 import Call from "../../public/Call.svg";
@@ -41,73 +40,6 @@ const ContactForm = () => {
       border: false,
     },
   ];
-  const ServicesOptions = [
-    {
-      id: nanoid(),
-      name: "Unarmed Security",
-    },
-    {
-      id: nanoid(),
-      name: "Fire Watch",
-    },
-    {
-      id: nanoid(),
-      name: "Remote Guarding Service",
-    },
-    {
-      id: nanoid(),
-      name: "Vehicle Patrol",
-    },
-    {
-      id: nanoid(),
-      name: "CCTV Installation",
-    },
-  ];
-  const facilityOptions = [
-    {
-      id: nanoid(),
-      name: "Residential Communities",
-    },
-    {
-      id: nanoid(),
-      name: "Commercial Buildings",
-    },
-    {
-      id: nanoid(),
-      name: "Construction Sites",
-    },
-    {
-      id: nanoid(),
-      name: "Shopping Centers",
-    },
-    {
-      id: nanoid(),
-      name: "Healthcare Facilities",
-    },
-  ];
-  const areaOptions = [
-    { id: nanoid(), name: "Downtown San Jose" },
-    { id: nanoid(), name: "Willow Glen" },
-    { id: nanoid(), name: "Cambrian Park" },
-    { id: nanoid(), name: "Almaden Valley" },
-    { id: nanoid(), name: "Berryessa" },
-    { id: nanoid(), name: "Evergreen" },
-    { id: nanoid(), name: "Rose Garden" },
-    { id: nanoid(), name: "North San Jose" },
-    { id: nanoid(), name: "West San Jose" },
-    { id: nanoid(), name: "East San Jose" },
-    { id: nanoid(), name: "South San Jose" },
-  ];
-  const durationOptions = [
-    { id: nanoid(), name: "15 Days" },
-    { id: nanoid(), name: "1 Month" },
-    { id: nanoid(), name: "3 Months" },
-    { id: nanoid(), name: "6 Months" },
-    { id: nanoid(), name: "1 Year" },
-    { id: nanoid(), name: "2 Years" },
-    { id: nanoid(), name: "3 Years" },
-    { id: nanoid(), name: "5 Years" },
-  ];
 
   const [freeQuote, setFreeQuote] = useState({
     userName: "",
@@ -115,10 +47,6 @@ const ContactForm = () => {
     userEmail: "",
     phoneNumber: "",
     userMessage: "",
-    service: "",
-    facility: "",
-    area: "",
-    duration: "",
   });
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -129,35 +57,114 @@ const ContactForm = () => {
       });
     }
   };
-  const handleDropdownChange = (name, value) => {
-    setFreeQuote((prev) => ({
-      ...prev,
-      [name]: value,
-    }));
-  };
-  const handleSubmit = (e) => {
-    e.preventDefault(); // prevent default form submit
 
-    // validate inputs if needed
+ const handleSubmit = async (e) => {
+    e.preventDefault();
 
-    console.log("Submitted:", freeQuote);
+    const { userName, companyName, userEmail, phoneNumber } = freeQuote;
 
-    // Reset all fields after submit
-    setFreeQuote({
-      userName: "",
-      companyName: "",
-      userEmail: "",
-      phoneNumber: "",
-      userMessage: "",
-      service: "",
-      facility: "",
-      area: "",
-      duration: "",
-    });
+    // Regex for email and phone number
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const phoneRegex = /^[0-9]{10,15}$/;
+           
+    // Validate required fields
+    if (!userName || !companyName || !userEmail || !phoneNumber) {
+      toast.error("Please fill in all required fields.");
+      return;
+    }
+      
+    // Validate email format
+    if (!emailRegex.test(userEmail)) {
+      toast.error(
+        "Please enter a valid email address (e.g., someone@gmail.com)."
+      );
+      return;
+    }
+
+    // Validate phone number format
+    if (!phoneRegex.test(phoneNumber)) {
+      toast.error(
+        "Please enter a valid phone number (only digits, 10–15 digits)."
+      );
+      return;
+    }
+
+    // Prepare form data
+    const formData = new FormData();
+    formData.append("your-name", userName);
+    formData.append("company-name", companyName);
+    formData.append("email", userEmail);
+    formData.append("phone", phoneNumber);
+    formData.append("message", freeQuote.userMessage);
+
+    try {
+      await fetch(
+        "https://webforms.pipedrive.com/f/ctsaBF7z4k5UwFt2BkGMdiBP8TJSgch1V6qPCnkyC7dmotBUGp9x52iNkmvQjIeCuD",
+        {
+          method: "POST",
+          body: formData,
+          mode: "no-cors",
+        }
+      );
+
+      toast.success("Thanks! We’ve got your request");
+
+      setFreeQuote({
+        userName: "",
+        companyName: "",
+        userEmail: "",
+        phoneNumber: "",
+        userMessage: "",
+      });
+    } catch (err) {
+      console.error("Form submission error:", err);
+      toast.error("Something went wrong. Please try again.");
+    }
   };
 
   return (
     <div className="mx-0 sm:mx-6  xl:mx-10 2xl:container 2xl:mx-auto mb-10 2xl:mb-20 py-10 px-4 sm:px-6 xl:px-10 2xl:p-20 rounded-[40px] flex flex-col xl:flex-row items-start gap-8 xl:gap-10 2xl:gap-20 bg-[#EDF5FF]">
+     {/* Toast Notification Container */}
+      <Toaster
+        position="top-right"
+        reverseOrder={true}
+        toastOptions={{
+          // Global default styles
+          style: {
+            background: "#ffffff",
+            color: "#000000",
+            padding: "16px",
+            fontSize: "16px",
+            fontWeight: "500",
+            boxShadow: "0 5px 12px rgba(0,0,0,0.0.25)",
+            fontFamily: 'DM Sans", sans-serif',
+            borderRadius: "0px",
+            padding: "12px 16px",
+            fontWeight: "600",
+          },
+
+          success: {
+            style: {
+              borderLeft: "4px solid #00D100",
+            },
+            iconTheme: {
+              primary: "#00D100",
+              secondary: "#ffffff",
+            },
+          },
+
+          error: {
+            style: {
+              borderLeft: "4px solid #FF0000",
+            },
+            iconTheme: {
+              primary: "#FF0000",
+              secondary: "#ffffff",
+            },
+          },
+        }}
+      />
+
       <div className="w-full xl:w-[calc(50%-20px)] 2xl:w-[calc(50%-40px)]">
         <Tag title={"Quick View CONTACT Us"} />
         <Heading
@@ -196,7 +203,7 @@ const ContactForm = () => {
         </div>
       </div>
       <form
-        onSubmit={handleSubmit}
+         onSubmit={handleSubmit}
         className="w-full xl:w-[calc(50%-20px)] 2xl:w-[calc(50%-40px)] p-4 md:p-6 2xl:p-8 rounded-2xl  md:rounded-3xl bg-[#F0F4FF] shadow-[0_5px_15px_0_rgba(19,85,255,0.2)]"
       >
         <h2 className="mb-6 font-dmSans text-[32px] !leading-10 font-semibold text-[#222A5B]">
@@ -242,50 +249,7 @@ const ContactForm = () => {
             />
           </div>
         </div>
-        {/* <div className="w-full flex flex-col md:flex-row gap-4 md:gap-6  mt-4">
-          <div className="w-full  md:w-1/2">
-            <Dropdown
-              options={ServicesOptions}
-              height="h-[55px]"
-              placeholder="Select Services"
-              name="service"
-              onSelect={handleDropdownChange}
-              value={freeQuote.service}
-            />
-          </div>
-          <div className="w-full  md:w-1/2">
-            <Dropdown
-              options={facilityOptions}
-              height="h-[55px]"
-              placeholder="Type Of Facility"
-              name="facility"
-              onSelect={handleDropdownChange}
-              value={freeQuote.facility}
-            />
-          </div>
-        </div>
-        <div className="w-full flex flex-col md:flex-row gap-4 md:gap-6  mt-4">
-          <div className="w-full  md:w-1/2">
-            <Dropdown
-              options={areaOptions}
-              height="h-[55px]"
-              placeholder="Select Area"
-              name="area"
-              onSelect={handleDropdownChange}
-              value={freeQuote.area}
-            />
-          </div>
-          <div className="w-full  md:w-1/2">
-            <Dropdown
-              options={durationOptions}
-              height="h-[55px]"
-              placeholder="Duration Of Service"
-              name="duration"
-              onSelect={handleDropdownChange}
-              value={freeQuote.duration}
-            />
-          </div>
-        </div> */}
+
         <div className="w-full  mt-4">
           <Textarea
             placeholder={"Write Your Message"}
@@ -297,13 +261,13 @@ const ContactForm = () => {
         </div>
         <div className="mt-6 2xl:mt-8 ">
           <Button
+           type="submit"
             variant="blue"
             icon={
               <Image src={right} alt="Right arrow icon" className="w-4 h-4" />
             }
             style={"min-w-full sm:!min-w-[175px]"}
-            name="Submit"
-            onClick={handleSubmit}
+            name="Submit Free Quote"
           />
         </div>
       </form>

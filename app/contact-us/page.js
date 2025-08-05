@@ -1,5 +1,6 @@
 export const metadata = {
-  title: "Contact Us | San Jose Bay Area Security Patrol Experts | Plaza Protection",
+  title:
+    "Contact Us | San Jose Bay Area Security Patrol Experts | Plaza Protection",
   description:
     "Get in touch with our trusted security guard company in the San Jose Bay Area. Contact us today for quotes, consultations, and expert security solutions tailored to your needs.",
   keywords: [
@@ -7,7 +8,6 @@ export const metadata = {
     "security guard services in san jose",
     "Security services",
     "Security Guards",
-    
   ],
   abstract:
     "Contact us if you have any queries, want to share feedback, or want to know more about how our security solutions can help your business.",
@@ -16,7 +16,8 @@ export const metadata = {
     canonical: "/contact-us",
   },
   openGraph: {
-    title: "Contact Us | San Jose Bay Area Security Patrol Experts | Plaza Protection",
+    title:
+      "Contact Us | San Jose Bay Area Security Patrol Experts | Plaza Protection",
     description:
       "Get in touch with our trusted security guard company in the San Jose Bay Area. Contact us today for quotes, consultations, and expert security solutions tailored to your needs.",
     url: "https://www.plazaprotection.com/contact-us",
@@ -36,7 +37,8 @@ export const metadata = {
     card: "summary_large_image",
     site: "@plazaprotection",
     creator: "@plazaprotection",
-    title: "Contact Us | San Jose Bay Area Security Patrol Experts | Plaza Protection",
+    title:
+      "Contact Us | San Jose Bay Area Security Patrol Experts | Plaza Protection",
     description:
       "Get in touch with our trusted security guard company in the San Jose Bay Area. Contact us today for quotes, consultations, and expert security solutions tailored to your needs.",
     images: ["https://plazaprotection.com/includes/img/plazaprotection.png"],
@@ -52,7 +54,7 @@ import ContactBannerB from "../../public/Contact-02.png";
 import SecurityTrustBanner from "@/components/SecurityTrustBanner";
 import ContactForm from "@/components/ContactUs/ContactForm";
 
-const Contact = () => {             
+const Contact = () => {
   const SecurityTrustData = {
     title: (
       <>
@@ -61,7 +63,7 @@ const Contact = () => {
       </>
     ),
     btnText: "Request A Quote",
-    path:'/request-quote'
+    path: "/request-quote",
   };
   return (
     <>
@@ -81,7 +83,7 @@ const Contact = () => {
       <div className="hidden sm:flex items-center justify-center mx-4 sm:mx-6 xl:max-w-[1200px] xl:mx-auto  mb-10 2xl:mb-20">
         <Image
           src={ContactBannerA}
-            alt="Plaza Protection security team standing in formation, ready to serve"
+          alt="Plaza Protection security team standing in formation, ready to serve"
           className="object-cover rounded-[40px]"
         />
       </div>
@@ -94,8 +96,7 @@ const Contact = () => {
         />
       </div>
 
-      <ContactForm/>
-
+      <ContactForm />
       <div className="mx-4 sm:mx-6  xl:mx-10 2xl:container 2xl:mx-auto mb-10 2xl:mb-20 rounded-[40px] overflow-hidden">
         <GoogleMapComponent />
       </div>
