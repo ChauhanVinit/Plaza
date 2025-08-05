@@ -27,69 +27,72 @@ const FreeQuote = () => {
     }));
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
 
-    const { userName, companyName, userEmail, phoneNumber } = freeQuote;
 
-    // Regex for email and phone number
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    const phoneRegex = /^[0-9]{10,15}$/;
-           
-    // Validate required fields
-    if (!userName || !companyName || !userEmail || !phoneNumber) {
-      toast.error("Please fill in all required fields.");
-      return;
-    }
-      
-    // Validate email format
-    if (!emailRegex.test(userEmail)) {
-      toast.error(
-        "Please enter a valid email address (e.g., someone@gmail.com)."
-      );
-      return;
-    }
 
-    // Validate phone number format
-    if (!phoneRegex.test(phoneNumber)) {
-      toast.error(
-        "Please enter a valid phone number (only digits, 10–15 digits)."
-      );
-      return;
-    }
 
-    // Prepare form data
-    const formData = new FormData();
-    formData.append("your-name", userName);
-    formData.append("company-name", companyName);
-    formData.append("email", userEmail);
-    formData.append("phone", phoneNumber);
-    formData.append("message", freeQuote.userMessage);
+const handleSubmit = (e) => {
+  e.preventDefault();
 
-    try {
-      await fetch(
-        "https://webforms.pipedrive.com/f/ctsaBF7z4k5UwFt2BkGMdiBP8TJSgch1V6qPCnkyC7dmotBUGp9x52iNkmvQjIeCuD",
-        {
-          method: "POST",
-          body: formData,
-          mode: "no-cors",
-        }
-      );
+  const { userName, companyName, userEmail, phoneNumber, userMessage } = freeQuote;
 
-      toast.success("Thanks! We’ve got your request");
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  const phoneRegex = /^[0-9]{10,15}$/;
 
-      setFreeQuote({
-        userName: "",
-        companyName: "",
-        userEmail: "",
-        phoneNumber: "",
-        userMessage: "",
-      });
-    } catch (err) {
-      console.error("Form submission error:", err);
-      toast.error("Something went wrong. Please try again.");
-    }
+  if (!userName || !companyName || !userEmail || !phoneNumber) {
+    toast.error("Please fill in all required fields.");
+    return;
+  }
+
+  if (!emailRegex.test(userEmail)) {
+    toast.error("Please enter a valid email address.");
+    return;
+  }
+
+  if (!phoneRegex.test(phoneNumber)) {
+    toast.error("Please enter a valid phone number (10–15 digits).");
+    return;
+  }
+
+  const form = document.createElement("form");
+  form.method = "POST";
+  form.action = "https://webforms.pipedrive.com/f/ctsaBF7z4k5UwFt2BkGMdiBP8TJSgch1V6qPCnkyC7dmotBUGp9x52iNkmvQjIeCuD";
+  form.style.display = "none";
+
+  const appendField = (name, value) => {
+    const input = document.createElement("input");
+    input.type = "hidden";
+    input.name = name;
+    input.value = value;
+    form.appendChild(input);
   };
+
+  const values = {
+    "V2ViRm9ybUNhcHR1cmVCbG9jazo2YTNlYTI3MC03MGZhLTExZjAtYmM3ZC1jN2QyOTBiYjIxZmU": userName,
+    "V2ViRm9ybUNhcHR1cmVCbG9jazo2YTNlYzk4MC03MGZhLTExZjAtYmM3ZC1jN2QyOTBiYjIxZmU": companyName,
+    "V2ViRm9ybUNhcHR1cmVCbG9jazplYzM5MTY5MS03MGY4LTExZjAtYmM3ZC1jN2QyOTBiYjIxZmU": userEmail,
+    "V2ViRm9ybUNhcHR1cmVCbG9jazo2YTNlYzk4MS03MGZhLTExZjAtYmM3ZC1jN2QyOTBiYjIxZmU": phoneNumber,
+    "V2ViRm9ybUNhcHR1cmVCbG9jazo2YTNlYzk4Mi03MGZhLTExZjAtYmM3ZC1jN2QyOTBiYjIxZmU": userMessage,
+  };
+
+  Object.entries(values).forEach(([name, value]) => {
+    appendField(name, value);
+  });
+
+  document.body.appendChild(form);
+  form.submit();
+
+  toast.success("Thanks! We’ve got your request");
+
+  setFreeQuote({
+    userName: "",
+    companyName: "",
+    userEmail: "",
+    phoneNumber: "",
+    userMessage: "",
+  });
+};
+
 
   return (
     <div className="relative h-auto lg:h-[450px] 2xl:h-[512px] 2xl:max-w-[1200px] mx-4 sm:mx-6 xl:mx-10 2xl:mx-auto mb-10 mt-10 lg:mt-0 lg:mb-[160px] 2xl:mb-[140px] px-4 sm:px-6 xl:px-8 2xl:px-[60px] bg-[#0C2459] rounded-[40px]">
