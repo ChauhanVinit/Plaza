@@ -27,11 +27,7 @@ const FreeQuote = () => {
     }));
   };
 
-
-
-
-
-const handleSubmit = (e) => {
+const handleSubmit = async (e) => {
   e.preventDefault();
 
   const { userName, companyName, userEmail, phoneNumber, userMessage } = freeQuote;
@@ -39,7 +35,7 @@ const handleSubmit = (e) => {
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   const phoneRegex = /^[0-9]{10,15}$/;
 
-  if (!userName || !companyName || !userEmail || !phoneNumber) {
+  if (!userName || !companyName || !userEmail || !phoneNumber || !userMessage) {
     toast.error("Please fill in all required fields.");
     return;
   }
@@ -54,45 +50,32 @@ const handleSubmit = (e) => {
     return;
   }
 
-  const form = document.createElement("form");
-  form.method = "POST";
-  form.action = "https://webforms.pipedrive.com/f/ctsaBF7z4k5UwFt2BkGMdiBP8TJSgch1V6qPCnkyC7dmotBUGp9x52iNkmvQjIeCuD";
-  form.style.display = "none";
+  try {
+    const res = await fetch("/api/pipedrive", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ userName, companyName, userEmail, phoneNumber, userMessage }),
+    });
 
-  const appendField = (name, value) => {
-    const input = document.createElement("input");
-    input.type = "hidden";
-    input.name = name;
-    input.value = value;
-    form.appendChild(input);
-  };
+    const data = await res.json();
 
-  const values = {
-    "V2ViRm9ybUNhcHR1cmVCbG9jazo2YTNlYTI3MC03MGZhLTExZjAtYmM3ZC1jN2QyOTBiYjIxZmU": userName,
-    "V2ViRm9ybUNhcHR1cmVCbG9jazo2YTNlYzk4MC03MGZhLTExZjAtYmM3ZC1jN2QyOTBiYjIxZmU": companyName,
-    "V2ViRm9ybUNhcHR1cmVCbG9jazplYzM5MTY5MS03MGY4LTExZjAtYmM3ZC1jN2QyOTBiYjIxZmU": userEmail,
-    "V2ViRm9ybUNhcHR1cmVCbG9jazo2YTNlYzk4MS03MGZhLTExZjAtYmM3ZC1jN2QyOTBiYjIxZmU": phoneNumber,
-    "V2ViRm9ybUNhcHR1cmVCbG9jazo2YTNlYzk4Mi03MGZhLTExZjAtYmM3ZC1jN2QyOTBiYjIxZmU": userMessage,
-  };
-
-  Object.entries(values).forEach(([name, value]) => {
-    appendField(name, value);
-  });
-
-  document.body.appendChild(form);
-  form.submit();
-
-  toast.success("Thanks! We’ve got your request");
-
-  setFreeQuote({
-    userName: "",
-    companyName: "",
-    userEmail: "",
-    phoneNumber: "",
-    userMessage: "",
-  });
+    if (data.success) {
+      toast.success("Thanks! We’ve got your request.");
+      setFreeQuote({
+        userName: "",
+        companyName: "",
+        userEmail: "",
+        phoneNumber: "",
+        userMessage: "",
+      });
+    } else {
+      toast.error(data.message || "Something went wrong.");
+    }
+  } catch (err) {
+    console.error(err);
+    toast.error("Server error. Please try again later.");
+  }
 };
-
 
   return (
     <div className="relative h-auto lg:h-[450px] 2xl:h-[512px] 2xl:max-w-[1200px] mx-4 sm:mx-6 xl:mx-10 2xl:mx-auto mb-10 mt-10 lg:mt-0 lg:mb-[160px] 2xl:mb-[140px] px-4 sm:px-6 xl:px-8 2xl:px-[60px] bg-[#0C2459] rounded-[40px]">

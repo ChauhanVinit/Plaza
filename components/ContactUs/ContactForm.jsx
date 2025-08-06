@@ -59,56 +59,39 @@ const ContactForm = () => {
   };
 
  const handleSubmit = async (e) => {
-    e.preventDefault();
+  e.preventDefault();
 
-    const { userName, companyName, userEmail, phoneNumber } = freeQuote;
+  const { userName, companyName, userEmail, phoneNumber, userMessage } = freeQuote;
 
-    // Regex for email and phone number
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    const phoneRegex = /^[0-9]{10,15}$/;
-           
-    // Validate required fields
-    if (!userName || !companyName || !userEmail || !phoneNumber) {
-      toast.error("Please fill in all required fields.");
-      return;
-    }
-      
-    // Validate email format
-    if (!emailRegex.test(userEmail)) {
-      toast.error(
-        "Please enter a valid email address (e.g., someone@gmail.com)."
-      );
-      return;
-    }
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  const phoneRegex = /^[0-9]{10,15}$/;
 
-    // Validate phone number format
-    if (!phoneRegex.test(phoneNumber)) {
-      toast.error(
-        "Please enter a valid phone number (only digits, 10–15 digits)."
-      );
-      return;
-    }
+  if (!userName || !companyName || !userEmail || !phoneNumber || !userMessage) {
+    toast.error("Please fill in all required fields.");
+    return;
+  }
 
-    // Prepare form data
-    const formData = new FormData();
-    formData.append("your-name", userName);
-    formData.append("company-name", companyName);
-    formData.append("email", userEmail);
-    formData.append("phone", phoneNumber);
-    formData.append("message", freeQuote.userMessage);
+  if (!emailRegex.test(userEmail)) {
+    toast.error("Please enter a valid email address.");
+    return;
+  }
 
-    try {
-      await fetch(
-        "https://webforms.pipedrive.com/f/ctsaBF7z4k5UwFt2BkGMdiBP8TJSgch1V6qPCnkyC7dmotBUGp9x52iNkmvQjIeCuD",
-        {
-          method: "POST",
-          body: formData,
-          mode: "no-cors",
-        }
-      );
+  if (!phoneRegex.test(phoneNumber)) {
+    toast.error("Please enter a valid phone number (10–15 digits).");
+    return;
+  }
 
-      toast.success("Thanks! We’ve got your request");
+  try {
+    const res = await fetch("/api/pipedrive", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ userName, companyName, userEmail, phoneNumber, userMessage }),
+    });
 
+    const data = await res.json();
+
+    if (data.success) {
+      toast.success("Thanks! We’ve got your request.");
       setFreeQuote({
         userName: "",
         companyName: "",
@@ -116,11 +99,14 @@ const ContactForm = () => {
         phoneNumber: "",
         userMessage: "",
       });
-    } catch (err) {
-      console.error("Form submission error:", err);
-      toast.error("Something went wrong. Please try again.");
+    } else {
+      toast.error(data.message || "Something went wrong.");
     }
-  };
+  } catch (err) {
+    console.error(err);
+    toast.error("Server error. Please try again later.");
+  }
+};
 
   return (
     <div className="mx-0 sm:mx-6  xl:mx-10 2xl:container 2xl:mx-auto mb-10 2xl:mb-20 py-10 px-4 sm:px-6 xl:px-10 2xl:p-20 rounded-[40px] flex flex-col xl:flex-row items-start gap-8 xl:gap-10 2xl:gap-20 bg-[#EDF5FF]">
