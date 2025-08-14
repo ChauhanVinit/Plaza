@@ -9,10 +9,10 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-  			jakarta: 'Plus Jakarta Sans',
-  			urbanist: 'Urbanist',
+        jakarta: 'Plus Jakarta Sans',
+        urbanist: 'Urbanist',
         dmSans: 'DM Sans',
-  		},
+      },
       screens: {
         xxs: '390px',
         xs: "480px",
@@ -22,16 +22,16 @@ export default {
         xl: "1280px",
         "2xl": "1440px",
       },
-  		
+
     },
 
   },
   plugins: [
-		function ({ addVariant }) {
-			addVariant('dots', '& > ul');
-			addVariant('dot', '& > ul > li > button');
-			addVariant('activeDot', '& > ul > li > .is-active');
-		}
-	],
+    function ({ addVariant }) {
+      addVariant('dots', '& > ul');
+      addVariant('dot', '& > ul > li > button');
+      addVariant('activeDot', '& > ul > li > .is-active');
+    }
+  ],
 };
 
