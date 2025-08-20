@@ -185,7 +185,7 @@ const Header = () => {
           name: "Blog",
           desc: "Expert insights & updates on security solutions.",
           subIcon: blogIcon,
-          path: "/blog",
+          path: "https://blog.plazaprotection.com/",
         },
         {
           id: "aboutUs",
