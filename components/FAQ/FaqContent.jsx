@@ -78,7 +78,7 @@ const FaqContent = () => {
             placeholder="Search Question"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-            className="grow border-0 outline-none placeholder:text-[#999999] text-base text-[#171A1D] font-medium"
+            className="grow border-0 outline-none placeholder:text-[#999999] text-base text-[#171A1D] font-medium !bg-transparent"
           />
           <Image src={searchIcon} alt="Search" className="w-6 h-6" />
         </div>

@@ -23,7 +23,6 @@ import ShoppingCentersicon from "../public/Shopping-Centers.svg";
 import Healthcareicon from "../public/Healthcare.svg";
 import Industries from "../public/building-06.svg";
 import Resources from "../public/resources-add.svg";
-import contractsUs from "../public/contracts.svg";
 import UnarmedImg from "../public/Unarmed-Security.png";
 import FireWatchImg from "../public/Fire-Watch-img.png";
 import RemoteGuardingImg from "../public/Remote-Guarding-Service-Img.png";
@@ -36,12 +35,14 @@ import ShoppingCentersImg from "../public/Shopping-Centers-img.png";
 import HealthcareFacilitiesImg from "../public/Healthcare-Facilities-img.png";
 import SubNavBg from "../public/SubNav-Background-image.png";
 import SubNavSmallBg from "../public/SubNav-Small-BG.png";
-import HiringIcon from "../public/Hiring.svg";
 import blogIcon from "../public/Blog.svg";
 import AboutusIcon from "../public/About us.svg";
-import IllustrationA from "../public/Illustration-01.png";
-import IllustrationB from "../public/Illustration-02.png";
-import arrowright from "../public/arrow-right.svg";
+import FAQIcon from "../public/FAQ.svg";
+import StoriesIcon from "../public/Customer-Stories.svg";
+import RequestQuoteIcon from "../public/Request-Quote.svg";
+import ContactUsIcon from "../public/Contact-Us.svg";
+import ClientPortalIcon from "../public/Client-Portal.svg";
+
 import { usePathname } from "next/navigation";
 
 const Header = () => {
@@ -197,35 +198,35 @@ const Header = () => {
         {
           id: "clientPortal",
           desc: "Explore our current vacancies right here.",
-          subIcon: HiringIcon,
+          subIcon: ClientPortalIcon,
           name: "Client Portal",
           path: "/client-portal",
         },
         {
           id: "ContactUs",
           desc: "Expert insights & updates on security     solutions",
-          subIcon: HiringIcon,
+          subIcon: ContactUsIcon,
           name: "Contact us",
           path: "/contact-us",
         },
         {
           id: "requestQuote",
           desc: "Your reliable partner for expert security services and peace of mind",
-          subIcon: HiringIcon,
+          subIcon: RequestQuoteIcon,
           name: "Request Quote",
           path: "/request-quote",
         },
         {
           id: "customerStories",
           desc: "Explore our current vacancies right here.",
-          subIcon: HiringIcon,
+          subIcon: StoriesIcon,
           name: "Customer Stories",
           path: "/customer-stories",
         },
         {
           id: "faq",
           desc: "Expert insights & updates on security     solutions",
-          subIcon: HiringIcon,
+          subIcon: FAQIcon,
           name: "FAQ",
           path: "/faq",
         },
@@ -573,39 +574,3 @@ const Header = () => {
 };
 
 export default Header;
-
-
-{/* <div>
-                            <Image
-                              src={IllustrationA}
-                              alt="Visual representation of security demo video"
-                            />
-                            <div className="mt-5 inline-flex items-center gap-[10px]">
-                              <h3 className="font-dmSans font-semibold text-lg !leading-8 text-[#111B29] tracking-[-0.58px] ">
-                                Watch demo video
-                              </h3>
-                              <Image
-                                src={arrowright}
-                                className="w-[18px] h-[18px]"
-                                alt="" // Empty alt hides it from screen readers
-                                aria-hidden="true"
-                              />
-                            </div>
-                          </div>
-                          <div>
-                            <Image
-                              src={IllustrationB}
-                              alt="Visual representation of security demo video"
-                            />
-                            <div className="mt-5 inline-flex items-center gap-[10px]">
-                              <h3 className="font-dmSans font-semibold text-lg !leading-8 text-[#111B29] tracking-[-0.58px] ">
-                                Watch demo video
-                              </h3>
-                              <Image
-                                src={arrowright}
-                                className="w-[18px] h-[18px]"
-                                alt="" // Empty alt hides it from screen readers
-                                aria-hidden="true"
-                              />
-                            </div>
-                          </div> */}
