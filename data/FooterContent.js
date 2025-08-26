@@ -98,6 +98,10 @@ socialMedia: [
           path: "/contact-us",
         },
         {
+          label: "Client Portal",
+          path: "/client-portal",
+        },
+        {
           label: "Blog",
           path: "/blog",
         },
@@ -105,10 +109,7 @@ socialMedia: [
           label: "Request A Quote",
           path: "/request-quote",
         },
-         {
-          label: "Client Portal",
-          path: "/client-portal",
-        },
+         
       ],
     },
   ],
