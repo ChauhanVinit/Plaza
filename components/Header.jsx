@@ -15,14 +15,11 @@ import CCTV from "../public/CCTV.svg";
 import tvSmart from "../public/tv-smart.svg";
 import car from "../public/car-03.svg";
 import fire from "../public/Services/Fire-risk.svg";
-import Services from "../public/work-history.svg";
 import Residentialicon from "../public/Residential.svg";
 import Buildingsicon from "../public/Buildings.svg";
 import Sitesicon from "../public/Sites.svg";
 import ShoppingCentersicon from "../public/Shopping-Centers.svg";
 import Healthcareicon from "../public/Healthcare.svg";
-import Industries from "../public/building-06.svg";
-import Resources from "../public/resources-add.svg";
 import UnarmedImg from "../public/Unarmed-Security.png";
 import FireWatchImg from "../public/Fire-Watch-img.png";
 import RemoteGuardingImg from "../public/Remote-Guarding-Service-Img.png";
@@ -38,11 +35,10 @@ import SubNavSmallBg from "../public/SubNav-Small-BG.png";
 import blogIcon from "../public/Blog.svg";
 import AboutusIcon from "../public/About us.svg";
 import FAQIcon from "../public/FAQ.svg";
-import StoriesIcon from "../public/Customer-Stories.svg";
 import RequestQuoteIcon from "../public/Request-Quote.svg";
 import ContactUsIcon from "../public/Contact-Us.svg";
 import ClientPortalIcon from "../public/Client-Portal.svg";
-
+import Latestvideos from "../public/Latest-videos.png"
 import { usePathname } from "next/navigation";
 
 const Header = () => {
@@ -50,7 +46,6 @@ const Header = () => {
     {
       id: 1,
       name: "Services",
-      icon: Services,
       subnavs: [
         {
           id: "unarmedSecurity",
@@ -121,7 +116,6 @@ const Header = () => {
     {
       id: 2,
       name: "Industries",
-      icon: Industries,
       subnavs: [
         {
           id: "residential-Communities",
@@ -179,60 +173,59 @@ const Header = () => {
     {
       id: 3,
       name: "Resources",
-      icon: Resources,
       subnavs: [
         {
           id: "blog",
           name: "Blog",
-          desc: "Expert insights & updates on security solutions.",
+          desc: "Expert insights and updates on security solutions from Plaza Protection.",
           subIcon: blogIcon,
           path: "https://blog.plazaprotection.com/",
         },
         {
           id: "aboutUs",
           name: "About Us",
-          desc: "Your reliable partner for expert security services and peace of mind.",
+          desc: "Discover who we are and how we deliver trusted security services.",
           subIcon: AboutusIcon,
           path: "/about-us",
         },
         {
           id: "clientPortal",
-          desc: "Explore our current vacancies right here.",
+          desc: "Securely access your personalized dashboard and manage services with ease.",
           subIcon: ClientPortalIcon,
           name: "Client Portal",
           path: "/client-portal",
         },
         {
           id: "ContactUs",
-          desc: "Expert insights & updates on security     solutions",
+          desc: "Get in touch with our team for inquiries, support, or more information.",
           subIcon: ContactUsIcon,
           name: "Contact us",
           path: "/contact-us",
         },
         {
           id: "requestQuote",
-          desc: "Your reliable partner for expert security services and peace of mind",
+          desc: "Request a tailored security quote to match your specific requirements.",
           subIcon: RequestQuoteIcon,
           name: "Request Quote",
           path: "/request-quote",
         },
         {
-          id: "customerStories",
-          desc: "Explore our current vacancies right here.",
-          subIcon: StoriesIcon,
-          name: "Customer Stories",
-          path: "/customer-stories",
-        },
-        {
           id: "faq",
-          desc: "Expert insights & updates on security     solutions",
+          desc: "Find quick answers to frequently asked questions about our services.",
           subIcon: FAQIcon,
           name: "FAQ",
           path: "/faq",
         },
       ],
     },
+    {
+      id: 4,
+      name: "Contact us",
+      path: '/contact-us',
+      subnavs: [
 
+      ],
+    },
   ];
   const [openMobNav, setOpenMobNav] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -314,12 +307,7 @@ const Header = () => {
                       className={` relative cursor-pointer w-full mb-2 xl:mb-0 bg-[#1355FF]/5 xl:bg-white inline-flex gap-2 items-center px-3 xl:px-[14px] py-6 rounded-2xl xl:py-7 text-base font-dmSans font-semibold tracking-[-0.5px]  xl:after:content-[''] xl:after:absolute xl:after:h-[3px] xl:after:rounded-[50px] xl:after:bottom-0 xl:after:left-1/2 xl:after:-translate-x-1/2 xl:after:bg-[#1355FF] 
                         xl:group-hover:text-[#1355FF] group-hover:after:w-[20px] text-[#1A1A1A] after:w-0 after:transition-all after:duration-250 after:ease-in-out`}
                     >
-                      <Image
-                        src={nav.icon}
-                        alt={`${nav.name} icon`}
-                        title={`${nav.name}`}
-                        className="w-4 h-4"
-                      />
+
                       {nav.name}
                       <div
                         className={`w-4 h-4  absolute right-3 top-7 xl:relative xl:right-0 xl:top-[2px] transition-transform duration-200 ease-in-out ${hoveredNavId === nav.id
@@ -352,111 +340,144 @@ const Header = () => {
                         : "opacity-0 invisible"
                         } top-0 xl:!top-10 left-0 w-full xl:-z-[1] z-10 bg-white p-4 xl:px-12 xl:pb-12 xl:pt-6 transition-all xl:duration-150 ease-in-out xl:invisible xl:opacity-0 xl:group-hover:!top-24 xl:group-hover:opacity-100 xl:group-hover:visible xl:rounded-[40px]`}
                     >
-                      <div className="py-2 border-b border-[#7198FE]/10 flex items-center justify-between">
-                        <h3 className="font-dmSans text-sm !leading-6 tracking-[1px] text-[#666666] font-bold uppercase">
-                          {nav.name}
-                        </h3>
-                        <button
-                          type="button"
-                          onClick={() => setOpenMobNav(null)}
-                          className="xl:hidden text-xs !leading-6 tracking-[1px] text-[#3355FF] font-bold "
-                        >
-                          Back
-                        </button>
-                      </div>
+
                       {nav.name !== "Resources" ? (
-                        <div className="mt-4 xl:mt-6 flex flex-col xl:flex-row xl:items-center gap-4 xl:gap-6">
-                          {navData
-                            .find((item) => item.id === nav.id)
-                            ?.subnavs.map((sub) => (
-                              <Link
-                                // onClick={() => {
-                                //   setOpenMobNav(null);
-                                //   setMenuOpen(false);
-                                // }}
-                                key={sub.id}
-                                href={sub.path}
-                              >
-                                <div className="nav-item-hover-wrapper relative xl:flex-1  rounded-2xl bg-[linear-gradient(to_bottom,_#1355FF00_0%,_#1355FF1A_100%)] hover:!bg-[linear-gradient(to_top,_#1355FF00_0%,_#1355FF1A_100%)] transition-transform duration-300 ease-in-out overflow-hidden">
-                                  <div
-                                    className={`p-4  flex xl:flex-col gap-3 xl:gap-0 ${nav.name == "Services"
-                                      ? "!mb-0 xl:!mb-[18px]"
-                                      : "!mb-0"
-                                      }  `}
-                                  >
-                                    <Image
-                                      src={sub.subIcon}
-                                      alt={`${sub.name} Icon`}
-                                      title={`${sub.name}`}
-                                      className="w-[28px] h-[28px]"
-                                    />
-                                    <div className="xl:mt-4">
-                                      <h4 className="subnav-title mb-[2px] font-dmSans text-lg font-semibold tracking-[-0.5px] text-[#111B29] group-subnav-hover:text-[#1355FF] transition-transform duration-300 ease-in-out">
-                                        {sub.name}
-                                      </h4>
-                                      <p className="text-sm xl:text-xs font-normal text-[#677489] xl:max-w-[217px]">
-                                        {sub.desc}
-                                      </p>
-                                    </div>
-                                  </div>
-
-                                  <Image
-                                    src={sub.img}
-                                    alt={`${sub.name} illustration`}
-                                    title={sub.name}
-                                    className="subnav-image hidden xl:block w-full relative z-20  transition-transform duration-300 ease-in-out"
-                                  />
-
-                                  <Image
-                                    src={SubNavBg}
-                                    alt=""
-                                    role="presentation"
-                                    aria-hidden="true"
-                                    className="subnav-bg hidden xl:block absolute bottom-0 right-0 z-10  transition-transform duration-300 ease-in-out"
-                                  />
-                                  <Image
-                                    src={SubNavSmallBg}
-                                    alt=""
-                                    role="presentation"
-                                    aria-hidden="true"
-                                    className="xl:hidden absolute bottom-0 right-0 z-10"
-                                  />
-                                </div>
-                              </Link>
-                            ))}
-                        </div>
-                      ) : (
-                        <div className="mt-4 xl:mt-6 grid grid-cols-12 gap-4">
-                          
-                            {chunkArray(nav.subnavs, 3).map((group, groupIndex) => (
-                              <div key={groupIndex} className=" col-span-12 lg:col-span-4 2xl:col-span-3">
-                                {group.map((sub, index, array) => (
-                                  <Link key={sub.id} href={sub.path}>
+                        <>
+                          <div className="py-2 border-b border-[#7198FE]/10 flex items-center justify-between">
+                            <h3 className="font-dmSans text-sm !leading-6 tracking-[1px] text-[#666666] font-bold uppercase">
+                              {nav.name}
+                            </h3>
+                            <button
+                              type="button"
+                              onClick={() => setOpenMobNav(null)}
+                              className="xl:hidden text-xs !leading-6 tracking-[1px] text-[#3355FF] font-bold "
+                            >
+                              Back
+                            </button>
+                          </div>
+                          <div className="mt-4 xl:mt-6 flex flex-col xl:flex-row xl:items-center gap-4 xl:gap-6">
+                            {navData
+                              .find((item) => item.id === nav.id)
+                              ?.subnavs.map((sub) => (
+                                <Link
+                                  // onClick={() => {
+                                  //   setOpenMobNav(null);
+                                  //   setMenuOpen(false);
+                                  // }}
+                                  key={sub.id}
+                                  href={sub.path}
+                                >
+                                  <div className="nav-item-hover-wrapper relative xl:flex-1  rounded-2xl bg-[linear-gradient(to_bottom,_#1355FF00_0%,_#1355FF1A_100%)] hover:!bg-[linear-gradient(to_top,_#1355FF00_0%,_#1355FF1A_100%)] transition-transform duration-300 ease-in-out overflow-hidden">
                                     <div
-                                      className={`xl:max-w-[326px] flex items-start gap-4 px-[6px] py-2 bg-white hover:bg-[#EBF1FF]/50 smooth rounded-lg ${index === array.length - 1 ? "mb-0" : "mb-5"
-                                        }`}
+                                      className={`p-4  flex xl:flex-col gap-3 xl:gap-0 ${nav.name == "Services"
+                                        ? "!mb-0 xl:!mb-[18px]"
+                                        : "!mb-0"
+                                        }  `}
                                     >
                                       <Image
                                         src={sub.subIcon}
-                                        className="w-6 h-6"
                                         alt={`${sub.name} Icon`}
+                                        title={`${sub.name}`}
+                                        className="w-[28px] h-[28px]"
                                       />
-                                      <div>
-                                        <h3 className="font-dmSans font-semibold text-lg tracking-[-0.5px] text-[#111B29] mb-[2px]">
+                                      <div className="xl:mt-4">
+                                        <h4 className="subnav-title mb-[2px] font-dmSans text-lg font-semibold tracking-[-0.5px] text-[#111B29] group-subnav-hover:text-[#1355FF] transition-transform duration-300 ease-in-out">
                                           {sub.name}
-                                        </h3>
-                                        <p className="font-dmSans text-sm font-normal text-[#677489]">
+                                        </h4>
+                                        <p className="text-sm xl:text-xs font-normal text-[#677489] xl:max-w-[217px]">
                                           {sub.desc}
                                         </p>
                                       </div>
                                     </div>
-                                  </Link>
-                                ))}
-                              </div>
-                            ))}
-                         
 
+                                    <Image
+                                      src={sub.img}
+                                      alt={`${sub.name} illustration`}
+                                      title={sub.name}
+                                      className="subnav-image hidden xl:block w-full relative z-20  transition-transform duration-300 ease-in-out"
+                                    />
+
+                                    <Image
+                                      src={SubNavBg}
+                                      alt=""
+                                      role="presentation"
+                                      aria-hidden="true"
+                                      className="subnav-bg hidden xl:block absolute bottom-0 right-0 z-10  transition-transform duration-300 ease-in-out"
+                                    />
+                                    <Image
+                                      src={SubNavSmallBg}
+                                      alt=""
+                                      role="presentation"
+                                      aria-hidden="true"
+                                      className="xl:hidden absolute bottom-0 right-0 z-10"
+                                    />
+                                  </div>
+                                </Link>
+                              ))}
+                          </div>
+                        </>
+
+
+                      ) : (
+                        <div className="grid grid-cols-12 gap-6">
+                          <div className="col-span-12 xl:col-span-8">
+                            <div className="py-2 border-b border-[#7198FE]/10 flex items-center justify-between">
+                              <h3 className="font-dmSans text-sm !leading-6 tracking-[1px] text-[#666666] font-bold uppercase">
+                                {nav.name}
+                              </h3>
+                              <button
+                                type="button"
+                                onClick={() => setOpenMobNav(null)}
+                                className="xl:hidden text-xs !leading-6 tracking-[1px] text-[#3355FF] font-bold "
+                              >
+                                Back
+                              </button>
+                            </div>
+                            <div className="mt-4 xl:mt-6 grid grid-cols-12 gap-4">
+                              {chunkArray(nav.subnavs, 3).map((group, groupIndex) => (
+                                <div key={groupIndex} className="col-span-12 xl:col-span-6">
+                                  {group.map((sub, index, array) => (
+                                    <Link key={sub.id} href={sub.path}>
+                                      <div
+                                        className={`xl:max-w-[326px] flex items-start gap-4 px-[6px] py-2 bg-white hover:bg-[#EBF1FF]/50 smooth rounded-lg ${index === array.length - 1 ? "mb-0" : "mb-5"
+                                          }`}
+                                      >
+                                        <Image
+                                          src={sub.subIcon}
+                                          className="w-6 h-6"
+                                          alt={`${sub.name} Icon`}
+                                        />
+                                        <div>
+                                          <h3 className="font-dmSans font-semibold text-lg tracking-[-0.5px] text-[#111B29] mb-[2px]">
+                                            {sub.name}
+                                          </h3>
+                                          <p className="font-dmSans text-sm font-normal text-[#677489]">
+                                            {sub.desc}
+                                          </p>
+                                        </div>
+                                      </div>
+                                    </Link>
+                                  ))}
+                                </div>
+                              ))}
+
+
+                            </div>
+                          </div>
+                          <div className="col-span-12 xl:col-span-4">
+                            <div className="py-2 mb-4 border-b border-[#7198FE]/10 flex items-center justify-between">
+                              <h3 className="font-dmSans text-sm !leading-6 tracking-[1px] text-[#666666] font-bold uppercase">
+                                Latest videos
+                              </h3>
+
+                            </div>
+                            <Link href={'https://www.youtube.com/@Plazaprotection/featured'} target="_blank" >
+                              <Image src={Latestvideos} alt="" className="w-auto sm:max-w-[392px]" />
+                            </Link>
+                          </div>
                         </div>
+
+
                       )}
                     </div>
                   </div>
@@ -466,12 +487,7 @@ const Header = () => {
                     href={nav.path}
                     key={nav.id}
                   >
-                    <Image
-                      src={nav.icon}
-                      title={nav.name}
-                      alt={`${nav.name} icon`}
-                      className="w-4 h-4"
-                    />
+
                     {nav.name}
                   </Link>
                 )

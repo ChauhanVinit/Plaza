@@ -86,7 +86,7 @@ const Clientportal = () => {
         },
         {
             image: clientPortalB,
-            title: `Accurate Reports for\n Complete Transparency`,
+            title: `Seamless Scheduling for Stronger Security Operations`,
             desc: "Effective security guard scheduling is the key to success as it lies at the heart of all security operations. Using the Plaza Protection client portal you no longer need to sit on the side lines but actively view schedules as well as request special coverage with automated security guard scheduling software equipped portal.",
             features: [
                 {
@@ -120,7 +120,8 @@ const Clientportal = () => {
         },
         {
             image: clientPortalD,
-            title: `24/7 Live GPS\n Guard Tracking`,
+            title: `24/7 Live GPS Guard Tracking
+`,
             desc: "Track the GPS location & movement of the guards assigned to your site on the live map of the Plaza Protection client portal. View geofence, a virtually built perimeter to mark authorized & restricted areas. And invite your team member to the client portal to track history & to oversee your property’s security operations.",
             features: [
                 {
@@ -142,7 +143,7 @@ const Clientportal = () => {
             <div className='w-full px-4 sm:px-6 lg:px-10 lg:pr-0 2xl:pl-[calc((100%-1440px)/2)]  py-8 sm:py-10 xl:py-20'>
                 <div className='grid grid-cols-11 gap-8 sm:gap-10 lg:gap-0'>
                     <div className='col-span-11 lg:col-span-4'>
-                        <Heading title={`Plaza Protection\n Dashboard`} className={'!mt-0 !mb-8 !text-[#222A5B] lg:whitespace-pre-line'} />
+                        <Heading title={`Plaza Protection\n Client Portal`} className={'!mt-0 !mb-8 !text-[#222A5B] lg:whitespace-pre-line'} />
                         <p className="font-dmSans text-lg 2xl:text-xl 2xl:!leading-8 px-4 rounded border-l-[3px] border-l-[#B0BABF] font-normal text-[#45535E] ">
                             Your Security, Your Control — Anytime, Anywhere
                             Experience real-time insights and seamless management of your security operations with our intuitive client portal. Stay connected, informed, and in control 24/7.
