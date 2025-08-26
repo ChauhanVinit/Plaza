@@ -143,7 +143,7 @@ const Clientportal = () => {
             <div className='w-full px-4 sm:px-6 lg:px-10 lg:pr-0 2xl:pl-[calc((100%-1440px)/2)]  py-8 sm:py-10 xl:py-24'>
                 <div className='grid grid-cols-11 gap-8 sm:gap-10 lg:gap-12'>
                     <div className='col-span-11 lg:col-span-4'>
-                        <Heading title={`Plaza Protection\n Client Portal`} className={'!mt-0 !mb-8 !text-[#222A5B] lg:whitespace-pre-line !text-5xl 2xl:!text-[64px] 2xl:!leading-[72px]'} />
+                        <Heading title={`Plaza Protection\n Client Portal`} className={'!mt-0 !mb-8 !text-[#222A5B] lg:whitespace-pre-line !text-[44px] !leading-[52px] 2xl:!text-[64px] 2xl:!leading-[72px]'} />
                         <p className="font-dmSans text-lg 2xl:text-xl 2xl:!leading-8 px-4 rounded border-l-[3px] border-l-[#B0BABF] font-normal text-[#45535E] ">
                             Your Security, Your Control — Anytime, Anywhere
                             Experience real-time insights and seamless management of your security operations with our intuitive client portal. Stay connected, informed, and in control 24/7.
