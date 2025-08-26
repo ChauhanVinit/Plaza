@@ -140,10 +140,10 @@ const Clientportal = () => {
 
     return (
         <>
-            <div className='w-full px-4 sm:px-6 lg:px-10 lg:pr-0 2xl:pl-[calc((100%-1440px)/2)]  py-8 sm:py-10 xl:py-20'>
-                <div className='grid grid-cols-11 gap-8 sm:gap-10 lg:gap-0'>
+            <div className='w-full px-4 sm:px-6 lg:px-10 lg:pr-0 2xl:pl-[calc((100%-1440px)/2)]  py-8 sm:py-10 xl:py-24'>
+                <div className='grid grid-cols-11 gap-8 sm:gap-10 lg:gap-12'>
                     <div className='col-span-11 lg:col-span-4'>
-                        <Heading title={`Plaza Protection\n Client Portal`} className={'!mt-0 !mb-8 !text-[#222A5B] lg:whitespace-pre-line'} />
+                        <Heading title={`Plaza Protection\n Client Portal`} className={'!mt-0 !mb-8 !text-[#222A5B] lg:whitespace-pre-line !text-5xl 2xl:!text-[64px] 2xl:!leading-[72px]'} />
                         <p className="font-dmSans text-lg 2xl:text-xl 2xl:!leading-8 px-4 rounded border-l-[3px] border-l-[#B0BABF] font-normal text-[#45535E] ">
                             Your Security, Your Control — Anytime, Anywhere
                             Experience real-time insights and seamless management of your security operations with our intuitive client portal. Stay connected, informed, and in control 24/7.
@@ -173,8 +173,8 @@ const Clientportal = () => {
                             />
                         </div>
                     </div>
-                    <div className=' hidden lg:block col-span-1'></div>
-                    <div className='col-span-11 lg:col-span-6 relative'>
+                    {/* <div className=' hidden lg:block col-span-1'></div> */}
+                    <div className='col-span-11 lg:col-span-7 relative'>
                         <Image src={Overview} alt='Plaza Protection Overview Image' className='object-cover' />
                         <div className=' hidden lg:block absolute right-0 top-0 h-full w-2/5 bg-gradient-to-r from-[rgba(255,255,255,0)_24%] to-[rgba(255,255,255,1)_89%]'></div>
                     </div>
@@ -185,7 +185,7 @@ const Clientportal = () => {
                 {clientPortalData.map((item, index) => (
                     <div
                         key={index}
-                        className={`grid grid-cols-11 gap-8 sm:gap-10 lg:gap-0 py-8 sm:py-10 xl::py-20 px-0 sm:px-6 xl:px-10 2xl:px-16 items-center`}
+                        className={`grid grid-cols-11 gap-8 sm:gap-10 lg:gap-0 py-8 sm:py-10 xl:py-20 px-0 sm:px-6 xl:px-10 2xl:px-16 items-center `}
                     >
 
                         {index % 2 === 1 ? (
