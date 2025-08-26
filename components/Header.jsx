@@ -338,7 +338,7 @@ const Header = () => {
                       className={`absolute ${openMobNav === nav.id
                         ? "opacity-100 visible"
                         : "opacity-0 invisible"
-                        } top-0 xl:!top-10 left-0 w-full xl:-z-[1] z-10 bg-white p-4 xl:px-12 xl:pb-12 xl:pt-6 transition-all xl:duration-150 ease-in-out xl:invisible xl:opacity-0 xl:group-hover:!top-24 xl:group-hover:opacity-100 xl:group-hover:visible xl:rounded-[40px]`}
+                        } top-0 xl:!top-10 left-0 w-full xl:-z-[1] z-10 bg-white h-[calc(100vh-72px)] overflow-y-scroll p-4 xl:px-12 xl:pb-12 xl:pt-6 transition-all xl:duration-150 ease-in-out xl:invisible xl:opacity-0 xl:group-hover:!top-24 xl:group-hover:opacity-100 xl:group-hover:visible xl:rounded-[40px]`}
                     >
 
                       {nav.name !== "Resources" ? (
