@@ -181,7 +181,7 @@ const Clientportal = () => {
                 </div>
             </div>
 
-            <div className='mx-4 sm:mx-6 xl:mx-10 mb-20 2xl:max-w-[1440px] 2xl:mx-auto'>
+            <div className='mx-4 sm:mx-6 xl:mx-10  mb-8 sm:mb-10 xl:mb-20 2xl:max-w-[1440px] 2xl:mx-auto'>
                 {clientPortalData.map((item, index) => (
                     <div
                         key={index}
