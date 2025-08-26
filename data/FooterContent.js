@@ -105,6 +105,10 @@ socialMedia: [
           label: "Request A Quote",
           path: "/request-quote",
         },
+         {
+          label: "Client Portal",
+          path: "/client-portal",
+        },
       ],
     },
   ],
