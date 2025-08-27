@@ -49,7 +49,7 @@ const SafeExpertData = [
           <div className="w-full xl:w-[42%]">
             <Image
               src={ExpertSecurity}
-              className="object-cover"
+              className="w-full max-w-[720px]"
               alt="Experienced security guard – Over 10 years of industry expertise"
               title="Over 10 years of security industry experience"
             />
