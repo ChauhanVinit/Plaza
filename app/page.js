@@ -120,7 +120,7 @@ const SafeExpertData = [
                 }
                 style={"w-full sm:max-w-[158px]"}
                 name="About Us"
-                path="/About-us"
+                path="/about-us"
               />
             </div>
           </div>
