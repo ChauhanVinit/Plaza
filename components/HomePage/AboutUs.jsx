@@ -18,35 +18,35 @@ const AboutusData = [
     title: "Residential Communities",
     description:
       "Plaza Protection’s security guards are committed to protecting residential communities, providing a secure and peaceful environment for every home.",
-    path: "/Residential-Communities",
+    path: "/residential-communities",
   },
   {
     image: Commercial,
     title: "Commercial Buildings",
     description:
       "Plaza Protection’s security experts are skilled in addressing the unique challenges of commercial properties, safeguarding your business against break-ins, theft, and vandalism.",
-    path: "/Commercial-Buildings",
+    path: "/commercial-buildings",
   },
   {
     image: Construction,
     title: "Construction Sites",
     description:
       "Plaza Protection security guards safeguard construction sites by preventing theft, monitoring activity, and maintaining a safe environment for your crew and assets.",
-    path: "/Construction-Sites",
+    path: "/construction-sites",
   },
   {
     image: ShoppingCenter,
     title: "Shopping Center",
     description:
       "Plaza Protection’s security guards offer customized protection for shopping centers, creating a safe and welcoming environment for both shoppers and retailers.",
-    path: "/Shopping-Centers",
+    path: "/shopping-centers",
   },
   {
     image: Healthcare,
     title: "Healthcare Facilities",
     description:
       "Plaza Protection’s security guards are expertly trained to meet the specific safety needs of healthcare environments, ensuring a secure space for patients, staff, and visitors.",
-    path: "/Healthcare-Facilities",
+    path: "/healthcare-facilities",
   },
 ];
 const AboutUs = () => {
