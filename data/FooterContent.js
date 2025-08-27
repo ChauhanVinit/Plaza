@@ -103,7 +103,7 @@ socialMedia: [
         },
         {
           label: "Blog",
-          path: "/blog",
+          path: "https://blog.plazaprotection.com/",
         },
         {
           label: "Request A Quote",
