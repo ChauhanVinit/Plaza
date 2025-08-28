@@ -115,6 +115,14 @@ socialMedia: [
   ],
   bottomSection: {
     copyRight: "All Right Reserved by PlazaProtection Copyright © 2025",
-    links: ["Terms", "Privacy", "Security"],
+    links: [ 
+       {
+          label: "Terms",
+          path: "/terms-of-service",
+        },
+         {
+          label: "Privacy",
+          path: "/privacy-policy",
+        },],
   },
 };

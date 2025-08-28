@@ -70,8 +70,8 @@ const Services = () => {
         title="Explore Our Range Of Security Solutions"
       />
       <div className="mt-[60px] !text-left">
-        <TabGroup className="flex items-center flex-col 2xl:flex-row  gap-8 2xl:gap-20 ">
-          <TabList className="flex  flex-col  justify-center   pl-[34px]  min-w-max sm:min-w-[291px]">
+        <TabGroup className="flex items-center flex-col xl:flex-row  gap-8 2xl:gap-20 ">
+          <TabList className="flex flex-col justify-center pl-[34px]  min-w-max sm:min-w-[291px]">
             {tabs.map((item, index) => (
               <div key={index} className="relative flex items-center mb-[22px] last:!mb-0">
                 {/* Connector Line - Only show if not the last tab */}
@@ -108,10 +108,10 @@ const Services = () => {
               </div>                                                                        
             ))}
           </TabList>
-          <TabPanels className="grow  lg:py-8 2xl:w-[75%]">
+          <TabPanels className="grow lg:py-8 xl:w-[75%]">
             {tabs.map((item, index) => (
               <TabPanel key={index}>
-                <div className="flex flex-col lg:flex-row items-center gap-10 2xl:gap-[60px]">
+                <div className="flex flex-col lg:flex-row items-center gap-10  2xl:gap-[60px]">
                   <div>
                     <Image
                       src={FeaturesBanner}

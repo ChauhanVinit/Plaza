@@ -189,6 +189,13 @@ const Header = () => {
           path: "/about-us",
         },
         {
+          id: "faq",
+          desc: "Find quick answers to frequently asked questions about our services.",
+          subIcon: FAQIcon,
+          name: "FAQ",
+          path: "/faq",
+        },
+        {
           id: "clientPortal",
           desc: "Securely access your personalized dashboard and manage services with ease.",
           subIcon: ClientPortalIcon,
@@ -209,13 +216,7 @@ const Header = () => {
           name: "Request Quote",
           path: "/request-quote",
         },
-        {
-          id: "faq",
-          desc: "Find quick answers to frequently asked questions about our services.",
-          subIcon: FAQIcon,
-          name: "FAQ",
-          path: "/faq",
-        },
+        
       ],
     },
     {

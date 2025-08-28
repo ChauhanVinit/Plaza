@@ -12,7 +12,10 @@ const Footer = () => {
     <div className=" rounded-[40px] md:rounded-[0px] px-4  sm:px-6 xl:px-8 2xl:px-[120px] pt-8 sm:pt-10 2xl:pt-20 pb-8 bg-[#EDF5FF] ">
       <div className="w-full 2xl:max-w-[1200px] mx-auto">
         <div className="w-full mb-6 lg:hidden">
-          <Image src={Logo} alt="Logo" className="w-[182px] h-12" />
+          <Link href={'/'} >
+            <Image src={Logo} alt="Logo" className="w-[182px] h-12" />
+          </Link>
+
           <p className="block lg:hidden mt-6 font-dmSansfont-urbanist text-base  font-normal text-[#374049] max-w-[500px] tracking-[-0.5px]">
             Plaza Protection delivers top-tier protection across the San Jose
             Bay Area with your safety front and center.
@@ -20,7 +23,9 @@ const Footer = () => {
         </div>
         <div className="flex flex-col md:flex-row  items-center gap-6 md:gap-4 lg:gap-0 justify-between pb-10 border-b border-[#212121]/20">
           <div className="w-1/3 hidden lg:block">
-            <Image src={Logo} alt="Logo" className="w-[182px] h-12" />
+            <Link href={'/'} >
+              <Image src={Logo} alt="Logo" className="w-[182px] h-12" />
+            </Link>
             <p className="block lg:hidden mt-6 font-dmSans text-base  font-normal text-[#374049] max-w-[340px] tracking-[-0.5px]">
               Plaza Protection delivers top-tier protection across the San Jose
               Bay Area with your safety front and center.
@@ -100,13 +105,13 @@ const Footer = () => {
                 {data.socialMedia.map((media, index) => (
                   <Link href={media.path} target="_blank" key={index}>
                     <div className="h-10 w-10 inline-flex items-center justify-center bg-white hover:bg-[#D7E8FF] smooth border border-[#D7E8FF] ">
-                       <Image
-                      src={media.icon}
-                      alt={media.alt}
-                      className="w-[18px] h-[18px]"
-                    />
+                      <Image
+                        src={media.icon}
+                        alt={media.alt}
+                        className="w-[18px] h-[18px]"
+                      />
                     </div>
-                    
+
                   </Link>
                 ))}
               </div>
@@ -137,13 +142,13 @@ const Footer = () => {
           <div className="lg:hidden mt-8 flex items-center justify-start sm:justify-center gap-4">
             {data.socialMedia.map((media, index) => (
               <Link href={media.path} target="_blank" key={index}>
-               <div className="h-10 w-10 inline-flex items-center justify-center bg-white hover:bg-[#D7E8FF] smooth border border-[#D7E8FF]">
-                       <Image
-                      src={media.icon}
-                      alt={media.alt}
-                      className="w-[18px] h-[18px]"
-                    />
-                    </div>
+                <div className="h-10 w-10 inline-flex items-center justify-center bg-white hover:bg-[#D7E8FF] smooth border border-[#D7E8FF]">
+                  <Image
+                    src={media.icon}
+                    alt={media.alt}
+                    className="w-[18px] h-[18px]"
+                  />
+                </div>
               </Link>
             ))}
           </div>
@@ -153,18 +158,19 @@ const Footer = () => {
           <p className="font-dmSans tracking-[-0.5px] font-semibold text-xs xxs:text-sm xxs:leading-5 text-[#344054]">
             {data.bottomSection.copyRight}
           </p>
-          <div className=" inline-flex items-center gap-8">
+          <div className="inline-flex items-center gap-8">
             {data.bottomSection.links.map((link, index) => (
-              <div
+              <Link
+                href={link.path}
+                target="_blank"
                 key={index}
-                className={`font-dmSans tracking-[-0.5px] font-semibold text-xs xxs:text-sm xxs:leading-5 text-[#344054] relative ${
-                  index > 0
-                    ? "before:absolute before:top-2 before:-left-4 before:w-1 before:h-1 before:rounded-[100px] before:bg-[#344054]"
-                    : ""
-                }`}
+                className={`font-dmSans tracking-[-0.5px] font-semibold text-xs xxs:text-sm xxs:leading-5 text-[#344054] relative ${index > 0
+                  ? "before:absolute before:top-2 before:-left-4 before:w-1 before:h-1 before:rounded-[100px] before:bg-[#344054]"
+                  : ""
+                  }`}
               >
-                {link}
-              </div>
+                {link.label}
+              </Link>
             ))}
           </div>
         </div>
@@ -172,5 +178,5 @@ const Footer = () => {
     </div>
   );
 };
-                       
+
 export default Footer;
