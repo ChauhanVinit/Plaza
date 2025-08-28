@@ -117,7 +117,7 @@ const Services = () => {
                       src={FeaturesBanner}
                       alt="Security guard dashboard interface with greeting and question prompts"
                       title="Interactive dashboard for security guards with smart assistance"
-                      className=" min-w-0  sm:min-w-[428px] w-auto h-[445px]"
+                      className="min-w-0 sm:min-w-[428px] w-auto h-auto xl:h-[445px]"
                     />
                   </div>
                   <div className="grow text-left sm:text-center lg:text-left">
