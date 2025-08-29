@@ -14,7 +14,7 @@ const Terms = () => {
         <p className="mt-4 font-sans text-lg !leading-8 font-normal text-[#333333]">
           By visiting {" "}
           <Link href="https://www.plazaprotection.com/" target='_blank' className="text-[#3355FF] font-medium hover:underline">
-            plazaprotection.com
+            www.plazaprotection.com
           </Link>{" "} and accessing the information, resources, services, products, and tools we provide, you understand and agree to accept and adhere to the following terms and conditions as stated in this policy. If you do not agree to be bound by these Terms of Use in their entirety, you may not access or use the Service.
         </p>
       ),
@@ -33,9 +33,9 @@ const Terms = () => {
         <>
           <p className="font-sans mt-4 text-lg !leading-8 font-normal text-[#333333]">
             By visiting {" "}
-            <Link href="https://www.plazaprotection.com/" target='_blank' className="text-[#3355FF] font-medium hover:underline">
-              plazaprotection.com
-            </Link>{" "} and accessing the information, resources, services, products, and tools we provide for you, either directly or indirectly, you agree to use these Resources only for the purposes intended as permitted by the terms of this User Agreement, and applicable laws, regulations and generally accepted online practices or guidelines. You agree that failure to adhere to any of these conditions constitutes a material breach of these Terms.
+          <Link href="https://www.plazaprotection.com/" target='_blank' className="text-[#3355FF] font-medium hover:underline">
+            www.plazaprotection.com
+          </Link>{" "}  and accessing the information, resources, services, products, and tools we provide for you, either directly or indirectly, you agree to use these Resources only for the purposes intended as permitted by the terms of this User Agreement, and applicable laws, regulations and generally accepted online practices or guidelines. You agree that failure to adhere to any of these conditions constitutes a material breach of these Terms.
           </p>
 
           <div className='pl-4'>
@@ -67,7 +67,7 @@ const Terms = () => {
             <p className="font-dmSans mt-4 text-lg !leading-8 font-normal text-[#333333]">
               7. You agree to indemnify and hold harmless {" "}
           <Link href="https://www.plazaprotection.com/" target='_blank' className="text-[#3355FF] font-medium hover:underline">
-            plazaprotection.com
+            www.plazaprotection.com
           </Link>{" "} and its parent company and affiliates, and their directors, officers, managers, employees, donors, agents, licensors, from and against all losses, expenses, damages and costs, including reasonable attorneys' fees, resulting from any violation of this User Agreement or the failure to fulfill any obligations relating to your account incurred by you or any other person using your account. We reserve the right to take over the exclusive defense of any claim for which we are entitled to indemnification under this User Agreement. In such event, you shall provide us with such cooperation as is reasonably requested by us.
 
 
@@ -114,7 +114,7 @@ const Terms = () => {
       title: "Payment For The Use Of Service",
       content: (
         <>
-          <p className="font-dmSans mt-4 text-lg !leading-8 font-normal text-[#333333]">
+          <p className="font-dmSans mt-4 text-lg !leading-8 font-bold text-[#333333]">
             The payment details as provided at the time of the registration are bound by the following terms:
 
           </p>
@@ -202,7 +202,10 @@ const Terms = () => {
 
                 </p>
                 <p className='font-dmSans mt-2 text-lg !leading-8 font-normal text-[#333333]'>
-                  d. Impersonates any person or entity, including any www.plazaprotection.com employees or representatives.
+                  d. Impersonates any person or entity, including any {" "}
+          <Link href="https://www.plazaprotection.com/" target='_blank' className="text-[#3355FF] font-medium hover:underline">
+            www.plazaprotection.com
+          </Link>{" "} employees or representatives.
 
 
 
@@ -228,7 +231,7 @@ const Terms = () => {
       title: "Limited Representation & Warranty",
       content: (
         <>
-          <p className="font-dmSans mt-4 text-lg !leading-8 font-normal text-[#333333]">
+          <p className="font-dmSans mt-4 text-lg !leading-8 font-bold text-[#333333]">
             Plaza Protection warrants for 60 days after the date that security services are provided that it will perform the security services:
 
 
@@ -284,7 +287,16 @@ const Terms = () => {
 
           </p>
           <p className="font-dmSans mt-4 text-lg !leading-8 font-normal text-[#333333]">
-            All content such as image, text, icons, and such are provided by the contractors and subcontractors hired by Plaza Protection. In case of any conflict with any copyrights or trademark incidents that may arise, Plaza Protection will investigate the incidents and remove such material from the site. However, Plaza Protection is not directly responsible for the use of such copyright and trademark violations. All content and materials available on www.plazaprotection.com, including but not limited to text, graphics, website name, code, images, and logos are the intellectual property of www.plazaprotection.com and are protected by applicable copyright and trademark law. Any inappropriate use, including but not limited to the reproduction, distribution, display or transmission of any content on this site is strictly prohibited unless specifically authorized by www.plazaprotection.com
+            All content such as image, text, icons, and such are provided by the contractors and subcontractors hired by Plaza Protection. In case of any conflict with any copyrights or trademark incidents that may arise, Plaza Protection will investigate the incidents and remove such material from the site. However, Plaza Protection is not directly responsible for the use of such copyright and trademark violations. All content and materials available on {" "}
+          <Link href="https://www.plazaprotection.com/" target='_blank' className="text-[#3355FF] font-medium hover:underline">
+            www.plazaprotection.com
+          </Link>{" "}, including but not limited to text, graphics, website name, code, images, and logos are the intellectual property of {" "}
+          <Link href="https://www.plazaprotection.com/" target='_blank' className="text-[#3355FF] font-medium hover:underline">
+            www.plazaprotection.com
+          </Link>{" "} and are protected by applicable copyright and trademark law. Any inappropriate use, including but not limited to the reproduction, distribution, display or transmission of any content on this site is strictly prohibited unless specifically authorized by {" "}
+          <Link href="https://www.plazaprotection.com/" target='_blank' className="text-[#3355FF] font-medium hover:underline">
+            www.plazaprotection.com
+          </Link>{" "}
 
           </p>
         </>
@@ -308,9 +320,9 @@ const Terms = () => {
         <>
           <p className="font-dmSans mt-4 text-lg !leading-8 font-normal text-[#333333]">
             {" "}
-            <Link href="https://www.plazaprotection.com/" target='_blank' className="text-[#3355FF] font-medium hover:underline">
-              plazaprotection.com
-            </Link>{" "}  is controlled from our offices located in the state of CA, USA. It can be accessed in most countries around the world. As each country has laws that may differ from those of CA, by accessing our website, you agree that the statutes and laws of CA, without regard to the conflict of laws and the United Nations Convention on the International Sales of Goods, will apply to all matters relating to the use of this website and the purchase of any services through this site. Furthermore, any action to enforce this User Agreement shall be brought in the federal or state courts located in USA, CA. You hereby agree to personal jurisdiction by such courts and waive any jurisdictional, venue, or inconvenient forum objections to such courts.
+          <Link href="https://www.plazaprotection.com/" target='_blank' className="text-[#3355FF] font-medium hover:underline">
+            www.plazaprotection.com
+          </Link>{" "}  is controlled from our offices located in the state of CA, USA. It can be accessed in most countries around the world. As each country has laws that may differ from those of CA, by accessing our website, you agree that the statutes and laws of CA, without regard to the conflict of laws and the United Nations Convention on the International Sales of Goods, will apply to all matters relating to the use of this website and the purchase of any services through this site. Furthermore, any action to enforce this User Agreement shall be brought in the federal or state courts located in USA, CA. You hereby agree to personal jurisdiction by such courts and waive any jurisdictional, venue, or inconvenient forum objections to such courts.
 
           </p>
 
