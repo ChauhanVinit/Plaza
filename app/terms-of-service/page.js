@@ -65,7 +65,10 @@ const Terms = () => {
 
             </p>
             <p className="font-dmSans mt-4 text-lg !leading-8 font-normal text-[#333333]">
-              7. You agree to indemnify and hold harmless plazaprotection.com and its parent company and affiliates, and their directors, officers, managers, employees, donors, agents, licensors, from and against all losses, expenses, damages and costs, including reasonable attorneys' fees, resulting from any violation of this User Agreement or the failure to fulfill any obligations relating to your account incurred by you or any other person using your account. We reserve the right to take over the exclusive defense of any claim for which we are entitled to indemnification under this User Agreement. In such event, you shall provide us with such cooperation as is reasonably requested by us.
+              7. You agree to indemnify and hold harmless {" "}
+          <Link href="https://www.plazaprotection.com/" target='_blank' className="text-[#3355FF] font-medium hover:underline">
+            plazaprotection.com
+          </Link>{" "} and its parent company and affiliates, and their directors, officers, managers, employees, donors, agents, licensors, from and against all losses, expenses, damages and costs, including reasonable attorneys' fees, resulting from any violation of this User Agreement or the failure to fulfill any obligations relating to your account incurred by you or any other person using your account. We reserve the right to take over the exclusive defense of any claim for which we are entitled to indemnification under this User Agreement. In such event, you shall provide us with such cooperation as is reasonably requested by us.
 
 
             </p>
