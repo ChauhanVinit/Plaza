@@ -1,9 +1,8 @@
 "use client"
-import React from "react";
+import React, { useState, useRef } from "react";
 import FreeQuote from "@/components/FreeQuote";
 import Heading from "@/utils/Heading";
 import Link from "next/link";
-import { useState } from 'react'
 
 const Privacy = () => {
   const privacyData = [
@@ -179,31 +178,31 @@ const Privacy = () => {
   ];
 
 
-  const slugify = (text, index) =>
-    text
-      .toString()
-      .toLowerCase()
-      .trim()
-      .replace(/[^a-z0-9]+/g, "-")
-      .replace(/^-+|-+$/g, "") + "-" + index;
+const slugify = (text, index) =>
+    text.toLowerCase().replace(/\s+/g, "-") + "-" + index;
 
   const [activeId, setActiveId] = useState(() => slugify(privacyData[0].title, 0));
+  const contentRef = useRef(null);
+const handleScrollToSection = (sectionId) => {
+  setActiveId(sectionId);
+  const section = document.getElementById(sectionId);
+  if (section && contentRef.current) {
+    const container = contentRef.current;
+    const offset = 20;
 
-  const handleScrollToSection = (sectionId) => {
-    setActiveId(sectionId);
+    let topPosition = section.offsetTop - container.offsetTop - offset;
 
-    const section = document.getElementById(sectionId);
-    if (section) {
-      const offset = 100;
-      const topPosition =
-        section.getBoundingClientRect().top + window.scrollY - offset;
-
-      window.scrollTo({
-        top: topPosition,
-        behavior: "smooth",
-      });
+    // Only clamp if the section would push beyond the scroll area
+    if (topPosition > container.scrollHeight - container.clientHeight) {
+      topPosition = container.scrollHeight - container.clientHeight;
     }
-  };
+
+    container.scrollTo({
+      top: topPosition,
+      behavior: "smooth",
+    });
+  }
+};
 
 
   return (
@@ -225,36 +224,41 @@ const Privacy = () => {
       </div>
 
 
-      <div className="mx-4 sm:mx-6 xl:mx-10 mb-10 2xl:max-w-[1440px] 2xl:mx-auto grid grid-cols-11 gap-6 lg:gap-10">
-        <div className="col-span-11 md:col-span-4  xl:col-span-3 bg-gradient-to-b from-[#F0F6FF] to-[#FFFFFF] py-8 px-4 lg:p-8">
-          {privacyData.map((item, index) => {
-            const id = slugify(item.title, index);
-            return (
-              <button
-                key={id}
-                onClick={() => handleScrollToSection(id)}
-                className={`flex ${item.title.length > 25 ? "items-start" : "items-center"
-                  } gap-4 ${index !== privacyData.length - 1 ? "mb-6" : ""
-                  } text-left w-full`}
-              >
-                <div
-                  className={`min-w-2 h-2 rounded-full ${activeId === id ? "bg-[#1355FF]" : "bg-[#1355FF]/20"
-                    } ${item.title.length > 25 ? "mt-3" : ""}`}
-                ></div>
-                <h4
-                  className={`font-dmSans text-lg leading-8 ${activeId === id
-                    ? "text-[#3355FF] font-bold"
-                    : "text-[#666666] font-medium"
-                    }`}
+    <div className="mx-4 sm:mx-6 xl:mx-10 mb-10 2xl:max-w-[1440px] 2xl:mx-auto grid grid-cols-11 gap-6 lg:gap-10">
+        <div className="hidden col-span-11  md:block md:col-span-4 xl:col-span-3">
+          <div className="sticky top-[84px] bg-gradient-to-b from-[#F0F6FF] to-[#FFFFFF] py-8 px-4 lg:p-8 h-[calc(100vh-84px)] overflow-y-auto rounded-lg">
+            {privacyData.map((item, index) => {
+              const id = slugify(item.title, index);
+              return (
+                <button
+                  key={id}
+                  onClick={() => handleScrollToSection(id)}
+                  className={`flex ${item.title.length > 25 ? "items-start" : "items-center"
+                    } gap-4 ${index !== privacyData.length - 1 ? "mb-6" : ""
+                    } text-left w-full`}
                 >
-                  {item.title}
-                </h4>
-              </button>
-            );
-          })}
+                  <div
+                    className={`min-w-2 h-2 rounded-full ${activeId === id ? "bg-[#1355FF]" : "bg-[#1355FF]/20"
+                      } ${item.title.length > 25 ? "mt-3" : ""}`}
+                  ></div>
+                  <h4
+                    className={`font-dmSans text-lg leading-8 ${activeId === id
+                        ? "text-[#3355FF] font-bold"
+                        : "text-[#666666] font-medium"
+                      }`}
+                  >
+                    {item.title}
+                  </h4>
+                </button>
+              );
+            })}
+          </div>
         </div>
 
-        <div className="col-span-11 md:col-span-7 xl:col-span-8 bg-[#FAFAFA] py-8 px-4 lg:p-10 space-y-8">
+        <div
+          ref={contentRef}
+          className="col-span-11 md:col-span-7 xl:col-span-8 bg-[#FAFAFA] py-8 px-4 lg:p-10 space-y-10 md:h-[calc(100vh-84px)] md:overflow-y-auto rounded-lg"
+        >
           {privacyData.map((item, index) => {
             const id = slugify(item.title, index);
             return (

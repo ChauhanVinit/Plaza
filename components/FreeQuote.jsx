@@ -18,7 +18,7 @@ const FreeQuote = () => {
       document.body.removeChild(script);
     };
   }, []);
-
+                                                                                                                                                                                                                                         
   return (
     <div className="lg:mb-[400px] 2xl:mb-[360px]">
       <div className="max-h-auto lg:max-h-[440px] 2xl:max-h-[500px] relative 2xl:max-w-[1200px] mx-4 sm:mx-6 xl:mx-10 2xl:mx-auto mb-10 mt-10 lg:mt-0 lg:mb-[160px] 2xl:mb-[140px] px-4 sm:px-6 xl:px-8 2xl:px-[60px] bg-[#0C2459] rounded-[40px]">
@@ -66,8 +66,8 @@ const FreeQuote = () => {
           </div>
         </div>
       </div>
-    </div>
-
+    </div> 
+                                  
   );
 };
 
