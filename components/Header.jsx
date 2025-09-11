@@ -216,7 +216,7 @@ const Header = () => {
           name: "Request Quote",
           path: "/request-quote",
         },
-        
+
       ],
     },
     {
@@ -238,20 +238,20 @@ const Header = () => {
   };
 
   const pathname = usePathname();
-useEffect(() => {
-  // 🔥 Reset everything instantly on route change
-  setOpenMobNav(null);
-  setMenuOpen(false);
-  setHoveredNavId(null);
+  useEffect(() => {
+    // 🔥 Reset everything instantly on route change
+    setOpenMobNav(null);
+    setMenuOpen(false);
+    setHoveredNavId(null);
 
-  // Prevent hover opening immediately after route change
-  setDisableHover(true);
-  const timer = setTimeout(() => {
-    setDisableHover(false);
-  }, 500); // little longer to avoid flicker
+    // Prevent hover opening immediately after route change
+    setDisableHover(true);
+    const timer = setTimeout(() => {
+      setDisableHover(false);
+    }, 500); // little longer to avoid flicker
 
-  return () => clearTimeout(timer);
-}, [pathname]);
+    return () => clearTimeout(timer);
+  }, [pathname]);
 
 
 
@@ -305,7 +305,11 @@ useEffect(() => {
                     key={nav.id}
                     className={`${disableHover ? "" : "group"
                       } w-full xl:w-auto`}
-                    onMouseEnter={() => setHoveredNavId(nav.id)}
+                    onMouseEnter={() => {
+                      if (!disableHover) {
+                        setHoveredNavId(nav.id);
+                      }
+                    }}
                     onMouseLeave={() => setHoveredNavId(null)}
                   >
                     <div
@@ -341,7 +345,7 @@ useEffect(() => {
                       </div>
                     </div>
                     <div
-                      className={`absolute ${openMobNav === nav.id
+                      className={`absolute ${openMobNav === nav.id || hoveredNavId === nav.id
                         ? "opacity-100 visible"
                         : "opacity-0 invisible"
                         } top-0 xl:!top-10 left-0 w-full xl:-z-[1] z-10 bg-white h-[calc(100vh-72px)] xl:h-auto overflow-y-scroll xl:overflow-hidden p-4 xl:px-12 xl:pb-12 xl:pt-6 transition-all xl:duration-150 ease-in-out xl:invisible xl:opacity-0 xl:group-hover:!top-24 xl:group-hover:opacity-100 xl:group-hover:visible xl:rounded-[40px]`}
