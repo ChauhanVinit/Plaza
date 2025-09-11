@@ -238,17 +238,22 @@ const Header = () => {
   };
 
   const pathname = usePathname();
-  useEffect(() => {
-    setOpenMobNav(null);
-    setMenuOpen(false);
-    setDisableHover(true); // disable hover immediately on route change
+useEffect(() => {
+  // 🔥 Reset everything instantly on route change
+  setOpenMobNav(null);
+  setMenuOpen(false);
+  setHoveredNavId(null);
 
-    const timer = setTimeout(() => {
-      setDisableHover(false); // allow hover again after 300ms
-    }, 300);
+  // Prevent hover opening immediately after route change
+  setDisableHover(true);
+  const timer = setTimeout(() => {
+    setDisableHover(false);
+  }, 500); // little longer to avoid flicker
 
-    return () => clearTimeout(timer);
-  }, [pathname]);
+  return () => clearTimeout(timer);
+}, [pathname]);
+
+
 
   const chunkArray = (arr, size) => {
     const result = [];
@@ -293,7 +298,7 @@ const Header = () => {
               />
             </Link>
 
-            <div className="w-full xl:w-auto xl:ml-auto 2xl:ml-[180px] mr-auto flex flex-col xl:flex-row items-start xl:items-center">
+            <div onMouseLeave={() => setHoveredNavId(null)} className="w-full xl:w-auto xl:ml-auto 2xl:ml-[180px] mr-auto flex flex-col xl:flex-row items-start xl:items-center">
               {navData.map((nav) =>
                 nav.subnavs.length ? (
                   <div
