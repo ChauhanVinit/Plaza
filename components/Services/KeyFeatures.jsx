@@ -8,8 +8,8 @@ const KeyFeatures = ({ data, title, desc }) => {
   return (
     <div
       id="key-features"
-      className="mx-4 xxs:container 2xl:max-w-[1440px]  xxs:mx-auto px-4 py-10 sm:px-6 xl:px-10 2xl:px-16 xl:py-20 rounded-[40px] bg-[#E7E7FF]/20 mb-10
-     2xl:mb-[68px]"
+      className="mx-4 xxs:container 2xl:max-w-[1440px] xxs:mx-auto px-4 py-10 sm:px-6 xl:px-10 2xl:px-16 xl:py-20 rounded-[40px] bg-[#E7E7FF]/20 mb-10
+     xl:mb-[68px]"
     >
       <div className="flex flex-col xl:flex-row  xl:justify-between items-start xl:items-end gap-8 xl:gap-0">
         <div>
