@@ -51,7 +51,7 @@ const FaqContent = () => {
 
   return (
     <>
-      <div className="mx-4 sm:mx-6 xl:mx-10 2xl:container 2xl:mx-auto my-8 sm:my-10 lg:my-20 text-center">
+      <div className="xxs:container 2xl:max-w-[1440px] mx-4  xxs:mx-auto my-8 sm:my-10 lg:my-20 text-center">
         <Heading title={"Plaza Protection FAQ : Questions We Hear Most"} className={'2xl:!text-[56px] 2xl:!leading-[64px] !text-4xl xl:!text-5xl !text-[#222A5B]'} />
         <p className="font-dmSans text-[18px] leading-7 text-[#6B7280] mt-8 max-w-[1050px] mx-auto">
           Find clear answers to the most common questions about Plaza
@@ -63,7 +63,7 @@ const FaqContent = () => {
       </div>
 
       {/* FAQ list */}
-      <div className="mx-0 sm:mx-6 xl:mx-10 2xl:container 2xl:mx-auto px-4 py-6 sm:py-10 sm:px-8 xl:p-10 2xl:p-20 bg-[#EDF5FF] rounded-[40px]">
+      <div className="xxs:container 2xl:max-w-[1440px] mx-4  xxs:mx-auto px-4 py-6 sm:py-10 sm:px-8 xl:p-10 xl:px-10 2xl:p-20 bg-[#EDF5FF] rounded-[40px]">
         <div className="rounded-[20px] overflow-hidden px-4 sm:px-6 xl:px-10 py-2 bg-white">
           {faqsData.map((item, index) => (
             <div

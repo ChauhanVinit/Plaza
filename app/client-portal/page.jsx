@@ -140,8 +140,8 @@ const Clientportal = () => {
 
     return (
         <>
-            <div className='w-full px-4 sm:px-6 lg:px-10 lg:pr-0 2xl:pl-[calc((100%-1440px)/2)]  py-8 sm:py-10  xl:pt-14 xl:pb-20'>
-                <div className='grid grid-cols-11 gap-8 sm:gap-10 lg:gap-12'>
+            <div className='w-full xxs:container px-4 xxs:px-0 xxs:mx-auto lg:max-w-full lg:pr-0 lg:pl-[calc((100%-1080px)/2)] xl:pl-[calc((100%-1280px)/2)] 2xl:pl-[calc((100%-1440px)/2)]  py-8 sm:py-10  xl:pt-14 xl:pb-20'>
+                <div className='grid grid-cols-11 gap-8 sm:gap-10 lg:gap-12 '>
                     <div className='col-span-11 lg:col-span-4'>
                         <Heading title={`Plaza Protection\n Client Portal`} className={'!mt-0 !mb-8 !text-[#222A5B] lg:whitespace-pre-line  2xl:!text-[56px] 2xl:!leading-[64px] !text-4xl xl:!text-5xl'} />
                         <p className="font-dmSans text-lg 2xl:text-xl 2xl:!leading-8 px-4 rounded border-l-[3px] border-l-[#B0BABF] font-normal text-[#45535E] ">
@@ -181,7 +181,7 @@ const Clientportal = () => {
                 </div>
             </div>
 
-            <div className='mx-4 sm:mx-6 xl:mx-10  mb-8 sm:mb-10 xl:mb-20 2xl:max-w-[1440px] 2xl:mx-auto'>
+            <div className='w-full px-4 xxs:px-0 xxs:container  mb-8 sm:mb-10 xl:mb-20 xxs:mx-auto'>
                 {clientPortalData.map((item, index) => (
                     <div
                         key={index}

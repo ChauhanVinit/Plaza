@@ -7,7 +7,7 @@ import Button from "../utils/Button";
 import right from "../public/right.svg";
 const SecurityTrustBanner = ({ title, btnText, path }) => {
   return (
-    <div className="relative mx-[5px] sm:mx-6  xl:mx-10 2xl:max-w-[1440px] 2xl:mx-auto  mb-10 2xl:mb-20 px-4 py-6  sm:py-10 sm:px-6 xl:px-8 2xl:p-20 rounded-2xl sm:rounded-[40px] bg-[#0C2459] text-left sm:text-center overflow-hidden">
+    <div className="relative xxs:container 2xl:max-w-[1440px] mx-4 xxs:mx-auto  mb-10 xl:mb-20 px-4 py-6  sm:py-10 sm:px-6 xl:px-10  xl:py-20 2xl:p-20 rounded-2xl sm:rounded-[40px] bg-[#0C2459] text-left sm:text-center overflow-hidden">
       <Image
         src={lineShape}
         className="z-0 absolute top-0 left-0 max-h-[612px] "

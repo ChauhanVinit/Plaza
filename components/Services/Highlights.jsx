@@ -6,8 +6,8 @@ import Heading from "../../utils/Heading";
 
 const Highlights = ({ data, title, desc, image }) => {
   return (
-    <div id="highlights" className="mx-4 sm:mx-6 xl:mx-10  2xl:max-w-[1440px] 2xl:mx-auto mb-10
-     2xl:mb-[68px] px-4 py-10 sm:px-6 xl:px-8 2xl:px-16 2xl:p-16 rounded-[40px] bg-[#EDF5FF]/50">
+    <div id="highlights" className="xxs:container 2xl:max-w-[1440px] mx-4 xxs:mx-auto mb-10
+     xl:mb-[68px] px-4 py-10 sm:px-6 xl:px-10 xl:py-16 2xl:px-16 2xl:p-16 rounded-[40px] bg-[#EDF5FF]/50">
       <Tag title={"Highlights"} />
       <Heading title={title} className={"!mb-6 !tracking-[-2px] !text-[#222A5B]"} />
       <p className="font-dmSans font-normal text-lg 2xl:text-xl  2xl:!leading-8 text-[#374049]">

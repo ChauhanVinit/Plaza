@@ -119,7 +119,7 @@ const SecurityTrustData = {
 const AboutUs = () => {
   return (
     <>
-      <div className="mx-4 sm:mx-6  xl:mx-10 2xl:max-w-[1360px] 2xl:mx-auto  my-10 xl:mt-[60px] xl:mb-20 2xl:mt-[100px] 2xl:mb-40">
+      <div className="mx-4 xxs:container 2xl:max-w-[1360px] xxs:mx-auto  my-10 lg:mt-[60px] lg:xl:mb-20 xl:mt-[100px] xl:mb-40">
         <div className="sm:text-center">
           <h1 className="font-dmSans text-5xl !leading-[56px] xl:text-[52px] xl:!leading-[60px] 2xl:text-[56px]  2xl:!leading-[64px] font-semibold text-[#222A5B] mb-8 tracking-[-4px] xs:tracking-[-3px] max-w-[1162px] mx-auto">
             Welcome To Plaza Protection – Your Trusted Security Partner In The
@@ -163,7 +163,7 @@ const AboutUs = () => {
       <TopIndustries />
       <OurServices />
 
-      <div className="mx-4 sm:mx-6  xl:mx-10 2xl:max-w-[1440px] 2xl:mx-auto mb-10 2xl:mb-20 px-4 sm:px-6  py-10 xl:px-10 2xl:p-20 rounded-[40px] bg-[#EDF5FF]">
+      <div className="xxs:container 2xl:max-w-[1440px] mx-4 xxs:mx-auto mb-10 xl:mb-20 px-4 sm:px-6  py-10 xl:px-10  xl:py-20  2xl:p-20 rounded-[40px] bg-[#EDF5FF]">
         <Tag title={"Quick view about us"} />
         <Heading
           className={"!mt-4 !text-[#222A5B]"}
@@ -190,7 +190,7 @@ const AboutUs = () => {
         </div>
       </div>
 
-      <div className="mx-4 sm:mx-6  xl:mx-10 2xl:max-w-[1440px] 2xl:mx-auto mb-10 2xl:mb-20 px-4 sm:px-6  py-10 xl:px-10 2xl:p-20 rounded-[40px] bg-[#F0F6FF] flex flex-col lg:flex-row gap-8  xl:gap-10 2xl:gap-20">
+      <div className="xxs:container 2xl:max-w-[1440px] mx-4 xxs:mx-auto mb-10 xl:mb-20 px-4 sm:px-6  py-10  2xl:p-20 rounded-[40px] bg-[#F0F6FF] flex flex-col lg:flex-row gap-8  xl:px-10  xl:py-20 2xl:gap-20">
         <div className="w-full lg:w-1/2">
           <Tag title={"our technologies"} />
           <Heading

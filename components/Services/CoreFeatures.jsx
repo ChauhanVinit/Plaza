@@ -15,7 +15,7 @@ const CoreFeatures = ({ data, title, desc, img }) => {
   return (
     <div
       id="why-choose"
-      className="mx-0 sm:mx-6 xl:mx-10 2xl:max-w-[1440px] 2xl:mx-auto px-4 py-10 sm:px-6 xl:px-8 2xl:py-20 2xl:px-16 flex flex-col-reverse lg:flex-row   items-center gap-8 lg:gap-10 2xl:gap-20 rounded-[40px] mb-10 2xl:mb-[68px]"
+      className="xxs:container 2xl:max-w-[1440px]  xxs:mx-auto px-4 py-10 sm:px-6 xl:px-10 xl:py-20 2xl:px-16 flex flex-col-reverse lg:flex-row items-center gap-8 lg:gap-10 xl:gap-[60px] 2xl:gap-20 rounded-[40px] mb-10 xl:mb-[68px]"
     >  
       <div className="w-full lg:w-1/2">
         <Image src={img} className="w-full max-w-[720px]" alt="title" title={title} />

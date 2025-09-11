@@ -44,23 +44,24 @@ const SafeExpertData = [
     <>
       <Hero />
       <TopIndustries />
-      <div className="mx-4 sm:mx-6  xl:mx-10  2xl:max-w-[1440px] 2xl:mx-auto mt-10 2xl:mt-[60px] py-8 px-4 sm:py-10 sm:px-6  xl:px-8  2xl:px-[60px] 2xl:py-20 bg-[#FAFAFA] rounded-[40px]">
-        <div className="flex flex-col xl:flex-row items-start gap-8 xl:gap-10 2xl:gap-[140px]">
-          <div className="w-full xl:w-[42%]">
+      <div className="xxs:container 2xl:max-w-[1440px] mx-4 xxs:mx-auto mt-10 2xl:mt-[60px] py-8 px-4 sm:py-10 sm:px-6  xl:px-8  2xl:px-[60px] xl:py-20 bg-[#FAFAFA] rounded-[40px]">
+        <div className="flex flex-col xl:flex-row items-start gap-8 xl:gap-[60px] 2xl:gap-[140px]">
+          <div className="w-full xl:w-[44%]">
             <Image
               src={ExpertSecurity}
-              className="w-full max-w-[720px]"
+              className="w-full max-w-[620px]"
               alt="Experienced security guard – Over 10 years of industry expertise"
               title="Over 10 years of security industry experience"
             />
           </div>
-          <div className="w-full xl:w-[58%]">
+          <div className="w-full xl:w-[56%]">
             <Tag title={"Ensuring Safety With Expertise"} />
 
             <Heading
               title={
-                "Cutting-Edge Security Solutions For A Rapidly Evolving World"
+                `Cutting-Edge Security Solutions For\n A Rapidly Evolving World`
               }
+              className={'xl:!whitespace-pre-line'}
             />
             <p className="mt-6 font-dmSans text-lg 2xl:text-xl 2xl:!leading-8 font-normal  text-[#45535E]">
               Our commitment to excellence ensures a safe, secure environment for all, giving you peace of mind under our vigilant protection.

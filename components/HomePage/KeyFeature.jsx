@@ -19,7 +19,7 @@ const featureData = [
     description:
       "Monitor the real-time GPS location and movement of guards on your site via the live map in our client portal.",
     image: GuardTracking,
-    span: "col-span-12 lg:col-span-4   2xl:col-span-4",
+    span: "col-span-12 lg:col-span-4 xl:col-span-4",
   },
   {
     id: 2,
@@ -27,7 +27,7 @@ const featureData = [
     description:
       "Stay in the loop—view schedules, post orders, and request special coverage on the go.",
     image: ViewingSchedule,
-    span: "col-span-12 lg:col-span-4  2xl:col-span-4",
+    span: "col-span-12 lg:col-span-4 xl:col-span-4",
   },
   {
     id: 3,
@@ -35,7 +35,7 @@ const featureData = [
     description:
       "Enhance communication with your security guards, streamlining real-time updates and efficient teamwork.",
     image: Coordinatewithguard,
-    span: "col-span-12 lg:col-span-4  2xl:col-span-4",
+    span: "col-span-12 lg:col-span-4 xl:col-span-4",
   },
   {
     id: 4,
@@ -43,7 +43,7 @@ const featureData = [
     description:
       "Access detailed reports and visitor logs anytime, anywhere, through the Plaza Protection client portal.",
     image: Realreporting,
-    span: "col-span-12 lg:col-span-6 2xl:col-span-3",
+    span: "col-span-12 lg:col-span-6 xl:col-span-3",
   },
   {
     id: 5,
@@ -51,7 +51,7 @@ const featureData = [
     description:
       "Streamline visitor management with real-time tracking and access control for efficient, secure site access.",
     image: ManagingVisitors,
-    span: "col-span-12 lg:col-span-6 2xl:col-span-3",
+    span: "col-span-12 lg:col-span-6 xl:col-span-3",
   },
   {
     id: 6,
@@ -59,7 +59,7 @@ const featureData = [
     description:
       "Step into the future with QR, NFC, and virtual tags for secure site tours and patrols on predefined routes.",
     image: Sitetour,
-    span: "col-span-12 lg:col-span-6 2xl:col-span-3",
+    span: "col-span-12 lg:col-span-6 xl:col-span-3",
   },
   {
     id: 7,
@@ -67,14 +67,14 @@ const featureData = [
     description:
       "Collaborate with us seamlessly—co-manage patrol operations in real-time with secure access to our live dashboard.",
     image: LiveDashboard,
-    span: "col-span-12 lg:col-span-6 2xl:col-span-3",
+    span: "col-span-12 lg:col-span-6 xl:col-span-3",
   },
 ];
 
 const KeyFeature = () => {
   return (
-    <div className="w-full 2xl:pr-[calc((100%-1440px)/2)] ">
-      <div className="relative rounded-[40px] sm:rounded-tl-[0px] sm:rounded-bl-[0px]   sm:rounded-tr-[40px] sm:rounded-br-[40px] bg-[#0A2540] mx-4 sm:mr-6 sm:ml-0  xl:mr-10 2xl:mx-0  mt-10 2xl:mt-20 sm:pb-[154px]">
+    <div className="w-full  xxs:pr-[calc((100%-390px)/2)] xs:pr-[calc((100%-480px)/2)] sm:pr-[calc((100%-640px)/2)] md:pr-[calc((100%-790px)/2)]  lg:pr-[calc((100%-1080px)/2)] xl:pr-[calc((100%-1280px)/2)] 2xl:pr-[calc((100%-1440px)/2)]">
+      <div className="relative rounded-[40px] xxs:rounded-tl-[0px] xxs:rounded-bl-[0px]  sm:rounded-tr-[40px] sm:rounded-br-[40px] bg-[#0A2540] mx-4  xxs:mx-0   mt-10 xl:mt-20 xxs:pb-[154px]">
         <Image
           src={lineShape}
           className="z-0 absolute top-0 left-0 w-[431px] h-[357px]"
@@ -86,7 +86,7 @@ const KeyFeature = () => {
             alt=""
         />
 
-        <div className="ml-auto max-w-[1440px]  py-8 px-4 sm:py-10 sm:px-6  xl:px-8  2xl:py-20 2xl:px-[60px] relative z-10">
+        <div className="ml-auto max-w-[1280px]  2xl:max-w-[1440px]  py-8 px-4 sm:py-10 sm:px-6 2xl:py-20 xl:px-10 2xl:px-[60px] relative z-10">
           <Tag
             title={"What sets us apart"}
             className={"!bg-none !text-[#B9D8FF]"}

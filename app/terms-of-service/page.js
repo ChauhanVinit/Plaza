@@ -385,7 +385,7 @@ const handleScrollToSection = (sectionId) => {
   return (
     <>
       <div
-        className="mx-4 sm:mx-6 xl:mx-10 my-10 2xl:max-w-[1440px] 2xl:mx-auto py-10 px-4 xl:py-[84px] bg-[url('/TermsImg.png')] bg-center bg-cover bg-no-repeat"
+        className="xxs:container 2xl:max-w-[1440px] mx-4 xxs:mx-auto my-10 py-10  xl:py-[84px] bg-[url('/TermsImg.png')] bg-center bg-cover bg-no-repeat"
 
       >
         <Heading title={`Terms of Service`} className={'!mt-0 !mb-8 !text-[#222A5B] lg:whitespace-pre-line  2xl:!text-[64px] 2xl:!leading-[72px] !text-4xl lg:!text-5xl xl:!text-6xl'} />
@@ -397,7 +397,7 @@ const handleScrollToSection = (sectionId) => {
         <p className='font-dmSans text-base !leading-8 font-normal text-[#333333]'>Last updated: 26 August, 2025</p>
       </div>
 
-      <div className="mx-4 sm:mx-6 xl:mx-10 mb-10 2xl:max-w-[1440px] 2xl:mx-auto grid grid-cols-11 gap-6 lg:gap-10">
+      <div className="xxs:container 2xl:max-w-[1440px] mx-4 xxs:mx-auto mb-10 grid grid-cols-11 gap-6 lg:gap-10">
         <div className="hidden col-span-11  md:block md:col-span-4 xl:col-span-3">
           <div className="sticky top-[84px] bg-gradient-to-b from-[#F0F6FF] to-[#FFFFFF] py-8 px-4 lg:p-8 h-[calc(100vh-84px)] overflow-y-auto rounded-lg">
             {termsData.map((item, index) => {

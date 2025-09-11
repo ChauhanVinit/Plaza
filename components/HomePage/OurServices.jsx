@@ -33,7 +33,7 @@ const clientTestimonials = [
 const OurServices = () => {
   const isClient = useIsClient();
   return (
-    <div className="relative mx-4 sm:mx-6 xl:mx-10 my-10 2xl:my-[60px] 2xl:max-w-[1440px] 2xl:mx-auto pt-8 pb-[142px] px-0 sm:pt-10 sm:pb-[150px] sm:px-6 xl:px-8 2xl:pt-20 2xl:pb-[190px] 2xl:px-[70px] rounded-[40px]">
+    <div className="relative  xxs:container 2xl:max-w-[1440px] mx-4 xxs:mx-auto pt-10 pb-[142px] px-0  sm:pb-[150px] sm:px-6 xl:px-10 xl:pt-20 xl:pb-[190px] 2xl:px-[70px] rounded-[40px]">
      
       <div className="text-center">
         <Tag title={"Don’t trust us? Trust businesses like yours"} />
@@ -63,7 +63,7 @@ const OurServices = () => {
             interval: 3000,
             pagination: false,
           }}
-          className="relative overflow-visible dots:absolute dots:right-0 dots:-bottom-[92px]  dots:p-0 dots:min-w-[300px] dots:justify-center  dots:items-center  dots:gap-4 dot:!bg-[#88C0FF] dot:w-2 dot:h-2 activeDot:scale-100 activeDot:!bg-[#1355FF] dot:shadow-none dot:outline-none mt-[60px]"
+          className="relative overflow-visible dots:absolute dots:right-0 dots:-bottom-[92px]  dots:p-0 dots:min-w-[300px] dots:justify-center  dots:items-center  dots:gap-4 dot:!bg-[#88C0FF] dot:w-2 dot:h-2 activeDot:scale-100 activeDot:!bg-[#1355FF] dot:shadow-none dot:outline-none mt-10 xl:mt-[60px]"
         >
           {clientTestimonials.map((testimonial, index) => (
             <SplideSlide key={index} >

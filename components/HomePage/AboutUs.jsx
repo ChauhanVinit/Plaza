@@ -53,10 +53,10 @@ const AboutUs = () => {
   const isClient = useIsClient();
 
   return (
-    <div className="w-full 2xl:pl-[calc((100%-1440px)/2)] ">
-      <div className="rounded-[40px] sm:rounded-tr-[0px] sm:rounded-br-[0px]  sm:rounded-tl-[40px] sm:rounded-bl-[40px]  relative mt-10  sm:-mt-[116px] pb-[114px]  pt-8 px-4 sm:pb-[122px] sm:pt-10  sm:px-6 md:py-10  xl:px-8  2xl:py-20 2xl:pr-[0px] 2xl:pl-[60px] bg-[#EDF5FF]  mx-4 sm:ml-6 sm:mr-0  xl:ml-10 2xl:mx-0">
+    <div className="w-full xxs:pl-[calc((100%-390px)/2)] xs:pl-[calc((100%-480px)/2)] sm:pl-[calc((100%-640px)/2)] md:pl-[calc((100%-790px)/2)]  lg:pl-[calc((100%-1080px)/2)] xl:pl-[calc((100%-1280px)/2)] 2xl:pl-[calc((100%-1440px)/2)]">
+      <div className="rounded-[40px] xxs:rounded-tl-[40px] xxs:rounded-bl-[40px]  xxs:rounded-tr-[0px] xxs:rounded-br-[0px] mx-4 xxs:mx-0 relative mt-10  xxs:-mt-[116px] pb-[114px]  pt-8 px-4 sm:pb-[122px] sm:pt-10  sm:px-6 md:py-10  xl:py-20 xl:pr-[0px] xl:pl-10  2xl:pl-[60px] bg-[#EDF5FF] ">
         <Tag title={"Quick view about us"} />
-        <Heading title={"Trusted Security Services For Every Industry"} className={'      md:max-w-[600px] lg:max-w-full'} />
+        <Heading title={"Trusted Security Services For Every Industry"} className={' md:max-w-[600px] lg:max-w-full'} />
         {isClient && (
           <Splide
             aria-label="My Favorite Images"
@@ -83,7 +83,7 @@ const AboutUs = () => {
               interval: 3000,
               
             }}
-            className="dots:absolute dots:right-0 dots:-bottom-16 sm:dots:-bottom-[72px]  dots:p-0 dots:min-w-[300px] dots:justify-center  dots:items-center  dots:gap-4 dot:!bg-[#88C0FF] dot:w-2 dot:h-2 activeDot:scale-100 activeDot:!bg-[#1355FF] dot:shadow-none dot:outline-none mt-[60px]"
+            className="dots:absolute dots:right-0 dots:-bottom-16 sm:dots:-bottom-[72px] dots:p-0 dots:min-w-[300px] dots:justify-center dots:items-center dots:gap-4 dot:!bg-[#88C0FF] dot:w-2 dot:h-2 activeDot:scale-100 activeDot:!bg-[#1355FF] dot:shadow-none dot:outline-none mt-[60px]"
           >
             {AboutusData.map((item, index) => (
               <SplideSlide key={index}>

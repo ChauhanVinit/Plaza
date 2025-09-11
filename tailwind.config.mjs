@@ -14,13 +14,13 @@ export default {
         dmSans: 'DM Sans',
       },
       screens: {
-        xxs: '390px',
+        xxs: '391px',
         xs: "480px",
         sm: "640px",
         md: "790px",
         lg: "1080px",
         xl: "1280px",
-        "2xl": "1440px",
+        "2xl": "1600px",
       },
 
     },

@@ -8,7 +8,7 @@ import Heading from "../../utils/Heading";
 const IndustryTabs = ({data, title, desc}) => {
     const isClient = useIsClient();
   return (
-   <div className="mx-4 sm:mx-6 xl:mx-10 2xl:max-w-[1440px] 2xl:mx-auto mb-10 2xl:mb-20 bg-[#F0F6FF] rounded-[40px] px-4 pt-10 pb-[122px] sm:px-6 xl:px-8 2xl:p-20">
+   <div className="xxs:container 2xl:max-w-[1440px] mx-4 xxs:mx-auto mb-10 xl:mb-20 bg-[#F0F6FF] rounded-[40px] px-4 pt-10 pb-[122px] lg:py-10  sm:px-6 xl:py-20 xl:px-10 2xl:p-20">
         <Heading
           className="!mb-6 !mt-0 !text-[#222A5B] !text-center !tracking-[-2px]"
           title={title}

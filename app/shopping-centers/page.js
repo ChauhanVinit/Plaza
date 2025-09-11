@@ -130,8 +130,8 @@ const ShoppingCenter = () => {
 
   return (
     <>
-      <div className="w-full px-4 sm:px-6 xl:px-10 2xl:px-0 2xl:max-w-[1342px] mt-10 2xl:mt-20 mb-20 2xl:mb-40 2xl:mx-auto">
-        <div className="flex gap-12">
+      <div className="w-full xxs:container px-4 xxs:p-0 xxs:mx-auto 2xl:max-w-[1342px] mt-10 xl:mt-20 mb-10 lg:mb-20 xl:mb-40 ">
+        <div className="flex gap-10 2xl:gap-12">
           <div className="relative pt-[14px] hidden xl:block">
             <Image
               src={Shoppingmall}
@@ -176,7 +176,7 @@ const ShoppingCenter = () => {
           <Image
             src={ConectElement}
             alt=""
-            className=" object-cover"
+            className="object-cover"
           />
 
           <div className="z-[51] absolute left-0 translate-x-6  top-0 translate-y-[3px] inline-flex items-center gap-1  sm:gap-2 px-2 sm:px-3 py-[5px] sm:py-[9px] rounded-[50px] bg-white border-[1.5px] border-[#E7E7E7]  shadow-[0_17.33px_25.99px_0_rgba(0,0,0,0.05)]">
@@ -205,7 +205,7 @@ const ShoppingCenter = () => {
             </div>
           </div>
         </div>
-        <div className="flex items-start mt-[74px] gap-[52px] ">
+        <div className="flex items-start mt-[74px] gap-10 2xl:gap-[52px]">
           <div className="grow flex flex-col item-start md:flex-row md:items-center  gap-5 p-6 lg:p-[35px] rounded-3xl bg-[#FFB82E]/5">
             <div className="flex items-end gap-[14px]">
               <div className="min-w-[206px]">

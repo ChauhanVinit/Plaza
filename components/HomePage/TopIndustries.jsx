@@ -15,14 +15,14 @@ const images = [
 
 const TopIndustries = () => {
   return (
-    <div className="mx-0 sm:mx-6  xl:mx-10 2xl:max-w-[1440px] 2xl:mx-auto  px-4 py-8  sm:px-6  xl:px-8  2xl:py-20 2xl:px-[70px] grid grid-cols-12 items-center gap-4 2xl:gap-0">
+    <div className="xxs:container 2xl:max-w-[1300px] mx-auto  px-4 py-8  sm:px-6  xl:px-8  2xl:py-20 2xl:px-[70px] grid grid-cols-12 items-center gap-4 2xl:gap-0">
       <div className="col-span-12 lg:col-span-4">
         <h3 className="font-dmSans text-[28px] 2xl:text-[32px] font-semibold leading-9 2xl:!leading-10 text-[#171A1D] tracking-[-1px] max-w-[323px]">
           Trusted By San Jose’s Leading Industries
         </h3>
       </div>
 
-      <div className="col-span-12 lg:col-span-8   overflow-hidden">
+      <div className="col-span-12 lg:col-span-8 overflow-hidden">
         <div className="relative overflow-hidden w-full">
           <div className="flex w-max animate-marquee">
             {[...images, ...images].map((item, index) => (

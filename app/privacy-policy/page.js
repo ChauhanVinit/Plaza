@@ -207,7 +207,7 @@ const handleScrollToSection = (sectionId) => {
 
   return (
     <>
-      <div className="mx-4 sm:mx-6 xl:mx-10 my-10 2xl:max-w-[1440px] 2xl:mx-auto py-10 px-4 xl:px-0 xl:py-[68px] bg-[#FAFAFA] xl:bg-[url('/PolicyImage.png')] xl:bg-center xl:bg-cover xl:bg-no-repeat">
+      <div className="xxs:container 2xl:max-w-[1440px] mx-4 xxs:mx-auto my-10 py-10 px-4 xl:px-0 xl:py-[68px] bg-[#FAFAFA] xl:bg-[url('/PolicyImage.png')] xl:bg-center xl:bg-cover xl:bg-no-repeat">
         <Heading
           title={`Privacy Policy`}
           className={
@@ -224,7 +224,7 @@ const handleScrollToSection = (sectionId) => {
       </div>
 
 
-    <div className="mx-4 sm:mx-6 xl:mx-10 mb-10 2xl:max-w-[1440px] 2xl:mx-auto grid grid-cols-11 gap-6 lg:gap-10">
+    <div className="xxs:container 2xl:max-w-[1440px] mx-4 xxs:mx-auto mb-10 grid grid-cols-11 gap-6 lg:gap-10">
         <div className="hidden col-span-11  md:block md:col-span-4 xl:col-span-3">
           <div className="sticky top-[84px] bg-gradient-to-b from-[#F0F6FF] to-[#FFFFFF] py-8 px-4 lg:p-8 h-[calc(100vh-84px)] overflow-y-auto rounded-lg">
             {privacyData.map((item, index) => {

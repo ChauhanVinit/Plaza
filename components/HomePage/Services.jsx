@@ -63,14 +63,14 @@ const Services = () => {
   ];
 
   return (
-    <div className="mx-4 sm:mx-6 xl:mx-10 2xl:max-w-[1440px] 2xl:mx-auto mt-10 2xl:mt-[60px] py-8 px-4 sm:py-10 sm:px-6 xl:px-8 2xl:py-20 2xl:px-[60px] rounded-[40px] bg-[#F0F6FF] text-center">
+    <div className="xxs:container 2xl:max-w-[1440px] mx-4 xxs:mx-auto mt-10 xl:mt-20 py-8 px-4 sm:py-10 sm:px-6 xl:px-10 xl:py-20 2xl:px-[60px] rounded-[40px] bg-[#F0F6FF] text-center">
       <Tag title="Why Choose Us?" />
       <Heading
         className="!mt-4"
         title="Explore Our Range Of Security Solutions"
       />
       <div className="mt-[60px] !text-left">
-        <TabGroup className="flex items-center flex-col xl:flex-row  gap-8 2xl:gap-20 ">
+        <TabGroup className="flex items-center flex-col xl:flex-row  gap-10 2xl:gap-20 ">
           <TabList className="flex flex-col justify-center pl-[34px]  min-w-max sm:min-w-[291px]">
             {tabs.map((item, index) => (
               <div key={index} className="relative flex items-center mb-[22px] last:!mb-0">
@@ -108,7 +108,7 @@ const Services = () => {
               </div>                                                                        
             ))}
           </TabList>
-          <TabPanels className="grow lg:py-8 xl:w-[75%]">
+          <TabPanels className="grow xl:w-[75%]">
             {tabs.map((item, index) => (
               <TabPanel key={index}>
                 <div className="flex flex-col lg:flex-row items-center gap-10  2xl:gap-[60px]">

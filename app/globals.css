@@ -26,11 +26,11 @@
 }
 
 .serv-prev {
-  @apply left-1/2 -translate-x-[calc(50%-106px)] -bottom-[82px] sm:-bottom-[90px] md:right-0 md:left-auto md:translate-x-0 2xl:right-[284px] md:-top-[110px];
+  @apply left-1/2 -translate-x-[calc(50%-106px)] -bottom-[82px] sm:-bottom-[90px] md:right-0 md:left-auto md:translate-x-0 xl:right-[284px] md:-top-[110px];
 }
 
 .serv-next {
-  @apply left-1/2 -translate-x-[calc(50%+106px)] -bottom-[82px] sm:-bottom-[90px] md:right-[66px] md:left-auto md:translate-x-0 2xl:right-[350px] md:-top-[110px] rotate-180;
+  @apply left-1/2 -translate-x-[calc(50%+106px)] -bottom-[82px] sm:-bottom-[90px] md:right-[66px] md:left-auto md:translate-x-0 xl:right-[350px] md:-top-[110px] rotate-180;
 }
 
 .custom-arrow svg {

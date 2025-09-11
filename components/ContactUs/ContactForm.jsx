@@ -49,7 +49,7 @@ const ContactForm = () => {
   }, []);
 
   return (
-    <div className="mx-0 sm:mx-6 xl:mx-10 2xl:container 2xl:mx-auto mb-10 2xl:mb-20 py-10 px-4 sm:px-6 xl:px-10 2xl:p-20 rounded-[40px] flex flex-col xl:flex-row items-start gap-8 xl:gap-10 2xl:gap-20 bg-[#EDF5FF]">
+    <div className="xxs:container 2xl:max-w-[1440px] mx-4  xxs:mx-auto mb-10 xl:mb-20 py-10 px-4 sm:px-6 xl:px-10 2xl:p-20 rounded-[40px] flex flex-col xl:flex-row items-start gap-8 xl:gap-10 xl:py-20 2xl:gap-20 bg-[#EDF5FF]">
       <div className="w-full xl:w-[calc(50%-20px)] 2xl:w-[calc(50%-40px)]">
         <Tag title={"Quick View CONTACT Us"} />
         <Heading

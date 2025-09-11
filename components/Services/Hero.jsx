@@ -9,7 +9,7 @@ const scrollIntoData = [
   { id: "highlights", title: "Highlights" },
 ];
 
-const Hero = ({ title, desc, img , alt}) => {
+const Hero = ({ title, desc, img, alt }) => {
   const handleScrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
     if (section) {
@@ -24,10 +24,10 @@ const Hero = ({ title, desc, img , alt}) => {
     }
   };
   return (
-    <div className="px-4 sm:px-6  xl:px-10 2xl:max-w-[1440px] 2xl:mx-auto mb-10 mt-10  2xl:mt-20 2xl:mb-[140px]">
+    <div className="xxs:container 2xl:max-w-[1440px] mx-4 xxs:mx-auto mb-10 mt-10 xl:mt-20 xl:mb-[140px]">
       <div className="flex flex-col lg:flex-row items-stretch w-full  relative overflow-visible ">
-        <div className="w-full lg:w-1/2 2xl:w-full   2xl:max-w-[490px] relative z-10 lg:pt-[38px] lg:pb-[34px]">
-          <h1 className="font-dmSans text-5xl !leading-[56px] lg:text-[52px] lg:!leading-[60px] xl:text-[60px] xl:!leading-[68px] 2xl:text-[64px]  2xl:!leading-[72px] font-semibold text-[#222A5B] mb-8 capitalize tracking-[-3px]  lg:-mr-80   xl:-mr-96">
+        <div className="w-full lg:w-1/2 xl:w-full xl:max-w-[490px] relative z-10 lg:pt-[38px] lg:pb-[34px]">
+          <h1 className="font-dmSans text-5xl !leading-[56px] lg:text-[52px] lg:!leading-[60px] xl:text-[56px] xl:!leading-[64px] 2xl:text-[64px]  2xl:!leading-[72px] font-semibold text-[#222A5B] mb-8 capitalize tracking-[-3px]  lg:-mr-80 xl:-mr-[335px]  2xl:-mr-96">
             {title}
           </h1>
           <p className="font-dmSans text-lg 2xl:text-xl !leading-8 px-4 rounded border-l-[3px] border-l-[#B0BABF] font-normal text-[#45535E] lg:-mr-14">
@@ -62,7 +62,7 @@ const Hero = ({ title, desc, img , alt}) => {
             ))}
           </div>
         </div>
-        <div className="w-full hidden lg:block lg:w-1/2  2xl:grow flex-shrink-0 z-0">
+        <div className="w-full hidden lg:block lg:w-1/2  xl:grow flex-shrink-0 z-0">
           <Image src={img} alt={alt} className="object-cover h-full" />
         </div>
       </div>

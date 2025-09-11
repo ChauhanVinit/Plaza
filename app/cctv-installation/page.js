@@ -130,13 +130,13 @@ const KeyFeature = [
     icon: checkmark,
     title: "Ultra-HD Video Quality",
     description:
-      "Experience best image resolution with our HD and 4K cameras, ensuring all detail is captured clear.",
+      "Experience best resolution with our HD and 4K cameras, ensuring all detail is captured clear.",
   },
   {
     icon: checkmark,
     title: "Remote Monitoring & Alerts",
     description:
-      "Access live footage from any device and receive instant alerts to stay informed even when you're away.",
+      "Access live footage on any device and get instant alerts, even when away.",
   },
   {
     icon: checkmark,

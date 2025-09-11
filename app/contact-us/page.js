@@ -67,7 +67,7 @@ const Contact = () => {
   };
   return (
     <>
-      <div className="mx-4 sm:mx-6  xl:mx-10 2xl:max-w-[1360px] 2xl:mx-auto mt-10 2xl:mt-[91px] mb-8 2xl:mb-[70px] sm:text-center">
+      <div className="mx-4 xxs:container 2xl:max-w-[1360px] xxs:mx-auto mt-10 xl:mt-[91px] mb-8 xl:mb-[70px] sm:text-center">
         <h1 className="font-dmSans text-5xl !leading-[56px] xl:text-[52px] xl:!leading-[60px] 2xl:text-[56px]  2xl:!leading-[64px] font-semibold text-[#222A5B] tracking-[-3px] mb-8">
           Contact Us
         </h1>
@@ -80,7 +80,7 @@ const Contact = () => {
         </p>
       </div>
 
-      <div className="hidden sm:flex items-center justify-center mx-4 sm:mx-6 xl:max-w-[1200px] xl:mx-auto  mb-10 2xl:mb-20">
+      <div className="hidden sm:flex items-center justify-center mx-4 xxs:container xl:max-w-[1200px] xxs:mx-auto  mb-10 xl:mb-20">
         <Image
           src={ContactBannerA}
           alt="Plaza Protection security team standing in formation, ready to serve"
@@ -88,7 +88,7 @@ const Contact = () => {
         />
       </div>
 
-      <div className="sm:hidden flex items-center justify-start mx-4 sm:mx-6 xl:max-w-[1200px] xl:mx-auto  mb-10 2xl:mb-20">
+      <div className="sm:hidden flex items-center justify-start mx-4 xxs:container xl:max-w-[1200px] xxs:mx-auto  mb-10 xl:mb-20">
         <Image
           src={ContactBannerB}
           alt="Trained Plaza Protection security guards ensuring safety and readiness"
@@ -97,7 +97,7 @@ const Contact = () => {
       </div>
 
       <ContactForm />
-      <div className="mx-4 sm:mx-6  xl:mx-10 2xl:container 2xl:mx-auto mb-10 2xl:mb-20 rounded-[40px] overflow-hidden">
+      <div className="xxs:container 2xl:max-w-[1440px] mx-4  xxs:mx-auto mb-10 xl:mb-20 rounded-[40px] overflow-hidden">
         <GoogleMapComponent />
       </div>
       <SecurityTrustBanner {...SecurityTrustData} />

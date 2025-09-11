@@ -63,7 +63,7 @@ const RequestAQuote = () => {
   };
   return (
     <>
-      <div className="mx-4 sm:mx-6 xl:max-w-[1160px] xl:mx-auto sm:text-center mt-10 2xl:mt-[100px] mb-12 2xl:mb-[116px]">
+      <div className="mx-4 xxs:container xl:max-w-[1160px]  xxs:mx-auto sm:text-center mt-10 xl:mt-[100px] mb-12 xl:mb-[116px]">
         <h1 className="mb-8 font-dmSans text-5xl !leading-[56px] xl:text-[52px] xl:!leading-[60px] 2xl:text-[56px]  2xl:!leading-[64px] font-semibold text-[#222A5B] tracking-[-3px]">
           Request A Quote
         </h1>

@@ -9,8 +9,8 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="rounded-[40px] md:rounded-[0px] px-4  sm:px-6 xl:px-8 2xl:px-[120px] pt-8 sm:pt-10 2xl:pt-20 pb-8 bg-[#EDF5FF] ">
-      <div className="w-full 2xl:max-w-[1200px] mx-auto">
+    <div className="px-4  sm:px-6 xl:px-8 2xl:px-[120px] pt-8 sm:pt-10 2xl:pt-20 pb-8 bg-[#EDF5FF] ">
+      <div className="w-full xxs:container xl:max-w-[1200px] mx-auto">
         <div className="w-full mb-6 lg:hidden">
           <Link href={'/'} >
             <Image src={Logo} alt="Logo" className="w-[182px] h-12" />

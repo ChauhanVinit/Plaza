@@ -3,7 +3,7 @@ import Heading from "../../utils/Heading";
 import Card from "../../components/Card";
 const IndustryHighlights = ({data, title , desc}) => {
   return (
-    <div className="mx-4 sm:mx-6 xl:mx-10 2xl:max-w-[1440px] 2xl:mx-auto mt-10 2xl:mt-20  px-4 py-10 sm:px-6 xl:px-8 2xl:p-20 ">
+    <div className="xxs:container 2xl:max-w-[1440px] xxs:mx-auto my-10 xl:my-20  px-4 py-10  sm:px-6  xl:py-20 xl:px-10 2xl:p-20 ">
         <Heading
           className="!mb-6 !mt-0 !text-[#222A5B] !text-center !tracking-[-2px]"
           title={title}

@@ -50,13 +50,7 @@ const Header = () => {
         {
           id: "unarmedSecurity",
           name: "Unarmed Security",
-          desc: (
-            <>
-              Deliver professional, reliable on-site protection with a strong
-              focus on
-              <br className="hidden xl:block" /> safety, and service.
-            </>
-          ),
+          desc: "Deliver professional, reliable on-site protection with a strong focus on safety, and service.",
           subIcon: UnarmedSecurity,
           img: UnarmedImg,
           path: "/unarmed-security",
@@ -64,13 +58,7 @@ const Header = () => {
         {
           id: "fire-Watch",
           name: "Fire Watch",
-          desc: (
-            <>
-              Preventing hazards and maintaining full compliance with fire
-              safety
-              <br className="hidden xl:block" /> regulations.
-            </>
-          ),
+          desc: "Preventing hazards and maintaining full compliance with fire safety regulations.",
           subIcon: fire,
           img: FireWatchImg,
           path: "/fire-watch",
@@ -78,12 +66,7 @@ const Header = () => {
         {
           id: "RemoteGuarding",
           name: "Remote Guarding Service",
-          desc: (
-            <>
-              Advanced surveillance technology with live monitoring to detect,
-              respond to threats in real time.
-            </>
-          ),
+          desc: "Advanced surveillance technology with live monitoring to detect, respond to threats in real time.",
           subIcon: tvSmart,
           img: RemoteGuardingImg,
           path: "/remote-guarding-service",
@@ -99,14 +82,7 @@ const Header = () => {
         {
           id: "CCTV-Installation",
           name: "CCTV Installation",
-          desc: (
-            <>
-              Expert CCTV installation tailored to
-              <br className="hidden xl:block" /> your property—enhancing
-              visibility,
-              <br className="hidden xl:block" /> deterring threats.
-            </>
-          ),
+          desc:"Expert CCTV installation tailored to your property—enhancing visibility, deterring threats.",
           subIcon: CCTV,
           img: CCTVInstallationImg,
           path: "/cctv-installation",
@@ -136,12 +112,7 @@ const Header = () => {
         {
           id: "construction-Sites",
           name: "Construction Sites",
-          desc: (
-            <>
-              Keep secured, protected—day and
-              <br className="hidden xl:block" /> night, start to finish.
-            </>
-          ),
+          desc: "Keep secured, protected—day and night, start to finish.",
           subIcon: Sitesicon,
           img: ConstructionSitesImg,
           path: "/construction-sites",
@@ -157,12 +128,7 @@ const Header = () => {
         {
           id: "healthcare-facilities",
           name: "Healthcare Facilities",
-          desc: (
-            <>
-              Specialized security that ensures a
-              <br className="hidden xl:block" /> safe, controlled environment.
-            </>
-          ),
+          desc:"Specialized security that ensures a safe, controlled environment.",
           subIcon: Healthcareicon,
           img: HealthcareFacilitiesImg,
           path: "/healthcare-facilities",
@@ -274,7 +240,7 @@ const Header = () => {
       ></div>
 
       <div className="w-full sticky top-0 z-[999] bg-white">
-        <div className="2xl:max-w-[1440px] 2xl:mx-auto bg-white flex items-center relative p-4 xl:px-0 xl:pt-1 xl:pb-0">
+        <div className="xl:max-w-[1280px] 2xl:max-w-[1440px] xl:mx-auto bg-white flex items-center relative p-4 xl:px-0 xl:pt-1 xl:pb-0">
           <Link href="/" className="xl:hidden">
             <Image
               src={Logo}
@@ -298,7 +264,9 @@ const Header = () => {
               />
             </Link>
 
-            <div onMouseLeave={() => setHoveredNavId(null)} className="w-full xl:w-auto xl:ml-auto 2xl:ml-[180px] mr-auto flex flex-col xl:flex-row items-start xl:items-center">
+            <div 
+            onMouseLeave={() => setHoveredNavId(null)} 
+            className="w-full xl:w-auto xl:ml-auto 2xl:ml-[180px] mr-auto flex flex-col xl:flex-row items-start xl:items-center">
               {navData.map((nav) =>
                 nav.subnavs.length ? (
                   <div
@@ -313,14 +281,14 @@ const Header = () => {
                     onMouseLeave={() => setHoveredNavId(null)}
                   >
                     <div
-                      onClick={() => setOpenMobNav(nav.id)}
-                      className={` relative cursor-pointer w-full mb-2 xl:mb-0 bg-[#1355FF]/5 xl:bg-white inline-flex gap-2 items-center px-3 xl:px-[14px] py-6 rounded-2xl xl:py-7 text-base font-dmSans font-semibold tracking-[-0.5px]  xl:after:content-[''] xl:after:absolute xl:after:h-[3px] xl:after:rounded-[50px] xl:after:bottom-0 xl:after:left-1/2 xl:after:-translate-x-1/2 xl:after:bg-[#1355FF] 
+                      onClick={() => setOpenMobNav(openMobNav === nav.id ? null : nav.id)}
+                      className={`relative cursor-pointer w-full mb-2 xl:mb-0 bg-[#1355FF]/5 xl:bg-white inline-flex gap-2 items-center px-3 xl:px-[14px] py-6 rounded-2xl xl:py-7 text-base font-dmSans font-semibold tracking-[-0.5px]  xl:after:content-[''] xl:after:absolute xl:after:h-[3px] xl:after:rounded-[50px] xl:after:bottom-0 xl:after:left-1/2 xl:after:-translate-x-1/2 xl:after:bg-[#1355FF] 
                         xl:group-hover:text-[#1355FF] group-hover:after:w-[20px] text-[#1A1A1A] after:w-0 after:transition-all after:duration-250 after:ease-in-out`}
                     >
 
                       {nav.name}
                       <div
-                        className={`w-4 h-4  absolute right-3 top-7 xl:relative xl:right-0 xl:top-[2px] transition-transform duration-200 ease-in-out ${hoveredNavId === nav.id
+                        className={`w-4 h-4 absolute right-3 top-7 xl:relative xl:right-0 xl:top-[2px] transition-transform duration-200 ease-in-out ${hoveredNavId === nav.id
                           ? "rotate-0 xl:rotate-180"
                           : "rotate-0"
                           }`}
@@ -348,7 +316,8 @@ const Header = () => {
                       className={`absolute ${openMobNav === nav.id || hoveredNavId === nav.id
                         ? "opacity-100 visible"
                         : "opacity-0 invisible"
-                        } top-0 xl:!top-10 left-0 w-full xl:-z-[1] z-10 bg-white h-[calc(100vh-72px)] xl:h-auto overflow-y-scroll xl:overflow-hidden p-4 xl:px-12 xl:pb-12 xl:pt-6 transition-all xl:duration-150 ease-in-out xl:invisible xl:opacity-0 xl:group-hover:!top-24 xl:group-hover:opacity-100 xl:group-hover:visible xl:rounded-[40px]`}
+                        } top-0 xl:!top-10 left-0 w-full xl:-z-[1] z-10 bg-white h-[calc(100vh-72px)] xl:h-auto overflow-y-scroll xl:overflow-hidden p-4 xl:px-6 xl:pb-6 2xl:px-12 2xl:pb-12 xl:pt-6 transition-all xl:duration-150 ease-in-out xl:invisible xl:opacity-0 xl:group-hover:!top-24 xl:group-hover:opacity-100 xl:group-hover:visible xl:rounded-[40px]`}
+                        onMouseLeave={() => setHoveredNavId(null)}
                     >
 
                       {nav.name !== "Resources" ? (
@@ -391,7 +360,7 @@ const Header = () => {
                                         className="w-[28px] h-[28px]"
                                       />
                                       <div className="xl:mt-4">
-                                        <h4 className="subnav-title mb-[2px] font-dmSans text-lg font-semibold tracking-[-0.5px] text-[#111B29] group-subnav-hover:text-[#1355FF] transition-transform duration-300 ease-in-out">
+                                        <h4 className="subnav-title mb-[2px] font-dmSans text-base 2xl:text-lg font-semibold tracking-[-0.5px] text-[#111B29] group-subnav-hover:text-[#1355FF] transition-transform duration-300 ease-in-out">
                                           {sub.name}
                                         </h4>
                                         <p className="text-sm xl:text-xs font-normal text-[#677489] xl:max-w-[217px]">
@@ -458,7 +427,7 @@ const Header = () => {
                                           alt={`${sub.name} Icon`}
                                         />
                                         <div>
-                                          <h3 className="font-dmSans font-semibold text-lg tracking-[-0.5px] text-[#111B29] mb-[2px]">
+                                          <h3 className="font-dmSans font-semibold text-base 2xl:text-lg tracking-[-0.5px] text-[#111B29] mb-[2px]">
                                             {sub.name}
                                           </h3>
                                           <p className="font-dmSans text-sm font-normal text-[#677489]">

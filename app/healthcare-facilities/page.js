@@ -129,8 +129,8 @@ const featuresListContent = {
 const HospitalSecurity = () => {
   return (
     <>
-      <div className="w-full px-4 sm:px-6 xl:px-10 2xl:px-0 2xl:max-w-[1342px] mt-10 2xl:mt-20 mb-20 2xl:mb-40 2xl:mx-auto">
-        <div className="flex gap-12">
+      <div className="w-full xxs:container px-4 xxs:p-0 xxs:mx-auto 2xl:max-w-[1342px] mt-10 xl:mt-20 mb-10 lg:mb-20 xl:mb-40 ">
+        <div className="flex gap-10 2xl:gap-12">
           <div className="relative pt-[14px] hidden xl:block">
             <Image
               src={HospitalImage}
@@ -196,7 +196,7 @@ const HospitalSecurity = () => {
             </div>
           </div>
         </div>
-        <div className="flex items-start mt-[74px] gap-[52px] ">
+        <div className="flex items-start mt-[74px] gap-10 2xl:gap-[52px]">
           <div className="grow flex flex-col item-start md:flex-row md:items-center  gap-5 p-6 lg:p-[35px] rounded-3xl bg-[#FFB82E]/5">
             <div className="flex items-end gap-[14px]">
               <div className="min-w-[206px]">
